@@ -12,6 +12,13 @@
       Google Sheet → GAS export trigger → data.json → GitHub repo
       GitHub Pages serves this HTML + data.json
       Squarespace embeds via iframe
+
+    Deep linking:
+      When embedded in Squarespace, the iframe communicates with the
+      parent page via postMessage to keep the browser URL in sync.
+      Shared links point to the Squarespace page (not GitHub Pages)
+      using the SQUARESPACE_PARENT_URL config. The parent page passes
+      any ?id= parameter down to the iframe on load.
 -->
 <html lang="en">
 <head>
@@ -869,6 +876,15 @@
         // Website tracking endpoint (optional - still calls GAS for analytics)
         const TRACKING_URL = 'https://script.google.com/macros/s/AKfycby-jo_4Lhz5E775mUElJtPMq3kmyar5Ax9eOr8psR30pTxp5SkO9nih82eIigi2S985Yg/exec';
 
+        // Squarespace parent page URL for deep linking when embedded in an iframe
+        // Set this to the Squarespace page URL where this iframe is embedded
+        // e.g. 'https://www.ansir.org.au/projects'
+        // When set, permalinks will point to the Squarespace page instead of GitHub Pages
+        const SQUARESPACE_PARENT_URL = '';  // <-- Set this to your Squarespace page URL
+
+        // Detect if we're running inside an iframe
+        const IS_EMBEDDED = (window !== window.top);
+
         /* ============================================ */
         /* GLOBAL STATE VARIABLES                      */
         /* ============================================ */
@@ -1429,9 +1445,15 @@
         }
 
         // Generate permalink for project
+        // When SQUARESPACE_PARENT_URL is set, permalinks point to the Squarespace page
+        // so shared links take users to the branded site, not raw GitHub Pages
         function generatePermalink(project) {
+            const projectRef = encodeURIComponent(project.ansirRef || project.id);
+            if (SQUARESPACE_PARENT_URL) {
+                return `${SQUARESPACE_PARENT_URL}?id=${projectRef}`;
+            }
             const baseUrl = window.location.origin + window.location.pathname;
-            return `${baseUrl}?id=${project.ansirRef || project.id}`;
+            return `${baseUrl}?id=${projectRef}`;
         }
 
         // Copy permalink to clipboard
@@ -1455,9 +1477,65 @@
         }
 
         /* ============================================ */
+        /* IFRAME ↔ PARENT COMMUNICATION              */
+        /* ============================================ */
+
+        // Notify parent Squarespace page when a project is selected/deselected
+        // Parent updates its URL bar so visitors can copy/share the correct link
+        function notifyParentProjectChange(projectRef) {
+            if (!IS_EMBEDDED) return;
+            try {
+                window.parent.postMessage({
+                    type: 'ansir-project-selected',
+                    projectId: projectRef || null
+                }, '*');
+            } catch (e) {
+                // Silently fail if cross-origin restrictions prevent messaging
+            }
+        }
+
+        // Listen for messages from parent (e.g., parent passing ?id= on page load)
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'ansir-load-project' && event.data.projectId) {
+                // Parent is telling us to load a specific project
+                urlProjectId = event.data.projectId;
+                if (projectsInitialized && allProjects.length > 0) {
+                    searchForProject(event.data.projectId);
+                }
+                // If projects haven't loaded yet, urlProjectId will be picked up by the deep-link logic
+            }
+        });
+
+        // Auto-resize: send content height to parent so iframe has no inner scrollbar
+        // Uses ResizeObserver for efficiency — fires when content actually changes size
+        function sendHeightToParent() {
+            if (!IS_EMBEDDED) return;
+            try {
+                const height = document.body.scrollHeight;
+                window.parent.postMessage({
+                    type: 'ansir-resize',
+                    height: height
+                }, '*');
+            } catch (e) {
+                // Silently fail if cross-origin restrictions prevent messaging
+            }
+        }
+
+        // Observe body size changes (card expand/collapse, filter changes, etc.)
+        if (IS_EMBEDDED) {
+            const resizeObserver = new ResizeObserver(function() {
+                sendHeightToParent();
+            });
+            resizeObserver.observe(document.documentElement);
+
+            // Also send on initial load
+            window.addEventListener('load', sendHeightToParent);
+        }
+
+        /* ============================================ */
         /* API FUNCTIONS                               */
         /* ============================================ */
-        
+
         // Fetch project data from static JSON file (GitHub Pages hosted)
         // The JSON file is exported from Google Sheet via a GAS scheduled trigger
         // Format: { success: true, data: [...], exported: "ISO date" }
@@ -2253,6 +2331,9 @@
                 card.setAttribute('aria-expanded', card.classList.contains('expanded'));
                 if (card.classList.contains('expanded')) {
                     trackEvent('project-expanded', project.name);
+                    notifyParentProjectChange(project.ansirRef || project.id);
+                } else {
+                    notifyParentProjectChange(null);
                 }
             }
 
