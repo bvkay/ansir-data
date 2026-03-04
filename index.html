@@ -1507,15 +1507,26 @@
         });
 
         // Auto-resize: send content height to parent so iframe has no inner scrollbar
-        // Uses ResizeObserver for efficiency — fires when content actually changes size
+        // Uses both ResizeObserver and periodic polling for reliability
+        let lastSentHeight = 0;
         function sendHeightToParent() {
             if (!IS_EMBEDDED) return;
             try {
-                const height = document.body.scrollHeight;
-                window.parent.postMessage({
-                    type: 'ansir-resize',
-                    height: height
-                }, '*');
+                // Use the larger of body and documentElement to capture full content
+                const height = Math.max(
+                    document.body.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.scrollHeight,
+                    document.documentElement.offsetHeight
+                );
+                // Only send if height actually changed (avoid message spam)
+                if (height !== lastSentHeight && height > 0) {
+                    lastSentHeight = height;
+                    window.parent.postMessage({
+                        type: 'ansir-resize',
+                        height: height
+                    }, '*');
+                }
             } catch (e) {
                 // Silently fail if cross-origin restrictions prevent messaging
             }
@@ -1527,9 +1538,19 @@
                 sendHeightToParent();
             });
             resizeObserver.observe(document.documentElement);
+            resizeObserver.observe(document.body);
 
-            // Also send on initial load
+            // Send on window load
             window.addEventListener('load', sendHeightToParent);
+
+            // Poll briefly after load to catch late-rendering content (map tiles, etc.)
+            // Stops after 10 seconds once content has stabilised
+            let pollCount = 0;
+            const heightPoll = setInterval(function() {
+                sendHeightToParent();
+                pollCount++;
+                if (pollCount >= 20) clearInterval(heightPoll); // 20 x 500ms = 10s
+            }, 500);
         }
 
         /* ============================================ */
@@ -1839,16 +1860,19 @@
                     
                     requestAnimationFrame(() => {
                         initializeMap(); // Initialize map after content is visible
-                        
+
                         // Delay marker addition for proper rendering
                         setTimeout(() => {
                             updateMapMarkers(); // Auto-fit to project locations
-                            
+
                             // Enhanced deep linking: auto-expand card and open map popup
                             if (targetProjectForDeepLink) {
                                 autoExpandProjectCard(targetProjectForDeepLink);
                                 autoOpenMapPopup(targetProjectForDeepLink);
                             }
+
+                            // Send final height to parent after all content is rendered
+                            sendHeightToParent();
                         }, 100);
                     });
                 });
