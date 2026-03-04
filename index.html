@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v002)
-    Based on: git_projects_v001.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v003)
+    Based on: git_projects_v002.html
 
-    Changes in v002:
-      - Stats bar: removed white outline box, stat boxes now white background
-      - Filter bar: inputs auto-size to content width instead of full-width bars
-      - Reduced vertical spacing throughout for compact layout
+    Changes in v003:
+      - Removed stats section (moved to main ANSIR page later)
+      - Renamed 'Complete' to 'Finished' throughout
+      - Reduced map legend font size and banner/footer padding
+      - Reduced project card header padding
+      - Data access pill: only shows 'Open' + FDSN Network pill
+      - Removed objectives from expanded card
+      - Renamed 'Networks' to 'FDSN Network'
+      - Method display more prominent (pill style)
+      - Funding: org, title, identifier on one line per record
 
     This version fetches project data from a static data.json file
     hosted alongside this HTML on GitHub Pages, instead of calling
@@ -315,10 +321,10 @@
         .map-title {
             background: var(--primary-bg);
             color: var(--white);
-            padding: var(--spacing-md) var(--spacing-lg);
+            padding: var(--spacing-sm) var(--spacing-lg);
             font-family: var(--font-family-sans);
             font-weight: 700;
-            font-size: 15px;
+            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -354,7 +360,7 @@
             display: flex;
             justify-content: center;
             gap: var(--spacing-xl);
-            padding: var(--spacing-md);
+            padding: var(--spacing-sm);
             background: var(--light-gray);
             border-top: 1px solid var(--border-color);
         }
@@ -362,8 +368,8 @@
         .legend-item {
             display: flex;
             align-items: center;
-            gap: var(--spacing-sm);
-            font-size: 16px;
+            gap: var(--spacing-xs);
+            font-size: 12px;
             font-weight: 500;
             color: var(--text-color);
         }
@@ -451,7 +457,7 @@
 
         /* Project Header */
         .project-header {
-            padding: var(--spacing-lg);
+            padding: var(--spacing-sm) var(--spacing-lg);
             background: var(--primary-bg);
             color: var(--white);
             position: relative;
@@ -506,8 +512,8 @@
             color: var(--status-complete-color);
         }
 
-        /* Data Access Badges */
-        .data-access-badge {
+        /* Data Access & FDSN Badges */
+        .data-access-badge, .fdsn-badge {
             display: inline-block;
             padding: 4px var(--spacing-sm);
             border-radius: 12px;
@@ -515,7 +521,6 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-left: var(--spacing-xs);
             flex-shrink: 0;
         }
 
@@ -524,14 +529,9 @@
             color: #155724;
         }
 
-        .access-embargoed {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .access-restricted {
-            background: #f8d7da;
-            color: #721c24;
+        .fdsn-badge {
+            background: #d1ecf1;
+            color: #0c5460;
         }
 
         /* Project Body */
@@ -592,8 +592,14 @@
         }
 
         .methods-display {
-            font-weight: 500;
-            color: var(--primary-bg);
+            font-weight: 600;
+            color: var(--white) !important;
+            background: var(--primary-bg) !important;
+            border-radius: 12px;
+            padding: var(--spacing-xs) var(--spacing-sm) !important;
+            font-size: 11px !important;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* ============================================ */
@@ -800,27 +806,7 @@
             <!-- SEO: Dynamic H2 for project descriptions and enhanced discoverability -->
             <h2 id="project-description-meta" class="visually-hidden">Geophysical research projects enabled by the ANSIR facility</h2>
 
-            <!-- Stats Dashboard: 4 Key Metrics -->
-            <div class="stats-section">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number" id="total-projects">0</div>
-                        <div class="stat-label">Total Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="active-projects">0</div>
-                        <div class="stat-label">Active Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="total-sites">0</div>
-                        <div class="stat-label">Sites Collected</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="total-publications">0</div>
-                        <div class="stat-label">Outputs</div>
-                    </div>
-                </div>
-            </div>
+            <!-- v003: Stats section removed (will be on main ANSIR page) -->
 
             <!-- Filters Section: Search and Filter Controls -->
             <div class="filters-section">
@@ -835,7 +821,7 @@
                             <option value="">All Status</option>
                             <option value="planning">Planning</option>
                             <option value="in-progress">In Progress</option>
-                            <option value="complete">Complete</option>
+                            <option value="complete">Finished</option>
                         </select>
                     </div>
                     <div class="filter-group">
@@ -872,7 +858,7 @@
                     </div>
                     <div class="legend-item">
                         <span class="legend-dot" style="background: var(--status-complete-marker);"></span>
-                        <span>Complete</span>
+                        <span>Finished</span>
                     </div>
                 </div>
             </div>
@@ -1108,6 +1094,27 @@
             return { publications, datasets, networks, all };
         }
 
+        // v003: Parse funding into structured records from semicolon-separated fields
+        function parseFundingRecords(agencyStr, titleStr, identifierStr) {
+            const agencies = parseArrayField(agencyStr);
+            const titles = parseArrayField(titleStr);
+            const identifiers = parseArrayField(identifierStr);
+
+            const maxLen = Math.max(agencies.length, titles.length, identifiers.length);
+            if (maxLen === 0) return [];
+
+            const records = [];
+            for (let i = 0; i < maxLen; i++) {
+                const agency = agencies[i] || '';
+                const title = titles[i] || '';
+                const id = identifiers[i] || '';
+                if (agency || title || id) {
+                    records.push({ agency, title, id });
+                }
+            }
+            return records;
+        }
+
         // Parse multiple contributors from semicolon-separated fields
         function parseContributors(rawProject) {
             const titles = parseArrayField(rawProject.contributor_honoury_title);
@@ -1184,16 +1191,27 @@
         // Map project status to standardized values
         function mapProjectStatus(status) {
             if (!status) return 'unknown';
-            
+
             const statusStr = String(status).toLowerCase();
-            
-            // Map various status values to standard ones
-            if (statusStr.includes('complet')) return 'complete';
+
+            // Map various status values to standard CSS class names
+            if (statusStr.includes('complet') || statusStr.includes('finish')) return 'complete';
             if (statusStr.includes('progress') || statusStr.includes('active')) return 'in-progress';
             if (statusStr.includes('plan')) return 'planning';
             if (statusStr.includes('draft')) return 'draft';
-            
+
             return statusStr;
+        }
+
+        // v003: Display name for status (internal value → user-facing label)
+        function statusDisplayName(status) {
+            const names = {
+                'complete': 'Finished',
+                'in-progress': 'In Progress',
+                'planning': 'Planning',
+                'draft': 'Draft'
+            };
+            return names[status] || status;
         }
 
         // Transform raw project data to display format
@@ -1258,6 +1276,13 @@
                 country: String(rawProject.location_country || ''),
                 coordinates: coordinates,
                 polygon: parsePolygon(rawProject.location_polygon),
+                // v003: Parse funding into structured records
+                fundingRecords: parseFundingRecords(
+                    rawProject.funding_agency_name,
+                    rawProject.funding_title,
+                    rawProject.funding_identifier
+                ),
+                // Keep legacy fields for structured data / SEO
                 funding: String(rawProject.funding_title || ''),
                 fundingId: String(rawProject.funding_identifier || ''),
                 fundingAgency: String(rawProject.funding_agency_name || ''),
@@ -2070,7 +2095,7 @@
                     <p style="margin: 4px 0; font-size: 13px;"><strong>PI:</strong> ${escapeHtml(project.lead)}</p>
                     <p style="margin: 4px 0; font-size: 13px;"><strong>Location:</strong> ${escapeHtml(project.location)}</p>
                     <p style="margin: 4px 0; font-size: 13px;"><strong>Methods:</strong> ${project.methods ? project.methods.map(escapeHtml).join(', ') : 'Not specified'}</p>
-                    <p style="margin: 4px 0; font-size: 13px;"><strong>Status:</strong> <span style="color: ${color}; font-weight: bold;">${escapeHtml(project.status.replace('-', ' ').toUpperCase())}</span></p>
+                    <p style="margin: 4px 0; font-size: 13px;"><strong>Status:</strong> <span style="color: ${color}; font-weight: bold;">${escapeHtml(statusDisplayName(project.status).toUpperCase())}</span></p>
                     <p style="margin: 4px 0; font-size: 13px;"><strong>Duration:</strong> ${escapeHtml(project.startDate)} to ${escapeHtml(project.endDate)}</p>
                     <hr style="margin: 8px 0; border: none; border-top: 1px solid #ddd;">
                     <a href="#" onclick="searchForProject('${escapeHtml(String(projectSearchId))}'); return false;" style="color: #282572; font-size: 12px; text-decoration: none;">View project details →</a>
@@ -2239,8 +2264,9 @@
                         ${eAcronym ? `<p class="project-subtitle">${eAcronym}</p>` : ''}
                     </div>
                     <div style="display: flex; gap: 4px; flex-shrink: 0; align-items: center;">
-                        <span class="project-status-badge status-${project.status}">${escapeHtml(project.status)}</span>
-                        ${project.dataAccess ? `<span class="data-access-badge access-${project.dataAccess.toLowerCase().includes('open') ? 'open' : project.dataAccess.toLowerCase().includes('embargo') ? 'embargoed' : 'restricted'}">${escapeHtml(project.dataAccess)}</span>` : ''}
+                        <span class="project-status-badge status-${project.status}">${escapeHtml(statusDisplayName(project.status))}</span>
+                        ${project.dataAccess && project.dataAccess.toLowerCase().includes('open') ? `<span class="data-access-badge access-open">Open</span>` : ''}
+                        ${project.networks && project.networks.length > 0 ? `<span class="fdsn-badge">FDSN</span>` : ''}
                     </div>
                 </div>
                 <div class="project-body">
@@ -2258,20 +2284,17 @@
                     </div>
                 </div>
                 <div class="project-expanded-content">
-                    ${eObj ? `
-                        <div class="expanded-section">
-                            <h4 class="section-title">Objectives</h4>
-                            <div class="objectives-content">${eObj}</div>
-                        </div>
-                    ` : ''}
+                    <!-- v003: Objectives removed — public summary is sufficient -->
 
-                    ${project.funding ? `
+                    ${project.fundingRecords && project.fundingRecords.length > 0 ? `
                         <div class="expanded-section">
                             <h4 class="section-title">Funding</h4>
                             <div class="funding-content">
-                                <span class="funding-organization">${escapeHtml(project.fundingAgency) || 'Funding Agency'}</span><br>
-                                ${escapeHtml(project.funding)}
-                                ${project.fundingId ? `<br><small>ID: ${escapeHtml(project.fundingId)}</small>` : ''}
+                                ${project.fundingRecords.map(f => `
+                                    <div style="margin-bottom: 3px;">
+                                        ${f.agency ? `<strong>${escapeHtml(f.agency)}</strong>` : ''}${f.agency && f.title ? ' — ' : ''}${f.title ? escapeHtml(f.title) : ''}${f.id ? ` (${escapeHtml(f.id)})` : ''}
+                                    </div>
+                                `).join('')}
                             </div>
                         </div>
                     ` : ''}
@@ -2362,7 +2385,7 @@
 
                     ${project.networks && project.networks.length > 0 ? `
                         <div class="expanded-section">
-                            <h4 class="section-title">Networks (${project.networks.length})</h4>
+                            <h4 class="section-title">FDSN Network (${project.networks.length})</h4>
                             <div class="data-links-list">
                                 ${project.networks.map((network, index) => `
                                     <div class="data-link-item">
@@ -2416,22 +2439,8 @@
         /* ============================================ */
         
         // Update dashboard statistics
-        function updateStats() {
-            const stats = {
-                total: filteredProjects.length,
-                active: filteredProjects.filter(p => p.status === 'in-progress').length,
-                sites: filteredProjects.reduce((sum, p) => sum + (p.sitesCollected || 0), 0),
-                publications: filteredProjects.reduce((sum, p) => 
-                    sum + (p.publications ? p.publications.length : 0) + 
-                    (p.datasets ? p.datasets.length : 0) + 
-                    (p.networks ? p.networks.length : 0), 0)
-            };
-
-            document.getElementById('total-projects').textContent = stats.total;
-            document.getElementById('active-projects').textContent = stats.active;
-            document.getElementById('total-sites').textContent = stats.sites;
-            document.getElementById('total-publications').textContent = stats.publications;
-        }
+        // v003: Stats section removed — function kept as no-op to avoid errors
+        function updateStats() { }
 
         /* ============================================ */
         /* FILTER AND SORT FUNCTIONS                   */
