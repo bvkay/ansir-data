@@ -1,30 +1,4 @@
 <!DOCTYPE html>
-<!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v002)
-    Based on: git_projects_v001.html
-
-    Changes in v002:
-      - Stats bar: removed white outline box, stat boxes now white background
-      - Filter bar: inputs auto-size to content width instead of full-width bars
-      - Reduced vertical spacing throughout for compact layout
-
-    This version fetches project data from a static data.json file
-    hosted alongside this HTML on GitHub Pages, instead of calling
-    Google Apps Script directly. This eliminates the 4-5 second
-    GAS cold-start delay for public visitors.
-
-    Data flow:
-      Google Sheet → GAS export trigger → data.json → GitHub repo
-      GitHub Pages serves this HTML + data.json
-      Squarespace embeds via iframe
-
-    Deep linking:
-      When embedded in Squarespace, the iframe communicates with the
-      parent page via postMessage to keep the browser URL in sync.
-      Shared links point to the Squarespace page (not GitHub Pages)
-      using the SQUARESPACE_PARENT_URL config. The parent page passes
-      any ?id= parameter down to the iframe on load.
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +11,8 @@
     <!-- ============================================ -->
 
     <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
-    <!-- git_projects_v001: Removed GAS preconnect hints - data now served locally -->
+    <link rel="dns-prefetch" href="//script.google.com">
+    <link rel="preconnect" href="https://script.google.com">
     <meta name="google-site-verification" content="yUJ1i6owu4OVxWDIjLrszS8Kdy9-qQHGLuBzCZHgmbE" />
     <!-- Leaflet Map CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -132,7 +107,7 @@
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: var(--spacing-md);
+            padding: var(--spacing-lg);
         }
 
         /* ============================================ */
@@ -208,35 +183,37 @@
         /* ============================================ */
         /* STATS DASHBOARD: Key Metrics Display        */
         /* ============================================ */
-        /* v002: No outer white box — stat items sit directly on page background */
         .stats-section {
-            margin-bottom: var(--spacing-md);
+            background: var(--white);
+            border-radius: var(--border-radius-xl);
+            padding: var(--spacing-xl);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: var(--spacing-lg);
         }
 
         .stats-grid {
-            display: flex;
-            gap: var(--spacing-sm);
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--spacing-lg);
         }
 
         .stat-item {
             text-align: center;
-            padding: var(--spacing-sm) var(--spacing-lg);
-            background: var(--white);
+            padding: var(--spacing-md);
+            background: var(--light-gray);
             border-radius: var(--border-radius-lg);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
 
         .stat-number {
             font-family: var(--font-family-sans);
             font-weight: 700;
-            font-size: 22px;
+            font-size: 24px;
             color: var(--primary-bg);
-            margin-bottom: 1px;
+            margin-bottom: 2px;  /* Tight spacing to label */
         }
 
         .stat-label {
-            font-size: 11px;
+            font-size: 12px;
             color: var(--text-color);
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -245,16 +222,18 @@
         /* ============================================ */
         /* FILTERS: Search and Filter Controls         */
         /* ============================================ */
-        /* v002: Inline flex layout — inputs sized to content, no outer white box */
         .filters-section {
-            margin-bottom: var(--spacing-md);
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-xl);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: var(--spacing-lg);
         }
 
         .filters-grid {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);  /* 4 columns for desktop */
             gap: var(--spacing-sm);
-            align-items: flex-end;
         }
 
         .filter-group {
@@ -263,31 +242,21 @@
         }
 
         .filter-label {
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 500;
             color: var(--medium-gray);
-            margin-bottom: 3px;
+            margin-bottom: var(--spacing-xs);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
         .filter-input, .filter-select {
-            padding: 6px var(--spacing-sm);
+            padding: var(--spacing-sm);
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius-md);
-            font-size: 13px;
+            font-size: 14px;
             background: var(--white);
             transition: border-color 0.2s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-
-        /* Search input gets a bit more room, dropdowns auto-size */
-        .filter-input {
-            width: 280px;
-        }
-
-        .filter-select {
-            width: auto;
         }
 
         .filter-input:focus, .filter-select:focus {
@@ -308,7 +277,7 @@
             background: var(--white);
             border-radius: var(--border-radius-xl);
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
             overflow: hidden;
         }
 
@@ -387,8 +356,8 @@
         .projects-grid {
             display: grid;
             grid-template-columns: 1fr;  /* Single column layout */
-            gap: var(--spacing-sm);
-            margin-bottom: var(--spacing-lg);
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
         }
 
         .project-card {
@@ -504,34 +473,6 @@
         .status-complete {
             background: var(--status-complete-bg);
             color: var(--status-complete-color);
-        }
-
-        /* Data Access Badges */
-        .data-access-badge {
-            display: inline-block;
-            padding: 4px var(--spacing-sm);
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-left: var(--spacing-xs);
-            flex-shrink: 0;
-        }
-
-        .access-open {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .access-embargoed {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .access-restricted {
-            background: #f8d7da;
-            color: #721c24;
         }
 
         /* Project Body */
@@ -744,11 +685,14 @@
                 padding: var(--spacing-sm);
             }
             
-            /* Stats wrap naturally on mobile via flex-wrap */
-
-            /* Filters: search input goes full width on mobile */
-            .filter-input {
-                width: 100%;
+            /* 2x2 grid for stats on mobile */
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            /* 2x2 grid for filters on mobile */
+            .filters-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
             
             /* Smaller map on mobile */
@@ -905,21 +849,11 @@
         /* ============================================ */
         /* CONFIGURATION                                */
         /* ============================================ */
-        // GitHub Pages version: fetches static JSON instead of calling GAS
-        // data.json is exported from Google Sheet and pushed to this repo
-        const DATA_URL = './data.json';
-
-        // Website tracking endpoint (optional - still calls GAS for analytics)
+        // Google Apps Script API endpoint - UPDATE THIS URL
+        const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbwwLzD1OKgK2DjkJS-1zzxvG1r96XXUseWM6FYs69Nw0dquu_y92pTQAX9AbHXIenkOjA/exec'; // Replace with your Code_RAiD_0006.gs URL
+        
+        // Website tracking endpoint (optional)
         const TRACKING_URL = 'https://script.google.com/macros/s/AKfycby-jo_4Lhz5E775mUElJtPMq3kmyar5Ax9eOr8psR30pTxp5SkO9nih82eIigi2S985Yg/exec';
-
-        // Squarespace parent page URL for deep linking when embedded in an iframe
-        // Set this to the Squarespace page URL where this iframe is embedded
-        // e.g. 'https://www.ansir.org.au/projects'
-        // When set, permalinks will point to the Squarespace page instead of GitHub Pages
-        const SQUARESPACE_PARENT_URL = '';  // <-- Set this to your Squarespace page URL
-
-        // Detect if we're running inside an iframe
-        const IS_EMBEDDED = (window !== window.top);
 
         /* ============================================ */
         /* GLOBAL STATE VARIABLES                      */
@@ -1481,15 +1415,9 @@
         }
 
         // Generate permalink for project
-        // When SQUARESPACE_PARENT_URL is set, permalinks point to the Squarespace page
-        // so shared links take users to the branded site, not raw GitHub Pages
         function generatePermalink(project) {
-            const projectRef = encodeURIComponent(project.ansirRef || project.id);
-            if (SQUARESPACE_PARENT_URL) {
-                return `${SQUARESPACE_PARENT_URL}?id=${projectRef}`;
-            }
             const baseUrl = window.location.origin + window.location.pathname;
-            return `${baseUrl}?id=${projectRef}`;
+            return `${baseUrl}?id=${project.ansirRef || project.id}`;
         }
 
         // Copy permalink to clipboard
@@ -1513,111 +1441,27 @@
         }
 
         /* ============================================ */
-        /* IFRAME ↔ PARENT COMMUNICATION              */
-        /* ============================================ */
-
-        // Notify parent Squarespace page when a project is selected/deselected
-        // Parent updates its URL bar so visitors can copy/share the correct link
-        function notifyParentProjectChange(projectRef) {
-            if (!IS_EMBEDDED) return;
-            try {
-                window.parent.postMessage({
-                    type: 'ansir-project-selected',
-                    projectId: projectRef || null
-                }, '*');
-            } catch (e) {
-                // Silently fail if cross-origin restrictions prevent messaging
-            }
-        }
-
-        // Listen for messages from parent (e.g., parent passing ?id= on page load)
-        window.addEventListener('message', function(event) {
-            if (event.data && event.data.type === 'ansir-load-project' && event.data.projectId) {
-                // Parent is telling us to load a specific project
-                urlProjectId = event.data.projectId;
-                if (projectsInitialized && allProjects.length > 0) {
-                    searchForProject(event.data.projectId);
-                }
-                // If projects haven't loaded yet, urlProjectId will be picked up by the deep-link logic
-            }
-        });
-
-        // Auto-resize: send content height to parent so iframe has no inner scrollbar
-        // Uses both ResizeObserver and periodic polling for reliability
-        let lastSentHeight = 0;
-        function sendHeightToParent() {
-            if (!IS_EMBEDDED) return;
-            try {
-                // Use the larger of body and documentElement to capture full content
-                const height = Math.max(
-                    document.body.scrollHeight,
-                    document.body.offsetHeight,
-                    document.documentElement.scrollHeight,
-                    document.documentElement.offsetHeight
-                );
-                // Only send if height actually changed (avoid message spam)
-                if (height !== lastSentHeight && height > 0) {
-                    lastSentHeight = height;
-                    window.parent.postMessage({
-                        type: 'ansir-resize',
-                        height: height
-                    }, '*');
-                }
-            } catch (e) {
-                // Silently fail if cross-origin restrictions prevent messaging
-            }
-        }
-
-        // Observe body size changes (card expand/collapse, filter changes, etc.)
-        if (IS_EMBEDDED) {
-            const resizeObserver = new ResizeObserver(function() {
-                sendHeightToParent();
-            });
-            resizeObserver.observe(document.documentElement);
-            resizeObserver.observe(document.body);
-
-            // Send on window load
-            window.addEventListener('load', sendHeightToParent);
-
-            // Poll briefly after load to catch late-rendering content (map tiles, etc.)
-            // Stops after 10 seconds once content has stabilised
-            let pollCount = 0;
-            const heightPoll = setInterval(function() {
-                sendHeightToParent();
-                pollCount++;
-                if (pollCount >= 20) clearInterval(heightPoll); // 20 x 500ms = 10s
-            }, 500);
-        }
-
-        /* ============================================ */
         /* API FUNCTIONS                               */
         /* ============================================ */
-
-        // Fetch project data from static JSON file (GitHub Pages hosted)
-        // The JSON file is exported from Google Sheet via a GAS scheduled trigger
-        // Format: { success: true, data: [...], exported: "ISO date" }
+        
+        // Fetch all projects from API
         async function fetchProjects() {
-            const response = await fetch(DATA_URL, {
+            const url = `${API_BASE_URL}?format=public`;
+            
+            const response = await fetch(url, {
                 cache: 'default'
             });
-
+            
             if (!response.ok) {
-                throw new Error(`Failed to load project data (HTTP ${response.status})`);
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-
+            
             const data = await response.json();
-
-            // Support both formats:
-            // 1. Wrapped: { success: true, data: [...] } (same as GAS output)
-            // 2. Raw array: [...] (plain JSON array of projects)
-            if (Array.isArray(data)) {
-                return { success: true, data: data };
+            
+            if (!data.success) {
+                throw new Error(data.error || 'Failed to load data');
             }
-
-            if (!data.success && !data.data) {
-                throw new Error(data.error || 'Invalid data format in data.json');
-            }
-
+            
             return data;
         }
 
@@ -1896,19 +1740,16 @@
                     
                     requestAnimationFrame(() => {
                         initializeMap(); // Initialize map after content is visible
-
+                        
                         // Delay marker addition for proper rendering
                         setTimeout(() => {
                             updateMapMarkers(); // Auto-fit to project locations
-
+                            
                             // Enhanced deep linking: auto-expand card and open map popup
                             if (targetProjectForDeepLink) {
                                 autoExpandProjectCard(targetProjectForDeepLink);
                                 autoOpenMapPopup(targetProjectForDeepLink);
                             }
-
-                            // Send final height to parent after all content is rendered
-                            sendHeightToParent();
                         }, 100);
                     });
                 });
@@ -2238,10 +2079,7 @@
                         </h3>
                         ${eAcronym ? `<p class="project-subtitle">${eAcronym}</p>` : ''}
                     </div>
-                    <div style="display: flex; gap: 4px; flex-shrink: 0; align-items: center;">
-                        <span class="project-status-badge status-${project.status}">${escapeHtml(project.status)}</span>
-                        ${project.dataAccess ? `<span class="data-access-badge access-${project.dataAccess.toLowerCase().includes('open') ? 'open' : project.dataAccess.toLowerCase().includes('embargo') ? 'embargoed' : 'restricted'}">${escapeHtml(project.dataAccess)}</span>` : ''}
-                    </div>
+                    <span class="project-status-badge status-${project.status}">${escapeHtml(project.status)}</span>
                 </div>
                 <div class="project-body">
                     <div class="project-lead">
@@ -2394,9 +2232,6 @@
                 card.setAttribute('aria-expanded', card.classList.contains('expanded'));
                 if (card.classList.contains('expanded')) {
                     trackEvent('project-expanded', project.name);
-                    notifyParentProjectChange(project.ansirRef || project.id);
-                } else {
-                    notifyParentProjectChange(null);
                 }
             }
 
