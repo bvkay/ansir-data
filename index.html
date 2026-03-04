@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v001)
-    Based on: 2026_Projects_v002.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v002)
+    Based on: git_projects_v001.html
+
+    Changes in v002:
+      - Stats bar: removed white outline box, stat boxes now white background
+      - Filter bar: inputs auto-size to content width instead of full-width bars
+      - Reduced vertical spacing throughout for compact layout
 
     This version fetches project data from a static data.json file
     hosted alongside this HTML on GitHub Pages, instead of calling
@@ -127,7 +132,7 @@
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: var(--spacing-lg);
+            padding: var(--spacing-md);
         }
 
         /* ============================================ */
@@ -203,37 +208,35 @@
         /* ============================================ */
         /* STATS DASHBOARD: Key Metrics Display        */
         /* ============================================ */
+        /* v002: No outer white box — stat items sit directly on page background */
         .stats-section {
-            background: var(--white);
-            border-radius: var(--border-radius-xl);
-            padding: var(--spacing-xl);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin-bottom: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
         }
 
         .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
         }
 
         .stat-item {
             text-align: center;
-            padding: var(--spacing-md);
-            background: var(--light-gray);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            background: var(--white);
             border-radius: var(--border-radius-lg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
 
         .stat-number {
             font-family: var(--font-family-sans);
             font-weight: 700;
-            font-size: 24px;
+            font-size: 22px;
             color: var(--primary-bg);
-            margin-bottom: 2px;  /* Tight spacing to label */
+            margin-bottom: 1px;
         }
 
         .stat-label {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-color);
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -242,18 +245,16 @@
         /* ============================================ */
         /* FILTERS: Search and Filter Controls         */
         /* ============================================ */
+        /* v002: Inline flex layout — inputs sized to content, no outer white box */
         .filters-section {
-            background: var(--white);
-            padding: var(--spacing-lg);
-            border-radius: var(--border-radius-xl);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin-bottom: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
         }
 
         .filters-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);  /* 4 columns for desktop */
+            display: flex;
+            flex-wrap: wrap;
             gap: var(--spacing-sm);
+            align-items: flex-end;
         }
 
         .filter-group {
@@ -262,21 +263,31 @@
         }
 
         .filter-label {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 500;
             color: var(--medium-gray);
-            margin-bottom: var(--spacing-xs);
+            margin-bottom: 3px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
         .filter-input, .filter-select {
-            padding: var(--spacing-sm);
+            padding: 6px var(--spacing-sm);
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius-md);
-            font-size: 14px;
+            font-size: 13px;
             background: var(--white);
             transition: border-color 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        /* Search input gets a bit more room, dropdowns auto-size */
+        .filter-input {
+            width: 280px;
+        }
+
+        .filter-select {
+            width: auto;
         }
 
         .filter-input:focus, .filter-select:focus {
@@ -297,7 +308,7 @@
             background: var(--white);
             border-radius: var(--border-radius-xl);
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin-bottom: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
             overflow: hidden;
         }
 
@@ -376,8 +387,8 @@
         .projects-grid {
             display: grid;
             grid-template-columns: 1fr;  /* Single column layout */
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-xl);
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
         }
 
         .project-card {
@@ -493,6 +504,34 @@
         .status-complete {
             background: var(--status-complete-bg);
             color: var(--status-complete-color);
+        }
+
+        /* Data Access Badges */
+        .data-access-badge {
+            display: inline-block;
+            padding: 4px var(--spacing-sm);
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: var(--spacing-xs);
+            flex-shrink: 0;
+        }
+
+        .access-open {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .access-embargoed {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .access-restricted {
+            background: #f8d7da;
+            color: #721c24;
         }
 
         /* Project Body */
@@ -705,14 +744,11 @@
                 padding: var(--spacing-sm);
             }
             
-            /* 2x2 grid for stats on mobile */
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            /* 2x2 grid for filters on mobile */
-            .filters-grid {
-                grid-template-columns: repeat(2, 1fr);
+            /* Stats wrap naturally on mobile via flex-wrap */
+
+            /* Filters: search input goes full width on mobile */
+            .filter-input {
+                width: 100%;
             }
             
             /* Smaller map on mobile */
@@ -2202,7 +2238,10 @@
                         </h3>
                         ${eAcronym ? `<p class="project-subtitle">${eAcronym}</p>` : ''}
                     </div>
-                    <span class="project-status-badge status-${project.status}">${escapeHtml(project.status)}</span>
+                    <div style="display: flex; gap: 4px; flex-shrink: 0; align-items: center;">
+                        <span class="project-status-badge status-${project.status}">${escapeHtml(project.status)}</span>
+                        ${project.dataAccess ? `<span class="data-access-badge access-${project.dataAccess.toLowerCase().includes('open') ? 'open' : project.dataAccess.toLowerCase().includes('embargo') ? 'embargoed' : 'restricted'}">${escapeHtml(project.dataAccess)}</span>` : ''}
+                    </div>
                 </div>
                 <div class="project-body">
                     <div class="project-lead">
