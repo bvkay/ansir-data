@@ -13,6 +13,9 @@ concurrency:
   group: data-enrichment
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   enrich-and-generate:
     runs-on: ubuntu-latest
