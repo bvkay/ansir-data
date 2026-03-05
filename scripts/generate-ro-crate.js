@@ -94,7 +94,7 @@ function buildGraph(data) {
     const projectId = `#project-${project.ansirCode || project.id}`;
     const projectEntity = {
       '@id': projectId,
-      '@type': 'Dataset',
+      '@type': ['Dataset', 'Project'],
       'name': project.title || '',
       'description': project.description || '',
       'identifier': project.ansirCode || '',
@@ -292,7 +292,7 @@ function buildGraph(data) {
     // Related objects (publications, datasets, FDSN networks)
     if (project.relatedObjects && project.relatedObjects.length > 0) {
       const citations = [];
-      const distributions = [];
+      const parts = [];
 
       for (const obj of project.relatedObjects) {
         const doiUrl = extractDOI(obj.identifier);
@@ -325,7 +325,7 @@ function buildGraph(data) {
           citations.push({ '@id': objId });
 
         } else if (type.includes('fdsn') || type.includes('network')) {
-          // FDSN network — a dataset
+          // FDSN network — a sub-dataset
           const networkEntity = {
             '@id': objId,
             '@type': 'Dataset'
@@ -337,7 +337,7 @@ function buildGraph(data) {
           if (doiUrl) networkEntity.identifier = doiUrl;
 
           addEntity(networkEntity);
-          distributions.push({ '@id': objId });
+          parts.push({ '@id': objId });
 
         } else {
           // Dataset or other
@@ -351,15 +351,15 @@ function buildGraph(data) {
           if (doiUrl) dataEntity.identifier = doiUrl;
 
           addEntity(dataEntity);
-          distributions.push({ '@id': objId });
+          parts.push({ '@id': objId });
         }
       }
 
       if (citations.length > 0) {
         projectEntity.citation = citations;
       }
-      if (distributions.length > 0) {
-        projectEntity.distribution = distributions;
+      if (parts.length > 0) {
+        projectEntity.hasPart = parts;
       }
     }
 
@@ -394,6 +394,7 @@ function buildGraph(data) {
     '@id': 'https://creativecommons.org/licenses/by/4.0/',
     '@type': 'CreativeWork',
     'name': 'Creative Commons Attribution 4.0 International',
+    'description': 'This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator.',
     'identifier': 'CC-BY-4.0'
   });
 
