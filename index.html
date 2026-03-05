@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v009)
-    Based on: git_projects_v008.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v010)
+    Based on: git_projects_v009.html
+
+    Changes in v010:
+      - DOI titles now displayed for publications, datasets, and networks
+        (resolved at publish time by v14 GAS export via CrossRef/DataCite APIs)
+      - Removed standalone "Data Access" text section from expanded card
+        (Open Data pill badge in header is kept)
 
     Changes in v009:
       - Consumes structured JSON from v13 GAS export (no more semicolon parsing)
       - Simplified transformProject() — data arrives pre-structured
       - Removed parseArrayField, parseMethodsField, parseContributors,
         parseFundingRecords, parseInstruments, parseRelatedObjects functions
-      - Method display more prominent (pill style)
-      - Funding: org, title, identifier on one line per record
 
     This version fetches project data from a static data.json file
     hosted alongside this HTML on GitHub Pages, instead of calling
@@ -725,6 +729,13 @@
             text-decoration: underline;
         }
 
+        .doi-subtitle {
+            display: block;
+            font-size: 11px;
+            color: var(--medium-gray);
+            margin-top: 1px;
+        }
+
         /* ============================================ */
         /* NO RESULTS STATE                            */
         /* ============================================ */
@@ -1128,7 +1139,8 @@
                     type: obj.type || '',
                     url: obj.identifier,
                     cleanDOI: cleanDOI,
-                    displayText: cleanDOI || obj.identifier
+                    resolvedTitle: obj.title || '',
+                    displayText: obj.title || cleanDOI || obj.identifier
                 };
                 const t = (obj.type || '').toLowerCase();
                 if (t.includes('fdsn') || t.includes('network')) {
@@ -2233,13 +2245,6 @@
                         </div>
                     ` : ''}
 
-                    ${project.dataAccess ? `
-                        <div class="expanded-section">
-                            <h4 class="section-title">Data Access</h4>
-                            <div class="section-content">${escapeHtml(project.dataAccess)}</div>
-                        </div>
-                    ` : ''}
-
                     ${project.indigenousInvolvement ? `
                         <div class="expanded-section">
                             <h4 class="section-title">Indigenous Engagement</h4>
@@ -2257,9 +2262,8 @@
                                 ${project.publications.map((pub, index) => `
                                     <div class="publication-item">
                                         <div class="publication-title">
-                                            ${pub.cleanDOI ?
-                                                `<a href="${escapeHtml(pub.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(pub.cleanDOI)}</a>` :
-                                                `<a href="${escapeHtml(pub.url)}" target="_blank" rel="noopener" class="publication-link">Publication ${index + 1}</a>`}
+                                            <a href="${escapeHtml(pub.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(pub.resolvedTitle || pub.cleanDOI || 'Publication ' + (index + 1))}</a>
+                                            ${pub.resolvedTitle && pub.cleanDOI ? `<span class="doi-subtitle">DOI: ${escapeHtml(pub.cleanDOI)}</span>` : ''}
                                         </div>
                                     </div>
                                 `).join('')}
@@ -2274,9 +2278,8 @@
                                 ${project.datasets.map((dataset, index) => `
                                     <div class="data-link-item">
                                         <div class="data-link-title">
-                                            ${dataset.cleanDOI ?
-                                                `<a href="${escapeHtml(dataset.url)}" target="_blank" rel="noopener" class="data-link-url">${escapeHtml(dataset.cleanDOI)}</a>` :
-                                                `<a href="${escapeHtml(dataset.url)}" target="_blank" rel="noopener" class="data-link-url">Dataset ${index + 1}</a>`}
+                                            <a href="${escapeHtml(dataset.url)}" target="_blank" rel="noopener" class="data-link-url">${escapeHtml(dataset.resolvedTitle || dataset.cleanDOI || 'Dataset ' + (index + 1))}</a>
+                                            ${dataset.resolvedTitle && dataset.cleanDOI ? `<span class="doi-subtitle">DOI: ${escapeHtml(dataset.cleanDOI)}</span>` : ''}
                                         </div>
                                     </div>
                                 `).join('')}
@@ -2291,9 +2294,8 @@
                                 ${project.networks.map((network, index) => `
                                     <div class="data-link-item">
                                         <div class="data-link-title">
-                                            ${network.cleanDOI ?
-                                                `<a href="${escapeHtml(network.url)}" target="_blank" rel="noopener" class="data-link-url">${escapeHtml(network.cleanDOI)}</a>` :
-                                                `<a href="${escapeHtml(network.url)}" target="_blank" rel="noopener" class="data-link-url">Network ${index + 1}</a>`}
+                                            <a href="${escapeHtml(network.url)}" target="_blank" rel="noopener" class="data-link-url">${escapeHtml(network.resolvedTitle || network.cleanDOI || 'Network ' + (index + 1))}</a>
+                                            ${network.resolvedTitle && network.cleanDOI ? `<span class="doi-subtitle">DOI: ${escapeHtml(network.cleanDOI)}</span>` : ''}
                                         </div>
                                     </div>
                                 `).join('')}
