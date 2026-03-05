@@ -1133,9 +1133,10 @@
       }
     },
     {
-      "@id": "#grant-arc-linkage-project-lp170100890",
+      "@id": "#grant-lp170100890",
       "@type": "Grant",
-      "name": "ARC Linkage Project LP170100890",
+      "name": "ARC Linkage Project",
+      "identifier": "LP170100890",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -1231,7 +1232,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-linkage-project-lp170100890"
+          "@id": "#grant-lp170100890"
         }
       ],
       "instrument": [
@@ -2139,8 +2140,8 @@
       "identifier": "Placeholder-12",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-12",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-03-30",
-      "temporalCoverage": "2022-03-30/2022-07-30",
+      "dateCreated": "2022-03-29",
+      "temporalCoverage": "2022-03-29/2022-07-29",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -3444,9 +3445,10 @@
       }
     },
     {
-      "@id": "#grant-arc-discovery-project-grant-dp200101854",
+      "@id": "#grant-dp200101854",
       "@type": "Grant",
-      "name": "ARC Discovery Project Grant (DP200101854)",
+      "name": "ARC Discovery Project Grant",
+      "identifier": "DP200101854",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -3531,7 +3533,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-discovery-project-grant-dp200101854"
+          "@id": "#grant-dp200101854"
         }
       ],
       "instrument": [
@@ -3591,17 +3593,19 @@
       }
     },
     {
-      "@id": "#grant-arc-discovery-early-career-researcher-award-de240100481",
+      "@id": "#grant-de240100481",
       "@type": "Grant",
-      "name": "ARC Discovery Early Career Researcher Award (DE240100481)",
+      "name": "ARC Discovery Early Career Researcher Award",
+      "identifier": "DE240100481",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
     },
     {
-      "@id": "#grant-arc-linkage-project-lp210301373",
+      "@id": "#grant-lp210301373",
       "@type": "Grant",
-      "name": "ARC Linkage Project (LP210301373)"
+      "name": "ARC Linkage Project",
+      "identifier": "LP210301373"
     },
     {
       "@id": "#project-S04-2023",
@@ -3631,10 +3635,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-discovery-early-career-researcher-award-de240100481"
+          "@id": "#grant-de240100481"
         },
         {
-          "@id": "#grant-arc-linkage-project-lp210301373"
+          "@id": "#grant-lp210301373"
         }
       ],
       "instrument": [
@@ -3718,9 +3722,10 @@
       "identifier": "https://ror.org/04p7g7c05"
     },
     {
-      "@id": "#grant-nhc-toka-t-ake-university-research-programme-seismic-hazard-",
+      "@id": "#grant-rcp023",
       "@type": "Grant",
-      "name": "NHC Toka Tū Ake University Research Programme \"Seismic hazard of the southern South Island the neglected provinces\" (RCP023)",
+      "name": "NHC Toka Tū Ake University Research Programme \"Seismic hazard of the southern South Island the neglected provinces\"",
+      "identifier": "RCP023",
       "funder": {
         "@id": "https://ror.org/04p7g7c05"
       }
@@ -3784,7 +3789,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-nhc-toka-t-ake-university-research-programme-seismic-hazard-"
+          "@id": "#grant-rcp023"
         }
       ],
       "instrument": [
@@ -3836,9 +3841,10 @@
       }
     },
     {
-      "@id": "#grant-arc-discovery-early-career-researcher-award-de190100062",
+      "@id": "#grant-de190100062",
       "@type": "Grant",
-      "name": "ARC Discovery Early Career Researcher Award (DE190100062)",
+      "name": "ARC Discovery Early Career Researcher Award",
+      "identifier": "DE190100062",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -3891,7 +3897,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-discovery-early-career-researcher-award-de190100062"
+          "@id": "#grant-de190100062"
         }
       ],
       "instrument": [
@@ -3952,9 +3958,10 @@
       }
     },
     {
-      "@id": "#grant-predictive-mineral-discovery-crc",
+      "@id": "#grant-pmdcrc",
       "@type": "Grant",
       "name": "Predictive Mineral Discovery CRC",
+      "identifier": "pmdCRC",
       "funder": {
         "@id": "https://ror.org/021z9m619"
       }
@@ -4109,7 +4116,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-predictive-mineral-discovery-crc"
+          "@id": "#grant-pmdcrc"
         },
         {
           "@id": "#grant-research-school-of-earth-sciences"
@@ -4176,25 +4183,28 @@
       }
     },
     {
-      "@id": "#grant-fellowship-lighting-up-fiber-for-seismic-imaging-ft210100440",
+      "@id": "#grant-ft210100440",
       "@type": "Grant",
-      "name": "Fellowship “Lighting Up Fiber for Seismic Imaging” (FT210100440)",
+      "name": "Fellowship “Lighting Up Fiber for Seismic Imaging”",
+      "identifier": "FT210100440",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
     },
     {
-      "@id": "#grant-discovery-project-measuring-the-seismic-pulse-of-the-earth-u",
+      "@id": "#grant-dp230100277",
       "@type": "Grant",
-      "name": "Discovery Project “Measuring the seismic pulse of the Earth using fiber optics” (DP230100277)",
+      "name": "Discovery Project “Measuring the seismic pulse of the Earth using fiber optics”",
+      "identifier": "DP230100277",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
     },
     {
-      "@id": "#grant-and-centre-of-excellence-in-optical-microcombs-for-breakthro",
+      "@id": "#grant-ce230100006",
       "@type": "Grant",
-      "name": "and Centre of Excellence in Optical Microcombs for Breakthrough Science (CE230100006)",
+      "name": "and Centre of Excellence in Optical Microcombs for Breakthrough Science",
+      "identifier": "CE230100006",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4268,13 +4278,13 @@
       ],
       "funding": [
         {
-          "@id": "#grant-fellowship-lighting-up-fiber-for-seismic-imaging-ft210100440"
+          "@id": "#grant-ft210100440"
         },
         {
-          "@id": "#grant-discovery-project-measuring-the-seismic-pulse-of-the-earth-u"
+          "@id": "#grant-dp230100277"
         },
         {
-          "@id": "#grant-and-centre-of-excellence-in-optical-microcombs-for-breakthro"
+          "@id": "#grant-ce230100006"
         }
       ],
       "instrument": [
@@ -4323,9 +4333,10 @@
       "identifier": "https://ror.org/01nfmeh72"
     },
     {
-      "@id": "#grant-arc-discovery-grant-dp0342618",
+      "@id": "#grant-dp0342618",
       "@type": "Grant",
-      "name": "ARC Discovery Grant (DP0342618)",
+      "name": "ARC Discovery Grant",
+      "identifier": "DP0342618",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4403,7 +4414,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-discovery-grant-dp0342618"
+          "@id": "#grant-dp0342618"
         }
       ],
       "instrument": [
@@ -4470,9 +4481,10 @@
       }
     },
     {
-      "@id": "#grant-arc-linkage-project-lp0560955",
+      "@id": "#grant-lp0560955",
       "@type": "Grant",
-      "name": "ARC Linkage Project (LP0560955)",
+      "name": "ARC Linkage Project",
+      "identifier": "LP0560955",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4519,7 +4531,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-linkage-project-lp0560955"
+          "@id": "#grant-lp0560955"
         }
       ],
       "instrument": [
@@ -4580,25 +4592,28 @@
       "identifier": "https://ror.org/05e89k615"
     },
     {
-      "@id": "#grant-aad-grant-2771",
+      "@id": "#grant-2771",
       "@type": "Grant",
-      "name": "AAD Grant (2771)",
+      "name": "AAD Grant",
+      "identifier": "2771",
       "funder": {
         "@id": "https://ror.org/05e89k615"
       }
     },
     {
-      "@id": "#grant-arc-linkage-project-lp0774891",
+      "@id": "#grant-lp0774891",
       "@type": "Grant",
-      "name": "ARC Linkage Project (LP0774891)",
+      "name": "ARC Linkage Project",
+      "identifier": "LP0774891",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
     },
     {
-      "@id": "#grant-arc-discovery-project-dp0988263",
+      "@id": "#grant-dp0988263",
       "@type": "Grant",
-      "name": "ARC Discovery Project (DP0988263)",
+      "name": "ARC Discovery Project",
+      "identifier": "DP0988263",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4689,13 +4704,13 @@
       ],
       "funding": [
         {
-          "@id": "#grant-aad-grant-2771"
+          "@id": "#grant-2771"
         },
         {
-          "@id": "#grant-arc-linkage-project-lp0774891"
+          "@id": "#grant-lp0774891"
         },
         {
-          "@id": "#grant-arc-discovery-project-dp0988263"
+          "@id": "#grant-dp0988263"
         }
       ],
       "instrument": [
@@ -4891,9 +4906,10 @@
       }
     },
     {
-      "@id": "#grant-arc-strategic-research-priorities-dp160104637",
+      "@id": "#grant-dp160104637",
       "@type": "Grant",
-      "name": "ARC Strategic Research Priorities (DP160104637)",
+      "name": "ARC Strategic Research Priorities",
+      "identifier": "DP160104637",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4962,7 +4978,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-strategic-research-priorities-dp160104637"
+          "@id": "#grant-dp160104637"
         },
         {
           "@id": "#grant-pace-copper"
