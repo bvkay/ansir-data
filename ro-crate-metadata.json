@@ -3568,7 +3568,7 @@
     {
       "@id": "https://orcid.org/0000-0001-8272-6697",
       "@type": "Person",
-      "name": "Emer Prof Martin Lambert",
+      "name": "Dr Martin Lambert",
       "identifier": "https://orcid.org/0000-0001-8272-6697",
       "affiliation": {
         "@id": "https://ror.org/00892tw58"
@@ -3577,7 +3577,7 @@
     {
       "@id": "https://orcid.org/0000-0003-3525-0432",
       "@type": "Person",
-      "name": "Dr Wei Zeng",
+      "name": "Prof Wei Zeng",
       "identifier": "https://orcid.org/0000-0003-3525-0432",
       "affiliation": {
         "@id": "https://ror.org/00892tw58"
@@ -3586,7 +3586,7 @@
     {
       "@id": "https://orcid.org/0000-0003-2308-799X",
       "@type": "Person",
-      "name": "Prof Benjamin Cazzolato",
+      "name": "Benjamin Cazzolato",
       "identifier": "https://orcid.org/0000-0003-2308-799X",
       "affiliation": {
         "@id": "https://ror.org/00892tw58"
@@ -3605,7 +3605,10 @@
       "@id": "#grant-lp210301373",
       "@type": "Grant",
       "name": "ARC Linkage Project",
-      "identifier": "LP210301373"
+      "identifier": "LP210301373",
+      "funder": {
+        "@id": "https://ror.org/05mmh0f86"
+      }
     },
     {
       "@id": "#project-S04-2023",
@@ -3615,8 +3618,8 @@
       "identifier": "S04-2023",
       "url": "https://bvkay.github.io/ansir-data/?id=S04-2023",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2024-02-29",
-      "temporalCoverage": "2024-02-29/2025-04-30",
+      "dateCreated": "2024-02-28",
+      "temporalCoverage": "2024-02-28/2025-04-29",
       "about": [
         {
           "@id": "#method-das"
