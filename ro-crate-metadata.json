@@ -50,7 +50,7 @@
           "@id": "#project-Placeholder-03"
         },
         {
-          "@id": "#project-Placeholder-04"
+          "@id": "#project-S01-2019"
         },
         {
           "@id": "#project-Placeholder-05"
@@ -1146,17 +1146,28 @@
       }
     },
     {
-      "@id": "#shape-placeholder-04",
+      "@id": "#geo-s01-2019",
+      "@type": "GeoCoordinates",
+      "latitude": -32.494705,
+      "longitude": 117.355957
+    },
+    {
+      "@id": "#shape-s01-2019",
       "@type": "GeoShape",
       "polygon": "-30.36867 115.55577 -34.03496 115.60883 -34.95166 116.72426 -33.08253 119.69009 -31.4539 119.43164 -30.32251 118.20749"
     },
     {
-      "@id": "#place-placeholder-04",
+      "@id": "#place-s01-2019",
       "@type": "Place",
       "name": "South-West, Western Australia, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-04"
-      }
+      "geo": [
+        {
+          "@id": "#geo-s01-2019"
+        },
+        {
+          "@id": "#shape-s01-2019"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/04ge02x20",
@@ -1180,18 +1191,19 @@
       "identifier": "https://ror.org/05h2dda38"
     },
     {
-      "@id": "#person-ruth-murdie",
+      "@id": "https://orcid.org/0000-0002-6591-9777",
       "@type": "Person",
       "name": "Dr Ruth Murdie",
+      "identifier": "https://orcid.org/0000-0002-6591-9777",
       "affiliation": {
         "@id": "https://ror.org/05h2dda38"
       }
     },
     {
-      "@id": "https://orcid.org/0000-0002-6591-9777",
+      "@id": "https://orcid.org/0000-0003-3512-7856",
       "@type": "Person",
       "name": "Dr Klaus Gessner",
-      "identifier": "https://orcid.org/0000-0002-6591-9777",
+      "identifier": "https://orcid.org/0000-0003-3512-7856",
       "affiliation": {
         "@id": "https://ror.org/05h2dda38"
       }
@@ -1203,27 +1215,27 @@
       "identifier": "https://ror.org/047272k79"
     },
     {
-      "@id": "https://orcid.org/0000-0003-3512-7856",
+      "@id": "https://orcid.org/0000-0003-2206-5350",
       "@type": "Person",
       "name": "Dr Huaiyu Yuan",
-      "identifier": "https://orcid.org/0000-0003-3512-7856",
+      "identifier": "https://orcid.org/0000-0003-2206-5350",
       "affiliation": {
         "@id": "https://ror.org/047272k79"
       }
     },
     {
-      "@id": "https://orcid.org/0000-0003-2206-5350",
+      "@id": "#person-robert-pickle",
       "@type": "Person",
-      "name": "Prof Brian Kennett",
-      "identifier": "https://orcid.org/0000-0003-2206-5350",
+      "name": "Dr Robert Pickle",
       "affiliation": {
         "@id": "https://ror.org/019wvm592"
       }
     },
     {
-      "@id": "#grant-arc-linkage-project-lp170100890",
+      "@id": "#grant-lp170100890",
       "@type": "Grant",
-      "name": "ARC Linkage Project LP170100890",
+      "name": "ARC Linkage Project",
+      "identifier": "LP170100890",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -1277,25 +1289,25 @@
       "identifier": "https://doi.org/10.7914/SN/2P_2020"
     },
     {
-      "@id": "#project-Placeholder-04",
+      "@id": "#project-S01-2019",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "South West Australia Network",
       "description": "The new deployment of ~25 broadband seismometers will provide the opportunity to dramatically improve the rendering of 3-D seismic structure in the crust and mantle lithosphere. The objective of this work is to provide a compilation of 3-D models, which will be an effective characterisation of the structure of the craton and its margins. These data and models will provide improved information for enhanced assessment of seismic ground shaking from regional earthquakes and facilitate an improved understanding of mineral resource potential.",
-      "identifier": "Placeholder-04",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-04",
+      "identifier": "S01-2019",
+      "url": "https://bvkay.github.io/ansir-data/?id=S01-2019",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-07-29",
-      "temporalCoverage": "2020-07-29/2023-08-29",
+      "dateCreated": "2020-07-28",
+      "temporalCoverage": "2020-07-28/2023-08-28",
       "about": [
         {
           "@id": "#method-seismology"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-04"
+        "@id": "#place-s01-2019"
       },
       "creator": [
         {
@@ -1303,9 +1315,6 @@
         },
         {
           "@id": "https://orcid.org/0000-0003-3420-547X"
-        },
-        {
-          "@id": "#person-ruth-murdie"
         },
         {
           "@id": "https://orcid.org/0000-0002-6591-9777"
@@ -1318,11 +1327,14 @@
         },
         {
           "@id": "https://orcid.org/0000-0002-8550-5256"
+        },
+        {
+          "@id": "#person-robert-pickle"
         }
       ],
       "funding": [
         {
-          "@id": "#grant-arc-linkage-project-lp170100890"
+          "@id": "#grant-lp170100890"
         }
       ],
       "instrument": [
@@ -1355,6 +1367,7 @@
           "@id": "https://doi.org/10.7914/SN/2P_2020"
         }
       ],
+      "conditionsOfAccess": "open",
       "provider": {
         "@id": "https://ansir.org.au"
       },
