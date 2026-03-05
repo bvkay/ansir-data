@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T03:33:44.061Z",
+  "exported": "2026-03-05T03:38:53.466Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 43,
   "data": [
@@ -1041,8 +1041,8 @@
       "acronym": "SUD",
       "description": "This project proposes a broadband magnetotelluric (MT) survey along a 185 km transect across the western margin of the West African Craton (WAC), extending from the Dakhla Coastal Basin through the Adrar Souttouf to the Reguibat Ridge. A total of 45 MT stations will be deployed, spaced at approximately 5 km intervals, with tighter spacing of 2.5 km in areas of known mineral prospectivity. The survey targets a geologically diverse region that includes Mesozoic basins, Ediacaran metamorphic complexes, and Archean craton, intersecting key structures associated with rare earth element (REE), gold, platinum group element (PGE), and iron oxide mineral systems. Data will be collected using ANSIR LEMI-423 instruments with Ag-AgCl electrodes and LEMI-120 magnetic coils. This work forms part of a collaboration between the University of Adelaide and Morocco’s Office National des Hydrocarbures et des Mines (ONHYM), and aims to generate new geophysical insights in a frontier area for exploration.",
       "status": "Complete",
-      "startDate": "2023-12-31",
-      "endDate": "2024-02-29",
+      "startDate": "2023-12-30",
+      "endDate": "2024-02-28",
       "methods": [
         "Magnetotelluric"
       ],
@@ -1081,8 +1081,8 @@
           "position": "",
           "organisation": "National Office of Hydrocarbons and Mines",
           "organisationRole": "",
-          "isContact": false,
-          "isLeader": false
+          "isContact": true,
+          "isLeader": true
         },
         {
           "name": "Ben Kay",
