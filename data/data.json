@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T03:21:24.000Z",
+  "exported": "2026-03-05T03:29:09.668Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 43,
   "data": [
@@ -857,8 +857,8 @@
       "acronym": "",
       "description": "This ongoing joint project between ONHYM, the National Office of Hydrocarbons and Mines, Mohamed V University and the University of Adelaide is to map the geo-electrical structure of the High Atlas Mountains in Morocco.",
       "status": "In Progress",
-      "startDate": "2024-12-30",
-      "endDate": "2025-07-30",
+      "startDate": "2024-12-29",
+      "endDate": "2025-07-29",
       "methods": [
         "Magnetotelluric"
       ],
@@ -878,7 +878,7 @@
           "organisation": "Université Mohammed VI Polytechnique",
           "organisationRole": "Lead Research Organisation",
           "isContact": false,
-          "isLeader": false
+          "isLeader": true
         },
         {
           "name": "Graham Heinson",
@@ -887,8 +887,8 @@
           "position": "Co-investigator or Collaborator",
           "organisation": "University of Adelaide",
           "organisationRole": "Other Research Organisation",
-          "isContact": false,
-          "isLeader": false
+          "isContact": true,
+          "isLeader": true
         },
         {
           "name": "Ben Kay",
