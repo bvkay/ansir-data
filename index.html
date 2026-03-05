@@ -939,7 +939,7 @@
         /* ============================================ */
         // GitHub Pages version: fetches static JSON instead of calling GAS
         // data.json is exported from Google Sheet and pushed to this repo
-        const DATA_URL = './data.json';
+        const DATA_URL = './data/data.json';
 
         // Website tracking endpoint (optional - still calls GAS for analytics)
         const TRACKING_URL = 'https://script.google.com/macros/s/AKfycby-jo_4Lhz5E775mUElJtPMq3kmyar5Ax9eOr8psR30pTxp5SkO9nih82eIigi2S985Yg/exec';
@@ -2189,7 +2189,7 @@
         }
 
         // v002: ORCID icon with local PNG fallback (ORCID_iD.png)
-        const orcidIcon = `<img src="ORCID_iD.png" alt="ORCID" class="orcid-icon" onerror="this.style.display='none'" />`;
+        const orcidIcon = `<img src="assets/images/ORCID_iD.png" alt="ORCID" class="orcid-icon" onerror="this.style.display='none'" />`;
 
         // Create individual project card
         function createProjectCard(project) {
