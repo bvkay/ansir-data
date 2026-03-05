@@ -8,6 +8,8 @@
       - Removed GPU compositing hacks (translate3d, will-change) that interfered
         with layout recalculation after card collapse
       - sendHeightToParent() now temporarily collapses body to measure true content height
+      - Fixed initial sort: page now loads sorted by Date (Newest First) as the
+        dropdown indicates, instead of spreadsheet row order
 
     Changes in v010:
       - Full academic citations for publications, datasets, and networks
@@ -90,9 +92,9 @@
             --status-planning-bg: #fff3cd;           /* Yellow background */
             --status-planning-color: #856404;        /* Yellow text */
             --status-planning-marker: #ffc107;       /* Yellow map marker */
-            --status-in-progress-bg: #d1ecf1;        /* Blue background */
-            --status-in-progress-color: #0c5460;     /* Blue text */
-            --status-in-progress-marker: #17a2b8;    /* Blue map marker */
+            --status-in-progress-bg: #e8e0ff;        /* Indigo background */
+            --status-in-progress-color: #4338ca;     /* Indigo text */
+            --status-in-progress-marker: #6366F1;    /* Indigo map marker */
             --status-complete-bg: #d4edda;           /* Green background */
             --status-complete-color: #155724;        /* Green text */
             --status-complete-marker: #28a745;       /* Green map marker */
@@ -1830,10 +1832,8 @@
                     initializeProjectCards();
                     populateMethodFilter();
                     
-                    // Apply initial filter if URL had project ID
-                    if (targetProjectId) {
-                        applyFiltersSeamlessly(); // Use seamless filter for initial load
-                    }
+                    // Apply initial sort and filter (honours the default "Date Newest" dropdown)
+                    applyFiltersSeamlessly();
                     
                     // Update stats based on filtered projects
                     updateStats();
@@ -1987,7 +1987,7 @@
         function createProjectMarker(project) {
             const colors = {
                 'planning': '#ffc107',
-                'in-progress': '#17a2b8',
+                'in-progress': '#6366F1',
                 'complete': '#28a745'
             };
             
