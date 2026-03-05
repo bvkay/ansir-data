@@ -741,7 +741,7 @@
       "@id": "#instrument-igu-bd3c-5s",
       "@type": "IndividualProduct",
       "name": "IGU-BD3C-5s",
-      "description": "45 units deployed"
+      "description": "55 units deployed"
     },
     {
       "@id": "https://doi.org/10.7914/37v8-hv88",
@@ -763,8 +763,8 @@
       "identifier": "Placeholder-01",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-08-30",
-      "temporalCoverage": "2023-08-30/2023-10-30",
+      "dateCreated": "2023-08-29",
+      "temporalCoverage": "2023-08-29/2023-10-29",
       "about": [
         {
           "@id": "#method-passive-seismic"
