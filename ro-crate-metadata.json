@@ -927,9 +927,18 @@
       }
     },
     {
+      "@id": "#geo-anu-2021",
+      "@type": "GeoCoordinates",
+      "latitude": -35.069007,
+      "longitude": 149.37767
+    },
+    {
       "@id": "#place-anu-2021",
       "@type": "Place",
-      "name": "Lake George, Canberra, Australia"
+      "name": "Lake George, Canberra, Australia",
+      "geo": {
+        "@id": "#geo-anu-2021"
+      }
     },
     {
       "@id": "https://doi.org/10.7914/t2z3-2m87",
@@ -967,8 +976,8 @@
       "identifier": "ANU-2021",
       "url": "https://bvkay.github.io/ansir-data/?id=ANU-2021",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-11-21",
-      "temporalCoverage": "2020-11-21/2020-12-22",
+      "dateCreated": "2020-11-20",
+      "temporalCoverage": "2020-11-20/2020-12-21",
       "about": [
         {
           "@id": "#method-passive-seismic"
