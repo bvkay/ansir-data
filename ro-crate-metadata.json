@@ -1901,7 +1901,7 @@
       "@id": "#grant-rd02-260",
       "@type": "Grant",
       "name": "Accelerated Discovery Initiative (Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry)",
-      "identifier": "RD02/260",
+      "identifier": "RD02-260",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -1986,8 +1986,8 @@
       "identifier": "ANSIR-2022-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-02-06",
-      "temporalCoverage": "2022-02-06/2022-02-21",
+      "dateCreated": "2022-02-05",
+      "temporalCoverage": "2022-02-05/2022-02-20",
       "keywords": "magnetotelluric, iocg",
       "about": [
         {
@@ -2097,10 +2097,10 @@
       ]
     },
     {
-      "@id": "#grant-rd02-296-gp",
+      "@id": "#grant-rd02-296",
       "@type": "Grant",
       "name": "Accelerated Discovery Initiative (Magnetotelluric, Passive Seismic and Magnetic Modelling Study)",
-      "identifier": "RD02/296-GP",
+      "identifier": "RD02-296",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -2130,8 +2130,8 @@
       "identifier": "ANSIR-2022-002",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-002",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-03-29",
-      "temporalCoverage": "2022-03-29/2022-03-29",
+      "dateCreated": "2022-03-28",
+      "temporalCoverage": "2022-03-28/2022-03-28",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -2159,10 +2159,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-rd02-296-gp"
+          "@id": "#grant-rd02-296"
         },
         {
-          "@id": "#grant-rd02-296-gp"
+          "@id": "#grant-rd02-296"
         }
       ],
       "instrument": [
@@ -2970,14 +2970,6 @@
       },
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
-      }
-    },
-    {
-      "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti",
-      "@type": "Grant",
-      "name": "Accelerated Discovery Initiative (Jupiter MT Anomaly Definition Study)",
-      "funder": {
-        "@id": "https://ror.org/04g3scy39"
       }
     },
     {
