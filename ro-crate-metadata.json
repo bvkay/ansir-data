@@ -1354,8 +1354,8 @@
       "identifier": "Placeholder-06",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-06",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2024-08-29",
-      "temporalCoverage": "2024-08-29/2024-09-28",
+      "dateCreated": "2024-08-28",
+      "temporalCoverage": "2024-08-28/2024-09-27",
       "about": [
         {
           "@id": "#method-das"
@@ -1478,8 +1478,8 @@
       "identifier": "Placeholder-07",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-07",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2024-12-30",
-      "temporalCoverage": "2024-12-30/2025-07-30",
+      "dateCreated": "2024-12-29",
+      "temporalCoverage": "2024-12-29/2025-07-29",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -1550,8 +1550,8 @@
       "identifier": "Placeholder-08",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-08",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-10-29",
-      "temporalCoverage": "2023-10-29/2023-12-29",
+      "dateCreated": "2023-10-28",
+      "temporalCoverage": "2023-10-28/2023-12-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -1620,8 +1620,8 @@
       "identifier": "Placeholder-09",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-09",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-12-31",
-      "temporalCoverage": "2023-12-31/2024-02-29",
+      "dateCreated": "2023-12-30",
+      "temporalCoverage": "2023-12-30/2024-02-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
