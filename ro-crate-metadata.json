@@ -2828,6 +2828,12 @@
       }
     },
     {
+      "@id": "#geo-mt03-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -30.976487,
+      "longitude": 140.318756
+    },
+    {
       "@id": "#shape-mt03-2020",
       "@type": "GeoShape",
       "polygon": "-30.8923056 140.3837222 -31.0243889 140.4195556 -31.0563056 140.2486389 -30.9250833 140.2131389"
@@ -2836,9 +2842,14 @@
       "@id": "#place-mt03-2020",
       "@type": "Place",
       "name": "Central Curnamona Province, Australia",
-      "geo": {
-        "@id": "#shape-mt03-2020"
-      }
+      "geo": [
+        {
+          "@id": "#geo-mt03-2020"
+        },
+        {
+          "@id": "#shape-mt03-2020"
+        }
+      ]
     },
     {
       "@id": "#person-ben-kay",
@@ -2857,9 +2868,10 @@
       }
     },
     {
-      "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti",
+      "@id": "#grant-rd01-117",
       "@type": "Grant",
       "name": "Accelerated Discovery Initiative (Jupiter MT Anomaly Definition Study)",
+      "identifier": "RD01-117",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -2890,8 +2902,8 @@
       "identifier": "MT03-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT03-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2021-04-28",
-      "temporalCoverage": "2021-04-28/2121-04-28",
+      "dateCreated": "2021-04-27",
+      "temporalCoverage": "2021-04-27/2121-04-27",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -2919,10 +2931,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti"
+          "@id": "#grant-rd01-117"
         },
         {
-          "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti"
+          "@id": "#grant-rd01-117"
         }
       ],
       "instrument": [
@@ -2958,6 +2970,14 @@
       },
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti",
+      "@type": "Grant",
+      "name": "Accelerated Discovery Initiative (Jupiter MT Anomaly Definition Study)",
+      "funder": {
+        "@id": "https://ror.org/04g3scy39"
       }
     },
     {
