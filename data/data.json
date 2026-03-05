@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T11:47:42.565Z",
+  "exported": "2026-03-05T11:47:52.022Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 46,
   "data": [
@@ -1018,11 +1018,11 @@
       "id": "12",
       "ansirCode": "ANSIR-2023-002",
       "title": "Morocco - Nador MT Geothermal Array",
-      "acronym": "NADOR",
+      "acronym": "",
       "description": "",
       "status": "Complete",
-      "startDate": "2023-10-28",
-      "endDate": "2023-12-28",
+      "startDate": "2023-10-27",
+      "endDate": "2023-12-27",
       "methods": [
         "Magnetotelluric"
       ],
