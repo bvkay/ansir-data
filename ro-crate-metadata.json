@@ -3136,30 +3136,19 @@
       }
     },
     {
-      "@id": "#journal-preview",
-      "@type": "Periodical",
-      "name": "Preview"
-    },
-    {
       "@id": "https://doi.org/10.1080/14432471.2021.1935718",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
       "author": "O’Donnell, J. P., Robertson, K.",
       "datePublished": "2021",
-      "isPartOf": {
-        "@id": "#journal-preview"
-      },
       "identifier": "https://doi.org/10.1080/14432471.2021.1935718"
     },
     {
       "@id": "https://doi.org/10.1080/14432471.2020.1855772",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Geological Survey of South Australia: SAEMC 2020, AusArray SA, Central Delamerian Broadband MT transect",
       "author": "Heath, P., O’Donnell, J., Robertson, K., Wise, T.",
       "datePublished": "2020",
-      "isPartOf": {
-        "@id": "#journal-preview"
-      },
       "identifier": "https://doi.org/10.1080/14432471.2020.1855772"
     },
     {
@@ -3173,8 +3162,8 @@
       "identifier": "MT01-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT01-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-08-31",
-      "temporalCoverage": "2020-08-31/2020-09-30",
+      "dateCreated": "2020-08-30",
+      "temporalCoverage": "2020-08-30/2020-09-29",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -3213,7 +3202,7 @@
           "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries"
         }
       ],
-      "citation": [
+      "hasPart": [
         {
           "@id": "https://doi.org/10.1080/14432471.2021.1935718"
         },
@@ -3543,6 +3532,11 @@
       "datePublished": "2020",
       "publisher": "International Federation of Digital Seismograph Networks",
       "identifier": "https://doi.org/10.7914/SN/6K_2020"
+    },
+    {
+      "@id": "#journal-preview",
+      "@type": "Periodical",
+      "name": "Preview"
     },
     {
       "@id": "https://doi.org/10.1016/j.gr.2023.04.013",
