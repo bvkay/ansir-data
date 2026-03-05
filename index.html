@@ -4,8 +4,9 @@
     Based on: git_projects_v009.html
 
     Changes in v010:
-      - DOI titles now displayed for publications, datasets, and networks
-        (resolved at publish time by v14 GAS export via CrossRef/DataCite APIs)
+      - Full academic citations for publications, datasets, and networks
+        (authors, year, title, journal — resolved at publish by v14 GAS via CrossRef/DataCite)
+      - renderCitationItem() helper for consistent citation display
       - Removed standalone "Data Access" text section from expanded card
         (Open Data pill badge in header is kept)
 
@@ -729,11 +730,19 @@
             text-decoration: underline;
         }
 
+        .citation-item {
+            margin-bottom: 8px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .citation-authors {
+            font-weight: bold;
+        }
+
         .doi-subtitle {
-            display: block;
             font-size: 11px;
             color: var(--medium-gray);
-            margin-top: 1px;
         }
 
         /* ============================================ */
@@ -958,6 +967,28 @@
                 .replace(/'/g, '&#039;');
         }
 
+        // v010: Render a citation item (publication, dataset, or network)
+        // Format: Authors (Year). Title. Journal.  DOI: 10.xxxx/...
+        function renderCitationItem(item, fallbackLabel) {
+            const hasMetadata = item.resolvedTitle || item.authors;
+            if (!hasMetadata) {
+                // No resolved metadata — show DOI or fallback label as link
+                return `<div class="citation-item">
+                    <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(item.cleanDOI || fallbackLabel)}</a>
+                </div>`;
+            }
+            // Build academic citation
+            let citation = '';
+            if (item.authors) citation += `<span class="citation-authors">${escapeHtml(item.authors)}</span>`;
+            if (item.year) citation += ` (${escapeHtml(item.year)})`;
+            if (item.authors || item.year) citation += '. ';
+            if (item.resolvedTitle) citation += `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(item.resolvedTitle)}</a>`;
+            if (item.journal) citation += `. <em>${escapeHtml(item.journal)}</em>`;
+            citation += '.';
+            if (item.cleanDOI) citation += ` <span class="doi-subtitle">DOI: ${escapeHtml(item.cleanDOI)}</span>`;
+            return `<div class="citation-item">${citation}</div>`;
+        }
+
         // Month names for date formatting
         const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
                        'July', 'August', 'September', 'October', 'November', 'December'];
@@ -1140,6 +1171,9 @@
                     url: obj.identifier,
                     cleanDOI: cleanDOI,
                     resolvedTitle: obj.title || '',
+                    authors: obj.authors || '',
+                    journal: obj.journal || '',
+                    year: obj.year || '',
                     displayText: obj.title || cleanDOI || obj.identifier
                 };
                 const t = (obj.type || '').toLowerCase();
@@ -2259,14 +2293,9 @@
                         <div class="expanded-section">
                             <h4 class="section-title">Publications (${project.publications.length})</h4>
                             <div class="publications-list">
-                                ${project.publications.map((pub, index) => `
-                                    <div class="publication-item">
-                                        <div class="publication-title">
-                                            <a href="${escapeHtml(pub.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(pub.resolvedTitle || pub.cleanDOI || 'Publication ' + (index + 1))}</a>
-                                            ${pub.resolvedTitle && pub.cleanDOI ? `<span class="doi-subtitle">DOI: ${escapeHtml(pub.cleanDOI)}</span>` : ''}
-                                        </div>
-                                    </div>
-                                `).join('')}
+                                ${project.publications.map((pub, index) =>
+                                    renderCitationItem(pub, 'Publication ' + (index + 1))
+                                ).join('')}
                             </div>
                         </div>
                     ` : ''}
@@ -2275,14 +2304,9 @@
                         <div class="expanded-section">
                             <h4 class="section-title">Datasets (${project.datasets.length})</h4>
                             <div class="data-links-list">
-                                ${project.datasets.map((dataset, index) => `
-                                    <div class="data-link-item">
-                                        <div class="data-link-title">
-                                            <a href="${escapeHtml(dataset.url)}" target="_blank" rel="noopener" class="data-link-url">${escapeHtml(dataset.resolvedTitle || dataset.cleanDOI || 'Dataset ' + (index + 1))}</a>
-                                            ${dataset.resolvedTitle && dataset.cleanDOI ? `<span class="doi-subtitle">DOI: ${escapeHtml(dataset.cleanDOI)}</span>` : ''}
-                                        </div>
-                                    </div>
-                                `).join('')}
+                                ${project.datasets.map((dataset, index) =>
+                                    renderCitationItem(dataset, 'Dataset ' + (index + 1))
+                                ).join('')}
                             </div>
                         </div>
                     ` : ''}
@@ -2291,14 +2315,9 @@
                         <div class="expanded-section">
                             <h4 class="section-title">FDSN Network (${project.networks.length})</h4>
                             <div class="data-links-list">
-                                ${project.networks.map((network, index) => `
-                                    <div class="data-link-item">
-                                        <div class="data-link-title">
-                                            <a href="${escapeHtml(network.url)}" target="_blank" rel="noopener" class="data-link-url">${escapeHtml(network.resolvedTitle || network.cleanDOI || 'Network ' + (index + 1))}</a>
-                                            ${network.resolvedTitle && network.cleanDOI ? `<span class="doi-subtitle">DOI: ${escapeHtml(network.cleanDOI)}</span>` : ''}
-                                        </div>
-                                    </div>
-                                `).join('')}
+                                ${project.networks.map((network, index) =>
+                                    renderCitationItem(network, 'Network ' + (index + 1))
+                                ).join('')}
                             </div>
                         </div>
                     ` : ''}
