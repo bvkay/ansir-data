@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T11:55:04.448Z",
+  "exported": "2026-03-05T11:55:13.404Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 46,
   "data": [
@@ -1359,7 +1359,7 @@
     {
       "id": "15",
       "ansirCode": "ANSIR-2022-002",
-      "title": "Western Gawler Magnetotelluric & Passive Seismic Project",
+      "title": "Western Gawler Magnetotelluric and Passive Seismic Project",
       "acronym": "",
       "description": "The discovery of magmatic Ni-Cu sulphide in the Western Gawler Craton, confirmed the presence of significant, intrusive-hosted magmatic Ni-Cu sulphide in the Fowler Domain. The primary aim of this proposal is to develop a 3D model the Fowler Domain crust from the near surface to the Moho to identify the regional structural controls on emplacement of Ni-Cu-PGE prospective mafic-ultramafic intrusions. This proposal is in a collaboration between Western Areas and the University of Adelaide to complete three regionally-spaced magnetotelluric (MT) and passive seismic transects across key areas of the Fowler Domain. Such new data sets, coupled with legacy MT data, will be used to generate detailed 2D and 3D resistivity models of the Fowler Domain, with resolution from the near surface to the Moho. Passive seismic data will also constrain the cover sequences that can be introduced into the resistivity inversion. The project will integrate and interpret all the new and legacy datasets simultaneously to develop a 3D model with both sections and 3D views as outputs",
       "status": "Complete",
