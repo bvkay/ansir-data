@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v007)
-    Based on: git_projects_v006.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v009)
+    Based on: git_projects_v008.html
 
-    Changes in v007:
-      - Contributor hierarchy: contact lead on top, co-leads in header, co-investigators in body
-      - parseContributors now parses contributor_leader field
-      - Co-investigators section moved above Funding in expanded card
+    Changes in v009:
+      - Consumes structured JSON from v13 GAS export (no more semicolon parsing)
+      - Simplified transformProject() — data arrives pre-structured
+      - Removed parseArrayField, parseMethodsField, parseContributors,
+        parseFundingRecords, parseInstruments, parseRelatedObjects functions
       - Method display more prominent (pill style)
       - Funding: org, title, identifier on one line per record
 
@@ -547,12 +548,20 @@
         }
 
         .project-lead {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-xs);
             margin-bottom: var(--spacing-sm);
             color: var(--medium-gray);
             font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .lead-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--primary-bg);
+            display: block;
+            margin-bottom: 2px;
         }
 
         /* ORCID Links */
@@ -645,13 +654,7 @@
             font-size: 14px;
         }
 
-        /* Objectives and funding should match description styling exactly */
-        .objectives-content {
-            color: var(--text-color);
-            margin-bottom: var(--spacing-md);
-            line-height: 1.5;
-            font-size: 14px;
-        }
+        /* Funding should match description styling */
 
         .funding-content {
             color: var(--text-color);
@@ -971,44 +974,10 @@
             return { lat: 0, lng: 0 };
         }
 
-        // v002: Parse instruments from type and numbers fields
-        // Handles both plain numbers ("5") and "Name: Count" format ("EarthData PR6-24: 5")
-        function parseInstruments(typeField, numbersField) {
-            const instruments = {};
-
-            if (!typeField) return instruments;
-
-            const types = parseArrayField(typeField);
-            const numbers = parseArrayField(numbersField);
-
-            types.forEach((type, index) => {
-                if (type) {
-                    let count = 1;
-                    const numEntry = numbers[index] || '';
-                    // Handle "Name: Count" format (e.g., "EarthData PR6-24: 5")
-                    const colonMatch = numEntry.match(/:?\s*(\d+)\s*$/);
-                    if (colonMatch) {
-                        count = parseInt(colonMatch[1]) || 1;
-                    } else {
-                        count = parseInt(numEntry) || 1;
-                    }
-                    instruments[type.trim()] = count;
-                }
-            });
-
-            return instruments;
-        }
-
-        // Parse array fields (semicolon separated)
-        function parseArrayField(field) {
-            if (!field) return [];
-            
-            const str = String(field).trim();
-            if (!str) return [];
-            
-            // Split by semicolon and clean up
-            return str.split(';').map(item => item.trim()).filter(Boolean);
-        }
+        // v009: Old parsing functions (parseInstruments, parseArrayField,
+        // parseMethodsField, parseFundingRecords, parseContributors,
+        // parseRelatedObjects) removed — data now arrives pre-structured
+        // from v13 GAS export (transformProjectForExport).
 
         // Parse polygon coordinates
         function parsePolygon(polygonField) {
@@ -1058,106 +1027,6 @@
             return null;
         }
 
-        // Parse enhanced related objects (publications/datasets/networks) with semicolon separation
-        function parseRelatedObjects(idField, typeField) {
-            const publications = [];
-            const datasets = [];
-            const networks = [];
-            const all = [];
-            
-            if (!idField) return { publications, datasets, networks, all };
-            
-            const ids = parseArrayField(idField);
-            const types = parseArrayField(typeField);
-            
-            ids.forEach((id, index) => {
-                if (id) {
-                    const type = types[index] || 'unknown';
-                    const cleanDOI = extractCleanDOI(id);
-                    
-                    const relatedObject = {
-                        identifier: id,
-                        type: type,
-                        url: id, // Keep full URL for linking
-                        cleanDOI: cleanDOI, // Clean DOI for display
-                        displayText: cleanDOI || id // Use clean DOI if available, otherwise use full URL
-                    };
-                    
-                    all.push(relatedObject);
-                    
-                    // Categorize by type
-                    const typeStr = type.toLowerCase();
-                    if (typeStr.includes('journal') || typeStr.includes('article') || typeStr.includes('publication')) {
-                        publications.push(relatedObject);
-                    } else if (typeStr.includes('dataset') || typeStr.includes('data')) {
-                        datasets.push(relatedObject);
-                    } else if (typeStr.includes('fdsn') || typeStr.includes('network')) {
-                        networks.push(relatedObject);
-                    } else {
-                        // Default to publications for unknown types
-                        publications.push(relatedObject);
-                    }
-                }
-            });
-            
-            return { publications, datasets, networks, all };
-        }
-
-        // v003: Parse funding into structured records from semicolon-separated fields
-        function parseFundingRecords(agencyStr, titleStr, identifierStr) {
-            const agencies = parseArrayField(agencyStr);
-            const titles = parseArrayField(titleStr);
-            const identifiers = parseArrayField(identifierStr);
-
-            const maxLen = Math.max(agencies.length, titles.length, identifiers.length);
-            if (maxLen === 0) return [];
-
-            const records = [];
-            for (let i = 0; i < maxLen; i++) {
-                const agency = agencies[i] || '';
-                const title = titles[i] || '';
-                const id = identifiers[i] || '';
-                if (agency || title || id) {
-                    records.push({ agency, title, id });
-                }
-            }
-            return records;
-        }
-
-        // Parse multiple contributors from semicolon-separated fields
-        // v007: Added isLeader field from contributor_leader
-        function parseContributors(rawProject) {
-            const titles = parseArrayField(rawProject.contributor_honoury_title);
-            const names = parseArrayField(rawProject.contributor_name);
-            const ids = parseArrayField(rawProject.contributor_id);
-            const positions = parseArrayField(rawProject.contributor_position_id);
-            const contacts = parseArrayField(rawProject.contributor_is_contact);
-            const leaders = parseArrayField(rawProject.contributor_leader);
-            const organisations = parseArrayField(rawProject.organisation_name);
-
-            const contributors = [];
-            const maxLength = Math.max(titles.length, names.length, ids.length, positions.length, contacts.length, leaders.length, organisations.length);
-
-            for (let i = 0; i < maxLength; i++) {
-                const contributor = {
-                    title: titles[i] || '',
-                    name: names[i] || '',
-                    id: cleanOrcid(ids[i]),
-                    position: positions[i] || '',
-                    isContact: contacts[i] && String(contacts[i]).toUpperCase() === 'TRUE',
-                    isLeader: leaders[i] && String(leaders[i]).toUpperCase() === 'TRUE',
-                    organisation: organisations[i] || ''
-                };
-
-                // Only add if we have at least a name
-                if (contributor.name) {
-                    contributors.push(contributor);
-                }
-            }
-
-            return contributors;
-        }
-
         // Clean and validate ORCID
         function cleanOrcid(orcidValue) {
             if (!orcidValue) return null;
@@ -1170,11 +1039,6 @@
             // Since ORCIDs are always provided as full URLs, extract the ID
             const match = orcid.match(/orcid\.org\/(\d{4}-\d{4}-\d{4}-\d{3}[0-9X])/);
             return match ? match[1] : null;
-        }
-
-        // Extract DOI from URL (legacy function - kept for compatibility)
-        function extractDOI(url) {
-            return extractCleanDOI(url);
         }
 
         // Format date strings
@@ -1226,54 +1090,75 @@
             return names[status] || status;
         }
 
-        // Transform raw project data to display format
+        // v009: Transform structured JSON from v13 GAS export to display format
+        // Data arrives pre-structured with arrays/objects — no semicolon parsing needed
         function transformProject(rawProject, index = 0) {
             if (!rawProject) return null;
-            
-            // Parse coordinates
-            const coordinates = parseCoordinates(rawProject.location_coordinates);
-            
-            // Combine location fields
-            const location = [
-                rawProject.location_region,
-                rawProject.location_country
-            ].filter(Boolean).join(', ');
-            
-            // Parse methods
-            const methods = [
-                rawProject.methods_field
-            ].filter(Boolean).flatMap(m => parseArrayField(m)).filter(Boolean);
-            
-            // Parse instruments
-            const instruments = parseInstruments(
-                rawProject.instrumentation_type,
-                rawProject.instrumentation_numbers
-            );
-            
-            // Parse related objects with enhanced support
-            const relatedObjects = parseRelatedObjects(
-                rawProject.related_object_identifier,
-                rawProject.related_object_type
-            );
-            
-            // Parse contributors with full details
-            const contributors = parseContributors(rawProject);
 
-            // v007: Categorise contributors into hierarchy
-            // 1. Contact lead: isContact=TRUE (shown prominently at top of card)
-            // 2. Co-leads: isLeader=TRUE but not the contact (shown in header below contact)
-            // 3. Co-investigators: everyone else (shown in expanded body section)
+            // Location: nested object in structured JSON
+            const loc = rawProject.location || {};
+            const coordinates = parseCoordinates(loc.coordinates);
+            const location = [loc.region, loc.country].filter(Boolean).join(', ');
+
+            // Contributors arrive as array of {name, title, orcid, position, organisation, organisationRole, isContact, isLeader}
+            const contributors = (rawProject.contributors || []).map(c => ({
+                title: c.title || '',
+                name: c.name || '',
+                id: cleanOrcid(c.orcid),
+                position: c.position || '',
+                organisation: c.organisation || '',
+                organisationRole: c.organisationRole || '',
+                isContact: c.isContact === true,
+                isLeader: c.isLeader === true
+            }));
+
+            // Categorise contributors into hierarchy
             const primaryContact = contributors.find(c => c.isContact) || contributors.find(c => c.isLeader) || contributors[0];
             const coLeads = contributors.filter(c => c.isLeader && c !== primaryContact);
             const coInvestigators = contributors.filter(c => !c.isLeader && c !== primaryContact);
-            
+
+            // Related objects: categorise by type
+            const publications = [];
+            const datasets = [];
+            const networks = [];
+            (rawProject.relatedObjects || []).forEach(obj => {
+                const cleanDOI = extractCleanDOI(obj.identifier);
+                const enriched = {
+                    identifier: obj.identifier,
+                    type: obj.type || '',
+                    url: obj.identifier,
+                    cleanDOI: cleanDOI,
+                    displayText: cleanDOI || obj.identifier
+                };
+                const t = (obj.type || '').toLowerCase();
+                if (t.includes('fdsn') || t.includes('network')) {
+                    networks.push(enriched);
+                } else if (t.includes('dataset') || t.includes('data')) {
+                    datasets.push(enriched);
+                } else {
+                    publications.push(enriched);
+                }
+            });
+
+            // Funding arrives as array of {agency, title, identifier}
+            const fundingRecords = (rawProject.funding || []).map(f => ({
+                agency: f.agency || '',
+                title: f.title || '',
+                id: f.identifier || ''
+            }));
+
+            // Instruments arrive as array of {name, count}
+            const instruments = (rawProject.instruments || []);
+
+            // Methods and keywords already arrays
+            const methods = rawProject.methods || [];
+            const keywords = rawProject.keywords || [];
+
             return {
-                id: rawProject.alternative_identifier_id ? 
-                    parseInt(rawProject.alternative_identifier_id) : 
-                    index + 1,
-                name: String(rawProject.title_primary || ''),
-                ansirRef: String(rawProject.alternative_identifier_ansir_code || ''),
-                acronym: String(rawProject.title_acronym || ''),
+                id: rawProject.id ? parseInt(rawProject.id) : index + 1,
+                name: String(rawProject.title || ''),
+                ansirRef: String(rawProject.ansirCode || ''),
+                acronym: String(rawProject.acronym || ''),
                 contributors: contributors,
                 coLeads: coLeads,
                 coInvestigators: coInvestigators,
@@ -1281,41 +1166,33 @@
                      (primaryContact.organisation ? ', ' + primaryContact.organisation : '') : '',
                 leadInstitution: primaryContact ? primaryContact.organisation : '',
                 orcid: primaryContact ? primaryContact.id : null,
-                description: String(rawProject.description_primary || ''),
-                objectives: String(rawProject.description_objectives || ''),
-                status: mapProjectStatus(rawProject.project_status),
+                description: String(rawProject.description || ''),
+                status: mapProjectStatus(rawProject.status),
                 methods: methods,
-                startDate: formatDate(rawProject.date_start_date),
-                endDate: formatDate(rawProject.date_end_date),
-                rawStartDate: rawProject.date_start_date || '',  // v002: Keep raw ISO date for sorting
-                rawEndDate: rawProject.date_end_date || '',
+                startDate: formatDate(rawProject.startDate),
+                endDate: formatDate(rawProject.endDate),
+                rawStartDate: rawProject.startDate || '',
+                rawEndDate: rawProject.endDate || '',
                 instruments: instruments,
-                sitesCollected: parseInt(rawProject.collection_quantity) || 0,
+                sitesCollected: rawProject.collectionQuantity || 0,
                 location: location,
-                country: String(rawProject.location_country || ''),
+                country: String(loc.country || ''),
                 coordinates: coordinates,
-                polygon: parsePolygon(rawProject.location_polygon),
-                // v003: Parse funding into structured records
-                fundingRecords: parseFundingRecords(
-                    rawProject.funding_agency_name,
-                    rawProject.funding_title,
-                    rawProject.funding_identifier
-                ),
-                // Keep legacy fields for structured data / SEO
-                funding: String(rawProject.funding_title || ''),
-                fundingId: String(rawProject.funding_identifier || ''),
-                fundingAgency: String(rawProject.funding_agency_name || ''),
-                publications: relatedObjects.publications,
-                datasets: relatedObjects.datasets,
-                networks: relatedObjects.networks,
-                dataLinks: relatedObjects.datasets, // Keep legacy compatibility
-                // v002: New fields
-                keywords: String(rawProject.project_keywords || ''),
-                dataAccess: String(rawProject.data_access || ''),
-                indigenousInvolvement: rawProject.indigenous_involvement_flag === true ||
-                    String(rawProject.indigenous_involvement_flag || '').toLowerCase() === 'true',
-                indigenousEngagement: String(rawProject.description_indigenous_engagement_summary || ''),
-                indigenousAcknowledgement: String(rawProject.description_indigenous_acknowledgement || '')
+                polygon: parsePolygon(loc.polygon),
+                fundingRecords: fundingRecords,
+                // Legacy fields for structured data / SEO
+                funding: fundingRecords.length > 0 ? fundingRecords[0].title : '',
+                fundingId: fundingRecords.length > 0 ? fundingRecords[0].id : '',
+                fundingAgency: fundingRecords.length > 0 ? fundingRecords[0].agency : '',
+                publications: publications,
+                datasets: datasets,
+                networks: networks,
+                // Keywords: array, join for display/search
+                keywords: Array.isArray(keywords) ? keywords.join(', ') : String(keywords || ''),
+                dataAccess: String(rawProject.dataAccess || ''),
+                indigenousInvolvement: rawProject.indigenousInvolvement === true,
+                indigenousEngagement: String(rawProject.indigenousEngagement || ''),
+                indigenousAcknowledgement: String(rawProject.indigenousAcknowledgement || '')
             };
         }
 
@@ -2265,7 +2142,6 @@
             const eAcronym = escapeHtml(project.acronym);
             const eLead = escapeHtml(project.lead);
             const eDesc = escapeHtml(project.description);
-            const eObj = escapeHtml(project.objectives);
             const eLoc = escapeHtml(project.location);
             const methodsDisplay = project.methods && project.methods.length > 0
                 ? project.methods.map(m => `<span class="method-tag">${escapeHtml(m)}</span>`).join('')
@@ -2283,15 +2159,6 @@
                             </button>
                         </h3>
                         ${eAcronym ? `<p class="project-subtitle">${eAcronym}</p>` : ''}
-                        ${project.coLeads && project.coLeads.length > 0 ? `
-                            <div class="header-co-leads">
-                                ${project.coLeads.map(cl => `
-                                    <div>${cl.title ? escapeHtml(cl.title) + ' ' : ''}${escapeHtml(cl.name)}${cl.organisation ? ', ' + escapeHtml(cl.organisation) : ''}${cl.id ?
-                                        ` <a href="https://orcid.org/${escapeHtml(cl.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
-                                    </div>
-                                `).join('')}
-                            </div>
-                        ` : ''}
                     </div>
                     <div style="display: flex; gap: 4px; flex-shrink: 0; align-items: center;">
                         ${project.status !== 'complete' ? `<span class="project-status-badge status-${project.status}">${escapeHtml(statusDisplayName(project.status))}</span>` : ''}
@@ -2301,9 +2168,18 @@
                 </div>
                 <div class="project-body">
                     <div class="project-lead">
-                        <span>${eLead}</span>
-                        ${project.orcid && project.orcid.trim() && project.orcid !== 'N/A' && project.orcid !== '' ?
-                            `<a href="https://orcid.org/${escapeHtml(project.orcid)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                        <span class="lead-label">Project Lead${project.coLeads && project.coLeads.length > 0 ? 's' : ''}</span>
+                        <div>
+                            <span>${eLead}</span>
+                            ${project.orcid && project.orcid.trim() && project.orcid !== 'N/A' && project.orcid !== '' ?
+                                `<a href="https://orcid.org/${escapeHtml(project.orcid)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                        </div>
+                        ${project.coLeads && project.coLeads.length > 0 ? project.coLeads.map(cl => `
+                            <div>
+                                ${cl.title ? escapeHtml(cl.title) + ' ' : ''}${escapeHtml(cl.name)}${cl.organisation ? ', ' + escapeHtml(cl.organisation) : ''}${cl.id ?
+                                    ` <a href="https://orcid.org/${escapeHtml(cl.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                            </div>
+                        `).join('') : ''}
                     </div>
                     <p class="project-description">${eDesc}</p>
                     ${project.keywords ? `<p style="font-size: 12px; color: var(--medium-gray); margin-bottom: var(--spacing-sm);"><em>${escapeHtml(project.keywords)}</em></p>` : ''}
@@ -2343,14 +2219,14 @@
                         </div>
                     ` : ''}
 
-                    ${Object.keys(project.instruments || {}).length > 0 ? `
+                    ${project.instruments && project.instruments.length > 0 ? `
                         <div class="expanded-section">
                             <h4 class="section-title">ANSIR Instrumentation</h4>
                             <div class="instruments-grid">
-                                ${Object.entries(project.instruments).map(([name, count]) => `
+                                ${project.instruments.map(inst => `
                                     <div class="instrument-item">
-                                        <span>${escapeHtml(name)}</span>
-                                        <span class="instrument-count">${count}</span>
+                                        <span>${escapeHtml(inst.name)}</span>
+                                        <span class="instrument-count">${inst.count}</span>
                                     </div>
                                 `).join('')}
                             </div>
