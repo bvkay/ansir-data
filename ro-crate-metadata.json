@@ -1018,9 +1018,18 @@
       }
     },
     {
+      "@id": "#geo-placeholder-03",
+      "@type": "GeoCoordinates",
+      "latitude": -43.908433,
+      "longitude": 169.065514
+    },
+    {
       "@id": "#place-placeholder-03",
       "@type": "Place",
-      "name": "Alpine Fault, Haust, New Zealand"
+      "name": "Alpine Fault, Haust, New Zealand",
+      "geo": {
+        "@id": "#geo-placeholder-03"
+      }
     },
     {
       "@id": "https://orcid.org/0000-0002-0738-0187",
@@ -1084,8 +1093,8 @@
       "identifier": "Placeholder-03",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-03",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-01-30",
-      "temporalCoverage": "2023-01-30/2023-10-30",
+      "dateCreated": "2023-01-29",
+      "temporalCoverage": "2023-01-29/2023-10-29",
       "about": [
         {
           "@id": "#method-das"
