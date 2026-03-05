@@ -59,7 +59,7 @@
           "@id": "#project-2024-S01"
         },
         {
-          "@id": "#project-Placeholder-07"
+          "@id": "#project-ANSIR-2023-001"
         },
         {
           "@id": "#project-Placeholder-08"
@@ -1545,9 +1545,28 @@
       "name": "Magnetotelluric"
     },
     {
-      "@id": "#place-placeholder-07",
+      "@id": "#geo-ansir-2023-001",
+      "@type": "GeoCoordinates",
+      "latitude": 31.188868,
+      "longitude": -8.10791
+    },
+    {
+      "@id": "#shape-ansir-2023-001",
+      "@type": "GeoShape",
+      "polygon": "30.77016 -9.98657 30.13303 -9.62952 31.63234 -6.29242 32.12911 -6.80054"
+    },
+    {
+      "@id": "#place-ansir-2023-001",
       "@type": "Place",
-      "name": "High Atlas Mountains, Morocco"
+      "name": "High Atlas Mountains, Morocco",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2023-001"
+        },
+        {
+          "@id": "#shape-ansir-2023-001"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/03xc55g68",
@@ -1622,25 +1641,25 @@
       "description": "1 unit deployed"
     },
     {
-      "@id": "#project-Placeholder-07",
+      "@id": "#project-ANSIR-2023-001",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Morocco - Atlas Mountains MT Project",
       "description": "This ongoing joint project between ONHYM, the National Office of Hydrocarbons and Mines, Mohamed V University and the University of Adelaide is to map the geo-electrical structure of the High Atlas Mountains in Morocco.",
-      "identifier": "Placeholder-07",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-07",
+      "identifier": "ANSIR-2023-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2024-12-30",
-      "temporalCoverage": "2024-12-30/2025-07-30",
+      "dateCreated": "2024-12-28",
+      "temporalCoverage": "2024-12-28/2025-07-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-07"
+        "@id": "#place-ansir-2023-001"
       },
       "creator": [
         {
