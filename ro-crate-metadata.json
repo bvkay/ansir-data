@@ -881,8 +881,8 @@
       "identifier": "SX-2023",
       "url": "https://bvkay.github.io/ansir-data/?id=SX-2023",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2023-02-26",
-      "temporalCoverage": "2023-02-26/2025-09-28",
+      "dateCreated": "2023-02-25",
+      "temporalCoverage": "2023-02-25/2026-04-30",
       "about": [
         {
           "@id": "#method-seismology"
@@ -918,6 +918,7 @@
           "@id": "https://doi.org/10.7914/9j20-yq91"
         }
       ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
