@@ -586,15 +586,9 @@
             color: var(--medium-gray);
         }
 
-        .methods-display {
-            display: flex;
-            gap: 4px;
-            flex-wrap: wrap;
-            background: none !important;
-            padding: 0 !important;
-        }
-
         .method-tag {
+            display: inline-flex;
+            align-items: center;
             font-weight: 600;
             color: var(--white);
             background: var(--primary-bg);
@@ -2285,7 +2279,7 @@
                     <div class="project-meta">
                         <div class="meta-item">${duration}</div>
                         <div class="meta-item">${eLoc}</div>
-                        <div class="meta-item methods-display">${methodsDisplay}</div>
+                        ${methodsDisplay}
                     </div>
                 </div>
                 <div class="project-expanded-content">
