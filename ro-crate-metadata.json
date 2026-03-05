@@ -2565,6 +2565,12 @@
       }
     },
     {
+      "@id": "#geo-ansir-2023-06",
+      "@type": "GeoCoordinates",
+      "latitude": -33.631058,
+      "longitude": 136.5271
+    },
+    {
       "@id": "#shape-ansir-2023-06",
       "@type": "GeoShape",
       "polygon": "-33.58344 136.25152 -33.44463 136.48477 -33.45291 136.8252 -33.76621 136.83084 -33.88607 136.60935 -33.87216 136.43854"
@@ -2573,9 +2579,14 @@
       "@id": "#place-ansir-2023-06",
       "@type": "Place",
       "name": "Eyre Peninsula, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-ansir-2023-06"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ansir-2023-06"
+        },
+        {
+          "@id": "#shape-ansir-2023-06"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0009-0000-1208-692X",
@@ -2631,13 +2642,13 @@
         "Dataset",
         "Project"
       ],
-      "name": "Cowell-Cleve MT",
+      "name": "Eyre Peninsula Natural Hydrogen Magnetotelluric Study",
       "description": "The magnetotelluric component of the CRC-P \"Accelerating exploration and extraction of renewable natural hydrogen\" sought to characterise the crustal architecture of the study area on H2EX's PEL 691 license to identify potential sources, migration pathways and traps for hydrogen. There were multiple phases of deployment: (a) a 50-km feasibility transect in late 2023, (b) a regional-scale array covering 100 squared kilometres in early 2024, and (c) five infill transects, each spanning 25 - 60 km in late 2024.",
       "identifier": "ANSIR-2023-06",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-06",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-11-20",
-      "temporalCoverage": "2023-11-20/2024-11-08",
+      "dateCreated": "2023-11-19",
+      "temporalCoverage": "2023-11-19/2024-11-07",
       "about": [
         {
           "@id": "#method-magnetotelluric"
