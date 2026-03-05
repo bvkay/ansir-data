@@ -3379,9 +3379,28 @@
       }
     },
     {
+      "@id": "#geo-mt05-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -34.358739,
+      "longitude": 138.921432
+    },
+    {
+      "@id": "#shape-mt05-2020",
+      "@type": "GeoShape",
+      "polygon": "-34.35938 138.91371 -34.36554 138.92495 -34.35909 138.93027 -34.34967 138.92015"
+    },
+    {
       "@id": "#place-mt05-2020",
       "@type": "Place",
-      "name": "Burra, Australia"
+      "name": "Burra, Australia",
+      "geo": [
+        {
+          "@id": "#geo-mt05-2020"
+        },
+        {
+          "@id": "#shape-mt05-2020"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0002-7419-8545",
@@ -3393,9 +3412,10 @@
       }
     },
     {
-      "@id": "#grant-crc-p-kapunda-in-situ-copper-and-gold-field-recovery-trial",
+      "@id": "#grant-ga18145",
       "@type": "Grant",
       "name": "CRC-P Kapunda In-Situ Copper and Gold Field Recovery Trial",
+      "identifier": "GA18145",
       "funder": {
         "@id": "https://ror.org/021z9m619"
       }
@@ -3427,8 +3447,8 @@
       "identifier": "MT05-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT05-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2019-02-26",
-      "temporalCoverage": "2019-02-26/2020-06-28",
+      "dateCreated": "2019-02-25",
+      "temporalCoverage": "2019-02-25/2020-06-27",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -3453,7 +3473,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-crc-p-kapunda-in-situ-copper-and-gold-field-recovery-trial"
+          "@id": "#grant-ga18145"
         }
       ],
       "instrument": [
