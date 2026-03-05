@@ -618,7 +618,7 @@
       "@id": "#instrument-igu-16hr-3c-5hz",
       "@type": "IndividualProduct",
       "name": "IGU-16HR 3C 5Hz",
-      "description": "84 units deployed"
+      "description": "108 units deployed"
     },
     {
       "@id": "#instrument-igu-16s-portable-data-harvester",
@@ -643,8 +643,8 @@
       "identifier": "ANSIR-2025-004",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-004",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2025-09-24",
-      "temporalCoverage": "2025-09-24/2026-03-25",
+      "dateCreated": "2025-09-23",
+      "temporalCoverage": "2025-09-23/2026-03-31",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -686,7 +686,7 @@
           "@id": "#instrument-igu-16s-portable-battery-charger"
         }
       ],
-      "conditionsOfAccess": "restricted",
+      "conditionsOfAccess": "embargoes",
       "ethicsPolicy": "We have been speaking with representatives of local Iwi (Indigenous Māori tribal groups) in whose rohe (region) Makatiti and Haroharo lies, including Ngāti Tarāwhai, Ngāti Pikiao, Ngāti Rangithi, Tūhourangi and Ngāti Ronogomai. We have had multiple meetings with representatives of Ngāti Tarāwhai, including the chair. They have expressed their support of the project and will be actively involved in the deployment and management of the network. The proposed project was taken to the board meeting of Te Mana O Ngāti Rangitihi Trust, and they have agreed to the proposed seismometer testing within the Ōkataina caldera: a cultural monitor will observe the work. We have met with the Taiao (environment) lead for Tūhourangi about the project. They have expressed verbal enthusiasm about the project, but it has not yet been confirmed. The chair of Rotoiti 15 trust (see below) is also the chair of Ngāti Pikiao. We continue to build relationships in the region with other people and representatives of other Iwi as recommended by our partners.\n\nThe land the seismometers are planned on is managed by three organisations: Rotoiti 15, Māori Investments Limited and the Department of Conservation (DOC). We have permission from each of these organisations to install the network, subject to access and health & safety conditions for the fieldwork. Rotoiti 15 is an Iwi trust that represents Ngāti Pikiao, Ngāti Tarāwhai and Ngāti Rongomai interests. They manage the land that 32 of the proposed sites are on, and road access leading to 11 of the sites on DOC managed land. We have met multiple times with the general manager of Rotoiti 15. Their Taiao board has expressed support for the project and representatives will be actively involved in the deployment of the network. We will present on the project to keep the committee updated on 17th July. Māori Investments Limited manages the land that 27 of the proposed stations are on. The operations manager has confirmed they are in support of us putting the stations in, subject to access, health and safety conditions to be discussed closer to the time. Department of Conservation (DOC) manages the land that 25 of the proposed stations are on. We have applied for permission with DOC, and they have granted us permission for the install.. All of the conversations around partnership, access and permissions above are ongoing. Parts of the network layout may change as discussions progress about permissions, access, and safety. There will be cultural induction before the work begins, and local guides and cultural observers from these communities coming with the physical science team during the fieldwork.",
       "provider": {
         "@id": "https://ansir.org.au"
