@@ -1898,9 +1898,10 @@
       "identifier": "https://ror.org/04g3scy39"
     },
     {
-      "@id": "#grant-accelerated-discovery-initiative-associated-rfr-0006011106-i",
+      "@id": "#grant-rd02-260",
       "@type": "Grant",
-      "name": "Accelerated Discovery Initiative (Associated RFR: 0006011106: Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry)",
+      "name": "Accelerated Discovery Initiative (Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry)",
+      "identifier": "RD02/260",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -1980,13 +1981,13 @@
         "Dataset",
         "Project"
       ],
-      "name": "Vulcan Magnetotelluric & Passive Seismic Array",
+      "name": "Vulcan Magnetotelluric and Passive Seismic Array",
       "description": "FMG Resources Pty Ltd (FMG) was successful in securing Round 2 Accelerated Discovery Initiative (ADI) funding for its proposed Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry research collaboration project with the University of Adelaide (UoA), where new passive seismic and magnetotelluric data were collected across the Vulcan prospect in South Australia.",
       "identifier": "ANSIR-2022-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-02-07",
-      "temporalCoverage": "2022-02-07/2022-02-22",
+      "dateCreated": "2022-02-06",
+      "temporalCoverage": "2022-02-06/2022-02-21",
       "keywords": "magnetotelluric, iocg",
       "about": [
         {
@@ -2012,10 +2013,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-associated-rfr-0006011106-i"
+          "@id": "#grant-rd02-260"
         },
         {
-          "@id": "#grant-accelerated-discovery-initiative-associated-rfr-0006011106-i"
+          "@id": "#grant-rd02-260"
         }
       ],
       "instrument": [
