@@ -92,8 +92,7 @@
             --status-complete-marker: #28a745;       /* Green map marker */
             
             /* Typography */
-            --font-family-sans: Arial, sans-serif;
-            --font-family-serif: Arial, sans-serif;
+            --font-family: Arial, sans-serif;
             
             /* Spacing System */
             --spacing-xs: 4px;
@@ -119,7 +118,7 @@
         }
 
         body {
-            font-family: var(--font-family-serif);
+            font-family: var(--font-family);
             background: var(--background-light);
             color: var(--text-color);
             line-height: 1.5;
@@ -175,7 +174,7 @@
             margin-top: var(--spacing-md);
             color: var(--medium-gray);
             font-size: 18px;
-            font-family: var(--font-family-sans);
+            font-family: var(--font-family);
         }
 
         /* Error State */
@@ -236,7 +235,7 @@
         }
 
         .stat-number {
-            font-family: var(--font-family-sans);
+            font-family: var(--font-family);
             font-weight: 700;
             font-size: 22px;
             color: var(--primary-bg);
@@ -324,7 +323,7 @@
             background: var(--primary-bg);
             color: var(--white);
             padding: var(--spacing-sm) var(--spacing-lg);
-            font-family: var(--font-family-sans);
+            font-family: var(--font-family);
             font-weight: 700;
             font-size: 14px;
             text-transform: uppercase;
@@ -475,7 +474,7 @@
         .project-title {
             font-size: 18px;
             font-weight: 400;  /* Reduced boldness */
-            font-family: var(--font-family-sans);
+            font-family: var(--font-family);
             margin-bottom: var(--spacing-xs);
             line-height: 1.3;
             color: var(--white) !important;  /* Force white color for Squarespace */
@@ -669,18 +668,11 @@
             font-size: 14px;
         }
 
-        /* Funding should match description styling */
-
         .funding-content {
             color: var(--text-color);
             margin-bottom: var(--spacing-md);
             line-height: 1.5;
             font-size: 14px;
-        }
-
-        /* Lighter funding organization text */
-        .funding-organization {
-            font-weight: 400;  /* Reduced from bold */
         }
 
         /* Instruments Grid */
@@ -705,39 +697,13 @@
             color: var(--primary-bg);
         }
 
-        /* Publications and Data Links */
+        /* Citations (publications, datasets, FDSN networks) */
         .publications-list, .data-links-list {
             list-style: none !important;
             list-style-type: none !important;
             margin-top: var(--spacing-xs);
             padding-left: 0 !important;
             margin-left: 0 !important;
-        }
-
-        .publication-item, .data-link-item {
-            padding: var(--spacing-sm);
-            background: var(--white);
-            border-radius: var(--border-radius-md);
-            margin-bottom: var(--spacing-xs);
-            font-size: 13px;
-            list-style: none !important;
-            list-style-type: none !important;
-        }
-
-        .publication-title, .data-link-title {
-            font-weight: 500;
-            color: var(--primary-bg);
-            margin-bottom: 2px;
-        }
-
-        .publication-link, .data-link-url {
-            color: var(--primary-hover);
-            text-decoration: none;
-            word-break: break-all;
-        }
-
-        .publication-link:hover, .data-link-url:hover {
-            text-decoration: underline;
         }
 
         .citation-item {
@@ -758,12 +724,6 @@
         .citation-item a.citation-link:hover {
             text-decoration: underline;
         }
-
-        .doi-subtitle {
-            font-size: 11px;
-            color: var(--medium-gray);
-        }
-
 
         /* ============================================ */
         /* NO RESULTS STATE                            */
@@ -1006,7 +966,7 @@
             if (item.resolvedTitle) citation += `${escapeHtml(item.resolvedTitle)}`;
             if (item.journal) citation += `. <em>${escapeHtml(item.journal)}</em>`;
             citation += '.';
-            if (item.cleanDOI) citation += ` <span class="doi-subtitle">DOI: ${escapeHtml(item.cleanDOI)}</span>`;
+            if (item.cleanDOI) citation += ` ${escapeHtml(item.cleanDOI)}`;
             return `<div class="citation-item"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="citation-link">${citation}</a></div>`;
         }
 
