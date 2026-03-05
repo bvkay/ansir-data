@@ -47,7 +47,7 @@
           "@id": "#project-ANU-2021"
         },
         {
-          "@id": "#project-Placeholder-03"
+          "@id": "#project-ANU-2023"
         },
         {
           "@id": "#project-S01-2019"
@@ -1018,17 +1018,17 @@
       }
     },
     {
-      "@id": "#geo-placeholder-03",
+      "@id": "#geo-anu-2023",
       "@type": "GeoCoordinates",
       "latitude": -43.908433,
       "longitude": 169.065514
     },
     {
-      "@id": "#place-placeholder-03",
+      "@id": "#place-anu-2023",
       "@type": "Place",
       "name": "Alpine Fault, Haust, New Zealand",
       "geo": {
-        "@id": "#geo-placeholder-03"
+        "@id": "#geo-anu-2023"
       }
     },
     {
@@ -1083,18 +1083,18 @@
       "identifier": "https://doi.org/10.7914/bfp8-xv25"
     },
     {
-      "@id": "#project-Placeholder-03",
+      "@id": "#project-ANU-2023",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "South Island Seismology at the Speed of Light Experiment",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity and structure of the Alpine Fault near Haast, New Zealand in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator along Haast Pass.",
-      "identifier": "Placeholder-03",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-03",
+      "identifier": "ANU-2023",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-01-29",
-      "temporalCoverage": "2023-01-29/2023-10-29",
+      "dateCreated": "2023-01-28",
+      "temporalCoverage": "2023-01-28/2023-10-28",
       "about": [
         {
           "@id": "#method-das"
@@ -1104,7 +1104,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-03"
+        "@id": "#place-anu-2023"
       },
       "creator": [
         {
