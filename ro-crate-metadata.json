@@ -2445,6 +2445,12 @@
       }
     },
     {
+      "@id": "#geo-s03-2023",
+      "@type": "GeoCoordinates",
+      "latitude": -33.655209,
+      "longitude": 136.653442
+    },
+    {
       "@id": "#shape-s03-2023",
       "@type": "GeoShape",
       "polygon": "-33.58344 136.25152 -33.44463 136.48477 -33.45291 136.8252 -33.76621 136.83084 -33.88607 136.60935 -33.87216 136.43854"
@@ -2453,9 +2459,14 @@
       "@id": "#place-s03-2023",
       "@type": "Place",
       "name": "Eyre Peninsula, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-s03-2023"
-      }
+      "geo": [
+        {
+          "@id": "#geo-s03-2023"
+        },
+        {
+          "@id": "#shape-s03-2023"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0003-3685-174X",
@@ -2473,9 +2484,10 @@
       "identifier": "https://ror.org/021z9m619"
     },
     {
-      "@id": "#grant-crc-p-accelerating-exploration-and-extraction-of-renewable-n",
+      "@id": "#grant-ga329799",
       "@type": "Grant",
       "name": "CRC-P: Accelerating exploration and extraction of renewable natural hydrogen",
+      "identifier": "GA329799",
       "funder": {
         "@id": "https://ror.org/021z9m619"
       }
@@ -2500,8 +2512,8 @@
       "identifier": "S03-2023",
       "url": "https://bvkay.github.io/ansir-data/?id=S03-2023",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-10-29",
-      "temporalCoverage": "2023-10-29/2024-10-29",
+      "dateCreated": "2023-10-28",
+      "temporalCoverage": "2023-10-28/2024-10-28",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -2529,7 +2541,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-crc-p-accelerating-exploration-and-extraction-of-renewable-n"
+          "@id": "#grant-ga329799"
         }
       ],
       "instrument": [
@@ -2603,6 +2615,14 @@
       "name": "Ms Greschen Brecker",
       "affiliation": {
         "@id": "#org-h2ex-pty-ltd"
+      }
+    },
+    {
+      "@id": "#grant-crc-p-accelerating-exploration-and-extraction-of-renewable-n",
+      "@type": "Grant",
+      "name": "CRC-P: Accelerating exploration and extraction of renewable natural hydrogen",
+      "funder": {
+        "@id": "https://ror.org/021z9m619"
       }
     },
     {
