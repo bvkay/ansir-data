@@ -741,7 +741,7 @@
         }
 
         .citation-item {
-            padding: var(--spacing-sm);
+            padding: var(--spacing-xs) var(--spacing-sm);
             background: var(--white);
             border-radius: var(--border-radius-md);
             margin-bottom: var(--spacing-xs);
@@ -749,8 +749,14 @@
             line-height: 1.5;
         }
 
-        .citation-authors {
-            font-weight: bold;
+        .citation-item a.citation-link {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .citation-item a.citation-link:hover {
+            text-decoration: underline;
         }
 
         .doi-subtitle {
@@ -983,24 +989,25 @@
 
         // v010: Render a citation item (publication, dataset, or network)
         // Format: Authors (Year). Title. Journal.  DOI: 10.xxxx/...
+        // Entire citation is one clickable link
         function renderCitationItem(item, fallbackLabel) {
             const hasMetadata = item.resolvedTitle || item.authors;
             if (!hasMetadata) {
                 // No resolved metadata — show DOI or fallback label as link
                 return `<div class="citation-item">
-                    <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(item.cleanDOI || fallbackLabel)}</a>
+                    <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="citation-link">${escapeHtml(item.cleanDOI || fallbackLabel)}</a>
                 </div>`;
             }
-            // Build academic citation
+            // Build academic citation text
             let citation = '';
-            if (item.authors) citation += `<span class="citation-authors">${escapeHtml(item.authors)}</span>`;
+            if (item.authors) citation += `${escapeHtml(item.authors)}`;
             if (item.year) citation += ` (${escapeHtml(item.year)})`;
             if (item.authors || item.year) citation += '. ';
-            if (item.resolvedTitle) citation += `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="publication-link">${escapeHtml(item.resolvedTitle)}</a>`;
+            if (item.resolvedTitle) citation += `${escapeHtml(item.resolvedTitle)}`;
             if (item.journal) citation += `. <em>${escapeHtml(item.journal)}</em>`;
             citation += '.';
             if (item.cleanDOI) citation += ` <span class="doi-subtitle">DOI: ${escapeHtml(item.cleanDOI)}</span>`;
-            return `<div class="citation-item">${citation}</div>`;
+            return `<div class="citation-item"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="citation-link">${citation}</a></div>`;
         }
 
         // Month names for date formatting
