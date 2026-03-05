@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T12:03:03.057Z",
+  "exported": "2026-03-05T12:03:25.175Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 46,
   "data": [
@@ -547,13 +547,13 @@
     },
     {
       "id": "7",
-      "ansirCode": "ANU-2023",
+      "ansirCode": "ANU-2023-001",
       "title": "South Island Seismology at the Speed of Light Experiment",
       "acronym": "SISSLE",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity and structure of the Alpine Fault near Haast, New Zealand in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator along Haast Pass.",
       "status": "Complete",
-      "startDate": "2023-01-28",
-      "endDate": "2023-10-28",
+      "startDate": "2023-01-27",
+      "endDate": "2023-10-27",
       "methods": [
         "DAS",
         "Passive Seismic"
