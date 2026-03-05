@@ -1868,6 +1868,12 @@
       }
     },
     {
+      "@id": "#geo-ansir-2022-001",
+      "@type": "GeoCoordinates",
+      "latitude": -30.182779,
+      "longitude": 137.022514
+    },
+    {
       "@id": "#shape-ansir-2022-001",
       "@type": "GeoShape",
       "polygon": "-30.1458828 136.9748 -30.226683 136.977426 -30.224282 137.069635 -30.143874 137.068255"
@@ -1876,9 +1882,14 @@
       "@id": "#place-ansir-2022-001",
       "@type": "Place",
       "name": "Roxby Downs, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-ansir-2022-001"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ansir-2022-001"
+        },
+        {
+          "@id": "#shape-ansir-2022-001"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/04g3scy39",
@@ -1887,9 +1898,9 @@
       "identifier": "https://ror.org/04g3scy39"
     },
     {
-      "@id": "#grant-accelerated-discovery-initiative-project",
+      "@id": "#grant-accelerated-discovery-initiative-associated-rfr-0006011106-i",
       "@type": "Grant",
-      "name": "Accelerated Discovery Initiative project",
+      "name": "Accelerated Discovery Initiative (Associated RFR: 0006011106: Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry)",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -1898,14 +1909,6 @@
       "@id": "#funder-fortescue-metals-group",
       "@type": "Organization",
       "name": "Fortescue Metals Group"
-    },
-    {
-      "@id": "#grant-fortescue-metals-group",
-      "@type": "Grant",
-      "name": "",
-      "funder": {
-        "@id": "#funder-fortescue-metals-group"
-      }
     },
     {
       "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries",
@@ -1982,8 +1985,8 @@
       "identifier": "ANSIR-2022-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-02-08",
-      "temporalCoverage": "2022-02-08/2022-02-23",
+      "dateCreated": "2022-02-07",
+      "temporalCoverage": "2022-02-07/2022-02-22",
       "keywords": "magnetotelluric, iocg",
       "about": [
         {
@@ -2009,10 +2012,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-project"
+          "@id": "#grant-accelerated-discovery-initiative-associated-rfr-0006011106-i"
         },
         {
-          "@id": "#grant-fortescue-metals-group"
+          "@id": "#grant-accelerated-discovery-initiative-associated-rfr-0006011106-i"
         }
       ],
       "instrument": [
@@ -2079,6 +2082,14 @@
       "name": "Western Gawler Craton, Australia",
       "geo": {
         "@id": "#shape-placeholder-11"
+      }
+    },
+    {
+      "@id": "#grant-accelerated-discovery-initiative-project",
+      "@type": "Grant",
+      "name": "Accelerated Discovery Initiative project",
+      "funder": {
+        "@id": "https://ror.org/04g3scy39"
       }
     },
     {
