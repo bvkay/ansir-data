@@ -426,9 +426,10 @@
       "identifier": "https://ror.org/05mmh0f86"
     },
     {
-      "@id": "#grant-arc-centre-of-excellence-in-optical-microcombs-for-breakthro",
+      "@id": "#grant-ga275196",
       "@type": "Grant",
-      "name": "ARC Centre of Excellence in Optical Microcombs for Breakthrough Science (COMBS)",
+      "name": "ARC Centre of Excellence in Optical Microcombs for Breakthrough Science",
+      "identifier": "GA275196",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -468,8 +469,8 @@
       "identifier": "ANSIR-2025-003",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-003",
       "creativeWorkStatus": "Planning",
-      "dateCreated": "2025-08-29",
-      "temporalCoverage": "2025-08-29/2026-07-29",
+      "dateCreated": "2026-06-30",
+      "temporalCoverage": "2026-06-30/2027-06-30",
       "about": [
         {
           "@id": "#method-das"
@@ -500,7 +501,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-centre-of-excellence-in-optical-microcombs-for-breakthro"
+          "@id": "#grant-ga275196"
         }
       ],
       "instrument": [
