@@ -47,7 +47,7 @@
           "@id": "#project-ANU-2021"
         },
         {
-          "@id": "#project-ANU-2023"
+          "@id": "#project-ANU-2023-001"
         },
         {
           "@id": "#project-S01-2019"
@@ -86,7 +86,7 @@
           "@id": "#project-ANSIR-2023-06"
         },
         {
-          "@id": "#project-Placeholder-14"
+          "@id": "#project-ANU-2023-02"
         },
         {
           "@id": "#project-MT03-2020"
@@ -1018,17 +1018,17 @@
       }
     },
     {
-      "@id": "#geo-anu-2023",
+      "@id": "#geo-anu-2023-001",
       "@type": "GeoCoordinates",
       "latitude": -43.908433,
       "longitude": 169.065514
     },
     {
-      "@id": "#place-anu-2023",
+      "@id": "#place-anu-2023-001",
       "@type": "Place",
       "name": "Alpine Fault, Haust, New Zealand",
       "geo": {
-        "@id": "#geo-anu-2023"
+        "@id": "#geo-anu-2023-001"
       }
     },
     {
@@ -1083,18 +1083,18 @@
       "identifier": "https://doi.org/10.7914/bfp8-xv25"
     },
     {
-      "@id": "#project-ANU-2023",
+      "@id": "#project-ANU-2023-001",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "South Island Seismology at the Speed of Light Experiment",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity and structure of the Alpine Fault near Haast, New Zealand in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator along Haast Pass.",
-      "identifier": "ANU-2023",
-      "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023",
+      "identifier": "ANU-2023-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-01-28",
-      "temporalCoverage": "2023-01-28/2023-10-28",
+      "dateCreated": "2023-01-27",
+      "temporalCoverage": "2023-01-27/2023-10-27",
       "about": [
         {
           "@id": "#method-das"
@@ -1104,7 +1104,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-anu-2023"
+        "@id": "#place-anu-2023-001"
       },
       "creator": [
         {
@@ -2738,22 +2738,33 @@
       }
     },
     {
-      "@id": "#shape-placeholder-14",
+      "@id": "#geo-anu-2023-02",
+      "@type": "GeoCoordinates",
+      "latitude": -36.9885,
+      "longitude": 175.039673
+    },
+    {
+      "@id": "#shape-anu-2023-02",
       "@type": "GeoShape",
       "polygon": "-37.6303 175.8928 -37.335 174.7152 -36.451 174.2392 -36.3195 174.6987 -36.6651 175.48 -37.2432 175.8219"
     },
     {
-      "@id": "#place-placeholder-14",
+      "@id": "#place-anu-2023-02",
       "@type": "Place",
       "name": "Auckland Volcanic Field, New Zealand",
-      "geo": {
-        "@id": "#shape-placeholder-14"
-      }
+      "geo": [
+        {
+          "@id": "#geo-anu-2023-02"
+        },
+        {
+          "@id": "#shape-anu-2023-02"
+        }
+      ]
     },
     {
-      "@id": "#person-kimberley-berends",
+      "@id": "#person-meghan-miller",
       "@type": "Person",
-      "name": "Ms Kimberley Berends",
+      "name": "Prof Meghan Miller",
       "affiliation": {
         "@id": "https://ror.org/019wvm592"
       }
@@ -2768,35 +2779,35 @@
       "identifier": "https://doi.org/10.7914/8jxr-7029"
     },
     {
-      "@id": "#project-Placeholder-14",
+      "@id": "#project-ANU-2023-02",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Auckland-Hauraki Node Array",
       "description": "Short term (30 day) node array targeting the greater Auckland Volcanic Field and the Hauraki Rift to the east. 52 SmartSolo BD3C 5s nodes were deployed May-June 2023 which were supplemented by five additional Trillium Compact 120s stations (AKB*) which will remain installed for an extended period. All data recorded at 250 Hz.",
-      "identifier": "Placeholder-14",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-14",
+      "identifier": "ANU-2023-02",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023-02",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-03-30",
-      "temporalCoverage": "2023-03-30/..",
+      "dateCreated": "2023-03-29",
+      "temporalCoverage": "2023-03-29/..",
       "about": [
         {
           "@id": "#method-passive-seismic"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-14"
+        "@id": "#place-anu-2023-02"
       },
       "creator": [
         {
           "@id": "https://orcid.org/0000-0002-8550-5256"
         },
         {
-          "@id": "#person-kimberley-berends"
+          "@id": "https://orcid.org/0000-0001-5494-2296"
         },
         {
-          "@id": "https://orcid.org/0000-0001-5494-2296"
+          "@id": "#person-meghan-miller"
         }
       ],
       "instrument": [
