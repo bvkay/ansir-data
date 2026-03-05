@@ -554,9 +554,9 @@
 
         .project-lead {
             margin-bottom: var(--spacing-sm);
-            color: var(--medium-gray);
+            color: var(--text-color);
             font-size: 14px;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .lead-label {
@@ -570,6 +570,16 @@
         }
 
         /* ORCID Links */
+        .contributor-name-link {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contributor-name-link:hover {
+            text-decoration: underline;
+            color: var(--primary-bg);
+        }
+
         .orcid-link {
             display: inline-flex;
             align-items: center;
@@ -731,7 +741,10 @@
         }
 
         .citation-item {
-            margin-bottom: 8px;
+            padding: var(--spacing-sm);
+            background: var(--white);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-xs);
             font-size: 13px;
             line-height: 1.5;
         }
@@ -744,6 +757,7 @@
             font-size: 11px;
             color: var(--medium-gray);
         }
+
 
         /* ============================================ */
         /* NO RESULTS STATE                            */
@@ -1971,9 +1985,14 @@
                 currentPolygon = null;
             }
 
-            // Create markers for filtered projects only
+            // Create markers for filtered projects, layered by status:
+            // Finished first (bottom), then In Progress, then Planning (top)
+            const statusOrder = { 'complete': 0, 'in-progress': 1, 'planning': 2 };
+            const sortedForMap = [...filteredProjects].sort((a, b) =>
+                (statusOrder[a.status] || 0) - (statusOrder[b.status] || 0)
+            );
             const newMarkers = [];
-            filteredProjects.forEach(project => {
+            sortedForMap.forEach(project => {
                 if (project.coordinates && project.coordinates.lat && project.coordinates.lng) {
                     const marker = createProjectMarker(project);
                     newMarkers.push(marker);
@@ -2216,14 +2235,15 @@
                     <div class="project-lead">
                         <span class="lead-label">Project Lead${project.coLeads && project.coLeads.length > 0 ? 's' : ''}</span>
                         <div>
-                            <span>${eLead}</span>
                             ${project.orcid && project.orcid.trim() && project.orcid !== 'N/A' && project.orcid !== '' ?
-                                `<a href="https://orcid.org/${escapeHtml(project.orcid)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                                `<a href="https://orcid.org/${escapeHtml(project.orcid)}" target="_blank" rel="noopener" class="contributor-name-link">${eLead}</a> <a href="https://orcid.org/${escapeHtml(project.orcid)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` :
+                                `<span>${eLead}</span>`}
                         </div>
                         ${project.coLeads && project.coLeads.length > 0 ? project.coLeads.map(cl => `
                             <div>
-                                ${cl.title ? escapeHtml(cl.title) + ' ' : ''}${escapeHtml(cl.name)}${cl.organisation ? ', ' + escapeHtml(cl.organisation) : ''}${cl.id ?
-                                    ` <a href="https://orcid.org/${escapeHtml(cl.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                                ${cl.id ?
+                                    `<a href="https://orcid.org/${escapeHtml(cl.id)}" target="_blank" rel="noopener" class="contributor-name-link">${cl.title ? escapeHtml(cl.title) + ' ' : ''}${escapeHtml(cl.name)}${cl.organisation ? ', ' + escapeHtml(cl.organisation) : ''}</a> <a href="https://orcid.org/${escapeHtml(cl.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` :
+                                    `${cl.title ? escapeHtml(cl.title) + ' ' : ''}${escapeHtml(cl.name)}${cl.organisation ? ', ' + escapeHtml(cl.organisation) : ''}`}
                             </div>
                         `).join('') : ''}
                     </div>
@@ -2244,8 +2264,9 @@
                             <div class="section-content">
                                 ${project.coInvestigators.map(contributor => `
                                     <div style="margin-bottom: 3px;">
-                                        ${contributor.title ? escapeHtml(contributor.title) + ' ' : ''}${escapeHtml(contributor.name)}${contributor.organisation ? ', ' + escapeHtml(contributor.organisation) : ''}${contributor.id ?
-                                            ` <a href="https://orcid.org/${escapeHtml(contributor.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                                        ${contributor.id ?
+                                            `<a href="https://orcid.org/${escapeHtml(contributor.id)}" target="_blank" rel="noopener" class="contributor-name-link">${contributor.title ? escapeHtml(contributor.title) + ' ' : ''}${escapeHtml(contributor.name)}${contributor.organisation ? ', ' + escapeHtml(contributor.organisation) : ''}</a> <a href="https://orcid.org/${escapeHtml(contributor.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` :
+                                            `${contributor.title ? escapeHtml(contributor.title) + ' ' : ''}${escapeHtml(contributor.name)}${contributor.organisation ? ', ' + escapeHtml(contributor.organisation) : ''}`}
                                     </div>
                                 `).join('')}
                             </div>
