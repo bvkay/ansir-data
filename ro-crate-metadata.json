@@ -95,7 +95,7 @@
           "@id": "#project-MT03-2020"
         },
         {
-          "@id": "#project-Placeholder-15"
+          "@id": "#project-UA-2017-001"
         },
         {
           "@id": "#project-MT01-2020"
@@ -2973,17 +2973,28 @@
       }
     },
     {
-      "@id": "#shape-placeholder-15",
+      "@id": "#geo-ua-2017-001",
+      "@type": "GeoCoordinates",
+      "latitude": -33.767732,
+      "longitude": 138.966064
+    },
+    {
+      "@id": "#shape-ua-2017-001",
       "@type": "GeoShape",
       "polygon": "-33.33493 138.55224 -33.35903 139.39488 -34.0674 139.39259 -34.4131833 138.8415333 -34.12685 138.57137"
     },
     {
-      "@id": "#place-placeholder-15",
+      "@id": "#place-ua-2017-001",
       "@type": "Place",
       "name": "Burra, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-15"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ua-2017-001"
+        },
+        {
+          "@id": "#shape-ua-2017-001"
+        }
+      ]
     },
     {
       "@id": "#grant-phd-funded-project",
@@ -3013,25 +3024,25 @@
       "identifier": "https://doi.org/10.1016/j.gr.2023.12.012"
     },
     {
-      "@id": "#project-Placeholder-15",
+      "@id": "#project-UA-2017-001",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Burra MT Project",
       "description": "The Burra MT project aims to investigate the 3D crustal architecture of the Adelaide Rift Complex in South Australia using a scale-integrated magnetotelluric (MT) approach to better understand fluid pathways in post-subduction porphyry copper systems. The project will combine long-period AusLAMP MT data with a new dense grid of broadband MT observations to image the electrical resistivity structure of the crust and upper mantle beneath the Burra region, which is known to host both magmatic and sedimentary-hosted copper mineralisation. Plans include the deployment of 82 broadband MT sites across the Northern Mount Lofty Ranges using LEMI-423 instrumentation from ANSIR and the Geological Survey of South Australia, with an additional 42 sites to be acquired using Phoenix MTU-5C systems to increase resolution and coverage.",
-      "identifier": "Placeholder-15",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-15",
+      "identifier": "UA-2017-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=UA-2017-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2018-07-28",
-      "temporalCoverage": "2018-07-28/2021-02-25",
+      "dateCreated": "2018-07-27",
+      "temporalCoverage": "2018-07-27/2021-02-24",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-15"
+        "@id": "#place-ua-2017-001"
       },
       "creator": [
         {
