@@ -362,9 +362,18 @@
       "name": "DAS"
     },
     {
+      "@id": "#geo-ansir-2025-003",
+      "@type": "GeoCoordinates",
+      "latitude": 19.820717,
+      "longitude": 204.539509
+    },
+    {
       "@id": "#place-ansir-2025-003",
       "@type": "Place",
-      "name": "Hawai'i, USA"
+      "name": "Hawai'i, USA",
+      "geo": {
+        "@id": "#geo-ansir-2025-003"
+      }
     },
     {
       "@id": "https://ror.org/01wspgy28",
@@ -459,12 +468,6 @@
       "description": "3 units deployed"
     },
     {
-      "@id": "#instrument-nanometrics-trillium-compact-120s",
-      "@type": "IndividualProduct",
-      "name": "Nanometrics Trillium Compact 120s",
-      "description": "2 units deployed"
-    },
-    {
       "@id": "#project-ANSIR-2025-003",
       "@type": [
         "Dataset",
@@ -522,14 +525,9 @@
         },
         {
           "@id": "#instrument-power-cables"
-        },
-        {
-          "@id": "#instrument-nanometrics-centaur"
-        },
-        {
-          "@id": "#instrument-nanometrics-trillium-compact-120s"
         }
       ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -843,6 +841,12 @@
       "@id": "#instrument-terrasawr",
       "@type": "IndividualProduct",
       "name": "TerraSAWR",
+      "description": "12 units deployed"
+    },
+    {
+      "@id": "#instrument-nanometrics-trillium-compact-120s",
+      "@type": "IndividualProduct",
+      "name": "Nanometrics Trillium Compact 120s",
       "description": "12 units deployed"
     },
     {
