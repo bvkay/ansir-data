@@ -2010,9 +2010,12 @@
                 adjustedLng += 360;
             }
 
-            const marker = L.marker([project.coordinates.lat, adjustedLng], { 
+            // zIndexOffset ensures planning on top, in-progress middle, complete bottom
+            const zOffsets = { 'planning': 2000, 'in-progress': 1000, 'complete': 0 };
+            const marker = L.marker([project.coordinates.lat, adjustedLng], {
                 icon: icon,
-                interactive: true
+                interactive: true,
+                zIndexOffset: zOffsets[project.status] || 0
             }).addTo(map);
 
             // v002: Popup content with XSS-escaped values
