@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v006)
-    Based on: git_projects_v005.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v007)
+    Based on: git_projects_v006.html
 
-    Changes in v006:
-      - Background colour changed to #f2f2f1
-      - Map popup 'View project details' no longer shows GitHub URL on hover
+    Changes in v007:
+      - Contributor hierarchy: contact lead on top, co-leads in header, co-investigators in body
+      - parseContributors now parses contributor_leader field
+      - Co-investigators section moved above Funding in expanded card
       - Method display more prominent (pill style)
       - Funding: org, title, identifier on one line per record
 
@@ -477,6 +478,17 @@
         .project-subtitle {
             font-size: 14px;
             opacity: 0.9;
+        }
+
+        /* v007: Co-leads shown in header below contact lead */
+        .header-co-leads {
+            font-size: 13px;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+
+        .header-co-leads .orcid-link {
+            opacity: 0.85;
         }
 
         /* Status Badges */
@@ -1113,33 +1125,36 @@
         }
 
         // Parse multiple contributors from semicolon-separated fields
+        // v007: Added isLeader field from contributor_leader
         function parseContributors(rawProject) {
             const titles = parseArrayField(rawProject.contributor_honoury_title);
             const names = parseArrayField(rawProject.contributor_name);
             const ids = parseArrayField(rawProject.contributor_id);
             const positions = parseArrayField(rawProject.contributor_position_id);
             const contacts = parseArrayField(rawProject.contributor_is_contact);
+            const leaders = parseArrayField(rawProject.contributor_leader);
             const organisations = parseArrayField(rawProject.organisation_name);
-            
+
             const contributors = [];
-            const maxLength = Math.max(titles.length, names.length, ids.length, positions.length, contacts.length, organisations.length);
-            
+            const maxLength = Math.max(titles.length, names.length, ids.length, positions.length, contacts.length, leaders.length, organisations.length);
+
             for (let i = 0; i < maxLength; i++) {
                 const contributor = {
                     title: titles[i] || '',
                     name: names[i] || '',
                     id: cleanOrcid(ids[i]),
                     position: positions[i] || '',
-                    isContact: contacts[i] && (contacts[i].toLowerCase() === 'true' || contacts[i] === 'TRUE'),
+                    isContact: contacts[i] && String(contacts[i]).toUpperCase() === 'TRUE',
+                    isLeader: leaders[i] && String(leaders[i]).toUpperCase() === 'TRUE',
                     organisation: organisations[i] || ''
                 };
-                
+
                 // Only add if we have at least a name
                 if (contributor.name) {
                     contributors.push(contributor);
                 }
             }
-            
+
             return contributors;
         }
 
@@ -1243,9 +1258,14 @@
             
             // Parse contributors with full details
             const contributors = parseContributors(rawProject);
-            
-            // Find primary contact (main PI)
-            const primaryContact = contributors.find(c => c.isContact) || contributors[0];
+
+            // v007: Categorise contributors into hierarchy
+            // 1. Contact lead: isContact=TRUE (shown prominently at top of card)
+            // 2. Co-leads: isLeader=TRUE but not the contact (shown in header below contact)
+            // 3. Co-investigators: everyone else (shown in expanded body section)
+            const primaryContact = contributors.find(c => c.isContact) || contributors.find(c => c.isLeader) || contributors[0];
+            const coLeads = contributors.filter(c => c.isLeader && c !== primaryContact);
+            const coInvestigators = contributors.filter(c => !c.isLeader && c !== primaryContact);
             
             return {
                 id: rawProject.alternative_identifier_id ? 
@@ -1255,7 +1275,9 @@
                 ansirRef: String(rawProject.alternative_identifier_ansir_code || ''),
                 acronym: String(rawProject.title_acronym || ''),
                 contributors: contributors,
-                lead: primaryContact ? `${primaryContact.title} ${primaryContact.name}`.trim() + 
+                coLeads: coLeads,
+                coInvestigators: coInvestigators,
+                lead: primaryContact ? `${primaryContact.title} ${primaryContact.name}`.trim() +
                      (primaryContact.organisation ? ', ' + primaryContact.organisation : '') : '',
                 leadInstitution: primaryContact ? primaryContact.organisation : '',
                 orcid: primaryContact ? primaryContact.id : null,
@@ -2261,6 +2283,15 @@
                             </button>
                         </h3>
                         ${eAcronym ? `<p class="project-subtitle">${eAcronym}</p>` : ''}
+                        ${project.coLeads && project.coLeads.length > 0 ? `
+                            <div class="header-co-leads">
+                                ${project.coLeads.map(cl => `
+                                    <div>${cl.title ? escapeHtml(cl.title) + ' ' : ''}${escapeHtml(cl.name)}${cl.organisation ? ', ' + escapeHtml(cl.organisation) : ''}${cl.id ?
+                                        ` <a href="https://orcid.org/${escapeHtml(cl.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
                     </div>
                     <div style="display: flex; gap: 4px; flex-shrink: 0; align-items: center;">
                         ${project.status !== 'complete' ? `<span class="project-status-badge status-${project.status}">${escapeHtml(statusDisplayName(project.status))}</span>` : ''}
@@ -2283,7 +2314,21 @@
                     </div>
                 </div>
                 <div class="project-expanded-content">
-                    <!-- v003: Objectives removed — public summary is sufficient -->
+                    <!-- v007: Co-investigators above funding -->
+
+                    ${project.coInvestigators && project.coInvestigators.length > 0 ? `
+                        <div class="expanded-section">
+                            <h4 class="section-title">Co-Investigators</h4>
+                            <div class="section-content">
+                                ${project.coInvestigators.map(contributor => `
+                                    <div style="margin-bottom: 3px;">
+                                        ${contributor.title ? escapeHtml(contributor.title) + ' ' : ''}${escapeHtml(contributor.name)}${contributor.organisation ? ', ' + escapeHtml(contributor.organisation) : ''}${contributor.id ?
+                                            ` <a href="https://orcid.org/${escapeHtml(contributor.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
 
                     ${project.fundingRecords && project.fundingRecords.length > 0 ? `
                         <div class="expanded-section">
@@ -2294,25 +2339,6 @@
                                         ${f.agency ? `<strong>${escapeHtml(f.agency)}</strong>` : ''}${f.agency && f.title ? ': ' : ''}${f.title ? escapeHtml(f.title) : ''}${f.id ? ` (${escapeHtml(f.id)})` : ''}
                                     </div>
                                 `).join('')}
-                            </div>
-                        </div>
-                    ` : ''}
-
-                    ${project.contributors && project.contributors.length > 1 ? `
-                        <div class="expanded-section">
-                            <h4 class="section-title">Co-Investigators</h4>
-                            <div class="section-content">
-                                ${project.contributors.map(contributor => {
-                                    // Skip the primary contact (already shown in main section)
-                                    if (contributor.isContact) return '';
-
-                                    return `
-                                    <div style="margin-bottom: 3px;">
-                                        ${contributor.title ? escapeHtml(contributor.title) + ' ' : ''}${escapeHtml(contributor.name)}${contributor.organisation ? ', ' + escapeHtml(contributor.organisation) : ''}${contributor.id ?
-                                            ` <a href="https://orcid.org/${escapeHtml(contributor.id)}" target="_blank" rel="noopener" class="orcid-link">${orcidIcon}</a>` : ''}
-                                    </div>
-                                    `;
-                                }).filter(Boolean).join('')}
                             </div>
                         </div>
                     ` : ''}
