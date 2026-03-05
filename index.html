@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v003)
-    Based on: git_projects_v002.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v004)
+    Based on: git_projects_v003.html
 
-    Changes in v003:
-      - Removed stats section (moved to main ANSIR page later)
-      - Renamed 'Complete' to 'Finished' throughout
-      - Reduced map legend font size and banner/footer padding
-      - Reduced project card header padding
-      - Data access pill: only shows 'Open' + FDSN Network pill
-      - Removed objectives from expanded card
-      - Renamed 'Networks' to 'FDSN Network'
+    Changes in v004:
+      - Hide status badge for 'Finished' projects (only show Planning/In Progress)
+      - 'Open' pill renamed to 'Data Open'
+      - Method tag: rectangular instead of pill shape
+      - Funding: colon separator instead of em dash
       - Method display more prominent (pill style)
       - Funding: org, title, identifier on one line per record
 
@@ -595,7 +592,7 @@
             font-weight: 600;
             color: var(--white) !important;
             background: var(--primary-bg) !important;
-            border-radius: 12px;
+            border-radius: var(--border-radius-sm);
             padding: var(--spacing-xs) var(--spacing-sm) !important;
             font-size: 11px !important;
             text-transform: uppercase;
@@ -2264,8 +2261,8 @@
                         ${eAcronym ? `<p class="project-subtitle">${eAcronym}</p>` : ''}
                     </div>
                     <div style="display: flex; gap: 4px; flex-shrink: 0; align-items: center;">
-                        <span class="project-status-badge status-${project.status}">${escapeHtml(statusDisplayName(project.status))}</span>
-                        ${project.dataAccess && project.dataAccess.toLowerCase().includes('open') ? `<span class="data-access-badge access-open">Open</span>` : ''}
+                        ${project.status !== 'complete' ? `<span class="project-status-badge status-${project.status}">${escapeHtml(statusDisplayName(project.status))}</span>` : ''}
+                        ${project.dataAccess && project.dataAccess.toLowerCase().includes('open') ? `<span class="data-access-badge access-open">Data Open</span>` : ''}
                         ${project.networks && project.networks.length > 0 ? `<span class="fdsn-badge">FDSN</span>` : ''}
                     </div>
                 </div>
@@ -2292,7 +2289,7 @@
                             <div class="funding-content">
                                 ${project.fundingRecords.map(f => `
                                     <div style="margin-bottom: 3px;">
-                                        ${f.agency ? `<strong>${escapeHtml(f.agency)}</strong>` : ''}${f.agency && f.title ? ' — ' : ''}${f.title ? escapeHtml(f.title) : ''}${f.id ? ` (${escapeHtml(f.id)})` : ''}
+                                        ${f.agency ? `<strong>${escapeHtml(f.agency)}</strong>` : ''}${f.agency && f.title ? ': ' : ''}${f.title ? escapeHtml(f.title) : ''}${f.id ? ` (${escapeHtml(f.id)})` : ''}
                                     </div>
                                 `).join('')}
                             </div>
