@@ -53,7 +53,7 @@
           "@id": "#project-S01-2019"
         },
         {
-          "@id": "#project-Placeholder-05"
+          "@id": "#project-2018-S01"
         },
         {
           "@id": "#project-Placeholder-06"
@@ -1376,17 +1376,28 @@
       }
     },
     {
-      "@id": "#shape-placeholder-05",
+      "@id": "#geo-2018-s01",
+      "@type": "GeoCoordinates",
+      "latitude": -16.017106,
+      "longitude": 127.243652
+    },
+    {
+      "@id": "#shape-2018-s01",
       "@type": "GeoShape",
       "polygon": "-14.7875 126.4954 -16.0501 129.2647 -16.5943 128.4751 -16.6961 125.9231"
     },
     {
-      "@id": "#place-placeholder-05",
+      "@id": "#place-2018-s01",
       "@type": "Place",
       "name": "Kimberley, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-05"
-      }
+      "geo": [
+        {
+          "@id": "#geo-2018-s01"
+        },
+        {
+          "@id": "#shape-2018-s01"
+        }
+      ]
     },
     {
       "@id": "https://doi.org/10.7914/SN/3O_2019",
@@ -1398,29 +1409,34 @@
       "identifier": "https://doi.org/10.7914/SN/3O_2019"
     },
     {
-      "@id": "#project-Placeholder-05",
+      "@id": "#project-2018-S01",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "AKIMBA",
       "description": "Eight continuous broadband stations in the Kimberley region of northwest Australia. Designed to record both infrequent local events and earthquakes at the convergent margin to the north to image in the Australian lithosphere.",
-      "identifier": "Placeholder-05",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-05",
+      "identifier": "2018-S01",
+      "url": "https://bvkay.github.io/ansir-data/?id=2018-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2019-11-29",
-      "temporalCoverage": "2019-11-29/2020-04-29",
+      "dateCreated": "2019-11-28",
+      "temporalCoverage": "2019-11-28/2020-04-28",
       "about": [
         {
           "@id": "#method-seismology"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-05"
+        "@id": "#place-2018-s01"
       },
       "creator": [
         {
           "@id": "https://orcid.org/0000-0001-5494-2296"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-auscope"
         }
       ],
       "instrument": [
