@@ -71,7 +71,7 @@
           "@id": "#project-ANSIR-2022-001"
         },
         {
-          "@id": "#project-Placeholder-11"
+          "@id": "#project-ANSIR-2022-002"
         },
         {
           "@id": "#project-MT02-2020"
@@ -2072,25 +2072,42 @@
       }
     },
     {
-      "@id": "#shape-placeholder-11",
+      "@id": "#geo-ansir-2022-002",
+      "@type": "GeoCoordinates",
+      "latitude": -31.075138,
+      "longitude": 132.467651
+    },
+    {
+      "@id": "#shape-ansir-2022-002",
       "@type": "GeoShape",
       "polygon": "-31.52957015 131.8817282 -31.53131734 132.3506857 -30.84900257 132.9100787 -30.84784933 133.3160539 -30.63292048 132.7533913 -30.70583935 132.6026898"
     },
     {
-      "@id": "#place-placeholder-11",
+      "@id": "#place-ansir-2022-002",
       "@type": "Place",
       "name": "Western Gawler Craton, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-11"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ansir-2022-002"
+        },
+        {
+          "@id": "#shape-ansir-2022-002"
+        }
+      ]
     },
     {
-      "@id": "#grant-accelerated-discovery-initiative-project",
+      "@id": "#grant-rd02-296-gp",
       "@type": "Grant",
-      "name": "Accelerated Discovery Initiative project",
+      "name": "Accelerated Discovery Initiative (Magnetotelluric, Passive Seismic and Magnetic Modelling Study)",
+      "identifier": "RD02/296-GP",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
+    },
+    {
+      "@id": "#funder-western-areas-ltd",
+      "@type": "Organization",
+      "name": "Western Areas Ltd"
     },
     {
       "@id": "https://doi.org/10.7914/6j8j-9f06",
@@ -2102,18 +2119,18 @@
       "identifier": "https://doi.org/10.7914/6j8j-9f06"
     },
     {
-      "@id": "#project-Placeholder-11",
+      "@id": "#project-ANSIR-2022-002",
       "@type": [
         "Dataset",
         "Project"
       ],
-      "name": "Western Gawler Magnetotelluric & Passive Seismic Project",
+      "name": "Western Gawler Magnetotelluric and Passive Seismic Project",
       "description": "The discovery of magmatic Ni-Cu sulphide in the Western Gawler Craton, confirmed the presence of significant, intrusive-hosted magmatic Ni-Cu sulphide in the Fowler Domain. The primary aim of this proposal is to develop a 3D model the Fowler Domain crust from the near surface to the Moho to identify the regional structural controls on emplacement of Ni-Cu-PGE prospective mafic-ultramafic intrusions. This proposal is in a collaboration between Western Areas and the University of Adelaide to complete three regionally-spaced magnetotelluric (MT) and passive seismic transects across key areas of the Fowler Domain. Such new data sets, coupled with legacy MT data, will be used to generate detailed 2D and 3D resistivity models of the Fowler Domain, with resolution from the near surface to the Moho. Passive seismic data will also constrain the cover sequences that can be introduced into the resistivity inversion. The project will integrate and interpret all the new and legacy datasets simultaneously to develop a 3D model with both sections and 3D views as outputs",
-      "identifier": "Placeholder-11",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-11",
+      "identifier": "ANSIR-2022-002",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-002",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-03-30",
-      "temporalCoverage": "2022-03-30/2022-03-30",
+      "dateCreated": "2022-03-29",
+      "temporalCoverage": "2022-03-29/2022-03-29",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -2123,7 +2140,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-11"
+        "@id": "#place-ansir-2022-002"
       },
       "creator": [
         {
@@ -2141,7 +2158,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-project"
+          "@id": "#grant-rd02-296-gp"
+        },
+        {
+          "@id": "#grant-rd02-296-gp"
         }
       ],
       "instrument": [
