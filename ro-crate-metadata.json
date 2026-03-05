@@ -77,7 +77,7 @@
           "@id": "#project-MT02-2020"
         },
         {
-          "@id": "#project-Placeholder-12"
+          "@id": "#project-S01-2020"
         },
         {
           "@id": "#project-S03-2023"
@@ -2204,6 +2204,12 @@
       }
     },
     {
+      "@id": "#geo-mt02-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -31.094102,
+      "longitude": 140.932617
+    },
+    {
       "@id": "#shape-mt02-2020",
       "@type": "GeoShape",
       "polygon": "-29.5 139 -29.5 140.5 -29.758 141 -30.765 141.828 -31.765 142.3 -32.754 141 -32.754 140.22 -32 139.758 -31.241 139.262"
@@ -2212,9 +2218,14 @@
       "@id": "#place-mt02-2020",
       "@type": "Place",
       "name": "Curnamona Province, Australia",
-      "geo": {
-        "@id": "#shape-mt02-2020"
-      }
+      "geo": [
+        {
+          "@id": "#geo-mt02-2020"
+        },
+        {
+          "@id": "#shape-mt02-2020"
+        }
+      ]
     },
     {
       "@id": "#instrument-mtu-5c",
@@ -2255,8 +2266,8 @@
       "identifier": "MT02-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT02-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2021-05-29",
-      "temporalCoverage": "2021-05-29/2022-12-29",
+      "dateCreated": "2021-05-28",
+      "temporalCoverage": "2021-05-28/2022-12-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -2317,17 +2328,28 @@
       }
     },
     {
-      "@id": "#shape-placeholder-12",
+      "@id": "#geo-s01-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -31.168747,
+      "longitude": 140.493164
+    },
+    {
+      "@id": "#shape-s01-2020",
       "@type": "GeoShape",
       "polygon": "-29.5 139 -29.5 140.5 -29.758 141 -30.765 141.828 -31.765 142.3 -32.754 141 -32.754 140.22 -32 139.758 -31.241 139.262"
     },
     {
-      "@id": "#place-placeholder-12",
+      "@id": "#place-s01-2020",
       "@type": "Place",
       "name": "Curnamona Province, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-12"
-      }
+      "geo": [
+        {
+          "@id": "#geo-s01-2020"
+        },
+        {
+          "@id": "#shape-s01-2020"
+        }
+      ]
     },
     {
       "@id": "#journal-tectonophysics",
@@ -2355,25 +2377,25 @@
       "identifier": "https://doi.org/10.7914/6q5b-va48"
     },
     {
-      "@id": "#project-Placeholder-12",
+      "@id": "#project-S01-2020",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Curnamona Downward Looking Telescope: Curnamona Cube Passive Seismic Program",
       "description": "Running alongside the MT deployments, the Curnamona Cube project is also installing 200 passive seismic stations across the same 20 km grid. These instruments are being used to record ambient seismic noise and teleseismic events, which will allow researchers to develop detailed models of seismic velocity variations throughout the crust and upper mantle. This dual approach enables a multi-parameter perspective on lithospheric structure, enhancing resolution and interpretability. Additionally, a pilot observatory known as the Curnamona SuperSite is being established near the Kalkaroo deposit. At this site, a smaller grid of seismometers, MT instruments, and heat-flow probes are co-located to allow long-term monitoring and advanced Earth imaging experiments.\n",
-      "identifier": "Placeholder-12",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-12",
+      "identifier": "S01-2020",
+      "url": "https://bvkay.github.io/ansir-data/?id=S01-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-03-30",
-      "temporalCoverage": "2022-03-30/2022-07-30",
+      "dateCreated": "2022-03-29",
+      "temporalCoverage": "2022-03-29/2022-07-29",
       "about": [
         {
           "@id": "#method-passive-seismic"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-12"
+        "@id": "#place-s01-2020"
       },
       "creator": [
         {
