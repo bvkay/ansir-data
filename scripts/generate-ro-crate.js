@@ -206,14 +206,20 @@ function buildGraph(data) {
           personEntity.identifier = contrib.orcid;
         }
 
-        // Organisation affiliation
+        // Organisation affiliation (use ROR as @id when available)
         if (contrib.organisation) {
-          const orgId = localId('org', contrib.organisation);
-          addEntity({
+          const orgId = contrib.organisationRor && contrib.organisationRor.includes('ror.org')
+            ? contrib.organisationRor
+            : localId('org', contrib.organisation);
+          const orgEntity = {
             '@id': orgId,
             '@type': 'Organization',
             'name': contrib.organisation
-          });
+          };
+          if (contrib.organisationRor && contrib.organisationRor.includes('ror.org')) {
+            orgEntity.identifier = contrib.organisationRor;
+          }
+          addEntity(orgEntity);
           personEntity.affiliation = { '@id': orgId };
         }
 
@@ -245,12 +251,18 @@ function buildGraph(data) {
         }
 
         if (fund.agency) {
-          const funderOrgId = localId('funder', fund.agency);
-          addEntity({
+          const funderOrgId = fund.agencyRor && fund.agencyRor.includes('ror.org')
+            ? fund.agencyRor
+            : localId('funder', fund.agency);
+          const funderEntity = {
             '@id': funderOrgId,
             '@type': 'Organization',
             'name': fund.agency
-          });
+          };
+          if (fund.agencyRor && fund.agencyRor.includes('ror.org')) {
+            funderEntity.identifier = fund.agencyRor;
+          }
+          addEntity(funderEntity);
           grantEntity.funder = { '@id': funderOrgId };
         }
 
