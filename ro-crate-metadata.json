@@ -3218,9 +3218,18 @@
       }
     },
     {
+      "@id": "#geo-mt04-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -34.771371,
+      "longitude": 136.472168
+    },
+    {
       "@id": "#place-mt04-2020",
       "@type": "Place",
-      "name": "Spencer Gulf, Australia"
+      "name": "Spencer Gulf, Australia",
+      "geo": {
+        "@id": "#geo-mt04-2020"
+      }
     },
     {
       "@id": "https://ror.org/04v7hvq31",
@@ -3238,20 +3247,12 @@
       }
     },
     {
-      "@id": "#person-jake-perez",
-      "@type": "Person",
-      "name": "Dr Jake Perez",
-      "affiliation": {
-        "@id": "https://ror.org/04v7hvq31"
-      }
-    },
-    {
       "@id": "https://orcid.org/0000-0002-8678-412X",
       "@type": "Person",
-      "name": "Dr Stephan Thiel",
+      "name": "Dr Jake Perez",
       "identifier": "https://orcid.org/0000-0002-8678-412X",
       "affiliation": {
-        "@id": "#org-geological-survey-of-south-australia"
+        "@id": "https://ror.org/04v7hvq31"
       }
     },
     {
@@ -3295,8 +3296,8 @@
       "identifier": "MT04-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT04-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-10-30",
-      "temporalCoverage": "2020-10-30/2020-10-30",
+      "dateCreated": "2020-10-29",
+      "temporalCoverage": "2020-10-29/2020-10-29",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -3316,9 +3317,6 @@
           "@id": "https://orcid.org/0000-0002-7743-7812"
         },
         {
-          "@id": "#person-jake-perez"
-        },
-        {
           "@id": "https://orcid.org/0000-0002-8678-412X"
         },
         {
@@ -3326,6 +3324,9 @@
         },
         {
           "@id": "https://orcid.org/0000-0002-9738-7277"
+        },
+        {
+          "@id": "#person-ben-kay"
         }
       ],
       "funding": [
@@ -3354,6 +3355,15 @@
         },
         {
           "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries"
+        },
+        {
+          "@id": "#instrument-obem"
+        },
+        {
+          "@id": "#instrument-lemi-423"
+        },
+        {
+          "@id": "#instrument-lemi-120-magnetic-coils"
         }
       ],
       "hasPart": [
