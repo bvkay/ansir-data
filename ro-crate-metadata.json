@@ -62,7 +62,7 @@
           "@id": "#project-ANSIR-2023-001"
         },
         {
-          "@id": "#project-Placeholder-08"
+          "@id": "#project-ANSIR-2023-002"
         },
         {
           "@id": "#project-Placeholder-09"
@@ -1697,9 +1697,28 @@
       }
     },
     {
-      "@id": "#place-placeholder-08",
+      "@id": "#geo-ansir-2023-002",
+      "@type": "GeoCoordinates",
+      "latitude": 35.197887,
+      "longitude": -3.084412
+    },
+    {
+      "@id": "#shape-ansir-2023-002",
+      "@type": "GeoShape",
+      "polygon": "35.20799 -3.26157 35.34028 -3.03223 35.13390 -2.88666 35.07098 -3.19565"
+    },
+    {
+      "@id": "#place-ansir-2023-002",
       "@type": "Place",
-      "name": "Nador, Morocco"
+      "name": "Nador, Morocco",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2023-002"
+        },
+        {
+          "@id": "#shape-ansir-2023-002"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/02jd4k732",
@@ -1717,25 +1736,25 @@
       }
     },
     {
-      "@id": "#project-Placeholder-08",
+      "@id": "#project-ANSIR-2023-002",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Morocco - Nador MT Geothermal Array",
       "description": "",
-      "identifier": "Placeholder-08",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-08",
+      "identifier": "ANSIR-2023-002",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-002",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-10-29",
-      "temporalCoverage": "2023-10-29/2023-12-29",
+      "dateCreated": "2023-10-28",
+      "temporalCoverage": "2023-10-28/2023-12-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-08"
+        "@id": "#place-ansir-2023-002"
       },
       "creator": [
         {
