@@ -468,6 +468,12 @@
       "description": "3 units deployed"
     },
     {
+      "@id": "#instrument-nanometrics-trillium-compact-120s",
+      "@type": "IndividualProduct",
+      "name": "Nanometrics Trillium Compact 120s",
+      "description": "2 units deployed"
+    },
+    {
       "@id": "#project-ANSIR-2025-003",
       "@type": [
         "Dataset",
@@ -478,8 +484,8 @@
       "identifier": "ANSIR-2025-003",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-003",
       "creativeWorkStatus": "Planning",
-      "dateCreated": "2026-06-30",
-      "temporalCoverage": "2026-06-30/2027-06-30",
+      "dateCreated": "2026-06-29",
+      "temporalCoverage": "2026-06-29/2027-06-29",
       "about": [
         {
           "@id": "#method-das"
@@ -525,6 +531,9 @@
         },
         {
           "@id": "#instrument-power-cables"
+        },
+        {
+          "@id": "#instrument-nanometrics-trillium-compact-120s"
         }
       ],
       "conditionsOfAccess": "embargoes",
@@ -841,12 +850,6 @@
       "@id": "#instrument-terrasawr",
       "@type": "IndividualProduct",
       "name": "TerraSAWR",
-      "description": "12 units deployed"
-    },
-    {
-      "@id": "#instrument-nanometrics-trillium-compact-120s",
-      "@type": "IndividualProduct",
-      "name": "Nanometrics Trillium Compact 120s",
       "description": "12 units deployed"
     },
     {
