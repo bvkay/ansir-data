@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T12:02:50.988Z",
+  "exported": "2026-03-05T12:03:03.057Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 46,
   "data": [
@@ -1987,7 +1987,7 @@
       "location": {
         "region": "Auckland Volcanic Field",
         "country": "New Zealand",
-        "coordinates": "",
+        "coordinates": "-36.988500, 175.039673",
         "polygon": "-37.6303, 175.8928; -37.335, 174.7152; -36.451, 174.2392; -36.3195, 174.6987; -36.6651, 175.48; -37.2432, 175.8219"
       },
       "contributors": [
