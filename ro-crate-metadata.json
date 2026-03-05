@@ -459,6 +459,12 @@
       "description": "3 units deployed"
     },
     {
+      "@id": "#instrument-nanometrics-trillium-compact-120s",
+      "@type": "IndividualProduct",
+      "name": "Nanometrics Trillium Compact 120s",
+      "description": "2 units deployed"
+    },
+    {
       "@id": "#project-ANSIR-2025-003",
       "@type": [
         "Dataset",
@@ -516,6 +522,12 @@
         },
         {
           "@id": "#instrument-power-cables"
+        },
+        {
+          "@id": "#instrument-nanometrics-centaur"
+        },
+        {
+          "@id": "#instrument-nanometrics-trillium-compact-120s"
         }
       ],
       "provider": {
@@ -831,12 +843,6 @@
       "@id": "#instrument-terrasawr",
       "@type": "IndividualProduct",
       "name": "TerraSAWR",
-      "description": "12 units deployed"
-    },
-    {
-      "@id": "#instrument-nanometrics-trillium-compact-120s",
-      "@type": "IndividualProduct",
-      "name": "Nanometrics Trillium Compact 120s",
       "description": "12 units deployed"
     },
     {
