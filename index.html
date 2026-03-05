@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v010)
-    Based on: git_projects_v009.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v011)
+    Based on: git_projects_v010.html
+
+    Changes in v011:
+      - Fixed empty space after collapsing project cards (iframe height now shrinks)
+      - Removed GPU compositing hacks (translate3d, will-change) that interfered
+        with layout recalculation after card collapse
+      - sendHeightToParent() now temporarily collapses body to measure true content height
 
     Changes in v010:
       - Full academic citations for publications, datasets, and networks
@@ -129,8 +135,6 @@
             font-display: swap;
             /* Smooth scrolling behavior */
             scroll-behavior: smooth;
-            /* GPU acceleration for performance */
-            transform: translate3d(0, 0, 0);
         }
 
         /* ============================================ */
@@ -406,9 +410,6 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             cursor: pointer;
             position: relative;
-            /* Performance optimization */
-            will-change: transform;
-            transform: translateZ(0);
         }
 
         /* Hidden state for filtered projects - seamless transition */
@@ -1496,13 +1497,12 @@
         function sendHeightToParent() {
             if (!IS_EMBEDDED) return;
             try {
-                // Use the larger of body and documentElement to capture full content
-                const height = Math.max(
-                    document.body.scrollHeight,
-                    document.body.offsetHeight,
-                    document.documentElement.scrollHeight,
-                    document.documentElement.offsetHeight
-                );
+                // Temporarily shrink body so scrollHeight reflects actual content,
+                // not the iframe's current (possibly too-tall) viewport.
+                // Without this, scrollHeight never decreases after card collapse.
+                document.body.style.height = '1px';
+                const height = document.body.scrollHeight;
+                document.body.style.height = '';
                 // Only send if height actually changed (avoid message spam)
                 if (height !== lastSentHeight && height > 0) {
                     lastSentHeight = height;
