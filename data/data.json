@@ -1,8 +1,8 @@
 {
   "success": true,
-  "exported": "2026-03-05T05:32:34.458Z",
+  "exported": "2026-03-05T06:47:48.816Z",
   "source": "ANSIR_Projects_MasterList",
-  "projectCount": 43,
+  "projectCount": 46,
   "data": [
     {
       "id": "1",
@@ -10,7 +10,7 @@
       "title": "Southern Alps Monitoring of Weather-Influenced Seismicity and Erosion",
       "acronym": "SAMWISE",
       "description": "Our project focuses on studying seismic activity in New Zealand's Southern Alps/Kā Tiritiri o te Moana by collecting and analyzing new seismic data. We will expand the current seismometer network, develop high-quality earthquake datasets, and investigate environmental signals like landslides and avalanches. By using advanced modeling techniques, we aim to understand how surface changes, such as glacial retreat, influence seismicity and crustal deformation.",
-      "status": "Planning",
+      "status": "Complete",
       "startDate": "2025-09-28",
       "endDate": "2026-10-29",
       "methods": [
@@ -20,7 +20,7 @@
       "location": {
         "region": "Central Southern Alps",
         "country": "New Zealand",
-        "coordinates": "-43.680070, 170.341644",
+        "coordinates": "-43.683143, 170.352631",
         "polygon": "-43.8, 170.1; -43.55, 170.1; -43.55, 170.6; -43.8, 170.6"
       },
       "contributors": [
@@ -93,11 +93,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/0zmj-7e94",
-          "type": "fdsn_network",
-          "title": "Southern Alps Monitoring of Weather-Influenced Seismicity and Erosion",
-          "authors": "Konstantinos Michailos, Meghan Miller, John Townend, Calum John Chamberlain",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2025"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -223,9 +219,9 @@
       "title": "Ōkataina Caldera Seismic Imaging",
       "acronym": "",
       "description": "A temporary network of seismic nodes focussed on Ōkataina caldera volcano in the North Island of Aotearoa New Zealand. We seek to image the volcano in detail and detect local earthquakes to improve our knowledge of the volcano's structure and processes and the hazard that it poses.",
-      "status": "Planning",
-      "startDate": "2025-09-25",
-      "endDate": "2026-03-26",
+      "status": "In Progress",
+      "startDate": "2025-09-24",
+      "endDate": "2026-03-25",
       "methods": [
         "Passive Seismic"
       ],
@@ -233,8 +229,8 @@
       "location": {
         "region": "Ōkataina Caldera",
         "country": "New Zealand",
-        "coordinates": "-38.1, 176.48",
-        "polygon": ""
+        "coordinates": "-38.125645, 176.496735",
+        "polygon": "-38.21094, 176.54892; -38.12456, 176.36627; -38.03917, 176.45279; -38.11484, 176.63818"
       },
       "contributors": [
         {
@@ -393,11 +389,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/37v8-hv88",
-          "type": "fdsn_network",
-          "title": "Wairakei Earthquake and Tomography Array (WETA)",
-          "authors": "Chengxin Jiang, Finnigan Illsley-Kemp, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -421,7 +413,7 @@
       "location": {
         "region": "South Australia",
         "country": "Australia",
-        "coordinates": "",
+        "coordinates": "-34.512498, 137.109375",
         "polygon": "-34.867, 135.6581; -33.5064, 136.7064; -32.4916, 138.1907; -33.5206, 138.063; -35.2944, 138.553; -35.9231, 137.5602; -35.7619, 136.6848"
       },
       "contributors": [
@@ -471,11 +463,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/9j20-yq91",
-          "type": "fdsn_network",
-          "title": "Seismic Network Around Kangaroo Eyre Yorke",
-          "authors": "Caroline M. Eakin, Robert Pickle",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -537,19 +525,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/t2z3-2m87",
-          "type": "fdsn_network",
-          "title": "Lake George Seismic Nodal Array",
-          "authors": "Chengxin Jiang, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250046",
-          "type": "journal_article",
-          "title": "Illuminating Subsurface Structures Beneath Lake George Fault Zone, Southeast Australia with Traffic Noise",
-          "authors": "Jiang, C., Miller, M. S.",
-          "journal": "Seismological Research Letters",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "open",
@@ -627,27 +607,15 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220240322",
-          "type": "journal_article",
-          "title": "The South Island Seismology at the Speed of Light Experiment (SISSLE): Distributed Acoustic Sensing Across and Along the Alpine Fault, South Westland, New Zealand",
-          "authors": "Miller, M. S., Townend, J., Lai, V. H.",
-          "journal": "Seismological Research Letters",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2024JH000356",
-          "type": "journal_article",
-          "title": "Unsupervised Coherent Noise Removal From Seismological Distributed Acoustic Sensing Data",
-          "authors": "Konietzny, S., Lai, V. H., Miller, M. S., Townend, J., Harmeling, S.",
-          "journal": "Journal of Geophysical Research: Machine Learning and Computation",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/bfp8-xv25",
-          "type": "fdsn_network",
-          "title": "South Island Seismology at the Speed of Light Experiment",
-          "authors": "Meghan Miller, Voon Hui Lai, John Townend",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -756,8 +724,8 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Linkage Project",
-          "identifier": "LP170100890",
+          "title": "ARC Linkage Project LP170100890",
+          "identifier": "",
           "identifierType": "",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
@@ -789,27 +757,35 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220220323",
-          "type": "journal_article",
-          "title": "Southwest Australia Seismic Network (SWAN): Recording Earthquakes in Australia’s Most Active Seismic Zone",
-          "authors": "Miller, M. S., Pickle, R., Murdie, R., Yuan, H., Allen, T. I., Gessner, K., Kennett, B. L. N., Whitney, J.",
-          "journal": "Seismological Research Letters",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1093/gji/ggad035",
-          "type": "journal_article",
-          "title": "Refining the Moho across the Australian continent",
-          "authors": "Kennett, B. L. N., Gorbatov, A., Yuan, H., Agrawal, S., Murdie, R., Doublier, M. P., Eakin, C. M., Miller, M. S., Zhao, L., Czarnota, K., O’Donnell, J. P., Dentith, M., Gessner, K.",
-          "journal": "Geophysical Journal International",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/2P_2020",
-          "type": "fdsn_network",
-          "title": "South West Australia Network",
-          "authors": "Meghan Miller, Trevor Allen, Ruth Murdie, Klaus Gessner, Huaiyu Yuan, Brian Kennett, Robert Pickle",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2020"
+          "type": "fdsn_network"
+        },
+        {
+          "identifier": "https://doi.org/10.59350/1evzk-y6b17",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0120250054",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250316",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1029/2025gl117119",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250308",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -824,8 +800,8 @@
       "acronym": "AKIMBA",
       "description": "Eight continuous broadband stations in the Kimberley region of northwest Australia. Designed to record both infrequent local events and earthquakes at the convergent margin to the north to image in the Australian lithosphere.",
       "status": "Complete",
-      "startDate": "2019-11-28",
-      "endDate": "2020-04-28",
+      "startDate": "2019-11-29",
+      "endDate": "2020-04-29",
       "methods": [
         "Seismology"
       ],
@@ -845,8 +821,8 @@
           "organisation": "Australian National University",
           "organisationRor": "https://ror.org/019wvm592",
           "organisationRole": "Lead Research Organisation",
-          "isContact": true,
-          "isLeader": true
+          "isContact": false,
+          "isLeader": false
         }
       ],
       "funding": [],
@@ -860,19 +836,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1093/gji/ggad035",
-          "type": "journal_article",
-          "title": "Refining the Moho across the Australian continent",
-          "authors": "Kennett, B. L. N., Gorbatov, A., Yuan, H., Agrawal, S., Murdie, R., Doublier, M. P., Eakin, C. M., Miller, M. S., Zhao, L., Czarnota, K., O’Donnell, J. P., Dentith, M., Gessner, K.",
-          "journal": "Geophysical Journal International",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/3O_2019",
-          "type": "fdsn_network",
-          "title": "AKIMBA",
-          "authors": "Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2019"
+          "type": "fdsn_network"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0120250054",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250316",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -887,8 +863,8 @@
       "acronym": "",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity along with avalanche and landslide detection along highway SH94 to Milford Sound in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator.",
       "status": "Complete",
-      "startDate": "2024-08-27",
-      "endDate": "2024-09-26",
+      "startDate": "2024-08-29",
+      "endDate": "2024-09-28",
       "methods": [
         "DAS",
         "Passive Seismic"
@@ -909,8 +885,8 @@
           "organisation": "Australian National University",
           "organisationRor": "https://ror.org/019wvm592",
           "organisationRole": "Lead Research Organisation",
-          "isContact": true,
-          "isLeader": true
+          "isContact": false,
+          "isLeader": false
         },
         {
           "name": "Voon Hui Lai",
@@ -941,11 +917,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/7b9m-1d60",
-          "type": "fdsn_network",
-          "title": "Fiordland Seismological Sounding of Landslides and Earthquakes (FISSLE)",
-          "authors": "Meghan Miller, John Townend, Voon Hui Lai",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2024"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -959,9 +931,9 @@
       "title": "Morocco - Atlas Mountains MT Project",
       "acronym": "",
       "description": "This ongoing joint project between ONHYM, the National Office of Hydrocarbons and Mines, Mohamed V University and the University of Adelaide is to map the geo-electrical structure of the High Atlas Mountains in Morocco.",
-      "status": "In Progress",
-      "startDate": "2024-12-29",
-      "endDate": "2025-07-29",
+      "status": "Complete",
+      "startDate": "2024-12-30",
+      "endDate": "2025-07-30",
       "methods": [
         "Magnetotelluric"
       ],
@@ -982,7 +954,7 @@
           "organisationRor": "https://ror.org/03xc55g68",
           "organisationRole": "Lead Research Organisation",
           "isContact": false,
-          "isLeader": true
+          "isLeader": false
         },
         {
           "name": "Graham Heinson",
@@ -992,8 +964,8 @@
           "organisation": "University of Adelaide",
           "organisationRor": "https://ror.org/00892tw58",
           "organisationRole": "Other Research Organisation",
-          "isContact": true,
-          "isLeader": true
+          "isContact": false,
+          "isLeader": false
         },
         {
           "name": "Ben Kay",
@@ -1051,8 +1023,8 @@
       "acronym": "NADOR",
       "description": "",
       "status": "Complete",
-      "startDate": "2023-10-28",
-      "endDate": "2023-12-28",
+      "startDate": "2023-10-29",
+      "endDate": "2023-12-29",
       "methods": [
         "Magnetotelluric"
       ],
@@ -1094,8 +1066,8 @@
           "organisation": "National Office of Hydrocarbons and Mines",
           "organisationRor": "https://ror.org/02jd4k732",
           "organisationRole": "Other Research Organisation",
-          "isContact": true,
-          "isLeader": true
+          "isContact": false,
+          "isLeader": false
         },
         {
           "name": "Ben Kay",
@@ -1153,8 +1125,8 @@
       "acronym": "SUD",
       "description": "This project proposes a broadband magnetotelluric (MT) survey along a 185 km transect across the western margin of the West African Craton (WAC), extending from the Dakhla Coastal Basin through the Adrar Souttouf to the Reguibat Ridge. A total of 45 MT stations will be deployed, spaced at approximately 5 km intervals, with tighter spacing of 2.5 km in areas of known mineral prospectivity. The survey targets a geologically diverse region that includes Mesozoic basins, Ediacaran metamorphic complexes, and Archean craton, intersecting key structures associated with rare earth element (REE), gold, platinum group element (PGE), and iron oxide mineral systems. Data will be collected using ANSIR LEMI-423 instruments with Ag-AgCl electrodes and LEMI-120 magnetic coils. This work forms part of a collaboration between the University of Adelaide and Morocco’s Office National des Hydrocarbures et des Mines (ONHYM), and aims to generate new geophysical insights in a frontier area for exploration.",
       "status": "Complete",
-      "startDate": "2023-12-30",
-      "endDate": "2024-02-28",
+      "startDate": "2023-12-31",
+      "endDate": "2024-02-29",
       "methods": [
         "Magnetotelluric"
       ],
@@ -1196,8 +1168,8 @@
           "organisation": "National Office of Hydrocarbons and Mines",
           "organisationRor": "https://ror.org/02jd4k732",
           "organisationRole": "",
-          "isContact": true,
-          "isLeader": true
+          "isContact": false,
+          "isLeader": false
         },
         {
           "name": "Ben Kay",
@@ -1250,13 +1222,13 @@
     },
     {
       "id": "14",
-      "ansirCode": "Placeholder-10",
+      "ansirCode": "ANSIR-2022-001",
       "title": "Vulcan Magnetotelluric & Passive Seismic Array",
       "acronym": "VUL",
       "description": "FMG Resources Pty Ltd (FMG) was successful in securing Round 2 Accelerated Discovery Initiative (ADI) funding for its proposed Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry research collaboration project with the University of Adelaide (UoA), where new passive seismic and magnetotelluric data were collected across the Vulcan prospect in South Australia.",
       "status": "Complete",
-      "startDate": "2021-12-27",
-      "endDate": "2022-02-24",
+      "startDate": "2022-02-08",
+      "endDate": "2022-02-23",
       "methods": [
         "Passive Seismic",
         "Magnetotelluric"
@@ -1309,7 +1281,7 @@
       "funding": [
         {
           "agency": "SA Department for Energy and Mining",
-          "title": "Accelerated Discovery Initiative project \"Associated RFR:0006011106 Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry\"",
+          "title": "Accelerated Discovery Initiative project",
           "identifier": "",
           "identifierType": "Contract",
           "agencyRor": "https://ror.org/04g3scy39",
@@ -1362,43 +1334,23 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2378132",
-          "type": "journal_article",
-          "title": "Magnetotelluric imaging of an iron-oxide copper gold (IOCG) deposit under thick cover",
-          "authors": "Kay, B., Heinson, G., Boren, G., Liu, Y., Carter, S., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2371001",
-          "type": "journal_article",
-          "title": "Ambient noise tomography of an iron-oxide copper–gold (IOCG) deposit under thick cover",
-          "authors": "Olivier, G., Heinson, G., Kay, B., Boren, G., Liu, Y., Carter, S., Jones, T., Dales, P., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2354209",
-          "type": "journal_article",
-          "title": "Natural source-field induced polarisation exploration of an iron-oxide copper-gold (IOCG) deposit under thick cover",
-          "authors": "Liu, Y., Heinson, G., Kay, B., Boren, G., Carter, S., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2391571",
-          "type": "journal_article",
-          "title": "Fuzzy c-mean (FCM) integration of geophysical data from an iron-oxide copper gold (IOCG) deposit under thick cover",
-          "authors": "Carter, S., Heinson, G., Kay, B., Boren, G., Liu, Y., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/xnz7-th21",
-          "type": "fdsn_network",
-          "title": "Vulcan MT & Passive Seismic Array",
-          "authors": "Ben Kay, Graham Heinson, Goran Boren",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "open",
@@ -1413,8 +1365,8 @@
       "acronym": "",
       "description": "The discovery of magmatic Ni-Cu sulphide in the Western Gawler Craton, confirmed the presence of significant, intrusive-hosted magmatic Ni-Cu sulphide in the Fowler Domain. The primary aim of this proposal is to develop a 3D model the Fowler Domain crust from the near surface to the Moho to identify the regional structural controls on emplacement of Ni-Cu-PGE prospective mafic-ultramafic intrusions. This proposal is in a collaboration between Western Areas and the University of Adelaide to complete three regionally-spaced magnetotelluric (MT) and passive seismic transects across key areas of the Fowler Domain. Such new data sets, coupled with legacy MT data, will be used to generate detailed 2D and 3D resistivity models of the Fowler Domain, with resolution from the near surface to the Moho. Passive seismic data will also constrain the cover sequences that can be introduced into the resistivity inversion. The project will integrate and interpret all the new and legacy datasets simultaneously to develop a 3D model with both sections and 3D views as outputs",
       "status": "Complete",
-      "startDate": "2022-03-29",
-      "endDate": "2022-03-29",
+      "startDate": "2022-03-30",
+      "endDate": "2022-03-30",
       "methods": [
         "Passive Seismic",
         "Magnetotelluric"
@@ -1447,7 +1399,7 @@
           "organisationRor": "https://ror.org/00892tw58",
           "organisationRole": "Lead Research Organisation",
           "isContact": false,
-          "isLeader": true
+          "isLeader": false
         },
         {
           "name": "Chengxin Jiang",
@@ -1520,11 +1472,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/6j8j-9f06",
-          "type": "fdsn_network",
-          "title": "Western Gawler MT & Passive Seismic Array",
-          "authors": "Ben Kay, Graham Heinson, Goran Boren",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -1539,8 +1487,8 @@
       "acronym": "",
       "description": "The Curnamona Cube project is deploying 200 broadband magnetotelluric (MT) stations across the Curnamona Province on a 20 km grid, forming part of a broader deep Earth imaging initiative covering 90,000 km² across South Australia and New South Wales. This work is led by the University of Adelaide, in partnership with ANU, the University of Melbourne, Geoscience Australia, the State Geological Surveys, and several industry collaborators. The survey aims to image the electrical resistivity structure of the crust and upper mantle to depths of 300 km, offering a high-resolution view of a geologically complex and underexplored province. Early deployments, completed via helicopter and 4WD from Arkaroola to the SA-NSW border, are already feeding into what will become one of the most comprehensive geophysical datasets in Australia.\n",
       "status": "Complete",
-      "startDate": "2021-05-28",
-      "endDate": "2022-12-28",
+      "startDate": "2021-05-29",
+      "endDate": "2022-12-29",
       "methods": [
         "Magnetotelluric"
       ],
@@ -1572,7 +1520,7 @@
           "organisationRor": "https://ror.org/00892tw58",
           "organisationRole": "Lead Research Organisation",
           "isContact": false,
-          "isLeader": true
+          "isLeader": false
         },
         {
           "name": "Goran Boren",
@@ -1630,11 +1578,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2025.04.001",
-          "type": "journal_article",
-          "title": "Lithospheric architecture of the Curnamona Province, Australia",
-          "authors": "Kay, B., Heinson, G., Boren, G., Liu, Y., Brand, K., Thiel, S., Williams, H.",
-          "journal": "Gondwana Research",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -1649,8 +1593,8 @@
       "acronym": "",
       "description": "Running alongside the MT deployments, the Curnamona Cube project is also installing 200 passive seismic stations across the same 20 km grid. These instruments are being used to record ambient seismic noise and teleseismic events, which will allow researchers to develop detailed models of seismic velocity variations throughout the crust and upper mantle. This dual approach enables a multi-parameter perspective on lithospheric structure, enhancing resolution and interpretability. Additionally, a pilot observatory known as the Curnamona SuperSite is being established near the Kalkaroo deposit. At this site, a smaller grid of seismometers, MT instruments, and heat-flow probes are co-located to allow long-term monitoring and advanced Earth imaging experiments.\n",
       "status": "Complete",
-      "startDate": "2022-03-29",
-      "endDate": "2022-07-29",
+      "startDate": "2022-03-30",
+      "endDate": "2022-07-30",
       "methods": [
         "Passive Seismic"
       ],
@@ -1682,7 +1626,7 @@
           "organisationRor": "https://ror.org/00892tw58",
           "organisationRole": "Lead Research Organisation",
           "isContact": false,
-          "isLeader": true
+          "isLeader": false
         },
         {
           "name": "Goran Boren",
@@ -1728,19 +1672,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2025.230737",
-          "type": "journal_article",
-          "title": "Crustal structure of the Curnamona Province in Australia by ambient noise tomography",
-          "authors": "Tan, X., Yang, Y., Heinson, G., Kay, B., Boren, G., Yang, X.",
-          "journal": "Tectonophysics",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/6q5b-va48",
-          "type": "fdsn_network",
-          "title": "Curnamona Cube MT & Passive Seismic Array",
-          "authors": "Ben Kay, Graham Heinson, Goran Boren",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -1848,11 +1784,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/ac1p-7y35",
-          "type": "fdsn_network",
-          "title": "Eyre Peninsula Nodal Array",
-          "authors": "Caroline M. Eakin, Chengxin Jiang, Meghan Miller, Louis Moresi, Graham Heinson",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -1990,7 +1922,7 @@
           "count": 72
         },
         {
-          "name": "Field Laptops",
+          "name": "Field Laptop",
           "count": 2
         },
         {
@@ -2039,7 +1971,7 @@
       "title": "Auckland-Hauraki Node Array",
       "acronym": "",
       "description": "Short term (30 day) node array targeting the greater Auckland Volcanic Field and the Hauraki Rift to the east. 52 SmartSolo BD3C 5s nodes were deployed May-June 2023 which were supplemented by five additional Trillium Compact 120s stations (AKB*) which will remain installed for an extended period. All data recorded at 250 Hz.",
-      "status": "In Progress",
+      "status": "Complete",
       "startDate": "2023-03-30",
       "endDate": "",
       "methods": [
@@ -2098,11 +2030,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/8jxr-7029",
-          "type": "fdsn_network",
-          "title": "Auckland-Hauraki Node Array",
-          "authors": "Robert Pickle, Kimberley Berends, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -2461,11 +2389,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.12.012",
-          "type": "journal_article",
-          "title": "Multiscale resistivity mapping from an intracontinental hydrothermal mineral system, Adelaide Rift Complex, Australia",
-          "authors": "Kay, B., Heinson, G., Boren, G.",
-          "journal": "Gondwana Research",
-          "year": "2024"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -2552,19 +2476,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/14432471.2021.1935718",
-          "type": "journal_preview",
-          "title": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
-          "authors": "O’Donnell, J. P., Robertson, K.",
-          "journal": "Preview",
-          "year": "2021"
+          "type": "journal_preview"
         },
         {
           "identifier": "https://doi.org/10.1080/14432471.2020.1855772",
-          "type": "journal_preview",
-          "title": "Geological Survey of South Australia: SAEMC 2020, AusArray SA, Central Delamerian Broadband MT transect",
-          "authors": "Heath, P., O’Donnell, J., Robertson, K., Wise, T.",
-          "journal": "Preview",
-          "year": "2020"
+          "type": "journal_preview"
         }
       ],
       "dataAccess": "",
@@ -2722,11 +2638,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/14432471.2019.1694473",
-          "type": "",
-          "title": "Geological Survey of South Australia: An update",
-          "authors": "Heath, P., Katona, L., Robertson, K., Thiel, S.",
-          "journal": "Preview",
-          "year": "2019"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -2843,11 +2755,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.ejrh.2021.100841",
-          "type": "journal_article",
-          "title": "Constraining regional-scale groundwater transport predictions with multiple geophysical techniques",
-          "authors": "Li, C., Doble, R., Hatch, M., Heinson, G., Kay, B.",
-          "journal": "Journal of Hydrology: Regional Studies",
-          "year": "2021"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -2963,27 +2871,23 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/6K_2020",
-          "type": "fdsn_network",
-          "title": "AusArray SA",
-          "authors": "John Paul O'Donnell, Stephan Thiel, Kate Robertson, Alexei Gorbatov, Bruce Goleby",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1080/14432471.2021.1935718",
-          "type": "journal_article",
-          "title": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
-          "authors": "O’Donnell, J. P., Robertson, K.",
-          "journal": "Preview",
-          "year": "2021"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.04.013",
-          "type": "",
-          "title": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
-          "authors": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
-          "journal": "Gondwana Research",
-          "year": "2023"
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1016/j.tecto.2023.229938",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1029/2023gc011066",
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -3174,8 +3078,8 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Discovery Project Grant",
-          "identifier": "DP200101854",
+          "title": "ARC Discovery Project Grant (DP200101854)",
+          "identifier": "",
           "identifierType": "Grant",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
@@ -3199,27 +3103,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/3F_2020",
-          "type": "fdsn_network",
-          "title": "Macquarie Ridge",
-          "authors": "Hrvoje Tkalčić, Caroline Eakin, Nicholas Rawlinson, Coffin, M. F., Joann Miriam Stock",
-          "journal": "AusPass: The Australian Passive Seismic Server",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.5194/egusphere-egu23-10875",
-          "type": "",
-          "title": "Crustal Structure of the Macquarie Ridge Complex Constrained by the Ambient Noise and Earthquake Autocorrelograms",
-          "authors": "Ma, X., Tkalčić, H., Eakin, C., Rawlinson, N., Pham, T. S., Winder, T., Pickle, R., Coffin, M., Stock, J.",
-          "journal": "",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.5194/egusphere-egu23-9886",
-          "type": "",
-          "title": "Microseismicity of the Macquarie Ridge Complex",
-          "authors": "Rawlinson, N., Winder, T., Tkalcic, H., Stock, J., Coffin, M.",
-          "journal": "",
-          "year": "2023"
+          "type": ""
+        },
+        {
+          "identifier": "https://doi.org/10.1029/2024jb031032",
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -3234,8 +3130,8 @@
       "acronym": "",
       "description": "A new approach is proposed to monitor the condition of underground water pipelines by repurposing existing telecommunication optical fibre cables as distributed acoustic sensors (DAS). These unused “dark fibres,” which are already widespread beneath urban infrastructure, offer a low-cost and scalable solution for detecting cracks, leaks, and structural faults in water distribution networks. Unlike traditional sensor deployments, which can be expensive and logistically challenging, DAS enables continuous monitoring across long distances with minimal disruption. The use of fibre optic cables transforms passive infrastructure into real-time sensing systems, providing a foundation for smarter, more responsive water asset management in Australia’s aging pipeline network.",
       "status": "Complete",
-      "startDate": "2024-02-28",
-      "endDate": "2025-04-29",
+      "startDate": "2024-02-29",
+      "endDate": "2025-04-30",
       "methods": [
         "DAS"
       ],
@@ -3249,23 +3145,23 @@
       "contributors": [
         {
           "name": "Martin Lambert",
-          "title": "Prof",
+          "title": "Emer Prof",
           "orcid": "https://orcid.org/0000-0001-8272-6697",
-          "position": "Principal or Chief Investigator",
+          "position": "",
           "organisation": "University of Adelaide",
           "organisationRor": "https://ror.org/00892tw58",
-          "organisationRole": "Lead Research Organisation",
-          "isContact": true,
-          "isLeader": true
+          "organisationRole": "",
+          "isContact": false,
+          "isLeader": false
         },
         {
           "name": "Wei Zeng",
           "title": "Dr",
           "orcid": "https://orcid.org/0000-0003-3525-0432",
-          "position": "Co-investigator or Collaborator",
+          "position": "",
           "organisation": "University of Adelaide",
           "organisationRor": "https://ror.org/00892tw58",
-          "organisationRole": "Lead Research Organisation",
+          "organisationRole": "",
           "isContact": false,
           "isLeader": false
         },
@@ -3273,10 +3169,10 @@
           "name": "Benjamin Cazzolato",
           "title": "Prof",
           "orcid": "https://orcid.org/0000-0003-2308-799X",
-          "position": "Co-investigator or Collaborator",
+          "position": "",
           "organisation": "University of Adelaide",
           "organisationRor": "https://ror.org/00892tw58",
-          "organisationRole": "Lead Research Organisation",
+          "organisationRole": "",
           "isContact": false,
           "isLeader": false
         }
@@ -3284,19 +3180,19 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Discovery Early Career Researcher Award",
-          "identifier": "DE240100481",
-          "identifierType": "Award",
+          "title": "ARC Discovery Early Career Researcher Award (DE240100481)",
+          "identifier": "[DE240100481",
+          "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
         },
         {
-          "agency": "Australian Research Council",
-          "title": "ARC Linkage Project",
-          "identifier": "LP210301373",
-          "identifierType": "Grant",
+          "agency": "",
+          "title": "ARC Linkage Project (LP210301373)",
+          "identifier": "LP210301373]",
+          "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
-          "agencyLocation": "Canberra, Australia"
+          "agencyLocation": ""
         }
       ],
       "instruments": [
@@ -3380,7 +3276,7 @@
       "funding": [
         {
           "agency": "Natural Hazard Commission Toka Tū Ake",
-          "title": "NHC Toka Tū Ake University Research Programme \"Seismic hazard of the southern South Island the neglected provinces\"",
+          "title": "NHC Toka Tū Ake University Research Programme \"Seismic hazard of the southern South Island the neglected provinces\" (RCP023)",
           "identifier": "RCP023",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/04p7g7c05",
@@ -3401,19 +3297,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1029/2024JB030371",
-          "type": "journal_article",
-          "title": "Deep and Clustered Microseismicity at the Edge of Southern New Zealand's Transpressive Plate Boundary",
-          "authors": "Williams, J. N., Eberhart‐Phillips, D., Bourguignon, S., Stirling, M. W., Oliver, W.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/jr68-qq17",
-          "type": "fdsn_network",
-          "title": "Southland Otago Seismic Array",
-          "authors": "Jack N. Williams, Donna Eberhart-Phillips, Sandra Bourguignon, Mark Stirling",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -3478,7 +3366,7 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Discovery Early Career Researcher Award",
+          "title": "ARC Discovery Early Career Researcher Award (DE190100062)",
           "identifier": "DE190100062",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
@@ -3507,27 +3395,31 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/5G_2018",
-          "type": "fdsn_network",
-          "title": "Lake Eyre Basin",
-          "authors": "Caroline Eakin",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2018"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.04.013",
-          "type": "journal_article",
-          "title": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
-          "authors": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
-          "journal": "Gondwana Research",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072989",
-          "type": "conference_presentation",
-          "title": "Seismicity, Minerals, and Craton margins: The Lake Eyre Basin Seismic Deployment",
-          "authors": "Eakin, C.",
-          "journal": "ASEG Extended Abstracts",
-          "year": "2019"
+          "type": "conference_presentation"
+        },
+        {
+          "identifier": "https://doi.org/10.59350/1evzk-y6b17",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.59350/h4nph-she37",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1029/2024jb031032",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250032",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3622,51 +3514,35 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7G_2000",
-          "type": "fdsn_network",
-          "title": "West Australian Cratons",
-          "authors": "Brian Kennet",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2000"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01000.x",
-          "type": "journal_article",
-          "title": "Seismic structure of the Yilgarn Craton, Western Australia",
-          "authors": "Reading, A. M., Kennett, B. L. N., Dentith, M. C.",
-          "journal": "Australian Journal of Earth Sciences",
-          "year": "2003"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01003.x",
-          "type": "journal_article",
-          "title": "Lithospheric structure of the Pilbara Craton, Capricorn Orogen and northern Yilgarn Craton, Western Australia, from teleseismic receiver functions",
-          "authors": "Reading, A. M., Kennett, B. L. N.",
-          "journal": "Australian Journal of Earth Sciences",
-          "year": "2003"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2003GL018090",
-          "type": "journal_article",
-          "title": "Improved inversion for seismic structure using transformed, <i>S</i>‐wavevector receiver functions: Removing the effect of the free surface",
-          "authors": "Reading, A., Kennett, B., Sambridge, M.",
-          "journal": "Geophysical Research Letters",
-          "year": "2003"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1130/G23341A.1",
-          "type": "journal_article",
-          "title": "New constraints on the seismic structure of West Australia: Evidence for terrane stabilization prior to the assembly of an ancient continent?",
-          "authors": "Reading, A., Kennett, B., Goleby, B.",
-          "journal": "Geology",
-          "year": "2007"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1016/j.epsl.2005.01.009",
-          "type": "journal_article",
-          "title": "Contrasts in lithospheric structure within the Australian craton—insights from surface wave tomography",
-          "authors": "Fishwick, S., Kennett, B., Reading, A.",
-          "journal": "Earth and Planetary Science Letters",
-          "year": "2005"
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250308",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3720,15 +3596,15 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "Fellowship “Lighting Up Fiber for Seismic Imaging”",
-          "identifier": "FT210100440",
+          "title": "Fellowship “Lighting Up Fiber for Seismic Imaging” (FT210100440)",
+          "identifier": "[FT210100440",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
         },
         {
           "agency": "Australian Research Council",
-          "title": "Discovery Project “Measuring the seismic pulse of the Earth using fiber optics”",
+          "title": "Discovery Project “Measuring the seismic pulse of the Earth using fiber optics” (DP230100277)",
           "identifier": "DP230100277",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
@@ -3736,8 +3612,8 @@
         },
         {
           "agency": "Australian Research Council",
-          "title": "and Centre of Excellence in Optical Microcombs for Breakthrough Science",
-          "identifier": "CE230100006",
+          "title": "and Centre of Excellence in Optical Microcombs for Breakthrough Science (CE230100006)",
+          "identifier": "CE230100006]",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
@@ -3753,27 +3629,19 @@
       "relatedObjects": [
         {
           "identifier": "https://dx.doi.org/10.25914/kf96-nb26",
-          "type": "dataset",
-          "title": "Australian Lightwave Infrastructure Research Testbed Dataset (ALIRT-001)",
-          "authors": "Lai, Voon Hui, Miller, Meghan",
-          "journal": "NCI Australia",
-          "year": "2023"
+          "type": "dataset"
         },
         {
           "identifier": "https://doi.org/10.1785/0320240031",
-          "type": "journal_article",
-          "title": "Passive Seismic Imaging of Urban Environments Using Distributed Acoustic Sensing: A Case Study from Melbourne, Australia",
-          "authors": "Lai, V. H., Miller, M. S., Jiang, C., Yang, Y., Magrini, F., Zhan, Z., McQueen, H.",
-          "journal": "The Seismic Record",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220230180",
-          "type": "journal_article",
-          "title": "The Global DAS Month of February 2023",
-          "authors": "Wuestefeld, A., Spica, Z. J., Aderhold, K., Huang, H. H., Ma, K. F., Lai, V. H., Miller, M., Urmantseva, L., Zapf, D., Bowden, D. C., Edme, P., Kiers, T., Rinaldi, A. P., Tuinstra, K., Jestin, C., Diaz-Meza, S., Jousset, P., Wollin, C., Ugalde, A., Ruiz Barajas, S., Gaite, B., Currenti, G., Prestifilippo, M., Araki, E., Tonegawa, T., de Ridder, S., Nowacki, A., Lindner, F., Schoenball, M., Wetter, C., Zhu, H. H., Baird, A. F., Rørstadbotnen, R. A., Ajo-Franklin, J., Ma, Y., Abbott, R. E., Hodgkinson, K. M., Porritt, R. W., Stanciu, C., Podrasky, A., Hill, D., Biondi, B., Yuan, S., Luo, B., Nikitin, S., Morten, J. P., Dumitru, V. A., Lienhart, W., Cunningham, E., Wang, H.",
-          "journal": "Seismological Research Letters",
-          "year": "2023"
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220230325",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3838,7 +3706,7 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Discovery Grant",
+          "title": "ARC Discovery Grant (DP0342618)",
           "identifier": "DP0342618",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
@@ -3863,27 +3731,27 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.precamres.2011.07.001",
-          "type": "journal_article",
-          "title": "Seismic structure of the crust and uppermost mantle of the Capricorn and Paterson Orogens and adjacent cratons, Western Australia, from passive seismic transects",
-          "authors": "Reading, A. M., Tkalčić, H., Kennett, B. L., Johnson, S. P., Sheppard, S.",
-          "journal": "Precambrian Research",
-          "year": "2012"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/7J_2005",
-          "type": "fdsn_network",
-          "title": "CAPRA - Linkage",
-          "authors": "Anya Reading, Brian Kennett",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2005"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "journal_article",
-          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
-          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
-          "journal": "Geophysical Journal International",
-          "year": "2012"
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0120250054",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250316",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3948,7 +3816,7 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Linkage Project",
+          "title": "ARC Linkage Project (LP0560955)",
           "identifier": "LP0560955",
           "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
@@ -3969,27 +3837,27 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7J_2005",
-          "type": "fdsn_network",
-          "title": "CAPRA - Linkage",
-          "authors": "Anya Reading, Brian Kennett",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2005"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1029/2008JB006152",
-          "type": "journal_article",
-          "title": "NW Australian intraplate seismicity and stress regime",
-          "authors": "Revets, S. A., Keep, M., Kennett, B. L. N.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2009"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "journal_article",
-          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
-          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
-          "journal": "Geophysical Journal International",
-          "year": "2012"
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0120250054",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250316",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4076,24 +3944,24 @@
       "funding": [
         {
           "agency": "Australian Antarctic Division",
-          "title": "AAD Grant",
-          "identifier": "2771",
+          "title": "AAD Grant (2771)",
+          "identifier": "",
           "identifierType": "",
           "agencyRor": "https://ror.org/05e89k615",
           "agencyLocation": "Hobart, Australia"
         },
         {
           "agency": "Australian Research Council",
-          "title": "ARC Linkage Project",
-          "identifier": "LP0774891",
+          "title": "ARC Linkage Project (LP0774891)",
+          "identifier": "",
           "identifierType": "",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canbera, Australia"
         },
         {
           "agency": "Australian Research Council",
-          "title": "ARC Discovery Project",
-          "identifier": "DP0988263",
+          "title": "ARC Discovery Project (DP0988263)",
+          "identifier": "",
           "identifierType": "",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canbera, Australia"
@@ -4129,27 +3997,15 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1002/2015JB012677",
-          "type": "journal_article",
-          "title": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica",
-          "authors": "Peacock, J. R., Selway, K.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2016"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "dataset",
-          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
-          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
-          "journal": "Geophysical Journal International",
-          "year": "2012"
+          "type": "dataset"
         },
         {
           "identifier": "https://dx.doi.org/10.25914/5cc28d3b5a808",
-          "type": "",
-          "title": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica  (time series)",
-          "authors": "Heinson, Graham",
-          "journal": "National Computational Infrastructure",
-          "year": "2019"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -4288,19 +4144,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2021.09.017",
-          "type": "journal_article",
-          "title": "A global magnetotelluric graphite type locality: Multi-decade, multi-scale studies of the Eyre Peninsula anomaly",
-          "authors": "Heinson, G., Kay, B., Loader, L., Robertson, K., Thiel, S.",
-          "journal": "Gondwana Research",
-          "year": "2022"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072992",
-          "type": "conference abstract",
-          "title": "Defining the Eyre Conductivity Anomaly with the Tumby Bay MT transect",
-          "authors": "Robertson, K., Kay, B., Loader, L., Heinson, G., Thiel, S.",
-          "journal": "ASEG Extended Abstracts",
-          "year": "2019"
+          "type": "conference abstract"
         }
       ],
       "dataAccess": "",
@@ -4315,8 +4163,8 @@
       "acronym": "",
       "description": "Deep crustal conductors observed in tectonically stable regions present an enduring puzzle in solid Earth geophysics. One area of particular interest lies beneath the Mt Gambier subprovince of the Newer Volcanics Province (NVP) in southeast Australia, where long period MT & GDS imaging has revealed a low-resistivity zone extending across the mid to lower crust. Interpreted as evidence of fluid-assisted alteration and potentially partial melt, this conductor offers a rare opportunity to explore links between electrical conductivity, fluid transport, and the deeper mechanisms driving intraplate volcanism. A new MT survey is proposed to increase resolution across this feature and investigate whether the anomaly reflects rehydrated deep crust, partial melt, or carbon-rich lithologies. The survey will expand on earlier datasets by infilling critical gaps, especially along the southern margin of the NVP, to build a more complete 3D resistivity model of this dynamic region.",
       "status": "Complete",
-      "startDate": "2019-07-30",
-      "endDate": "2019-08-30",
+      "startDate": "2019-07-31",
+      "endDate": "2019-08-31",
       "methods": [
         "Magnetotelluric"
       ],
@@ -4336,8 +4184,8 @@
           "organisation": "University of Adelaide",
           "organisationRor": "https://ror.org/00892tw58",
           "organisationRole": "",
-          "isContact": true,
-          "isLeader": true
+          "isContact": false,
+          "isLeader": false
         },
         {
           "name": "Sam Jennings",
@@ -4348,7 +4196,7 @@
           "organisationRor": "https://ror.org/00892tw58",
           "organisationRole": "",
           "isContact": false,
-          "isLeader": true
+          "isLeader": false
         },
         {
           "name": "Ben Kay",
@@ -4398,9 +4246,9 @@
       "funding": [
         {
           "agency": "Australian Research Council",
-          "title": "ARC Strategic Research Priorities",
+          "title": "ARC Strategic Research Priorities (DP160104637)",
           "identifier": "DP160104637",
-          "identifierType": "",
+          "identifierType": "grant_number",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
         },
@@ -4408,7 +4256,7 @@
           "agency": "Geological Survey of South Australia",
           "title": "PACE Copper",
           "identifier": "",
-          "identifierType": "",
+          "identifierType": "none",
           "agencyRor": "https://ror.org/04g3scy39",
           "agencyLocation": "Adelaide, Australia"
         }
@@ -4439,11 +4287,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1038/s41598-023-32403-z",
-          "type": "journal_article",
-          "title": "Magnetotelluric support for edge-driven convection and shear-driven upwelling in the Newer Volcanics Province",
-          "authors": "Jennings, S., Heinson, G., Hasterok, D., Kay, B.",
-          "journal": "Scientific Reports",
-          "year": "2023"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4514,19 +4358,23 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/6F_2008",
-          "type": "fdsn_network",
-          "title": "BILBY",
-          "authors": "Sara Rawlinson, Brian Kennet",
-          "journal": "Australian Passive Seismic Server",
-          "year": "2008"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2016.03.031",
-          "type": "journal_article",
-          "title": "Moho geometry along a north–south passive seismic transect through Central Australia",
-          "authors": "Sippl, C.",
-          "journal": "Tectonophysics",
-          "year": "2016"
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1029/2023gc011066",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0120250054",
+          "type": "journal_article"
+        },
+        {
+          "identifier": "https://doi.org/10.1785/0220250316",
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4597,19 +4445,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/ZR_2009",
-          "type": "fdsn_network",
-          "title": "Mt Isa Norther Queensland - AuScope",
-          "authors": "Brian Kennett, Herb McQueen",
-          "journal": "Australian Passive Seismic Server",
-          "year": "2009"
+          "type": "fdsn_network"
         },
         {
           "identifier": "http://dx.doi.org/10.1080/08120099.2013.837098",
-          "type": "journal_article",
-          "title": "Structure of the Mt Isa region from seismic ambient noise tomography",
-          "authors": "Saygin, E., McQUEEN, H., Hutton, L. J., Kennett, B. L. N., Lister, G.",
-          "journal": "Australian Journal of Earth Sciences",
-          "year": "2013"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4686,19 +4526,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2392802",
-          "type": "journal_article",
-          "title": "Resistivity anomalies in the shallow and deep crust beneath West Tasmania from a broadband magnetotelluric 2D transect",
-          "authors": "Ostersen, T. C., Reading, A. M., Cracknell, M. J., Roach, M., Duffett, M. L., Bombardieri, D. J., McNeill, A., Fomin, T., Brand, K. E., Thiel, S., Boren, G., Heinson, G.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://dx.doi.org/10.25914/3erf-dn38",
-          "type": "dataset",
-          "title": "Magnetotelluric Broadband Surveys of Western and North-Western Tasmania, 2016",
-          "authors": "Ostersen, Thomas, Reading, Anya, Duffett, Mark, Heinson, Graham",
-          "journal": "NCI Australia",
-          "year": "2023"
+          "type": "dataset"
         }
       ],
       "dataAccess": "",
@@ -4712,7 +4544,7 @@
       "title": "Ostler Fault Quakes Array, New Zealand                        ",
       "acronym": "OstQ",
       "description": "The Ostler fault is one of the most active faults in the region east of the central Alpine fault, and underlies major New Zealand infrastructure. The Ostler quakes network will deploy 12 temporary seismographs to obtain accurate locations for very small magnitude earthquakes that are not observed by the sparse permanent network. This will enhance understanding of the deep Ostler fault and help identify other seismically active structures.",
-      "status": "In-planning",
+      "status": "In Progress",
       "startDate": "2025-09-30",
       "endDate": "2026-09-30",
       "methods": [
@@ -4722,8 +4554,8 @@
       "location": {
         "region": "Ostler",
         "country": "New Zeland",
-        "coordinates": "-44.2, 170.025",
-        "polygon": ""
+        "coordinates": "-44.2, 170.1",
+        "polygon": "-44, 169.8; -44.0, 170.3; -44.6, 170.3; -44.6, 169.8"
       },
       "contributors": [
         {
@@ -4763,6 +4595,312 @@
       "collectionQuantity": 0,
       "relatedObjects": [],
       "dataAccess": "",
+      "indigenousInvolvement": false,
+      "indigenousEngagement": "",
+      "indigenousAcknowledgement": ""
+    },
+    {
+      "id": "137",
+      "ansirCode": "ANSIR-2025-010",
+      "title": "Australian Lithospheric Architecture Magnetotelluric Project (AusLAMP) Phase 1 Queensland",
+      "acronym": "AusLAMP",
+      "description": "This project aims to create maps of how electricity moves through rocks deep beneath Australia. These maps help scientists better understand how the Australian continent formed and changed over time. The results can also help identify areas with potential mineral and energy resources, and improve understanding of how space weather can affect infrastructure on the ground.",
+      "status": "Complete",
+      "startDate": "2025-09-17",
+      "endDate": "2025-12-01",
+      "methods": [
+        "Magnetotelluric"
+      ],
+      "keywords": [],
+      "location": {
+        "region": "Southestern Queensland",
+        "country": "Australia",
+        "coordinates": "",
+        "polygon": ""
+      },
+      "contributors": [
+        {
+          "name": "Graham Heinson",
+          "title": "Prof",
+          "orcid": "https://orcid.org/0000-0001-7106-0789",
+          "position": "Principal or Chief Investigator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": true,
+          "isLeader": true
+        },
+        {
+          "name": "Neesha Schnepf",
+          "title": "Dr",
+          "orcid": "https://orcid.org/0000-0003-1489-7958",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        }
+      ],
+      "funding": [
+        {
+          "agency": "AuScope",
+          "title": "",
+          "identifier": "",
+          "identifierType": "none",
+          "agencyRor": "https://ror.org/04s1m4564",
+          "agencyLocation": "Melbourne, Australia"
+        }
+      ],
+      "instruments": [
+        {
+          "name": "Earth Data PR6-24 Loggers",
+          "count": 24
+        },
+        {
+          "name": "Bartington Mag-03MS Fluxgate",
+          "count": 24
+        },
+        {
+          "name": "Solar Panels",
+          "count": 24
+        },
+        {
+          "name": "Borin Stelth Ag-AgCl Electrodes",
+          "count": 80
+        },
+        {
+          "name": "Field Laptop",
+          "count": 2
+        }
+      ],
+      "collectionQuantity": 24,
+      "relatedObjects": [],
+      "dataAccess": "restricted",
+      "indigenousInvolvement": false,
+      "indigenousEngagement": "",
+      "indigenousAcknowledgement": ""
+    },
+    {
+      "id": "138",
+      "ansirCode": "ANSIR-2026-001",
+      "title": "Australian Lithospheric Architecture Magnetotelluric Project (AusLAMP) Phase 2 Queensland",
+      "acronym": "AusLAMP",
+      "description": "This project aims to create maps of how electricity moves through rocks deep beneath Australia. These maps help scientists better understand how the Australian continent formed and changed over time. The results can also help identify areas with potential mineral and energy resources, and improve understanding of how space weather can affect infrastructure on the ground.",
+      "status": "In Progress",
+      "startDate": "2026-02-28",
+      "endDate": "2026-04-28",
+      "methods": [
+        "Magnetotelluric"
+      ],
+      "keywords": [],
+      "location": {
+        "region": "Southwestern Queensland",
+        "country": "Australia",
+        "coordinates": "-26.600193, 143.986816",
+        "polygon": "-24.86650, 141.94336; -24.85653, 145.93140; -28.13982, 146.06323; -28.18824, 141.98730"
+      },
+      "contributors": [
+        {
+          "name": "Graham Heinson",
+          "title": "Prof",
+          "orcid": "https://orcid.org/0000-0001-7106-0789",
+          "position": "Principal or Chief Investigator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": true,
+          "isLeader": true
+        },
+        {
+          "name": "Neesha Schnepf",
+          "title": "Dr",
+          "orcid": "https://orcid.org/0000-0003-1489-7958",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        }
+      ],
+      "funding": [
+        {
+          "agency": "AuScope",
+          "title": "",
+          "identifier": "",
+          "identifierType": "",
+          "agencyRor": "https://ror.org/04s1m4564",
+          "agencyLocation": "Melbourne, Australia"
+        }
+      ],
+      "instruments": [
+        {
+          "name": "Earth Data PR6-24 Loggers",
+          "count": 24
+        },
+        {
+          "name": "Bartington Mag-03MS Fluxgate",
+          "count": 24
+        },
+        {
+          "name": "Solar Panels",
+          "count": 24
+        },
+        {
+          "name": "Borin Stelth Ag-AgCl Electrodes",
+          "count": 80
+        },
+        {
+          "name": "Field Laptop",
+          "count": 2
+        }
+      ],
+      "collectionQuantity": 24,
+      "relatedObjects": [],
+      "dataAccess": "restricted",
+      "indigenousInvolvement": false,
+      "indigenousEngagement": "",
+      "indigenousAcknowledgement": ""
+    },
+    {
+      "id": "139",
+      "ansirCode": "ANSIR-2026-002",
+      "title": "Resistivity model of mineral and hydrogen systems in Yorke Peninsula",
+      "acronym": "",
+      "description": "Discovery of natural hydrogen and helium on the Yorke Peninsula in 2023 increased public interest in hydrogen as a new green energy source. This project aims to develop a geophysical model of the region using newly collected as well as legacy geological, geophysical and geochemical datasets. A comprehensive geological interpretation will be done to examine: a) hydrogen sources, migration pathways and traps, b) fluid flow and basin traps, and c) relationships between H2 and different mineral and energy system.",
+      "status": "In Progress",
+      "startDate": "2026-02-21",
+      "endDate": "2026-12-18",
+      "methods": [
+        "Magnetotelluric"
+      ],
+      "keywords": [],
+      "location": {
+        "region": "Yorke Peninsula",
+        "country": "Australia",
+        "coordinates": "-34.616822, 137.658691",
+        "polygon": "-34.94716, 137.36755; -35.13605, 137.75208; -34.18270, 138.04321; -33.98707, 137.53235"
+      },
+      "contributors": [
+        {
+          "name": "Rumi Daruso",
+          "title": "Ms",
+          "orcid": "https://orcid.org/0009-0001-4670-8843",
+          "position": "Principal or Chief Investigator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": true,
+          "isLeader": true
+        },
+        {
+          "name": "Graham Heinson",
+          "title": "Prof",
+          "orcid": "https://orcid.org/0000-0001-7106-0789",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        },
+        {
+          "name": "Relly Margiono",
+          "title": "Mr",
+          "orcid": "https://orcid.org/0000-0001-9916-1020",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        },
+        {
+          "name": "Anna Gubina",
+          "title": "Ms",
+          "orcid": "https://orcid.org/0009-0000-1208-692X",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        },
+        {
+          "name": "Juan Camilo",
+          "title": "Mr",
+          "orcid": "https://orcid.org/0000-0001-7337-8790",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        },
+        {
+          "name": "Goran Boren",
+          "title": "Mr",
+          "orcid": "https://orcid.org/0000-0002-7743-7812",
+          "position": "Co-investigator or Collaborator",
+          "organisation": "University of Adelaide",
+          "organisationRor": "https://ror.org/00892tw58",
+          "organisationRole": "Lead Research Organisation",
+          "isContact": false,
+          "isLeader": false
+        }
+      ],
+      "funding": [
+        {
+          "agency": "Adelaide University",
+          "title": "Geoenergy Grant",
+          "identifier": "",
+          "identifierType": "",
+          "agencyRor": "https://ror.org/00892tw58",
+          "agencyLocation": "Adelaide, Australia"
+        },
+        {
+          "agency": "BP Australia",
+          "title": "",
+          "identifier": "",
+          "identifierType": "",
+          "agencyRor": "",
+          "agencyLocation": "Perth, Australia"
+        }
+      ],
+      "instruments": [
+        {
+          "name": "MTU-5C",
+          "count": 6
+        },
+        {
+          "name": "LEMI-423",
+          "count": 20
+        },
+        {
+          "name": "MTU-150 Magnetic Coils",
+          "count": 12
+        },
+        {
+          "name": "LEMI-120 Magnetic Coils",
+          "count": 40
+        },
+        {
+          "name": "Borin Stelth Ag-AgCl Electrodes",
+          "count": 100
+        },
+        {
+          "name": "Field Laptop",
+          "count": 2
+        },
+        {
+          "name": "Sonnenschein GF 12 63 Y 12V Batteries",
+          "count": 34
+        }
+      ],
+      "collectionQuantity": 0,
+      "relatedObjects": [],
+      "dataAccess": "restricted",
       "indigenousInvolvement": false,
       "indigenousEngagement": "",
       "indigenousAcknowledgement": ""
