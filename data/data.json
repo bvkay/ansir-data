@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T11:44:30.320Z",
+  "exported": "2026-03-05T11:44:55.451Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 46,
   "data": [
@@ -925,13 +925,13 @@
     },
     {
       "id": "11",
-      "ansirCode": "ANSIR-2024-001",
+      "ansirCode": "ANSIR-2023-001",
       "title": "Morocco - Atlas Mountains MT Project",
       "acronym": "",
       "description": "This ongoing joint project between ONHYM, the National Office of Hydrocarbons and Mines, Mohamed V University and the University of Adelaide is to map the geo-electrical structure of the High Atlas Mountains in Morocco.",
       "status": "Complete",
-      "startDate": "2024-12-29",
-      "endDate": "2025-07-29",
+      "startDate": "2024-12-28",
+      "endDate": "2025-07-28",
       "methods": [
         "Magnetotelluric"
       ],
