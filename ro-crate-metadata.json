@@ -278,13 +278,13 @@
       "@id": "#instrument-lpr200",
       "@type": "IndividualProduct",
       "name": "LPR200",
-      "description": "10 units deployed"
+      "description": "11 units deployed"
     },
     {
       "@id": "#instrument-lennartz-le-3dlite-mkii",
       "@type": "IndividualProduct",
       "name": "Lennartz LE-3Dlite MkII",
-      "description": "10 units deployed"
+      "description": "12 units deployed"
     },
     {
       "@id": "https://doi.org/10.7914/0zmj-7e94",
@@ -305,9 +305,9 @@
       "description": "Our project focuses on studying seismic activity in New Zealand's Southern Alps/Kā Tiritiri o te Moana by collecting and analyzing new seismic data. We will expand the current seismometer network, develop high-quality earthquake datasets, and investigate environmental signals like landslides and avalanches. By using advanced modeling techniques, we aim to understand how surface changes, such as glacial retreat, influence seismicity and crustal deformation.",
       "identifier": "ANSIR-2025-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-001",
-      "creativeWorkStatus": "Complete",
-      "dateCreated": "2025-09-28",
-      "temporalCoverage": "2025-09-28/2026-10-29",
+      "creativeWorkStatus": "In Progress",
+      "dateCreated": "2025-10-31",
+      "temporalCoverage": "2025-10-31/2027-10-31",
       "about": [
         {
           "@id": "#method-seismology"
@@ -348,6 +348,7 @@
           "@id": "https://doi.org/10.7914/0zmj-7e94"
         }
       ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -1240,68 +1241,6 @@
       "identifier": "https://doi.org/10.7914/SN/2P_2020"
     },
     {
-      "@id": "https://doi.org/10.59350/1evzk-y6b17",
-      "@type": "ScholarlyArticle",
-      "name": "Australia surprised by moderate quake, but rumbling is not unusual",
-      "author": "Eakin, C., Miller, M. S.",
-      "datePublished": "2021",
-      "identifier": "https://doi.org/10.59350/1evzk-y6b17"
-    },
-    {
-      "@id": "#journal-bulletin-of-the-seismological-society-of-america",
-      "@type": "Periodical",
-      "name": "Bulletin of the Seismological Society of America"
-    },
-    {
-      "@id": "https://doi.org/10.1785/0120250054",
-      "@type": "ScholarlyArticle",
-      "name": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
-      "author": "Allen, T. I.",
-      "datePublished": "2025",
-      "isPartOf": {
-        "@id": "#journal-bulletin-of-the-seismological-society-of-america"
-      },
-      "identifier": "https://doi.org/10.1785/0120250054"
-    },
-    {
-      "@id": "https://doi.org/10.1785/0220250316",
-      "@type": "ScholarlyArticle",
-      "name": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
-      "author": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
-      "datePublished": "2026",
-      "isPartOf": {
-        "@id": "#journal-seismological-research-letters"
-      },
-      "identifier": "https://doi.org/10.1785/0220250316"
-    },
-    {
-      "@id": "#journal-geophysical-research-letters",
-      "@type": "Periodical",
-      "name": "Geophysical Research Letters"
-    },
-    {
-      "@id": "https://doi.org/10.1029/2025gl117119",
-      "@type": "ScholarlyArticle",
-      "name": "Building Blocks of Cratonic Lithosphere in Southwestern Australia: Early Results of WA Array",
-      "author": "Levin, V., Yuan, H., Murdie, R., Gessner, K., Quentin de Gromard, R., Miller, M. S.",
-      "datePublished": "2025",
-      "isPartOf": {
-        "@id": "#journal-geophysical-research-letters"
-      },
-      "identifier": "https://doi.org/10.1029/2025gl117119"
-    },
-    {
-      "@id": "https://doi.org/10.1785/0220250308",
-      "@type": "ScholarlyArticle",
-      "name": "A New High-Resolution Seismic Catalog for Southwestern Australia (2020–2025) and Analysis of Long-Term Clustering Behavior",
-      "author": "Pickle, R., Miller, M. S., Allen, T., Mousavi, S., Zhang, P., Yuan, H., Murdie, R.",
-      "datePublished": "2026",
-      "isPartOf": {
-        "@id": "#journal-seismological-research-letters"
-      },
-      "identifier": "https://doi.org/10.1785/0220250308"
-    },
-    {
       "@id": "#project-Placeholder-04",
       "@type": [
         "Dataset",
@@ -1373,21 +1312,6 @@
         },
         {
           "@id": "https://doi.org/10.1093/gji/ggad035"
-        },
-        {
-          "@id": "https://doi.org/10.59350/1evzk-y6b17"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0120250054"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250316"
-        },
-        {
-          "@id": "https://doi.org/10.1029/2025gl117119"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250308"
         }
       ],
       "hasPart": [
@@ -1458,12 +1382,6 @@
       "citation": [
         {
           "@id": "https://doi.org/10.1093/gji/ggad035"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0120250054"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250316"
         }
       ],
       "hasPart": [
@@ -3389,33 +3307,11 @@
     },
     {
       "@id": "https://doi.org/10.1016/j.gr.2023.04.013",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
       "author": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
       "datePublished": "2023",
-      "isPartOf": {
-        "@id": "#journal-gondwana-research"
-      },
       "identifier": "https://doi.org/10.1016/j.gr.2023.04.013"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.tecto.2023.229938",
-      "@type": "ScholarlyArticle",
-      "name": "Tracking crustal thickness at the sediment inundated edge of the Gawler Craton, South Australia",
-      "author": "Agrawal, S., Eakin, C. M., O’Donnell, J. P.",
-      "datePublished": "2023",
-      "isPartOf": {
-        "@id": "#journal-tectonophysics"
-      },
-      "identifier": "https://doi.org/10.1016/j.tecto.2023.229938"
-    },
-    {
-      "@id": "https://doi.org/10.1029/2023gc011066",
-      "@type": "Dataset",
-      "name": "The Influence of Lithospheric Thickness Variations Beneath Australia on Seismic Anisotropy and Mantle Flow",
-      "author": "Eakin, C. M., Davies, D. R., Ghelichkhan, S., O’Donnell, J. P., Agrawal, S.",
-      "datePublished": "2023",
-      "identifier": "https://doi.org/10.1029/2023gc011066"
     },
     {
       "@id": "#project-S02-2019",
@@ -3477,12 +3373,6 @@
       "citation": [
         {
           "@id": "https://doi.org/10.1080/14432471.2021.1935718"
-        },
-        {
-          "@id": "https://doi.org/10.1016/j.gr.2023.04.013"
-        },
-        {
-          "@id": "https://doi.org/10.1016/j.tecto.2023.229938"
         }
       ],
       "hasPart": [
@@ -3490,7 +3380,7 @@
           "@id": "https://doi.org/10.7914/SN/6K_2020"
         },
         {
-          "@id": "https://doi.org/10.1029/2023gc011066"
+          "@id": "https://doi.org/10.1016/j.gr.2023.04.013"
         }
       ],
       "provider": {
@@ -3688,7 +3578,7 @@
     },
     {
       "@id": "https://doi.org/10.5194/egusphere-egu23-10875",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Crustal Structure of the Macquarie Ridge Complex Constrained by the Ambient Noise and Earthquake Autocorrelograms",
       "author": "Ma, X., Tkalčić, H., Eakin, C., Rawlinson, N., Pham, T. S., Winder, T., Pickle, R., Coffin, M., Stock, J.",
       "datePublished": "2023",
@@ -3701,14 +3591,6 @@
       "author": "Rawlinson, N., Winder, T., Tkalcic, H., Stock, J., Coffin, M.",
       "datePublished": "2023",
       "identifier": "https://doi.org/10.5194/egusphere-egu23-9886"
-    },
-    {
-      "@id": "https://doi.org/10.1029/2024jb031032",
-      "@type": "Dataset",
-      "name": "Investigating the Characteristics of Microseisms Using the Australian Seismic Arrays",
-      "author": "Pandey, A., Tkalčić, H., Ma, X.",
-      "datePublished": "2025",
-      "identifier": "https://doi.org/10.1029/2024jb031032"
     },
     {
       "@id": "#project-OB01-2019",
@@ -3764,20 +3646,15 @@
           "@id": "#instrument-igg-cas-g-type-60s-broadband-obs"
         }
       ],
-      "citation": [
-        {
-          "@id": "https://doi.org/10.5194/egusphere-egu23-10875"
-        }
-      ],
       "hasPart": [
         {
           "@id": "https://doi.org/10.7914/SN/3F_2020"
         },
         {
-          "@id": "https://doi.org/10.5194/egusphere-egu23-9886"
+          "@id": "https://doi.org/10.5194/egusphere-egu23-10875"
         },
         {
-          "@id": "https://doi.org/10.1029/2024jb031032"
+          "@id": "https://doi.org/10.5194/egusphere-egu23-9886"
         }
       ],
       "provider": {
@@ -4095,25 +3972,6 @@
       "identifier": "https://doi.org/10.1080/22020586.2019.12072989"
     },
     {
-      "@id": "https://doi.org/10.59350/h4nph-she37",
-      "@type": "ScholarlyArticle",
-      "name": "Australia surprised by moderate quake, but rumbling is not unusual",
-      "author": "Eakin, C., Miller, M. S.",
-      "datePublished": "2021",
-      "identifier": "https://doi.org/10.59350/h4nph-she37"
-    },
-    {
-      "@id": "https://doi.org/10.1785/0220250032",
-      "@type": "ScholarlyArticle",
-      "name": "Exploring Seismic Signal Detection and Source Identification of Atmospheric Entries: The Hayabusa2 Sample Return Capsule as a Benchmark",
-      "author": "Clemente, I., Sansom, E. K., Devillepoix, H. A. R., Kawamura, T., Fernando, B. A., Garcia, R. F., Collet, O.",
-      "datePublished": "2025",
-      "isPartOf": {
-        "@id": "#journal-seismological-research-letters"
-      },
-      "identifier": "https://doi.org/10.1785/0220250032"
-    },
-    {
       "@id": "#project-Placeholder-17",
       "@type": [
         "Dataset",
@@ -4167,18 +4025,6 @@
       "citation": [
         {
           "@id": "https://doi.org/10.1016/j.gr.2023.04.013"
-        },
-        {
-          "@id": "https://doi.org/10.59350/1evzk-y6b17"
-        },
-        {
-          "@id": "https://doi.org/10.59350/h4nph-she37"
-        },
-        {
-          "@id": "https://doi.org/10.1029/2024jb031032"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250032"
         }
       ],
       "hasPart": [
@@ -4303,6 +4149,11 @@
       "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01003.x"
     },
     {
+      "@id": "#journal-geophysical-research-letters",
+      "@type": "Periodical",
+      "name": "Geophysical Research Letters"
+    },
+    {
       "@id": "https://doi.org/10.1029/2003GL018090",
       "@type": "ScholarlyArticle",
       "name": "Improved inversion for seismic structure using transformed, <i>S</i>‐wavevector receiver functions: Removing the effect of the free surface",
@@ -4344,22 +4195,6 @@
         "@id": "#journal-earth-and-planetary-science-letters"
       },
       "identifier": "https://doi.org/10.1016/j.epsl.2005.01.009"
-    },
-    {
-      "@id": "#journal-journal-of-earth-system-science",
-      "@type": "Periodical",
-      "name": "Journal of Earth System Science"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s12040-025-02560-y",
-      "@type": "ScholarlyArticle",
-      "name": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
-      "author": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
-      "datePublished": "2025",
-      "isPartOf": {
-        "@id": "#journal-journal-of-earth-system-science"
-      },
-      "identifier": "https://doi.org/10.1007/s12040-025-02560-y"
     },
     {
       "@id": "#project-Placeholder-23",
@@ -4430,12 +4265,6 @@
         },
         {
           "@id": "https://doi.org/10.1016/j.epsl.2005.01.009"
-        },
-        {
-          "@id": "https://doi.org/10.1007/s12040-025-02560-y"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250308"
         }
       ],
       "hasPart": [
@@ -4533,17 +4362,6 @@
       "identifier": "https://doi.org/10.1785/0220230180"
     },
     {
-      "@id": "https://doi.org/10.1785/0220230325",
-      "@type": "ScholarlyArticle",
-      "name": "Toward a Metadata Standard for Distributed Acoustic Sensing (DAS) Data Collection",
-      "author": "Lai, V. H., Hodgkinson, K. M., Porritt, R. W., Mellors, R.",
-      "datePublished": "2024",
-      "isPartOf": {
-        "@id": "#journal-seismological-research-letters"
-      },
-      "identifier": "https://doi.org/10.1785/0220230325"
-    },
-    {
       "@id": "#project-Placeholder-24",
       "@type": [
         "Dataset",
@@ -4594,9 +4412,6 @@
         },
         {
           "@id": "https://doi.org/10.1785/0220230180"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220230325"
         }
       ],
       "hasPart": [
@@ -4736,15 +4551,6 @@
         },
         {
           "@id": "https://doi.org/10.1111/j.1365-246X.2011.05326.x"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0120250054"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250316"
-        },
-        {
-          "@id": "https://doi.org/10.1007/s12040-025-02560-y"
         }
       ],
       "hasPart": [
@@ -4862,15 +4668,6 @@
         },
         {
           "@id": "https://doi.org/10.1111/j.1365-246X.2011.05326.x"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0120250054"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250316"
-        },
-        {
-          "@id": "https://doi.org/10.1007/s12040-025-02560-y"
         }
       ],
       "hasPart": [
@@ -5391,11 +5188,6 @@
       "identifier": "https://doi.org/10.1016/j.tecto.2016.03.031"
     },
     {
-      "@id": "#journal-geochemistry-geophysics-geosystems",
-      "@type": "Periodical",
-      "name": "Geochemistry, Geophysics, Geosystems"
-    },
-    {
       "@id": "#project-Placeholder-34",
       "@type": [
         "Dataset",
@@ -5437,15 +5229,6 @@
       "citation": [
         {
           "@id": "https://doi.org/10.1016/j.tecto.2016.03.031"
-        },
-        {
-          "@id": "https://doi.org/10.1029/2023gc011066"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0120250054"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250316"
         }
       ],
       "hasPart": [
