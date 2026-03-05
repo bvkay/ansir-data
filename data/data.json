@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-05T11:21:32.084Z",
+  "exported": "2026-03-05T11:22:07.213Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 46,
   "data": [
@@ -633,7 +633,7 @@
     },
     {
       "id": "8",
-      "ansirCode": "Placeholder-04",
+      "ansirCode": "S01-2019",
       "title": "South West Australia Network",
       "acronym": "SWAN",
       "description": "The new deployment of ~25 broadband seismometers will provide the opportunity to dramatically improve the rendering of 3-D seismic structure in the crust and mantle lithosphere. The objective of this work is to provide a compilation of 3-D models, which will be an effective characterisation of the structure of the craton and its margins. These data and models will provide improved information for enhanced assessment of seismic ground shaking from regional earthquakes and facilitate an improved understanding of mineral resource potential.",
@@ -741,20 +741,24 @@
       ],
       "instruments": [
         {
+          "name": "Guralp CMG-6TD 30s-100Hz",
+          "count": 1
+        },
+        {
           "name": "Nanometrics Trillium Compact 120s",
-          "count": 20
+          "count": 1
         },
         {
           "name": "Nanometrics Trillium Compact Posthole 120s",
-          "count": 4
+          "count": 1
+        },
+        {
+          "name": "SiliconAudio 40s",
+          "count": 1
         },
         {
           "name": "IGU-BD3C-5s",
           "count": 1
-        },
-        {
-          "name": "TerraSAWR",
-          "count": 25
         }
       ],
       "collectionQuantity": 38,
