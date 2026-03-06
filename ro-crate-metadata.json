@@ -158,6 +158,9 @@
           "@id": "#project-ANSIR-2025-005"
         },
         {
+          "@id": "#project-ANSIR-2017-001"
+        },
+        {
           "@id": "#project-ANSIR-2025-010"
         },
         {
@@ -5980,6 +5983,98 @@
         },
         {
           "@id": "#instrument-lennartz-le-3dlite-mkii"
+        }
+      ],
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#geo-ansir-2017-001",
+      "@type": "GeoCoordinates",
+      "latitude": -28.746214,
+      "longitude": 138.466187
+    },
+    {
+      "@id": "#place-ansir-2017-001",
+      "@type": "Place",
+      "name": "",
+      "geo": {
+        "@id": "#geo-ansir-2017-001"
+      }
+    },
+    {
+      "@id": "#funder-government-of-south-australia",
+      "@type": "Organization",
+      "name": "Government of South Australia"
+    },
+    {
+      "@id": "#instrument-non-polarising-cuso-electrodes",
+      "@type": "IndividualProduct",
+      "name": "Non-polarising CuSO₄ Electrodes",
+      "description": "48 units deployed"
+    },
+    {
+      "@id": "#instrument-gel-tech-8g24m-74-ah-sealed-gel-battery",
+      "@type": "IndividualProduct",
+      "name": "Gel-Tech 8G24M 74 AH sealed gel battery",
+      "description": "20 units deployed"
+    },
+    {
+      "@id": "#project-ANSIR-2017-001",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Central Curnamona Magnetotelluric Traverse",
+      "description": "",
+      "identifier": "ANSIR-2017-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2017-001",
+      "creativeWorkStatus": "Complete",
+      "dateCreated": "2016-04-27",
+      "temporalCoverage": "2016-04-27/2016-05-28",
+      "about": [
+        {
+          "@id": "#method-magnetotelluric"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-ansir-2017-001"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-7106-0789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9738-7277"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7743-7812"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-pace-copper"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-lemi-423"
+        },
+        {
+          "@id": "#instrument-lemi-120-magnetic-coil"
+        },
+        {
+          "@id": "#instrument-non-polarising-cuso-electrodes"
+        },
+        {
+          "@id": "#instrument-field-laptop"
+        },
+        {
+          "@id": "#instrument-gel-tech-8g24m-74-ah-sealed-gel-battery"
         }
       ],
       "provider": {
