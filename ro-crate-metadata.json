@@ -168,6 +168,9 @@
         },
         {
           "@id": "#project-ANSIR-2026-002"
+        },
+        {
+          "@id": "#project-ANSIR-2026-004"
         }
       ]
     },
@@ -6407,6 +6410,96 @@
         }
       ],
       "conditionsOfAccess": "restricted",
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#geo-ansir-2026-004",
+      "@type": "GeoCoordinates",
+      "latitude": -30.299704,
+      "longitude": 139.514008
+    },
+    {
+      "@id": "#shape-ansir-2026-004",
+      "@type": "GeoShape",
+      "polygon": "-30.33053 139.39728 -30.18344 139.43298 -30.25701 139.68018 -30.43715 139.55521"
+    },
+    {
+      "@id": "#place-ansir-2026-004",
+      "@type": "Place",
+      "name": "Lake Frome Embayment, Australia",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2026-004"
+        },
+        {
+          "@id": "#shape-ansir-2026-004"
+        }
+      ]
+    },
+    {
+      "@id": "#grant-dp250100936",
+      "@type": "Grant",
+      "name": "ARC Discovery Grant \"Discovering natural hydrogen in continental interiors\"",
+      "identifier": "DP250100936",
+      "funder": {
+        "@id": "https://ror.org/05mmh0f86"
+      }
+    },
+    {
+      "@id": "#project-ANSIR-2026-004",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Investigating the natural hydrogen potential of the Frome Embayment through resistivity and shear-wave velocity structure",
+      "description": "This multi-geoscientific research explores the interplay between fault systems, hydrothermal activity, and potential natural hydrogen production related to the Paralana Fault Zone in South Australia’s Northern Flinders Ranges. The survey area represents an ideal natural laboratory for testing hypotheses on the roles of the essential geological processes in natural hydrogen production within the continental crust. Two geophysical methods - Magnetotellurics and Passive Seismics are used to constrain the sedimentary cover thickness, geometry of the major faults and to evaluate their potential role in natural hydrogen generation, transport and storage in continental settings.",
+      "identifier": "ANSIR-2026-004",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-004",
+      "creativeWorkStatus": "Planning",
+      "dateCreated": "2026-04-19",
+      "temporalCoverage": "2026-04-19/2026-06-09",
+      "about": [
+        {
+          "@id": "#method-passive-seismic"
+        },
+        {
+          "@id": "#method-magnetotelluric"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-ansir-2026-004"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0009-0000-1208-692X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7106-0789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7337-8790"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-4670-8843"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9916-1020"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7743-7812"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-dp250100936"
+        }
+      ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
