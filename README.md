@@ -1,10 +1,10 @@
 # ANSIR Research Projects
 
-Public-facing project database for the **Australian National Seismic Imaging Resource (ANSIR)**, an [AuScope](https://www.auscope.org.au/) national research facility.
+Public-facing project database for the **ANSIR - National Research Facility for Earth Sounding**, an [AuScope](https://www.auscope.org.au/) Earth Imaging and Sounding program.
 
 Browse active and completed geophysical research projects using ANSIR equipment across Australia and internationally.
 
-**Live site:** [auscope.org.au/ansir-test](https://www.auscope.org.au/ansir-test)
+**Live site:** [auscope.org.au/ansir-projects](https://www.auscope.org.au/ansir-projects)
 
 ## How it works
 
