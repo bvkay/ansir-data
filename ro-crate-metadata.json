@@ -6083,18 +6083,9 @@
         },
         {
           "@id": "#instrument-field-laptop"
-        },
-        {
-          "@id": "#instrument-edl"
-        },
-        {
-          "@id": "#instrument-fluxgate"
-        },
-        {
-          "@id": "#instrument-solar-panels"
         }
       ],
-      "conditionsOfAccess": "restricted",
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
