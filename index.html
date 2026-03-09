@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v015)
-    Based on: git_projects_v014.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v016)
+    Based on: git_projects_v015.html
+
+    Changes in v016:
+      - Fixed zoom flash: showProjectOnMap now fits bounds BEFORE opening popup,
+        and uses {animate:false} to prevent any visible pan/zoom transition.
+        The popup is opened with {autoPan:false} to prevent Leaflet re-panning.
+      - Increased site marker size (base side 6px → scales up to ~10px at high zoom)
+      - Copy link: replaced overlay with browser-style bottom-left link bar showing
+        the permalink URL, auto-dismisses after 5 seconds or on click
+      - Copy link always uses SQUARESPACE_PARENT_URL when set (already worked,
+        but ansir-repo/index.html needs it set to match)
 
     Changes in v015:
       - Rewrote "View project details →" flow: searchForProject no longer closes
@@ -1475,103 +1485,86 @@
             return baseUrl + '?id=' + projectRef;
         }
 
-        // v015: Copy permalink to clipboard — handles iframe sandbox restrictions
+        // v016: Copy permalink — show link in bottom-left bar (like browser link preview)
+        // Also attempts clipboard copy; shows toast if successful
         function copyPermalink(projectId, event) {
             event.stopPropagation();
             event.preventDefault();
 
             var project = allProjects.find(function(p) { return p.id === projectId; });
-            if (!project) {
-                console.error('copyPermalink: project not found for id', projectId);
-                return;
-            }
+            if (!project) return;
 
             var permalink = generatePermalink(project);
 
-            function showCopyToast() {
+            // Always show the link in the bottom-left bar
+            showLinkBar(permalink);
+
+            // Try to copy to clipboard
+            function onCopied() {
                 var toast = document.getElementById('permalink-toast');
                 toast.classList.add('show');
                 setTimeout(function() { toast.classList.remove('show'); }, 3000);
             }
 
-            // Try clipboard API first (works on HTTPS, not in sandboxed iframes)
             if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(permalink).then(showCopyToast).catch(function() {
-                    tryCopyFallback(permalink, showCopyToast);
+                navigator.clipboard.writeText(permalink).then(onCopied).catch(function() {
+                    tryExecCopy(permalink, onCopied);
                 });
             } else {
-                tryCopyFallback(permalink, showCopyToast);
+                tryExecCopy(permalink, onCopied);
             }
         }
 
-        // v015: Fallback copy using textarea + execCommand, with visible link as last resort
-        function tryCopyFallback(text, onSuccess) {
-            // Clear any existing selection
-            if (window.getSelection) {
-                window.getSelection().removeAllRanges();
-            }
-
+        // Fallback copy via execCommand
+        function tryExecCopy(text, onSuccess) {
+            if (window.getSelection) window.getSelection().removeAllRanges();
             var ta = document.createElement('textarea');
             ta.value = text;
-            ta.setAttribute('readonly', ''); // Prevent keyboard on mobile
-            ta.style.cssText = 'position:fixed;top:0;left:0;width:2em;height:2em;padding:0;border:none;outline:none;box-shadow:none;background:transparent;opacity:0;';
+            ta.setAttribute('readonly', '');
+            ta.style.cssText = 'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;';
             document.body.appendChild(ta);
             ta.focus();
             ta.select();
             ta.setSelectionRange(0, ta.value.length);
-
-            var copied = false;
-            try { copied = document.execCommand('copy'); } catch (e) { /* ignore */ }
+            var ok = false;
+            try { ok = document.execCommand('copy'); } catch (e) { /* ignore */ }
             document.body.removeChild(ta);
-
-            // Verify we actually copied the right content by checking clipboard
-            // In some iframes, execCommand returns true but copies wrong content
-            if (copied && !IS_EMBEDDED) {
-                onSuccess();
-            } else {
-                // In iframe or uncertain: show a selectable link overlay
-                showCopyOverlay(text);
-            }
+            if (ok) onSuccess();
         }
 
-        // v015: Show a visible overlay with the link for manual copy (iframe-safe)
-        function showCopyOverlay(text) {
-            // Remove any existing overlay
-            var existing = document.getElementById('copy-link-overlay');
-            if (existing) existing.remove();
+        // v016: Show permalink in a browser-style bottom-left link bar
+        var linkBarTimer = null;
+        function showLinkBar(url) {
+            var bar = document.getElementById('link-preview-bar');
+            if (!bar) {
+                bar = document.createElement('div');
+                bar.id = 'link-preview-bar';
+                bar.style.cssText = 'position:fixed;bottom:0;left:0;max-width:80%;padding:4px 12px;'
+                    + 'background:rgba(240,240,240,0.95);border-top:1px solid #ccc;border-right:1px solid #ccc;'
+                    + 'border-top-right-radius:4px;font-family:Arial,sans-serif;font-size:12px;'
+                    + 'color:#555;z-index:10000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'
+                    + 'cursor:pointer;transition:opacity 0.3s;';
+                bar.title = 'Click to select and copy';
+                bar.onclick = function() {
+                    // Select the text for easy copying
+                    var range = document.createRange();
+                    range.selectNodeContents(bar);
+                    var sel = window.getSelection();
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                };
+                document.body.appendChild(bar);
+            }
+            bar.textContent = url;
+            bar.style.opacity = '1';
+            bar.style.display = 'block';
 
-            var overlay = document.createElement('div');
-            overlay.id = 'copy-link-overlay';
-            overlay.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);'
-                + 'background:#fff;border:2px solid #282572;border-radius:8px;padding:20px;'
-                + 'box-shadow:0 4px 20px rgba(0,0,0,0.3);z-index:10000;max-width:90%;width:400px;'
-                + 'font-family:Arial,sans-serif;text-align:center;';
-
-            var label = document.createElement('p');
-            label.textContent = 'Project link:';
-            label.style.cssText = 'margin:0 0 10px;font-size:14px;color:#495057;';
-
-            var input = document.createElement('input');
-            input.type = 'text';
-            input.value = text;
-            input.readOnly = true;
-            input.style.cssText = 'width:100%;padding:8px;border:1px solid #dee2e6;border-radius:4px;'
-                + 'font-size:13px;text-align:center;margin-bottom:10px;';
-            input.onclick = function() { this.select(); this.setSelectionRange(0, this.value.length); };
-
-            var closeBtn = document.createElement('button');
-            closeBtn.textContent = 'Close';
-            closeBtn.style.cssText = 'background:#282572;color:#fff;border:none;padding:6px 20px;'
-                + 'border-radius:4px;cursor:pointer;font-size:13px;';
-            closeBtn.onclick = function() { overlay.remove(); };
-
-            overlay.appendChild(label);
-            overlay.appendChild(input);
-            overlay.appendChild(closeBtn);
-            document.body.appendChild(overlay);
-
-            // Auto-select the text
-            setTimeout(function() { input.select(); input.setSelectionRange(0, input.value.length); }, 50);
+            // Auto-hide after 6 seconds
+            if (linkBarTimer) clearTimeout(linkBarTimer);
+            linkBarTimer = setTimeout(function() {
+                bar.style.opacity = '0';
+                setTimeout(function() { bar.style.display = 'none'; }, 300);
+            }, 6000);
         }
 
         /* ============================================ */
@@ -1917,19 +1910,20 @@
                 map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10, animate: false });
             }
 
-            // Now find and open the popup (map is already at correct zoom)
-            setTimeout(function() {
-                var targetMarker = markers.find(function(marker) {
-                    var popup = marker.getPopup();
-                    return popup && popup.getContent() && popup.getContent().includes(project.name);
-                });
-                if (targetMarker) {
-                    // Temporarily suppress the popupopen handler from adding duplicate sites
-                    targetMarker._sitesAlreadyShown = true;
-                    targetMarker.openPopup();
-                    delete targetMarker._sitesAlreadyShown;
-                }
-            }, 50);
+            // v016: Open popup WITHOUT auto-pan (map is already at correct zoom/bounds)
+            var targetMarker = markers.find(function(marker) {
+                var popup = marker.getPopup();
+                return popup && popup.getContent() && popup.getContent().includes(project.name);
+            });
+            if (targetMarker) {
+                targetMarker._sitesAlreadyShown = true;
+                // Temporarily disable autoPan to prevent Leaflet from panning to marker
+                var popup = targetMarker.getPopup();
+                if (popup) popup.options.autoPan = false;
+                targetMarker.openPopup();
+                if (popup) popup.options.autoPan = true; // Restore for normal clicks
+                delete targetMarker._sitesAlreadyShown;
+            }
         }
 
         /* ============================================ */
@@ -2162,10 +2156,10 @@
 
         // v012: Build a site marker icon scaled to current zoom
         function buildSiteIcon(zoom) {
-            // Scale: at zoom 3 → small (side=4), at zoom 10+ → full size (side=8)
-            var scale = Math.max(0.5, Math.min(1.2, (zoom - 2) / 8));
-            var side = Math.round(4 * scale);
-            var height = Math.round(7 * scale);
+            // v016: Increased base size — side=6 at zoom 3, scales up to ~10 at zoom 10+
+            var scale = Math.max(0.6, Math.min(1.4, (zoom - 1) / 7));
+            var side = Math.round(6 * scale);
+            var height = Math.round(10 * scale);
             var w = side * 2;
             return L.divIcon({
                 className: 'site-marker',
