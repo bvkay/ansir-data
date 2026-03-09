@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T12:07:58.449Z",
+  "exported": "2026-03-09T12:08:25.979Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -11225,7 +11225,7 @@
         },
         {
           "identifier": "https://doi.org/10.1029/2023gc011066",
-          "type": ""
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
