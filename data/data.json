@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T12:06:28.631Z",
+  "exported": "2026-03-09T12:07:04.301Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -9397,7 +9397,7 @@
       "acronym": "",
       "description": "Short term (30 day) node array targeting the greater Auckland Volcanic Field and the Hauraki Rift to the east. 52 SmartSolo BD3C 5s nodes were deployed May-June 2023 which were supplemented by five additional Trillium Compact 120s stations (AKB*) which will remain installed for an extended period. All data recorded at 250 Hz.",
       "status": "Complete",
-      "startDate": "2023-03-29",
+      "startDate": "2023-03-28",
       "endDate": "",
       "methods": [
         "Passive Seismic"
@@ -9407,7 +9407,7 @@
         "region": "Auckland Volcanic Field",
         "country": "New Zealand",
         "coordinates": "-36.988500, 175.039673",
-        "polygon": "-37.6303, 175.8928; -37.335, 174.7152; -36.451, 174.2392; -36.3195, 174.6987; -36.6651, 175.48; -37.2432, 175.8219"
+        "polygon": "-37.63030, 175.89280; -37.59682, 175.35278; -37.33500, 174.71520; -36.93233, 174.38599; -36.45100, 174.23920; -36.31950, 174.69870; -36.68604, 175.82520; -37.24320, 175.82190"
       },
       "contributors": [
         {
@@ -9451,8 +9451,558 @@
           "count": 52
         }
       ],
-      "collectionQuantity": 59,
-      "collectionSites": [],
+      "collectionQuantity": 61,
+      "collectionSites": [
+        {
+          "name": "AKB01",
+          "latitude": -36.451,
+          "longitude": 174.2392,
+          "altitude": "105.0",
+          "startTime": "2023-04-29",
+          "finishTime": "2023-06-28",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKB02",
+          "latitude": -37.335,
+          "longitude": 174.7152,
+          "altitude": "51.0",
+          "startTime": "2023-04-25",
+          "finishTime": "2023-06-20",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKB03",
+          "latitude": -37.3073,
+          "longitude": 175.2412,
+          "altitude": "64.0",
+          "startTime": "2023-04-27",
+          "finishTime": "2023-06-27",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKB04",
+          "latitude": -37.6303,
+          "longitude": 175.8928,
+          "altitude": "148.0",
+          "startTime": "2023-06-26",
+          "finishTime": "2024-07-02",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKB05",
+          "latitude": -36.6651,
+          "longitude": 175.4799,
+          "altitude": "73.0",
+          "startTime": "2023-05-02",
+          "finishTime": "2023-06-25",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKB06",
+          "latitude": -37.1363,
+          "longitude": 175.5994,
+          "altitude": "102.0",
+          "startTime": "2024-07-03",
+          "finishTime": "2025-07-15",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKB07",
+          "latitude": -36.7252,
+          "longitude": 175.7233,
+          "altitude": "12.0",
+          "startTime": "2026-01-27",
+          "finishTime": "2026-01-29",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AKL01",
+          "latitude": -37.0471,
+          "longitude": 175.5245,
+          "altitude": "75.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL02",
+          "latitude": -36.7476,
+          "longitude": 175.5026,
+          "altitude": "70.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL03",
+          "latitude": -36.9694,
+          "longitude": 175.502,
+          "altitude": "98.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL04",
+          "latitude": -36.6077,
+          "longitude": 174.8075,
+          "altitude": "56.0",
+          "startTime": "2023-05-24",
+          "finishTime": "2023-06-27",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL05",
+          "latitude": -36.5996,
+          "longitude": 174.3312,
+          "altitude": "102.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL06",
+          "latitude": -37.2459,
+          "longitude": 175.3426,
+          "altitude": "34.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL07",
+          "latitude": -36.7647,
+          "longitude": 175.179,
+          "altitude": "197.0",
+          "startTime": "2023-05-21",
+          "finishTime": "2023-06-25",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL08",
+          "latitude": -36.3195,
+          "longitude": 174.6987,
+          "altitude": "163.0",
+          "startTime": "2023-05-12",
+          "finishTime": "2023-06-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL09",
+          "latitude": -36.3976,
+          "longitude": 174.555,
+          "altitude": "43.0",
+          "startTime": "2023-05-18",
+          "finishTime": "2023-06-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL10",
+          "latitude": -37.1363,
+          "longitude": 175.5995,
+          "altitude": "130.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL11",
+          "latitude": -36.9305,
+          "longitude": 174.7202,
+          "altitude": "88.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-18",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL12",
+          "latitude": -37.5744,
+          "longitude": 175.7622,
+          "altitude": "69.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL13",
+          "latitude": -36.8941,
+          "longitude": 174.7136,
+          "altitude": "90.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-22",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL14",
+          "latitude": -36.8522,
+          "longitude": 174.4915,
+          "altitude": "231.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL16",
+          "latitude": -36.8086,
+          "longitude": 174.7965,
+          "altitude": "48.0",
+          "startTime": "2023-05-14",
+          "finishTime": "2023-06-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL17",
+          "latitude": -36.6712,
+          "longitude": 174.5817,
+          "altitude": "115.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-20",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL18",
+          "latitude": -36.7638,
+          "longitude": 174.7072,
+          "altitude": "88.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL19",
+          "latitude": -37.1607,
+          "longitude": 175.2167,
+          "altitude": "103.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL20",
+          "latitude": -36.808,
+          "longitude": 174.5429,
+          "altitude": "51.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL21",
+          "latitude": -36.8626,
+          "longitude": 174.7035,
+          "altitude": "60.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-17",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL22",
+          "latitude": -36.9035,
+          "longitude": 174.6539,
+          "altitude": "42.0",
+          "startTime": "2023-05-10",
+          "finishTime": "2023-06-27",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL23",
+          "latitude": -36.8625,
+          "longitude": 174.7409,
+          "altitude": "73.0",
+          "startTime": "2023-05-21",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL24",
+          "latitude": -37.1312,
+          "longitude": 174.8491,
+          "altitude": "77.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL25",
+          "latitude": -37.0338,
+          "longitude": 174.985,
+          "altitude": "45.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-22",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL26",
+          "latitude": -36.9398,
+          "longitude": 174.9402,
+          "altitude": "77.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL27",
+          "latitude": -36.7853,
+          "longitude": 175.0014,
+          "altitude": "92.0",
+          "startTime": "2023-05-21",
+          "finishTime": "2023-06-26",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL28",
+          "latitude": -36.7742,
+          "longitude": 175.1236,
+          "altitude": "101.0",
+          "startTime": "2023-05-21",
+          "finishTime": "2023-06-26",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL29",
+          "latitude": -36.6813,
+          "longitude": 174.7104,
+          "altitude": "16.0",
+          "startTime": "2023-05-12",
+          "finishTime": "2023-06-27",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL30",
+          "latitude": -36.5478,
+          "longitude": 174.644,
+          "altitude": "21.0",
+          "startTime": "2023-05-18",
+          "finishTime": "2023-06-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL31",
+          "latitude": -36.784,
+          "longitude": 174.4486,
+          "altitude": "45.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-22",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL32",
+          "latitude": -37.1669,
+          "longitude": 175.0545,
+          "altitude": "270.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-20",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL33",
+          "latitude": -36.9061,
+          "longitude": 174.5791,
+          "altitude": "99.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-17",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL34",
+          "latitude": -36.9453,
+          "longitude": 174.6643,
+          "altitude": "55.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-22",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL35",
+          "latitude": -37.3203,
+          "longitude": 174.8966,
+          "altitude": "113.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-20",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL36",
+          "latitude": -37.1168,
+          "longitude": 174.7606,
+          "altitude": "29.0",
+          "startTime": "2023-05-18",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL37",
+          "latitude": -37.0034,
+          "longitude": 175.0647,
+          "altitude": "85.0",
+          "startTime": "2023-05-11",
+          "finishTime": "2023-06-27",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL38",
+          "latitude": -36.8823,
+          "longitude": 175.0419,
+          "altitude": "41.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL39",
+          "latitude": -37.2432,
+          "longitude": 175.8219,
+          "altitude": "61.0",
+          "startTime": "2023-06-06",
+          "finishTime": "2023-06-26",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL40",
+          "latitude": -36.6992,
+          "longitude": 174.4708,
+          "altitude": "171.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-22",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL41",
+          "latitude": -36.952,
+          "longitude": 174.4688,
+          "altitude": "41.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-18",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL42",
+          "latitude": -37.1923,
+          "longitude": 174.6516,
+          "altitude": "116.0",
+          "startTime": "2023-05-13",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL43",
+          "latitude": -37.2394,
+          "longitude": 174.786,
+          "altitude": "78.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL44",
+          "latitude": -37.2925,
+          "longitude": 175.0618,
+          "altitude": "66.0",
+          "startTime": "2023-05-12",
+          "finishTime": "2023-06-27",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL45",
+          "latitude": -37.051,
+          "longitude": 175.2926,
+          "altitude": "56.0",
+          "startTime": "2023-05-18",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL46",
+          "latitude": -37.343,
+          "longitude": 175.4057,
+          "altitude": "45.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL47",
+          "latitude": -37.5595,
+          "longitude": 175.4832,
+          "altitude": "58.0",
+          "startTime": "2023-05-11",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL48",
+          "latitude": -37.4129,
+          "longitude": 175.7204,
+          "altitude": "73.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL49",
+          "latitude": -37.2509,
+          "longitude": 175.6769,
+          "altitude": "64.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL50",
+          "latitude": -36.9395,
+          "longitude": 175.1831,
+          "altitude": "94.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL51",
+          "latitude": -36.9087,
+          "longitude": 174.771,
+          "altitude": "64.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-23",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL52",
+          "latitude": -37.497,
+          "longitude": 175.7109,
+          "altitude": "102.0",
+          "startTime": "2023-05-11",
+          "finishTime": "2023-06-26",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL53",
+          "latitude": -37.4456,
+          "longitude": 175.4872,
+          "altitude": "20.0",
+          "startTime": "2023-05-20",
+          "finishTime": "2023-06-24",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL54",
+          "latitude": -36.9846,
+          "longitude": 175.2382,
+          "altitude": "130.0",
+          "startTime": "2023-05-19",
+          "finishTime": "2023-06-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        },
+        {
+          "name": "AKL99",
+          "latitude": -37.1329,
+          "longitude": 175.5451,
+          "altitude": "86.0",
+          "startTime": "2023-05-18",
+          "finishTime": "2023-05-19",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (SP)"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/8jxr-7029",
