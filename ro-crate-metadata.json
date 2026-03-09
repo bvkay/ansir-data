@@ -131,7 +131,7 @@
           "@id": "#project-Placeholder-24"
         },
         {
-          "@id": "#project-Placeholder-27"
+          "@id": "#project-2006-S01"
         },
         {
           "@id": "#project-Placeholder-28"
@@ -4995,26 +4995,26 @@
       }
     },
     {
-      "@id": "#geo-placeholder-27",
+      "@id": "#geo-2006-s01",
       "@type": "GeoCoordinates",
       "latitude": -22.623518,
       "longitude": 116.850586
     },
     {
-      "@id": "#shape-placeholder-27",
+      "@id": "#shape-2006-s01",
       "@type": "GeoShape",
       "polygon": "-21.76907 122.73926 -19.59020 120.10254 -20.53958 117.02637 -21.31944 115.40039 -23.06899 114.03809 -26.46012 113.81836 -27.32236 118.21289 -24.51651 117.68555 -23.71432 118.21289 -22.86669 118.21289 -21.80987 120.32227"
     },
     {
-      "@id": "#place-placeholder-27",
+      "@id": "#place-2006-s01",
       "@type": "Place",
       "name": "Capricorn, Australia",
       "geo": [
         {
-          "@id": "#geo-placeholder-27"
+          "@id": "#geo-2006-s01"
         },
         {
-          "@id": "#shape-placeholder-27"
+          "@id": "#shape-2006-s01"
         }
       ]
     },
@@ -5076,25 +5076,25 @@
       "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x"
     },
     {
-      "@id": "#project-Placeholder-27",
+      "@id": "#project-2006-S01",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "CAPRA",
       "description": "A passive seismic survey is proposed across the Pilbara Craton, Capricorn Orogen, and Paterson Orogen to investigate the deep crustal structure of this geologically significant region. Broadband seismic stations, spaced at approximately 40-45 km, will record teleseismic waveforms to enable receiver function analysis and seismic velocity modelling. These methods are well suited to identifying key features such as the Moho, mid-crustal discontinuities, and lateral variations in crustal thickness. The survey will target areas where subsurface structure remains poorly constrained and where deep geological boundaries are not well defined from existing surface mapping or geophysical datasets.",
-      "identifier": "Placeholder-27",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-27",
+      "identifier": "2006-S01",
+      "url": "https://bvkay.github.io/ansir-data/?id=2006-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2006-05-30",
-      "temporalCoverage": "2006-05-30/2007-04-29",
+      "dateCreated": "2006-05-29",
+      "temporalCoverage": "2006-05-29/2007-04-28",
       "about": [
         {
           "@id": "#method-seismology"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-27"
+        "@id": "#place-2006-s01"
       },
       "creator": [
         {
