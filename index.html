@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v016)
-    Based on: git_projects_v015.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v017)
+    Based on: git_projects_v016.html
+
+    Changes in v017:
+      - Zoom now fits polygon bounds (when present) with 2x extra padding,
+        instead of fitting tightly to sites + polygon
+      - Chain icon link preview: shown on hover (like browser link targets),
+        hidden on mouse leave — no click needed to preview
+      - Blue banner card expand no longer changes parent URL bar
+        (removed notifyParentProjectChange calls from toggleCard)
 
     Changes in v016:
       - Fixed zoom flash: showProjectOnMap now fits bounds BEFORE opening popup,
@@ -1485,8 +1493,7 @@
             return baseUrl + '?id=' + projectRef;
         }
 
-        // v016: Copy permalink — show link in bottom-left bar (like browser link preview)
-        // Also attempts clipboard copy; shows toast if successful
+        // v017: Copy permalink to clipboard on click
         function copyPermalink(projectId, event) {
             event.stopPropagation();
             event.preventDefault();
@@ -1496,10 +1503,6 @@
 
             var permalink = generatePermalink(project);
 
-            // Always show the link in the bottom-left bar
-            showLinkBar(permalink);
-
-            // Try to copy to clipboard
             function onCopied() {
                 var toast = document.getElementById('permalink-toast');
                 toast.classList.add('show');
@@ -1532,40 +1535,32 @@
             if (ok) onSuccess();
         }
 
-        // v016: Show permalink in a browser-style bottom-left link bar
-        var linkBarTimer = null;
-        function showLinkBar(url) {
+        // v017: Show link preview on hover (browser-style bottom-left bar)
+        function showLinkPreview(projectId) {
+            var project = allProjects.find(function(p) { return p.id === projectId; });
+            if (!project) return;
+            var url = generatePermalink(project);
             var bar = document.getElementById('link-preview-bar');
             if (!bar) {
                 bar = document.createElement('div');
                 bar.id = 'link-preview-bar';
-                bar.style.cssText = 'position:fixed;bottom:0;left:0;max-width:80%;padding:4px 12px;'
-                    + 'background:rgba(240,240,240,0.95);border-top:1px solid #ccc;border-right:1px solid #ccc;'
-                    + 'border-top-right-radius:4px;font-family:Arial,sans-serif;font-size:12px;'
-                    + 'color:#555;z-index:10000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'
-                    + 'cursor:pointer;transition:opacity 0.3s;';
-                bar.title = 'Click to select and copy';
-                bar.onclick = function() {
-                    // Select the text for easy copying
-                    var range = document.createRange();
-                    range.selectNodeContents(bar);
-                    var sel = window.getSelection();
-                    sel.removeAllRanges();
-                    sel.addRange(range);
-                };
+                bar.style.cssText = 'position:fixed;bottom:0;left:0;max-width:80%;padding:3px 10px;'
+                    + 'background:rgba(245,245,245,0.95);border-top:1px solid #ddd;border-right:1px solid #ddd;'
+                    + 'border-top-right-radius:3px;font-family:Arial,sans-serif;font-size:11px;'
+                    + 'color:#666;z-index:10000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'
+                    + 'pointer-events:none;';
                 document.body.appendChild(bar);
             }
             bar.textContent = url;
-            bar.style.opacity = '1';
             bar.style.display = 'block';
-
-            // Auto-hide after 6 seconds
-            if (linkBarTimer) clearTimeout(linkBarTimer);
-            linkBarTimer = setTimeout(function() {
-                bar.style.opacity = '0';
-                setTimeout(function() { bar.style.display = 'none'; }, 300);
-            }, 6000);
         }
+
+        function hideLinkPreview() {
+            var bar = document.getElementById('link-preview-bar');
+            if (bar) bar.style.display = 'none';
+        }
+
+        // (v016 linkBarTimer removed in v017 — link preview is now hover-based)
 
         /* ============================================ */
         /* IFRAME ↔ PARENT COMMUNICATION              */
@@ -1905,9 +1900,15 @@
                 });
             }
 
-            // Fit bounds FIRST (no animation) so the map is at the right zoom
+            // v017: Fit bounds with generous padding (2x outward from content)
+            // This shows the polygon/sites with plenty of surrounding context
             if (bounds.isValid()) {
-                map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10, animate: false });
+                map.fitBounds(bounds, { padding: [100, 100], maxZoom: 9, animate: false });
+                // Zoom out one extra level for more context
+                var currentZoom = map.getZoom();
+                if (currentZoom > 3) {
+                    map.setZoom(currentZoom - 1, { animate: false });
+                }
             }
 
             // v016: Open popup WITHOUT auto-pan (map is already at correct zoom/bounds)
@@ -2420,7 +2421,7 @@
                     <div class="project-header-content">
                         <h3 class="project-title">
                             ${eName}
-                            <button type="button" class="permalink-btn" onclick="copyPermalink(${project.id}, event)" title="Copy project link">
+                            <button type="button" class="permalink-btn" onclick="copyPermalink(${project.id}, event)" onmouseenter="showLinkPreview(${project.id})" onmouseleave="hideLinkPreview()" title="Copy project link">
                                 🔗
                             </button>
                         </h3>
@@ -2561,9 +2562,7 @@
                 card.setAttribute('aria-expanded', card.classList.contains('expanded'));
                 if (card.classList.contains('expanded')) {
                     trackEvent('project-expanded', project.name);
-                    notifyParentProjectChange(project.ansirRef || project.id);
-                } else {
-                    notifyParentProjectChange(null);
+                    // v017: Removed notifyParentProjectChange — no longer changes parent URL on expand
                 }
             }
 
