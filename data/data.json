@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T11:59:37.407Z",
+  "exported": "2026-03-09T12:00:08.609Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -2933,8 +2933,8 @@
       "acronym": "SISSLE",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity and structure of the Alpine Fault near Haast, New Zealand in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator along Haast Pass.",
       "status": "Complete",
-      "startDate": "2023-01-27",
-      "endDate": "2023-10-27",
+      "startDate": "2023-01-26",
+      "endDate": "2023-10-26",
       "methods": [
         "DAS",
         "Passive Seismic"
@@ -2944,7 +2944,7 @@
         "region": "Alpine Fault, Haust",
         "country": "New Zealand",
         "coordinates": "-43.908433, 169.065514",
-        "polygon": ""
+        "polygon": "-43.90099, 169.05401; -43.89789, 169.06174; -43.90927, 169.07427; -43.91620, 169.06723"
       },
       "contributors": [
         {
@@ -2993,7 +2993,224 @@
         }
       ],
       "collectionQuantity": 30,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "SIS01",
+          "latitude": -43.860847,
+          "longitude": 169.042831,
+          "altitude": "8.0",
+          "startTime": "2023-02-23",
+          "finishTime": "2023-04-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS02",
+          "latitude": -43.902481,
+          "longitude": 169.057373,
+          "altitude": "16.0",
+          "startTime": "2023-02-25",
+          "finishTime": "2023-10-09",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS03",
+          "latitude": -43.90731,
+          "longitude": 169.06488,
+          "altitude": "17.0",
+          "startTime": "2023-02-25",
+          "finishTime": "2023-04-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS04",
+          "latitude": -43.913765,
+          "longitude": 169.067108,
+          "altitude": "23.0",
+          "startTime": "2023-02-25",
+          "finishTime": "2023-10-10",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS05",
+          "latitude": -43.939377,
+          "longitude": 169.285583,
+          "altitude": "63.0",
+          "startTime": "2023-02-24",
+          "finishTime": "2023-10-10",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS11",
+          "latitude": -43.903277,
+          "longitude": 169.057898,
+          "altitude": "18.0",
+          "startTime": "2023-10-09",
+          "finishTime": "2023-11-09",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS12",
+          "latitude": -43.904096,
+          "longitude": 169.058778,
+          "altitude": "17.0",
+          "startTime": "2023-10-09",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS13",
+          "latitude": -43.90476,
+          "longitude": 169.059509,
+          "altitude": "19.0",
+          "startTime": "2023-10-09",
+          "finishTime": "2023-11-07",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS14",
+          "latitude": -43.907865,
+          "longitude": 169.064515,
+          "altitude": "19.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS15",
+          "latitude": -43.908707,
+          "longitude": 169.065448,
+          "altitude": "20.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-07",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS16",
+          "latitude": -43.909559,
+          "longitude": 169.065964,
+          "altitude": "20.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS17",
+          "latitude": -43.910303,
+          "longitude": 169.067183,
+          "altitude": "23.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS18",
+          "latitude": -43.906429,
+          "longitude": 169.064641,
+          "altitude": "20.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS19",
+          "latitude": -43.906211,
+          "longitude": 169.063455,
+          "altitude": "20.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS20",
+          "latitude": -43.905603,
+          "longitude": 169.062387,
+          "altitude": "19.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS21",
+          "latitude": -43.904963,
+          "longitude": 169.060806,
+          "altitude": "19.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS22",
+          "latitude": -43.905108,
+          "longitude": 169.062993,
+          "altitude": "21.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS23",
+          "latitude": -43.911077,
+          "longitude": 169.067859,
+          "altitude": "18.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS24",
+          "latitude": -43.911971,
+          "longitude": 169.068128,
+          "altitude": "19.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-07",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS25",
+          "latitude": -43.90202,
+          "longitude": 169.063007,
+          "altitude": "17.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS26",
+          "latitude": -43.902836,
+          "longitude": 169.063676,
+          "altitude": "18.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS27",
+          "latitude": -43.903564,
+          "longitude": 169.064253,
+          "altitude": "18.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-07",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS28",
+          "latitude": -43.907846,
+          "longitude": 169.068212,
+          "altitude": "17.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "SIS29",
+          "latitude": -43.908486,
+          "longitude": 169.069247,
+          "altitude": "17.0",
+          "startTime": "2023-10-10",
+          "finishTime": "2023-11-06",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220240322",
