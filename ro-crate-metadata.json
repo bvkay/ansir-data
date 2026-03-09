@@ -146,6 +146,9 @@
           "@id": "#project-Placeholder-32"
         },
         {
+          "@id": "#project-2024-S02"
+        },
+        {
           "@id": "#project-Placeholder-34"
         },
         {
@@ -5738,6 +5741,111 @@
           "@id": "https://doi.org/10.1038/s41598-023-32403-z"
         }
       ],
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#geo-2024-s02",
+      "@type": "GeoCoordinates",
+      "latitude": -30.97897,
+      "longitude": 141.174316
+    },
+    {
+      "@id": "#shape-2024-s02",
+      "@type": "GeoShape",
+      "polygon": "-30.83876 141.27594 -30.85998 141.17294 -30.86705 141.06857 -30.95777 141.06720 -31.04253 141.06720 -31.08135 141.09604 -31.07076 141.32950 -30.99192 141.28418"
+    },
+    {
+      "@id": "#place-2024-s02",
+      "@type": "Place",
+      "name": "Mundi Mundi, Australia",
+      "geo": [
+        {
+          "@id": "#geo-2024-s02"
+        },
+        {
+          "@id": "#shape-2024-s02"
+        }
+      ]
+    },
+    {
+      "@id": "#grant-minex-crc-and-strategic-energy-resources",
+      "@type": "Grant",
+      "name": "",
+      "funder": {
+        "@id": "https://ror.org/021z9m619"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.7914/psbw-7z20",
+      "@type": "Dataset",
+      "name": "Mundi Mundi Passive Seismic Array",
+      "author": "Hamid Bizhani, Graham Heinson, Ben Kay, Goran Boren, Jianli Zhi, David Baker",
+      "datePublished": "2024",
+      "publisher": "International Federation of Digital Seismograph Networks",
+      "identifier": "https://doi.org/10.7914/psbw-7z20"
+    },
+    {
+      "@id": "#project-2024-S02",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Ambient Noise Tomography of an Electrical Resistivity Anomaly, Mundi Mundi",
+      "description": "",
+      "identifier": "2024-S02",
+      "url": "https://bvkay.github.io/ansir-data/?id=2024-S02",
+      "creativeWorkStatus": "Complete",
+      "dateCreated": "2024-06-27",
+      "temporalCoverage": "2024-06-27/2024-07-28",
+      "about": [
+        {
+          "@id": "#method-passive-seismic"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-2024-s02"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0009-0008-5611-8418"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7106-0789"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-minex-crc-and-strategic-energy-resources"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-igu-16hr-3c-5hz"
+        },
+        {
+          "@id": "#instrument-igu-16s-portable-data-harvester"
+        },
+        {
+          "@id": "#instrument-igu-16s-portable-battery-charger"
+        },
+        {
+          "@id": "#instrument-igu-16s-portable-battery-charger"
+        },
+        {
+          "@id": "#instrument-igu-16s-portable-data-harvester"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://doi.org/10.7914/psbw-7z20"
+        }
+      ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },

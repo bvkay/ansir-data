@@ -94,7 +94,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/0zmj-7e94",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Southern Alps Monitoring of Weather-Influenced Seismicity and Erosion",
+          "authors": "Konstantinos Michailos, Meghan Miller, John Townend, Calum John Chamberlain",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2025"
         }
       ],
       "dataAccess": "embargoes",
@@ -324,7 +328,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/kd1t-kt29",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Makatiti and Haroharo Nodal Array",
+          "authors": "Eleanor R. H. Mestel, Athena Mace, Finnigan Illsley-Kemp, Kelvin Tapuke, Colin Wilson, Robert Pickle, Chengxin Jiang, Meghan Miller",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2025"
         }
       ],
       "dataAccess": "embargoes",
@@ -1703,7 +1711,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/37v8-hv88",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Wairakei Earthquake and Tomography Array (WETA)",
+          "authors": "Chengxin Jiang, Finnigan Illsley-Kemp, Meghan Miller",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
@@ -1959,7 +1971,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/9j20-yq91",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Seismic Network Around Kangaroo Eyre Yorke",
+          "authors": "Caroline M. Eakin, Robert Pickle",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2023"
         }
       ],
       "dataAccess": "embargoes",
@@ -2914,11 +2930,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/t2z3-2m87",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Lake George Seismic Nodal Array",
+          "authors": "Chengxin Jiang, Meghan Miller",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2020"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250046",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Illuminating Subsurface Structures Beneath Lake George Fault Zone, Southeast Australia with Traffic Noise",
+          "authors": "Jiang, C., Miller, M. S.",
+          "journal": "Seismological Research Letters",
+          "year": "2025"
         }
       ],
       "dataAccess": "open",
@@ -3214,15 +3238,27 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220240322",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "The South Island Seismology at the Speed of Light Experiment (SISSLE): Distributed Acoustic Sensing Across and Along the Alpine Fault, South Westland, New Zealand",
+          "authors": "Miller, M. S., Townend, J., Lai, V. H.",
+          "journal": "Seismological Research Letters",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.1029/2024JH000356",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Unsupervised Coherent Noise Removal From Seismological Distributed Acoustic Sensing Data",
+          "authors": "Konietzny, S., Lai, V. H., Miller, M. S., Townend, J., Harmeling, S.",
+          "journal": "Journal of Geophysical Research: Machine Learning and Computation",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.7914/bfp8-xv25",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "South Island Seismology at the Speed of Light Experiment",
+          "authors": "Meghan Miller, Voon Hui Lai, John Townend",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
@@ -3708,35 +3744,67 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220220323",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Southwest Australia Seismic Network (SWAN): Recording Earthquakes in Australia’s Most Active Seismic Zone",
+          "authors": "Miller, M. S., Pickle, R., Murdie, R., Yuan, H., Allen, T. I., Gessner, K., Kennett, B. L. N., Whitney, J.",
+          "journal": "Seismological Research Letters",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1093/gji/ggad035",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Refining the Moho across the Australian continent",
+          "authors": "Kennett, B. L. N., Gorbatov, A., Yuan, H., Agrawal, S., Murdie, R., Doublier, M. P., Eakin, C. M., Miller, M. S., Zhao, L., Czarnota, K., O’Donnell, J. P., Dentith, M., Gessner, K.",
+          "journal": "Geophysical Journal International",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/2P_2020",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "South West Australia Network",
+          "authors": "Meghan Miller, Trevor Allen, Ruth Murdie, Klaus Gessner, Huaiyu Yuan, Brian Kennett, Robert Pickle",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2020"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
+          "authors": "Allen, T. I.",
+          "journal": "Bulletin of the Seismological Society of America",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
+          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         },
         {
           "identifier": "https://doi.org/10.1029/2025gl117119",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Building Blocks of Cratonic Lithosphere in Southwestern Australia: Early Results of WA Array",
+          "authors": "Levin, V., Yuan, H., Murdie, R., Gessner, K., Quentin de Gromard, R., Miller, M. S.",
+          "journal": "Geophysical Research Letters",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250308",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "A New High-Resolution Seismic Catalog for Southwestern Australia (2020–2025) and Analysis of Long-Term Clustering Behavior",
+          "authors": "Pickle, R., Miller, M. S., Allen, T., Mousavi, S., Zhang, P., Yuan, H., Murdie, R.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         },
         {
           "identifier": "https://doi.org/10.59350/1evzk-y6b17",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Australia surprised by moderate quake, but rumbling is not unusual",
+          "authors": "Eakin, C., Miller, M. S.",
+          "journal": "",
+          "year": "2021"
         }
       ],
       "dataAccess": "open",
@@ -3797,19 +3865,35 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1093/gji/ggad035",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Refining the Moho across the Australian continent",
+          "authors": "Kennett, B. L. N., Gorbatov, A., Yuan, H., Agrawal, S., Murdie, R., Doublier, M. P., Eakin, C. M., Miller, M. S., Zhao, L., Czarnota, K., O’Donnell, J. P., Dentith, M., Gessner, K.",
+          "journal": "Geophysical Journal International",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/3O_2019",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "AKIMBA",
+          "authors": "Meghan Miller",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2019"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
+          "authors": "Allen, T. I.",
+          "journal": "Bulletin of the Seismological Society of America",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
+          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         }
       ],
       "dataAccess": "",
@@ -3925,7 +4009,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/7b9m-1d60",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Fiordland Seismological Sounding of Landslides and Earthquakes (FISSLE)",
+          "authors": "Meghan Miller, John Townend, Voon Hui Lai",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2024"
         }
       ],
       "dataAccess": "",
@@ -5247,23 +5335,43 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2378132",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Magnetotelluric imaging of an iron-oxide copper gold (IOCG) deposit under thick cover",
+          "authors": "Kay, B., Heinson, G., Boren, G., Liu, Y., Carter, S., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
+          "journal": "Exploration Geophysics",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2371001",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Ambient noise tomography of an iron-oxide copper–gold (IOCG) deposit under thick cover",
+          "authors": "Olivier, G., Heinson, G., Kay, B., Boren, G., Liu, Y., Carter, S., Jones, T., Dales, P., Abel, R., Vella, L., McAllister, L.",
+          "journal": "Exploration Geophysics",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2354209",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Natural source-field induced polarisation exploration of an iron-oxide copper-gold (IOCG) deposit under thick cover",
+          "authors": "Liu, Y., Heinson, G., Kay, B., Boren, G., Carter, S., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
+          "journal": "Exploration Geophysics",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2391571",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Fuzzy c-mean (FCM) integration of geophysical data from an iron-oxide copper gold (IOCG) deposit under thick cover",
+          "authors": "Carter, S., Heinson, G., Kay, B., Boren, G., Liu, Y., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
+          "journal": "Exploration Geophysics",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.7914/xnz7-th21",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Vulcan MT & Passive Seismic Array",
+          "authors": "Ben Kay, Graham Heinson, Goran Boren",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2022"
         }
       ],
       "dataAccess": "open",
@@ -6070,7 +6178,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/6j8j-9f06",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Western Gawler MT & Passive Seismic Array",
+          "authors": "Ben Kay, Graham Heinson, Goran Boren",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2022"
         }
       ],
       "dataAccess": "",
@@ -6177,7 +6289,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2025.04.001",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Lithospheric architecture of the Curnamona Province, Australia",
+          "authors": "Kay, B., Heinson, G., Boren, G., Liu, Y., Brand, K., Thiel, S., Williams, H.",
+          "journal": "Gondwana Research",
+          "year": "2025"
         }
       ],
       "dataAccess": "",
@@ -7497,11 +7613,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2025.230737",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Crustal structure of the Curnamona Province in Australia by ambient noise tomography",
+          "authors": "Tan, X., Yang, Y., Heinson, G., Kay, B., Boren, G., Yang, X.",
+          "journal": "Tectonophysics",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.7914/6q5b-va48",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Curnamona Cube MT & Passive Seismic Array",
+          "authors": "Ben Kay, Graham Heinson, Goran Boren",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2022"
         }
       ],
       "dataAccess": "",
@@ -10113,7 +10237,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/ac1p-7y35",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Eyre Peninsula Nodal Array",
+          "authors": "Caroline M. Eakin, Chengxin Jiang, Meghan Miller, Louis Moresi, Graham Heinson",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
@@ -10911,7 +11039,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/8jxr-7029",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Auckland-Hauraki Node Array",
+          "authors": "Robert Pickle, Kimberley Berends, Meghan Miller",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
@@ -11273,7 +11405,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.12.012",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Multiscale resistivity mapping from an intracontinental hydrothermal mineral system, Adelaide Rift Complex, Australia",
+          "authors": "Kay, B., Heinson, G., Boren, G.",
+          "journal": "Gondwana Research",
+          "year": "2024"
         }
       ],
       "dataAccess": "",
@@ -11361,11 +11497,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/14432471.2021.1935718",
-          "type": ""
+          "type": "",
+          "title": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
+          "authors": "O’Donnell, J. P., Robertson, K.",
+          "journal": "Preview",
+          "year": "2021"
         },
         {
           "identifier": "https://doi.org/10.1080/14432471.2020.1855772",
-          "type": ""
+          "type": "",
+          "title": "Geological Survey of South Australia: SAEMC 2020, AusArray SA, Central Delamerian Broadband MT transect",
+          "authors": "Heath, P., O’Donnell, J., Robertson, K., Wise, T.",
+          "journal": "Preview",
+          "year": "2020"
         }
       ],
       "dataAccess": "",
@@ -11536,7 +11680,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/14432471.2019.1694473",
-          "type": ""
+          "type": "",
+          "title": "Geological Survey of South Australia: An update",
+          "authors": "Heath, P., Katona, L., Robertson, K., Thiel, S.",
+          "journal": "Preview",
+          "year": "2019"
         }
       ],
       "dataAccess": "",
@@ -11654,7 +11802,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.ejrh.2021.100841",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Constraining regional-scale groundwater transport predictions with multiple geophysical techniques",
+          "authors": "Li, C., Doble, R., Hatch, M., Heinson, G., Kay, B.",
+          "journal": "Journal of Hydrology: Regional Studies",
+          "year": "2021"
         }
       ],
       "dataAccess": "",
@@ -12114,23 +12266,43 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/6K_2020",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "AusArray SA",
+          "authors": "John Paul O'Donnell, Stephan Thiel, Kate Robertson, Alexei Gorbatov, Bruce Goleby",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2020"
         },
         {
           "identifier": "https://doi.org/10.1080/14432471.2021.1935718",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
+          "authors": "O’Donnell, J. P., Robertson, K.",
+          "journal": "Preview",
+          "year": "2021"
         },
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.04.013",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
+          "authors": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
+          "journal": "Gondwana Research",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2023.229938",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Tracking crustal thickness at the sediment inundated edge of the Gawler Craton, South Australia",
+          "authors": "Agrawal, S., Eakin, C. M., O’Donnell, J. P.",
+          "journal": "Tectonophysics",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1029/2023gc011066",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "The Influence of Lithospheric Thickness Variations Beneath Australia on Seismic Anisotropy and Mantle Flow",
+          "authors": "Eakin, C. M., Davies, D. R., Ghelichkhan, S., O’Donnell, J. P., Agrawal, S.",
+          "journal": "Geochemistry, Geophysics, Geosystems",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
@@ -12529,19 +12701,35 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/3F_2020",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Macquarie Ridge",
+          "authors": "Hrvoje Tkalčić, Caroline Eakin, Nicholas Rawlinson, Coffin, M. F., Joann Miriam Stock",
+          "journal": "AusPass: The Australian Passive Seismic Server",
+          "year": "2020"
         },
         {
           "identifier": "https://doi.org/10.5194/egusphere-egu23-10875",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Crustal Structure of the Macquarie Ridge Complex Constrained by the Ambient Noise and Earthquake Autocorrelograms",
+          "authors": "Ma, X., Tkalčić, H., Eakin, C., Rawlinson, N., Pham, T. S., Winder, T., Pickle, R., Coffin, M., Stock, J.",
+          "journal": "",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.5194/egusphere-egu23-9886",
-          "type": ""
+          "type": "",
+          "title": "Microseismicity of the Macquarie Ridge Complex",
+          "authors": "Rawlinson, N., Winder, T., Tkalcic, H., Stock, J., Coffin, M.",
+          "journal": "",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1029/2024jb031032",
-          "type": ""
+          "type": "",
+          "title": "Investigating the Characteristics of Microseisms Using the Australian Seismic Arrays",
+          "authors": "Pandey, A., Tkalčić, H., Ma, X.",
+          "journal": "Journal of Geophysical Research: Solid Earth",
+          "year": "2025"
         }
       ],
       "dataAccess": "",
@@ -12915,11 +13103,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1029/2024JB030371",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Deep and Clustered Microseismicity at the Edge of Southern New Zealand's Transpressive Plate Boundary",
+          "authors": "Williams, J. N., Eberhart‐Phillips, D., Bourguignon, S., Stirling, M. W., Oliver, W.",
+          "journal": "Journal of Geophysical Research: Solid Earth",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.7914/jr68-qq17",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Southland Otago Seismic Array",
+          "authors": "Jack N. Williams, Donna Eberhart-Phillips, Sandra Bourguignon, Mark Stirling",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2022"
         }
       ],
       "dataAccess": "",
@@ -13375,31 +13571,59 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/5G_2018",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Lake Eyre Basin",
+          "authors": "Caroline Eakin",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2018"
         },
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.04.013",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
+          "authors": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
+          "journal": "Gondwana Research",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072989",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Seismicity, Minerals, and Craton margins: The Lake Eyre Basin Seismic Deployment",
+          "authors": "Eakin, C.",
+          "journal": "ASEG Extended Abstracts",
+          "year": "2019"
         },
         {
           "identifier": "https://doi.org/10.59350/1evzk-y6b17",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Australia surprised by moderate quake, but rumbling is not unusual",
+          "authors": "Eakin, C., Miller, M. S.",
+          "journal": "",
+          "year": "2021"
         },
         {
           "identifier": "https://doi.org/10.59350/h4nph-she37",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Australia surprised by moderate quake, but rumbling is not unusual",
+          "authors": "Eakin, C., Miller, M. S.",
+          "journal": "",
+          "year": "2021"
         },
         {
           "identifier": "https://doi.org/10.1029/2024jb031032",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Investigating the Characteristics of Microseisms Using the Australian Seismic Arrays",
+          "authors": "Pandey, A., Tkalčić, H., Ma, X.",
+          "journal": "Journal of Geophysical Research: Solid Earth",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250032",
-          "type": ""
+          "type": "",
+          "title": "Exploring Seismic Signal Detection and Source Identification of Atmospheric Entries: The Hayabusa2 Sample Return Capsule as a Benchmark",
+          "authors": "Clemente, I., Sansom, E. K., Devillepoix, H. A. R., Kawamura, T., Fernando, B. A., Garcia, R. F., Collet, O.",
+          "journal": "Seismological Research Letters",
+          "year": "2025"
         }
       ],
       "dataAccess": "",
@@ -13919,35 +14143,67 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7G_2000",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "West Australian Cratons",
+          "authors": "Brian Kennet",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2000"
         },
         {
           "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01000.x",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Seismic structure of the Yilgarn Craton, Western Australia",
+          "authors": "Reading, A. M., Kennett, B. L. N., Dentith, M. C.",
+          "journal": "Australian Journal of Earth Sciences",
+          "year": "2003"
         },
         {
           "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01003.x",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Lithospheric structure of the Pilbara Craton, Capricorn Orogen and northern Yilgarn Craton, Western Australia, from teleseismic receiver functions",
+          "authors": "Reading, A. M., Kennett, B. L. N.",
+          "journal": "Australian Journal of Earth Sciences",
+          "year": "2003"
         },
         {
           "identifier": "https://doi.org/10.1029/2003GL018090",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Improved inversion for seismic structure using transformed, <i>S</i>‐wavevector receiver functions: Removing the effect of the free surface",
+          "authors": "Reading, A., Kennett, B., Sambridge, M.",
+          "journal": "Geophysical Research Letters",
+          "year": "2003"
         },
         {
           "identifier": "https://doi.org/10.1130/G23341A.1",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "New constraints on the seismic structure of West Australia: Evidence for terrane stabilization prior to the assembly of an ancient continent?",
+          "authors": "Reading, A., Kennett, B., Goleby, B.",
+          "journal": "Geology",
+          "year": "2007"
         },
         {
           "identifier": "https://doi.org/10.1016/j.epsl.2005.01.009",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Contrasts in lithospheric structure within the Australian craton—insights from surface wave tomography",
+          "authors": "Fishwick, S., Kennett, B., Reading, A.",
+          "journal": "Earth and Planetary Science Letters",
+          "year": "2005"
         },
         {
           "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
+          "authors": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
+          "journal": "Journal of Earth System Science",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250308",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "A New High-Resolution Seismic Catalog for Southwestern Australia (2020–2025) and Analysis of Long-Term Clustering Behavior",
+          "authors": "Pickle, R., Miller, M. S., Allen, T., Mousavi, S., Zhang, P., Yuan, H., Murdie, R.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         }
       ],
       "dataAccess": "",
@@ -14035,19 +14291,35 @@
       "relatedObjects": [
         {
           "identifier": "https://dx.doi.org/10.25914/kf96-nb26",
-          "type": "dataset"
+          "type": "dataset",
+          "title": "Australian Lightwave Infrastructure Research Testbed Dataset (ALIRT-001)",
+          "authors": "Lai, Voon Hui, Miller, Meghan",
+          "journal": "NCI Australia",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1785/0320240031",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Passive Seismic Imaging of Urban Environments Using Distributed Acoustic Sensing: A Case Study from Melbourne, Australia",
+          "authors": "Lai, V. H., Miller, M. S., Jiang, C., Yang, Y., Magrini, F., Zhan, Z., McQueen, H.",
+          "journal": "The Seismic Record",
+          "year": "2024"
         },
         {
           "identifier": "https://doi.org/10.1785/0220230180",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "The Global DAS Month of February 2023",
+          "authors": "Wuestefeld, A., Spica, Z. J., Aderhold, K., Huang, H. H., Ma, K. F., Lai, V. H., Miller, M., Urmantseva, L., Zapf, D., Bowden, D. C., Edme, P., Kiers, T., Rinaldi, A. P., Tuinstra, K., Jestin, C., Diaz-Meza, S., Jousset, P., Wollin, C., Ugalde, A., Ruiz Barajas, S., Gaite, B., Currenti, G., Prestifilippo, M., Araki, E., Tonegawa, T., de Ridder, S., Nowacki, A., Lindner, F., Schoenball, M., Wetter, C., Zhu, H. H., Baird, A. F., Rørstadbotnen, R. A., Ajo-Franklin, J., Ma, Y., Abbott, R. E., Hodgkinson, K. M., Porritt, R. W., Stanciu, C., Podrasky, A., Hill, D., Biondi, B., Yuan, S., Luo, B., Nikitin, S., Morten, J. P., Dumitru, V. A., Lienhart, W., Cunningham, E., Wang, H.",
+          "journal": "Seismological Research Letters",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1785/0220230325",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Toward a Metadata Standard for Distributed Acoustic Sensing (DAS) Data Collection",
+          "authors": "Lai, V. H., Hodgkinson, K. M., Porritt, R. W., Mellors, R.",
+          "journal": "Seismological Research Letters",
+          "year": "2024"
         }
       ],
       "dataAccess": "open",
@@ -14265,27 +14537,51 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.precamres.2011.07.001",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Seismic structure of the crust and uppermost mantle of the Capricorn and Paterson Orogens and adjacent cratons, Western Australia, from passive seismic transects",
+          "authors": "Reading, A. M., Tkalčić, H., Kennett, B. L., Johnson, S. P., Sheppard, S.",
+          "journal": "Precambrian Research",
+          "year": "2012"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/7J_2005",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "CAPRA - Linkage",
+          "authors": "Anya Reading, Brian Kennett",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2005"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
+          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
+          "journal": "Geophysical Journal International",
+          "year": "2012"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
+          "authors": "Allen, T. I.",
+          "journal": "Bulletin of the Seismological Society of America",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
+          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         },
         {
           "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
+          "authors": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
+          "journal": "Journal of Earth System Science",
+          "year": "2025"
         }
       ],
       "dataAccess": "",
@@ -14472,27 +14768,51 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7J_2005",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "CAPRA - Linkage",
+          "authors": "Anya Reading, Brian Kennett",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2005"
         },
         {
           "identifier": "https://doi.org/10.1029/2008JB006152",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "NW Australian intraplate seismicity and stress regime",
+          "authors": "Revets, S. A., Keep, M., Kennett, B. L. N.",
+          "journal": "Journal of Geophysical Research: Solid Earth",
+          "year": "2009"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
+          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
+          "journal": "Geophysical Journal International",
+          "year": "2012"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
+          "authors": "Allen, T. I.",
+          "journal": "Bulletin of the Seismological Society of America",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
+          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         },
         {
           "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
+          "authors": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
+          "journal": "Journal of Earth System Science",
+          "year": "2025"
         }
       ],
       "dataAccess": "",
@@ -14633,11 +14953,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1002/2015JB012677",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica",
+          "authors": "Peacock, J. R., Selway, K.",
+          "journal": "Journal of Geophysical Research: Solid Earth",
+          "year": "2016"
         },
         {
           "identifier": "https://dx.doi.org/10.25914/5cc28d3b5a808",
-          "type": "dataset"
+          "type": "dataset",
+          "title": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica  (time series)",
+          "authors": "Heinson, Graham",
+          "journal": "National Computational Infrastructure",
+          "year": "2019"
         }
       ],
       "dataAccess": "",
@@ -14777,11 +15105,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2021.09.017",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "A global magnetotelluric graphite type locality: Multi-decade, multi-scale studies of the Eyre Peninsula anomaly",
+          "authors": "Heinson, G., Kay, B., Loader, L., Robertson, K., Thiel, S.",
+          "journal": "Gondwana Research",
+          "year": "2022"
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072992",
-          "type": "conference abstract"
+          "type": "conference abstract",
+          "title": "Defining the Eyre Conductivity Anomaly with the Tumby Bay MT transect",
+          "authors": "Robertson, K., Kay, B., Loader, L., Heinson, G., Thiel, S.",
+          "journal": "ASEG Extended Abstracts",
+          "year": "2019"
         }
       ],
       "dataAccess": "",
@@ -14921,7 +15257,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1038/s41598-023-32403-z",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Magnetotelluric support for edge-driven convection and shear-driven upwelling in the Newer Volcanics Province",
+          "authors": "Jennings, S., Heinson, G., Hasterok, D., Kay, B.",
+          "journal": "Scientific Reports",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
@@ -15928,7 +16268,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/psbw-7z20",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Mundi Mundi Passive Seismic Array",
+          "authors": "Hamid Bizhani, Graham Heinson, Ben Kay, Goran Boren, Jianli Zhi, David Baker",
+          "journal": "International Federation of Digital Seismograph Networks",
+          "year": "2024"
         }
       ],
       "dataAccess": "embargoes",
@@ -16000,23 +16344,43 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/6F_2008",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "BILBY",
+          "authors": "Sara Rawlinson, Brian Kennet",
+          "journal": "Australian Passive Seismic Server",
+          "year": "2008"
         },
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2016.03.031",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Moho geometry along a north–south passive seismic transect through Central Australia",
+          "authors": "Sippl, C.",
+          "journal": "Tectonophysics",
+          "year": "2016"
         },
         {
           "identifier": "https://doi.org/10.1029/2023gc011066",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "The Influence of Lithospheric Thickness Variations Beneath Australia on Seismic Anisotropy and Mantle Flow",
+          "authors": "Eakin, C. M., Davies, D. R., Ghelichkhan, S., O’Donnell, J. P., Agrawal, S.",
+          "journal": "Geochemistry, Geophysics, Geosystems",
+          "year": "2023"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
+          "authors": "Allen, T. I.",
+          "journal": "Bulletin of the Seismological Society of America",
+          "year": "2025"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
+          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
+          "journal": "Seismological Research Letters",
+          "year": "2026"
         }
       ],
       "dataAccess": "",
@@ -16088,11 +16452,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/ZR_2009",
-          "type": "fdsn_network"
+          "type": "fdsn_network",
+          "title": "Mt Isa Norther Queensland - AuScope",
+          "authors": "Brian Kennett, Herb McQueen",
+          "journal": "Australian Passive Seismic Server",
+          "year": "2009"
         },
         {
           "identifier": "http://dx.doi.org/10.1080/08120099.2013.837098",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Structure of the Mt Isa region from seismic ambient noise tomography",
+          "authors": "Saygin, E., McQUEEN, H., Hutton, L. J., Kennett, B. L. N., Lister, G.",
+          "journal": "Australian Journal of Earth Sciences",
+          "year": "2013"
         }
       ],
       "dataAccess": "",
@@ -16170,11 +16542,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2392802",
-          "type": "journal_article"
+          "type": "journal_article",
+          "title": "Resistivity anomalies in the shallow and deep crust beneath West Tasmania from a broadband magnetotelluric 2D transect",
+          "authors": "Ostersen, T. C., Reading, A. M., Cracknell, M. J., Roach, M., Duffett, M. L., Bombardieri, D. J., McNeill, A., Fomin, T., Brand, K. E., Thiel, S., Boren, G., Heinson, G.",
+          "journal": "Exploration Geophysics",
+          "year": "2024"
         },
         {
           "identifier": "https://dx.doi.org/10.25914/3erf-dn38",
-          "type": "dataset"
+          "type": "dataset",
+          "title": "Magnetotelluric Broadband Surveys of Western and North-Western Tasmania, 2016",
+          "authors": "Ostersen, Thomas, Reading, Anya, Duffett, Mark, Heinson, Graham",
+          "journal": "NCI Australia",
+          "year": "2023"
         }
       ],
       "dataAccess": "",
