@@ -1383,6 +1383,14 @@
       "identifier": "https://doi.org/10.1785/0220250308"
     },
     {
+      "@id": "https://doi.org/10.59350/1evzk-y6b17",
+      "@type": "ScholarlyArticle",
+      "name": "Australia surprised by moderate quake, but rumbling is not unusual",
+      "author": "Eakin, C., Miller, M. S.",
+      "datePublished": "2021",
+      "identifier": "https://doi.org/10.59350/1evzk-y6b17"
+    },
+    {
       "@id": "#project-S01-2019",
       "@type": [
         "Dataset",
@@ -1466,6 +1474,9 @@
         },
         {
           "@id": "https://doi.org/10.1785/0220250308"
+        },
+        {
+          "@id": "https://doi.org/10.59350/1evzk-y6b17"
         }
       ],
       "hasPart": [
@@ -4462,14 +4473,6 @@
       "identifier": "https://doi.org/10.1080/22020586.2019.12072989"
     },
     {
-      "@id": "https://doi.org/10.59350/1evzk-y6b17",
-      "@type": "ScholarlyArticle",
-      "name": "Australia surprised by moderate quake, but rumbling is not unusual",
-      "author": "Eakin, C., Miller, M. S.",
-      "datePublished": "2021",
-      "identifier": "https://doi.org/10.59350/1evzk-y6b17"
-    },
-    {
       "@id": "https://doi.org/10.59350/h4nph-she37",
       "@type": "ScholarlyArticle",
       "name": "Australia surprised by moderate quake, but rumbling is not unusual",
@@ -4849,8 +4852,8 @@
     {
       "@id": "#grant-ft210100440",
       "@type": "Grant",
-      "name": "Fellowship “Lighting Up Fiber for Seismic Imaging” (FT210100440)",
-      "identifier": "[FT210100440",
+      "name": "ARC Future Fellowships \"Lighting Up Dark Fibre for Seismic Imaging\"",
+      "identifier": "FT210100440",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4858,7 +4861,7 @@
     {
       "@id": "#grant-dp230100277",
       "@type": "Grant",
-      "name": "Discovery Project “Measuring the seismic pulse of the Earth using fiber optics” (DP230100277)",
+      "name": "Discovery Project “Measuring the seismic pulse of the Earth using fiber optics”",
       "identifier": "DP230100277",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
@@ -4867,8 +4870,8 @@
     {
       "@id": "#grant-ce230100006",
       "@type": "Grant",
-      "name": "and Centre of Excellence in Optical Microcombs for Breakthrough Science (CE230100006)",
-      "identifier": "CE230100006]",
+      "name": "Centre of Excellence in Optical Microcombs for Breakthrough Science",
+      "identifier": "CE230100006",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -4936,8 +4939,8 @@
       "identifier": "Placeholder-24",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-24",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2021-11-29",
-      "temporalCoverage": "2021-11-29/2023-09-29",
+      "dateCreated": "2021-11-28",
+      "temporalCoverage": "2021-11-28/2023-09-28",
       "about": [
         {
           "@id": "#method-das"
