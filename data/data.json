@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T12:04:45.031Z",
+  "exported": "2026-03-09T12:05:04.196Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -4373,8 +4373,8 @@
       "acronym": "",
       "description": "The discovery of magmatic Ni-Cu sulphide in the Western Gawler Craton, confirmed the presence of significant, intrusive-hosted magmatic Ni-Cu sulphide in the Fowler Domain. The primary aim of this proposal is to develop a 3D model the Fowler Domain crust from the near surface to the Moho to identify the regional structural controls on emplacement of Ni-Cu-PGE prospective mafic-ultramafic intrusions. This proposal is in a collaboration between Western Areas and the University of Adelaide to complete three regionally-spaced magnetotelluric (MT) and passive seismic transects across key areas of the Fowler Domain. Such new data sets, coupled with legacy MT data, will be used to generate detailed 2D and 3D resistivity models of the Fowler Domain, with resolution from the near surface to the Moho. Passive seismic data will also constrain the cover sequences that can be introduced into the resistivity inversion. The project will integrate and interpret all the new and legacy datasets simultaneously to develop a 3D model with both sections and 3D views as outputs",
       "status": "Complete",
-      "startDate": "2022-03-28",
-      "endDate": "2022-03-28",
+      "startDate": "2022-03-27",
+      "endDate": "2022-03-27",
       "methods": [
         "Passive Seismic",
         "Magnetotelluric"
@@ -4485,7 +4485,683 @@
         }
       ],
       "collectionQuantity": 166,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "WGA01",
+          "latitude": -30.63292048,
+          "longitude": 132.7533913,
+          "altitude": "154.4",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-10",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA02",
+          "latitude": -30.63740702,
+          "longitude": 132.7668152,
+          "altitude": "154.5",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-10",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA03",
+          "latitude": -30.6469409,
+          "longitude": 132.7817771,
+          "altitude": "148.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-09",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA04",
+          "latitude": -30.65561525,
+          "longitude": 132.7977515,
+          "altitude": "155.4",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-09",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA05",
+          "latitude": -30.66664525,
+          "longitude": 132.8130417,
+          "altitude": "168.1",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-09",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA06",
+          "latitude": -30.67883602,
+          "longitude": 132.8243283,
+          "altitude": "183.4",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA07",
+          "latitude": -30.68711945,
+          "longitude": 132.8392933,
+          "altitude": "221.1",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA08",
+          "latitude": -30.69188022,
+          "longitude": 132.8575807,
+          "altitude": "226.8",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA09",
+          "latitude": -30.69804469,
+          "longitude": 132.8750556,
+          "altitude": "235.7",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA10",
+          "latitude": -30.68690013,
+          "longitude": 132.8867076,
+          "altitude": "241.4",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA11",
+          "latitude": -30.68652599,
+          "longitude": 132.8989385,
+          "altitude": "233.0",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA12",
+          "latitude": -30.68719267,
+          "longitude": 132.9194976,
+          "altitude": "214.9",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA13",
+          "latitude": -30.68695935,
+          "longitude": 132.9402002,
+          "altitude": "204.0",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA14",
+          "latitude": -30.68882354,
+          "longitude": 132.9607838,
+          "altitude": "216.2",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA15",
+          "latitude": -30.7085197,
+          "longitude": 132.9698565,
+          "altitude": "207.9",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA16",
+          "latitude": -30.71305586,
+          "longitude": 132.9893749,
+          "altitude": "205.6",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA17",
+          "latitude": -30.71986185,
+          "longitude": 133.0084457,
+          "altitude": "178.3",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA18",
+          "latitude": -30.72095716,
+          "longitude": 133.0284872,
+          "altitude": "162.6",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA19",
+          "latitude": -30.72535885,
+          "longitude": 133.0486885,
+          "altitude": "153.1",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA20",
+          "latitude": -30.73497661,
+          "longitude": 133.0693994,
+          "altitude": "144.9",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA21",
+          "latitude": -30.76135992,
+          "longitude": 133.0657472,
+          "altitude": "144.0",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA22",
+          "latitude": -30.76646027,
+          "longitude": 133.0838982,
+          "altitude": "155.2",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA23",
+          "latitude": -30.77130885,
+          "longitude": 133.1037083,
+          "altitude": "185.3",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA24",
+          "latitude": -30.77566202,
+          "longitude": 133.1235945,
+          "altitude": "166.6",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA25",
+          "latitude": -30.77929837,
+          "longitude": 133.1435053,
+          "altitude": "178.0",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA26",
+          "latitude": -30.78539639,
+          "longitude": 133.1626188,
+          "altitude": "160.6",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA27",
+          "latitude": -30.79330963,
+          "longitude": 133.1804003,
+          "altitude": "161.3",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA28",
+          "latitude": -30.79690922,
+          "longitude": 133.2002828,
+          "altitude": "159.4",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA29",
+          "latitude": -30.79913462,
+          "longitude": 133.2204666,
+          "altitude": "147.7",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA30",
+          "latitude": -30.80472973,
+          "longitude": 133.2397859,
+          "altitude": "137.9",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA31",
+          "latitude": -30.81425336,
+          "longitude": 133.2535043,
+          "altitude": "157.7",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA32",
+          "latitude": -30.8272059,
+          "longitude": 133.2628014,
+          "altitude": "138.8",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA33",
+          "latitude": -30.83437605,
+          "longitude": 133.2818508,
+          "altitude": "141.9",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA34",
+          "latitude": -30.84138234,
+          "longitude": 133.2985504,
+          "altitude": "129.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGA35",
+          "latitude": -30.84784933,
+          "longitude": 133.3160539,
+          "altitude": "151.6",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB01",
+          "latitude": -30.70583935,
+          "longitude": 132.6026898,
+          "altitude": "148.0",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB02",
+          "latitude": -30.71225301,
+          "longitude": 132.621455,
+          "altitude": "166.4",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB03",
+          "latitude": -30.721432,
+          "longitude": 132.6386168,
+          "altitude": "180.1",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB04",
+          "latitude": -30.72693182,
+          "longitude": 132.6636064,
+          "altitude": "166.8",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB06",
+          "latitude": -30.73139693,
+          "longitude": 132.6829357,
+          "altitude": "156.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB07",
+          "latitude": -30.7485516,
+          "longitude": 132.7185514,
+          "altitude": "153.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB08",
+          "latitude": -30.76144207,
+          "longitude": 132.7213134,
+          "altitude": "160.2",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB10",
+          "latitude": -30.77496108,
+          "longitude": 132.7596433,
+          "altitude": "153.6",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB11",
+          "latitude": -30.78470276,
+          "longitude": 132.7756541,
+          "altitude": "153.4",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB12",
+          "latitude": -30.79572243,
+          "longitude": 132.7835143,
+          "altitude": "143.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB13",
+          "latitude": -30.80618147,
+          "longitude": 132.7956843,
+          "altitude": "141.6",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB14",
+          "latitude": -30.81161142,
+          "longitude": 132.8160946,
+          "altitude": "140.2",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB15",
+          "latitude": -30.81660612,
+          "longitude": 132.8354235,
+          "altitude": "154.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB16",
+          "latitude": -30.82505597,
+          "longitude": 132.8500868,
+          "altitude": "168.7",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB17",
+          "latitude": -30.83325313,
+          "longitude": 132.867629,
+          "altitude": "181.0",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB18",
+          "latitude": -30.84117427,
+          "longitude": 132.8878851,
+          "altitude": "162.2",
+          "startTime": "2022-04-03",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGB19",
+          "latitude": -30.84900257,
+          "longitude": 132.9100787,
+          "altitude": "180.0",
+          "startTime": "2022-04-04",
+          "finishTime": "2022-04-11",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC01",
+          "latitude": -31.52957015,
+          "longitude": 131.8817282,
+          "altitude": "98.47",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC02",
+          "latitude": -31.52965092,
+          "longitude": 131.9127739,
+          "altitude": "96.24",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC03",
+          "latitude": -31.53008372,
+          "longitude": 131.9336782,
+          "altitude": "76.6",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC04",
+          "latitude": -31.53019738,
+          "longitude": 131.9549839,
+          "altitude": "75.96",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC05",
+          "latitude": -31.530238,
+          "longitude": 131.9760215,
+          "altitude": "61.72",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC06",
+          "latitude": -31.53024303,
+          "longitude": 131.9969347,
+          "altitude": "47.03",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC07",
+          "latitude": -31.53032401,
+          "longitude": 132.0180445,
+          "altitude": "66.33",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC08",
+          "latitude": -31.53040131,
+          "longitude": 132.0390606,
+          "altitude": "53.84",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC09",
+          "latitude": -31.53053502,
+          "longitude": 132.0601581,
+          "altitude": "60.09",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC10",
+          "latitude": -31.5306051,
+          "longitude": 132.0812513,
+          "altitude": "51.69",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC11",
+          "latitude": -31.53078862,
+          "longitude": 132.1024044,
+          "altitude": "70.56",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC12",
+          "latitude": -31.53082853,
+          "longitude": 132.123263,
+          "altitude": "48.22",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC13",
+          "latitude": -31.53086419,
+          "longitude": 132.1443232,
+          "altitude": "53.57",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC14",
+          "latitude": -31.53090309,
+          "longitude": 132.1653439,
+          "altitude": "58.7",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC15",
+          "latitude": -31.53096989,
+          "longitude": 132.1864823,
+          "altitude": "58.93",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC16",
+          "latitude": -31.53110595,
+          "longitude": 132.2074953,
+          "altitude": "50.56",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC17",
+          "latitude": -31.53105727,
+          "longitude": 132.2285506,
+          "altitude": "56.88",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC18",
+          "latitude": -31.53112516,
+          "longitude": 132.2496505,
+          "altitude": "54.89",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC19",
+          "latitude": -31.53117155,
+          "longitude": 132.2705526,
+          "altitude": "62.76",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC20",
+          "latitude": -31.5312633,
+          "longitude": 132.291761,
+          "altitude": "65.23",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC21",
+          "latitude": -31.5313236,
+          "longitude": 132.3127626,
+          "altitude": "72.14",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC22",
+          "latitude": -31.5313254,
+          "longitude": 132.3337244,
+          "altitude": "93.84",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "WGC23",
+          "latitude": -31.53131734,
+          "longitude": 132.3506857,
+          "altitude": "87.34",
+          "startTime": "2022-04-02",
+          "finishTime": "2022-04-12",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/6j8j-9f06",
