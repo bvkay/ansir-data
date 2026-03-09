@@ -47,37 +47,37 @@
           "@id": "#project-ANU-2021"
         },
         {
-          "@id": "#project-Placeholder-03"
+          "@id": "#project-ANU-2023-001"
         },
         {
-          "@id": "#project-Placeholder-04"
+          "@id": "#project-S01-2019"
         },
         {
-          "@id": "#project-Placeholder-05"
+          "@id": "#project-2018-S01"
         },
         {
-          "@id": "#project-Placeholder-06"
+          "@id": "#project-2024-S01"
         },
         {
-          "@id": "#project-Placeholder-07"
+          "@id": "#project-ANSIR-2023-001"
         },
         {
-          "@id": "#project-Placeholder-08"
+          "@id": "#project-ANSIR-2023-002"
         },
         {
-          "@id": "#project-Placeholder-09"
+          "@id": "#project-ANSIR-2023-003"
         },
         {
           "@id": "#project-ANSIR-2022-001"
         },
         {
-          "@id": "#project-Placeholder-11"
+          "@id": "#project-ANSIR-2022-002"
         },
         {
           "@id": "#project-MT02-2020"
         },
         {
-          "@id": "#project-Placeholder-12"
+          "@id": "#project-S01-2020"
         },
         {
           "@id": "#project-S03-2023"
@@ -86,7 +86,7 @@
           "@id": "#project-ANSIR-2023-06"
         },
         {
-          "@id": "#project-Placeholder-14"
+          "@id": "#project-ANU-2023-02"
         },
         {
           "@id": "#project-MT03-2020"
@@ -95,7 +95,7 @@
           "@id": "#project-MT03-2020"
         },
         {
-          "@id": "#project-Placeholder-15"
+          "@id": "#project-UA-2017-001"
         },
         {
           "@id": "#project-MT01-2020"
@@ -158,6 +158,9 @@
           "@id": "#project-ANSIR-2025-005"
         },
         {
+          "@id": "#project-ANSIR-2017-001"
+        },
+        {
           "@id": "#project-ANSIR-2025-010"
         },
         {
@@ -165,6 +168,9 @@
         },
         {
           "@id": "#project-ANSIR-2026-002"
+        },
+        {
+          "@id": "#project-ANSIR-2026-004"
         }
       ]
     },
@@ -305,9 +311,9 @@
       "description": "Our project focuses on studying seismic activity in New Zealand's Southern Alps/Kā Tiritiri o te Moana by collecting and analyzing new seismic data. We will expand the current seismometer network, develop high-quality earthquake datasets, and investigate environmental signals like landslides and avalanches. By using advanced modeling techniques, we aim to understand how surface changes, such as glacial retreat, influence seismicity and crustal deformation.",
       "identifier": "ANSIR-2025-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-001",
-      "creativeWorkStatus": "Complete",
-      "dateCreated": "2025-09-26",
-      "temporalCoverage": "2025-09-26/2026-10-27",
+      "creativeWorkStatus": "In Progress",
+      "dateCreated": "2025-10-31",
+      "temporalCoverage": "2025-10-31/2027-10-31",
       "about": [
         {
           "@id": "#method-seismology"
@@ -348,6 +354,7 @@
           "@id": "https://doi.org/10.7914/0zmj-7e94"
         }
       ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -361,9 +368,18 @@
       "name": "DAS"
     },
     {
+      "@id": "#geo-ansir-2025-003",
+      "@type": "GeoCoordinates",
+      "latitude": 19.820717,
+      "longitude": 204.539509
+    },
+    {
       "@id": "#place-ansir-2025-003",
       "@type": "Place",
-      "name": "Hawai'i, USA"
+      "name": "Hawai'i, USA",
+      "geo": {
+        "@id": "#geo-ansir-2025-003"
+      }
     },
     {
       "@id": "https://ror.org/01wspgy28",
@@ -425,9 +441,10 @@
       "identifier": "https://ror.org/05mmh0f86"
     },
     {
-      "@id": "#grant-arc-centre-of-excellence-in-optical-microcombs-for-breakthro",
+      "@id": "#grant-ga275196",
       "@type": "Grant",
-      "name": "ARC Centre of Excellence in Optical Microcombs for Breakthrough Science (COMBS)",
+      "name": "ARC Centre of Excellence in Optical Microcombs for Breakthrough Science",
+      "identifier": "GA275196",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -473,8 +490,8 @@
       "identifier": "ANSIR-2025-003",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-003",
       "creativeWorkStatus": "Planning",
-      "dateCreated": "2025-08-28",
-      "temporalCoverage": "2025-08-28/2026-07-28",
+      "dateCreated": "2026-06-29",
+      "temporalCoverage": "2026-06-29/2027-06-29",
       "about": [
         {
           "@id": "#method-das"
@@ -505,7 +522,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-centre-of-excellence-in-optical-microcombs-for-breakthro"
+          "@id": "#grant-ga275196"
         }
       ],
       "instrument": [
@@ -525,6 +542,7 @@
           "@id": "#instrument-nanometrics-trillium-compact-120s"
         }
       ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -621,8 +639,13 @@
       "description": "1 unit deployed"
     },
     {
-      "@id": "https://www.fdsn.org/networks/detail/Y7_2025/",
-      "@type": "Dataset"
+      "@id": "https://doi.org/10.7914/kd1t-kt29",
+      "@type": "Dataset",
+      "name": "Makatiti and Haroharo Nodal Array",
+      "author": "Eleanor R. H. Mestel, Athena Mace, Finnigan Illsley-Kemp, Kelvin Tapuke, Colin Wilson, Robert Pickle, Chengxin Jiang, Meghan Miller",
+      "datePublished": "2025",
+      "publisher": "International Federation of Digital Seismograph Networks",
+      "identifier": "https://doi.org/10.7914/kd1t-kt29"
     },
     {
       "@id": "#project-ANSIR-2025-004",
@@ -636,7 +659,7 @@
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-004",
       "creativeWorkStatus": "In Progress",
       "dateCreated": "2025-09-22",
-      "temporalCoverage": "2025-09-22/2026-03-23",
+      "temporalCoverage": "2025-09-22/2026-03-30",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -680,10 +703,10 @@
       ],
       "hasPart": [
         {
-          "@id": "https://www.fdsn.org/networks/detail/Y7_2025/"
+          "@id": "https://doi.org/10.7914/kd1t-kt29"
         }
       ],
-      "conditionsOfAccess": "restricted",
+      "conditionsOfAccess": "embargoes",
       "ethicsPolicy": "We have been speaking with representatives of local Iwi (Indigenous Māori tribal groups) in whose rohe (region) Makatiti and Haroharo lies, including Ngāti Tarāwhai, Ngāti Pikiao, Ngāti Rangithi, Tūhourangi and Ngāti Ronogomai. We have had multiple meetings with representatives of Ngāti Tarāwhai, including the chair. They have expressed their support of the project and will be actively involved in the deployment and management of the network. The proposed project was taken to the board meeting of Te Mana O Ngāti Rangitihi Trust, and they have agreed to the proposed seismometer testing within the Ōkataina caldera: a cultural monitor will observe the work. We have met with the Taiao (environment) lead for Tūhourangi about the project. They have expressed verbal enthusiasm about the project, but it has not yet been confirmed. The chair of Rotoiti 15 trust (see below) is also the chair of Ngāti Pikiao. We continue to build relationships in the region with other people and representatives of other Iwi as recommended by our partners.\n\nThe land the seismometers are planned on is managed by three organisations: Rotoiti 15, Māori Investments Limited and the Department of Conservation (DOC). We have permission from each of these organisations to install the network, subject to access and health & safety conditions for the fieldwork. Rotoiti 15 is an Iwi trust that represents Ngāti Pikiao, Ngāti Tarāwhai and Ngāti Rongomai interests. They manage the land that 32 of the proposed sites are on, and road access leading to 11 of the sites on DOC managed land. We have met multiple times with the general manager of Rotoiti 15. Their Taiao board has expressed support for the project and representatives will be actively involved in the deployment of the network. We will present on the project to keep the committee updated on 17th July. Māori Investments Limited manages the land that 27 of the proposed stations are on. The operations manager has confirmed they are in support of us putting the stations in, subject to access, health and safety conditions to be discussed closer to the time. Department of Conservation (DOC) manages the land that 25 of the proposed stations are on. We have applied for permission with DOC, and they have granted us permission for the install.. All of the conversations around partnership, access and permissions above are ongoing. Parts of the network layout may change as discussions progress about permissions, access, and safety. There will be cultural induction before the work begins, and local guides and cultural observers from these communities coming with the physical science team during the fieldwork.",
       "provider": {
         "@id": "https://ansir.org.au"
@@ -701,7 +724,7 @@
     {
       "@id": "#shape-placeholder-01",
       "@type": "GeoShape",
-      "polygon": "-38.61258 175.83755 -38.48692 176.11084 -38.61043 176.30859 -38.79156 176.09711"
+      "polygon": "-38.63895 175.87793 -38.51537 176.09023 -38.63717 176.26271 -38.73957 176.07712"
     },
     {
       "@id": "#place-placeholder-01",
@@ -760,8 +783,8 @@
       "identifier": "Placeholder-01",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-08-27",
-      "temporalCoverage": "2023-08-27/2023-10-27",
+      "dateCreated": "2023-08-29",
+      "temporalCoverage": "2023-08-29/2023-10-29",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -787,6 +810,9 @@
         },
         {
           "@id": "#instrument-igu-16hr-3c-5hz"
+        },
+        {
+          "@id": "#instrument-igu-bd3c-5s"
         }
       ],
       "hasPart": [
@@ -804,13 +830,13 @@
     {
       "@id": "#geo-sx-2023",
       "@type": "GeoCoordinates",
-      "latitude": -35.162442,
-      "longitude": 137.136841
+      "latitude": -34.512498,
+      "longitude": 137.109375
     },
     {
       "@id": "#shape-sx-2023",
       "@type": "GeoShape",
-      "polygon": "-34.88593 135.53833 -34.03445 136.03271 -33.50640 136.70640 -32.33356 138.26294 -33.51392 138.20801 -35.41591 138.80127 -36.02245 137.86743 -35.80890 136.65894"
+      "polygon": "-34.867 135.6581 -33.5064 136.7064 -32.4916 138.1907 -33.5206 138.063 -35.2944 138.553 -35.9231 137.5602 -35.7619 136.6848"
     },
     {
       "@id": "#place-sx-2023",
@@ -875,8 +901,8 @@
       "identifier": "SX-2023",
       "url": "https://bvkay.github.io/ansir-data/?id=SX-2023",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2023-02-24",
-      "temporalCoverage": "2023-02-24/2025-09-26",
+      "dateCreated": "2023-02-25",
+      "temporalCoverage": "2023-02-25/2026-04-30",
       "about": [
         {
           "@id": "#method-seismology"
@@ -912,6 +938,7 @@
           "@id": "https://doi.org/10.7914/9j20-yq91"
         }
       ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -922,26 +949,16 @@
     {
       "@id": "#geo-anu-2021",
       "@type": "GeoCoordinates",
-      "latitude": -35.010181,
-      "longitude": 149.383314
-    },
-    {
-      "@id": "#shape-anu-2021",
-      "@type": "GeoShape",
-      "polygon": "-35.00800 149.37808 -35.00885 149.38799 -35.01190 149.38743 -35.01092 149.37726"
+      "latitude": -35.069007,
+      "longitude": 149.37767
     },
     {
       "@id": "#place-anu-2021",
       "@type": "Place",
       "name": "Lake George, Canberra, Australia",
-      "geo": [
-        {
-          "@id": "#geo-anu-2021"
-        },
-        {
-          "@id": "#shape-anu-2021"
-        }
-      ]
+      "geo": {
+        "@id": "#geo-anu-2021"
+      }
     },
     {
       "@id": "https://doi.org/10.7914/t2z3-2m87",
@@ -979,8 +996,8 @@
       "identifier": "ANU-2021",
       "url": "https://bvkay.github.io/ansir-data/?id=ANU-2021",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-11-19",
-      "temporalCoverage": "2020-11-19/2020-12-20",
+      "dateCreated": "2020-11-20",
+      "temporalCoverage": "2020-11-20/2020-12-21",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -1021,28 +1038,18 @@
       }
     },
     {
-      "@id": "#geo-placeholder-03",
+      "@id": "#geo-anu-2023-001",
       "@type": "GeoCoordinates",
-      "latitude": -43.907665,
-      "longitude": 169.064226
+      "latitude": -43.908433,
+      "longitude": 169.065514
     },
     {
-      "@id": "#shape-placeholder-03",
-      "@type": "GeoShape",
-      "polygon": "-43.90148 169.05393 -43.89851 169.06148 -43.91236 169.07504 -43.91570 169.06526"
-    },
-    {
-      "@id": "#place-placeholder-03",
+      "@id": "#place-anu-2023-001",
       "@type": "Place",
       "name": "Alpine Fault, Haust, New Zealand",
-      "geo": [
-        {
-          "@id": "#geo-placeholder-03"
-        },
-        {
-          "@id": "#shape-placeholder-03"
-        }
-      ]
+      "geo": {
+        "@id": "#geo-anu-2023-001"
+      }
     },
     {
       "@id": "https://orcid.org/0000-0002-0738-0187",
@@ -1096,18 +1103,18 @@
       "identifier": "https://doi.org/10.7914/bfp8-xv25"
     },
     {
-      "@id": "#project-Placeholder-03",
+      "@id": "#project-ANU-2023-001",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "South Island Seismology at the Speed of Light Experiment",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity and structure of the Alpine Fault near Haast, New Zealand in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator along Haast Pass.",
-      "identifier": "Placeholder-03",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-03",
+      "identifier": "ANU-2023-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-01-28",
-      "temporalCoverage": "2023-01-28/2023-10-28",
+      "dateCreated": "2023-01-27",
+      "temporalCoverage": "2023-01-27/2023-10-27",
       "about": [
         {
           "@id": "#method-das"
@@ -1117,7 +1124,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-03"
+        "@id": "#place-anu-2023-001"
       },
       "creator": [
         {
@@ -1159,26 +1166,26 @@
       }
     },
     {
-      "@id": "#geo-placeholder-04",
+      "@id": "#geo-s01-2019",
       "@type": "GeoCoordinates",
-      "latitude": -32.947606,
-      "longitude": 117.25708
+      "latitude": -32.494705,
+      "longitude": 117.355957
     },
     {
-      "@id": "#shape-placeholder-04",
+      "@id": "#shape-s01-2019",
       "@type": "GeoShape",
-      "polygon": "-30.36867 115.55577 -34.03496 115.60883 -34.95166 116.72426 -34.45222 118.63037 -33.08253 119.69009 -31.45390 119.43164 -30.32251 118.20749"
+      "polygon": "-30.36867 115.55577 -34.03496 115.60883 -34.95166 116.72426 -33.08253 119.69009 -31.4539 119.43164 -30.32251 118.20749"
     },
     {
-      "@id": "#place-placeholder-04",
+      "@id": "#place-s01-2019",
       "@type": "Place",
       "name": "South-West, Western Australia, Australia",
       "geo": [
         {
-          "@id": "#geo-placeholder-04"
+          "@id": "#geo-s01-2019"
         },
         {
-          "@id": "#shape-placeholder-04"
+          "@id": "#shape-s01-2019"
         }
       ]
     },
@@ -1245,9 +1252,10 @@
       }
     },
     {
-      "@id": "#grant-arc-linkage-project-lp170100890",
+      "@id": "#grant-lp170100890",
       "@type": "Grant",
-      "name": "ARC Linkage Project LP170100890",
+      "name": "ARC Linkage Project",
+      "identifier": "LP170100890",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
       }
@@ -1363,25 +1371,25 @@
       "identifier": "https://doi.org/10.1785/0220250308"
     },
     {
-      "@id": "#project-Placeholder-04",
+      "@id": "#project-S01-2019",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "South West Australia Network",
       "description": "The new deployment of ~25 broadband seismometers will provide the opportunity to dramatically improve the rendering of 3-D seismic structure in the crust and mantle lithosphere. The objective of this work is to provide a compilation of 3-D models, which will be an effective characterisation of the structure of the craton and its margins. These data and models will provide improved information for enhanced assessment of seismic ground shaking from regional earthquakes and facilitate an improved understanding of mineral resource potential.",
-      "identifier": "Placeholder-04",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-04",
+      "identifier": "S01-2019",
+      "url": "https://bvkay.github.io/ansir-data/?id=S01-2019",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-07-27",
-      "temporalCoverage": "2020-07-27/2023-08-27",
+      "dateCreated": "2020-07-28",
+      "temporalCoverage": "2020-07-28/2023-08-28",
       "about": [
         {
           "@id": "#method-seismology"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-04"
+        "@id": "#place-s01-2019"
       },
       "creator": [
         {
@@ -1408,7 +1416,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-arc-linkage-project-lp170100890"
+          "@id": "#grant-lp170100890"
         }
       ],
       "instrument": [
@@ -1456,6 +1464,7 @@
           "@id": "https://doi.org/10.7914/SN/2P_2020"
         }
       ],
+      "conditionsOfAccess": "open",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -1464,26 +1473,26 @@
       }
     },
     {
-      "@id": "#geo-placeholder-05",
+      "@id": "#geo-2018-s01",
       "@type": "GeoCoordinates",
-      "latitude": -16.042514,
-      "longitude": 127.446899
+      "latitude": -16.017106,
+      "longitude": 127.243652
     },
     {
-      "@id": "#shape-placeholder-05",
+      "@id": "#shape-2018-s01",
       "@type": "GeoShape",
       "polygon": "-14.7875 126.4954 -16.0501 129.2647 -16.5943 128.4751 -16.6961 125.9231"
     },
     {
-      "@id": "#place-placeholder-05",
+      "@id": "#place-2018-s01",
       "@type": "Place",
       "name": "Kimberley, Australia",
       "geo": [
         {
-          "@id": "#geo-placeholder-05"
+          "@id": "#geo-2018-s01"
         },
         {
-          "@id": "#shape-placeholder-05"
+          "@id": "#shape-2018-s01"
         }
       ]
     },
@@ -1497,29 +1506,34 @@
       "identifier": "https://doi.org/10.7914/SN/3O_2019"
     },
     {
-      "@id": "#project-Placeholder-05",
+      "@id": "#project-2018-S01",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "AKIMBA",
       "description": "Eight continuous broadband stations in the Kimberley region of northwest Australia. Designed to record both infrequent local events and earthquakes at the convergent margin to the north to image in the Australian lithosphere.",
-      "identifier": "Placeholder-05",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-05",
+      "identifier": "2018-S01",
+      "url": "https://bvkay.github.io/ansir-data/?id=2018-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2019-11-27",
-      "temporalCoverage": "2019-11-27/2020-04-27",
+      "dateCreated": "2019-11-28",
+      "temporalCoverage": "2019-11-28/2020-04-28",
       "about": [
         {
           "@id": "#method-seismology"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-05"
+        "@id": "#place-2018-s01"
       },
       "creator": [
         {
           "@id": "https://orcid.org/0000-0001-5494-2296"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-auscope"
         }
       ],
       "instrument": [
@@ -1551,17 +1565,17 @@
       }
     },
     {
-      "@id": "#geo-placeholder-06",
+      "@id": "#geo-2024-s01",
       "@type": "GeoCoordinates",
-      "latitude": -44.733039,
-      "longitude": 167.943535
+      "latitude": -44.644968,
+      "longitude": 167.880707
     },
     {
-      "@id": "#place-placeholder-06",
+      "@id": "#place-2024-s01",
       "@type": "Place",
       "name": "Milford Sound, New Zealand",
       "geo": {
-        "@id": "#geo-placeholder-06"
+        "@id": "#geo-2024-s01"
       }
     },
     {
@@ -1574,18 +1588,18 @@
       "identifier": "https://doi.org/10.7914/7b9m-1d60"
     },
     {
-      "@id": "#project-Placeholder-06",
+      "@id": "#project-2024-S01",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Fiordland Seismological Sounding of Landslides and Earthquakes",
       "description": "SmartSolo IGU-16HR 3C 5Hz nodal deployment to target seismicity along with avalanche and landslide detection along highway SH94 to Milford Sound in conjunction with a distributed acoustic sensing (DAS) experiment using a Silixa iDAS interrogator.",
-      "identifier": "Placeholder-06",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-06",
+      "identifier": "2024-S01",
+      "url": "https://bvkay.github.io/ansir-data/?id=2024-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2024-08-27",
-      "temporalCoverage": "2024-08-27/2024-09-26",
+      "dateCreated": "2024-08-28",
+      "temporalCoverage": "2024-08-28/2024-09-27",
       "about": [
         {
           "@id": "#method-das"
@@ -1595,7 +1609,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-06"
+        "@id": "#place-2024-s01"
       },
       "creator": [
         {
@@ -1606,6 +1620,14 @@
         },
         {
           "@id": "https://orcid.org/0000-0002-7017-620X"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-igu-16hr-3c-5hz"
+        },
+        {
+          "@id": "#instrument-silixa-idas-25"
         }
       ],
       "hasPart": [
@@ -1626,9 +1648,28 @@
       "name": "Magnetotelluric"
     },
     {
-      "@id": "#place-placeholder-07",
+      "@id": "#geo-ansir-2023-001",
+      "@type": "GeoCoordinates",
+      "latitude": 31.188868,
+      "longitude": -8.10791
+    },
+    {
+      "@id": "#shape-ansir-2023-001",
+      "@type": "GeoShape",
+      "polygon": "30.77016 -9.98657 30.13303 -9.62952 31.63234 -6.29242 32.12911 -6.80054"
+    },
+    {
+      "@id": "#place-ansir-2023-001",
       "@type": "Place",
-      "name": "High Atlas Mountains, Morocco"
+      "name": "High Atlas Mountains, Morocco",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2023-001"
+        },
+        {
+          "@id": "#shape-ansir-2023-001"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/03xc55g68",
@@ -1703,25 +1744,25 @@
       "description": "1 unit deployed"
     },
     {
-      "@id": "#project-Placeholder-07",
+      "@id": "#project-ANSIR-2023-001",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Morocco - Atlas Mountains MT Project",
       "description": "This ongoing joint project between ONHYM, the National Office of Hydrocarbons and Mines, Mohamed V University and the University of Adelaide is to map the geo-electrical structure of the High Atlas Mountains in Morocco.",
-      "identifier": "Placeholder-07",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-07",
+      "identifier": "ANSIR-2023-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2024-12-30",
-      "temporalCoverage": "2024-12-30/2025-07-30",
+      "dateCreated": "2024-12-28",
+      "temporalCoverage": "2024-12-28/2025-07-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-07"
+        "@id": "#place-ansir-2023-001"
       },
       "creator": [
         {
@@ -1759,9 +1800,28 @@
       }
     },
     {
-      "@id": "#place-placeholder-08",
+      "@id": "#geo-ansir-2023-002",
+      "@type": "GeoCoordinates",
+      "latitude": 35.197887,
+      "longitude": -3.084412
+    },
+    {
+      "@id": "#shape-ansir-2023-002",
+      "@type": "GeoShape",
+      "polygon": "35.20799 -3.26157 35.34028 -3.03223 35.13390 -2.88666 35.07098 -3.19565"
+    },
+    {
+      "@id": "#place-ansir-2023-002",
       "@type": "Place",
-      "name": "Nador, Morocco"
+      "name": "Nador, Morocco",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2023-002"
+        },
+        {
+          "@id": "#shape-ansir-2023-002"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/02jd4k732",
@@ -1779,25 +1839,25 @@
       }
     },
     {
-      "@id": "#project-Placeholder-08",
+      "@id": "#project-ANSIR-2023-002",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Morocco - Nador MT Geothermal Array",
       "description": "",
-      "identifier": "Placeholder-08",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-08",
+      "identifier": "ANSIR-2023-002",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-002",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-10-29",
-      "temporalCoverage": "2023-10-29/2023-12-29",
+      "dateCreated": "2023-10-27",
+      "temporalCoverage": "2023-10-27/2023-12-27",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-08"
+        "@id": "#place-ansir-2023-002"
       },
       "creator": [
         {
@@ -1838,39 +1898,39 @@
       }
     },
     {
-      "@id": "#geo-placeholder-09",
+      "@id": "#geo-ansir-2023-003",
       "@type": "GeoCoordinates",
       "latitude": 22.25,
       "longitude": -15.47
     },
     {
-      "@id": "#place-placeholder-09",
+      "@id": "#place-ansir-2023-003",
       "@type": "Place",
       "name": "West African Craton, Morocco",
       "geo": {
-        "@id": "#geo-placeholder-09"
+        "@id": "#geo-ansir-2023-003"
       }
     },
     {
-      "@id": "#project-Placeholder-09",
+      "@id": "#project-ANSIR-2023-003",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Morocco - SUD West African Craton Margin Profile",
       "description": "This project proposes a broadband magnetotelluric (MT) survey along a 185 km transect across the western margin of the West African Craton (WAC), extending from the Dakhla Coastal Basin through the Adrar Souttouf to the Reguibat Ridge. A total of 45 MT stations will be deployed, spaced at approximately 5 km intervals, with tighter spacing of 2.5 km in areas of known mineral prospectivity. The survey targets a geologically diverse region that includes Mesozoic basins, Ediacaran metamorphic complexes, and Archean craton, intersecting key structures associated with rare earth element (REE), gold, platinum group element (PGE), and iron oxide mineral systems. Data will be collected using ANSIR LEMI-423 instruments with Ag-AgCl electrodes and LEMI-120 magnetic coils. This work forms part of a collaboration between the University of Adelaide and Morocco’s Office National des Hydrocarbures et des Mines (ONHYM), and aims to generate new geophysical insights in a frontier area for exploration.",
-      "identifier": "Placeholder-09",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-09",
+      "identifier": "ANSIR-2023-003",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-003",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-12-31",
-      "temporalCoverage": "2023-12-31/2024-02-29",
+      "dateCreated": "2023-12-30",
+      "temporalCoverage": "2023-12-30/2024-02-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-09"
+        "@id": "#place-ansir-2023-003"
       },
       "creator": [
         {
@@ -1911,6 +1971,12 @@
       }
     },
     {
+      "@id": "#geo-ansir-2022-001",
+      "@type": "GeoCoordinates",
+      "latitude": -30.182779,
+      "longitude": 137.022514
+    },
+    {
       "@id": "#shape-ansir-2022-001",
       "@type": "GeoShape",
       "polygon": "-30.1458828 136.9748 -30.226683 136.977426 -30.224282 137.069635 -30.143874 137.068255"
@@ -1919,9 +1985,14 @@
       "@id": "#place-ansir-2022-001",
       "@type": "Place",
       "name": "Roxby Downs, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-ansir-2022-001"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ansir-2022-001"
+        },
+        {
+          "@id": "#shape-ansir-2022-001"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/04g3scy39",
@@ -1930,9 +2001,10 @@
       "identifier": "https://ror.org/04g3scy39"
     },
     {
-      "@id": "#grant-accelerated-discovery-initiative-project",
+      "@id": "#grant-rd02-260",
       "@type": "Grant",
-      "name": "Accelerated Discovery Initiative project",
+      "name": "Accelerated Discovery Initiative (Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry)",
+      "identifier": "RD02-260",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -1941,14 +2013,6 @@
       "@id": "#funder-fortescue-metals-group",
       "@type": "Organization",
       "name": "Fortescue Metals Group"
-    },
-    {
-      "@id": "#grant-fortescue-metals-group",
-      "@type": "Grant",
-      "name": "",
-      "funder": {
-        "@id": "#funder-fortescue-metals-group"
-      }
     },
     {
       "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries",
@@ -2020,7 +2084,7 @@
         "Dataset",
         "Project"
       ],
-      "name": "Vulcan Magnetotelluric & Passive Seismic Array",
+      "name": "Vulcan Magnetotelluric and Passive Seismic Array",
       "description": "FMG Resources Pty Ltd (FMG) was successful in securing Round 2 Accelerated Discovery Initiative (ADI) funding for its proposed Integrated Exploration Under Deep Cover: Geophysics, Geochronology, Geochemistry research collaboration project with the University of Adelaide (UoA), where new passive seismic and magnetotelluric data were collected across the Vulcan prospect in South Australia.",
       "identifier": "ANSIR-2022-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-001",
@@ -2052,10 +2116,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-project"
+          "@id": "#grant-rd02-260"
         },
         {
-          "@id": "#grant-fortescue-metals-group"
+          "@id": "#grant-rd02-260"
         }
       ],
       "instrument": [
@@ -2112,17 +2176,42 @@
       }
     },
     {
-      "@id": "#shape-placeholder-11",
+      "@id": "#geo-ansir-2022-002",
+      "@type": "GeoCoordinates",
+      "latitude": -31.075138,
+      "longitude": 132.467651
+    },
+    {
+      "@id": "#shape-ansir-2022-002",
       "@type": "GeoShape",
       "polygon": "-31.52957015 131.8817282 -31.53131734 132.3506857 -30.84900257 132.9100787 -30.84784933 133.3160539 -30.63292048 132.7533913 -30.70583935 132.6026898"
     },
     {
-      "@id": "#place-placeholder-11",
+      "@id": "#place-ansir-2022-002",
       "@type": "Place",
       "name": "Western Gawler Craton, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-11"
+      "geo": [
+        {
+          "@id": "#geo-ansir-2022-002"
+        },
+        {
+          "@id": "#shape-ansir-2022-002"
+        }
+      ]
+    },
+    {
+      "@id": "#grant-rd02-296",
+      "@type": "Grant",
+      "name": "Accelerated Discovery Initiative (Magnetotelluric, Passive Seismic and Magnetic Modelling Study)",
+      "identifier": "RD02-296",
+      "funder": {
+        "@id": "https://ror.org/04g3scy39"
       }
+    },
+    {
+      "@id": "#funder-western-areas-ltd",
+      "@type": "Organization",
+      "name": "Western Areas Ltd"
     },
     {
       "@id": "https://doi.org/10.7914/6j8j-9f06",
@@ -2134,18 +2223,18 @@
       "identifier": "https://doi.org/10.7914/6j8j-9f06"
     },
     {
-      "@id": "#project-Placeholder-11",
+      "@id": "#project-ANSIR-2022-002",
       "@type": [
         "Dataset",
         "Project"
       ],
-      "name": "Western Gawler Magnetotelluric & Passive Seismic Project",
+      "name": "Western Gawler Magnetotelluric and Passive Seismic Project",
       "description": "The discovery of magmatic Ni-Cu sulphide in the Western Gawler Craton, confirmed the presence of significant, intrusive-hosted magmatic Ni-Cu sulphide in the Fowler Domain. The primary aim of this proposal is to develop a 3D model the Fowler Domain crust from the near surface to the Moho to identify the regional structural controls on emplacement of Ni-Cu-PGE prospective mafic-ultramafic intrusions. This proposal is in a collaboration between Western Areas and the University of Adelaide to complete three regionally-spaced magnetotelluric (MT) and passive seismic transects across key areas of the Fowler Domain. Such new data sets, coupled with legacy MT data, will be used to generate detailed 2D and 3D resistivity models of the Fowler Domain, with resolution from the near surface to the Moho. Passive seismic data will also constrain the cover sequences that can be introduced into the resistivity inversion. The project will integrate and interpret all the new and legacy datasets simultaneously to develop a 3D model with both sections and 3D views as outputs",
-      "identifier": "Placeholder-11",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-11",
+      "identifier": "ANSIR-2022-002",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2022-002",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2022-03-29",
-      "temporalCoverage": "2022-03-29/2022-03-29",
+      "dateCreated": "2022-03-28",
+      "temporalCoverage": "2022-03-28/2022-03-28",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -2155,7 +2244,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-11"
+        "@id": "#place-ansir-2022-002"
       },
       "creator": [
         {
@@ -2173,7 +2262,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-project"
+          "@id": "#grant-rd02-296"
+        },
+        {
+          "@id": "#grant-rd02-296"
         }
       ],
       "instrument": [
@@ -2215,6 +2307,12 @@
       }
     },
     {
+      "@id": "#geo-mt02-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -31.094102,
+      "longitude": 140.932617
+    },
+    {
       "@id": "#shape-mt02-2020",
       "@type": "GeoShape",
       "polygon": "-29.5 139 -29.5 140.5 -29.758 141 -30.765 141.828 -31.765 142.3 -32.754 141 -32.754 140.22 -32 139.758 -31.241 139.262"
@@ -2223,9 +2321,14 @@
       "@id": "#place-mt02-2020",
       "@type": "Place",
       "name": "Curnamona Province, Australia",
-      "geo": {
-        "@id": "#shape-mt02-2020"
-      }
+      "geo": [
+        {
+          "@id": "#geo-mt02-2020"
+        },
+        {
+          "@id": "#shape-mt02-2020"
+        }
+      ]
     },
     {
       "@id": "#instrument-mtu-5c",
@@ -2266,8 +2369,8 @@
       "identifier": "MT02-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT02-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2021-05-29",
-      "temporalCoverage": "2021-05-29/2022-12-29",
+      "dateCreated": "2021-05-28",
+      "temporalCoverage": "2021-05-28/2022-12-28",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -2328,26 +2431,26 @@
       }
     },
     {
-      "@id": "#geo-placeholder-12",
+      "@id": "#geo-s01-2020",
       "@type": "GeoCoordinates",
-      "latitude": -31.195476,
-      "longitude": 141.168823
+      "latitude": -31.168747,
+      "longitude": 140.493164
     },
     {
-      "@id": "#shape-placeholder-12",
+      "@id": "#shape-s01-2020",
       "@type": "GeoShape",
-      "polygon": "-29.80252 139.19678 -29.42046 139.94385 -29.49699 140.83374 -29.75800 141.00000 -30.22110 141.77856 -30.82678 142.10815 -31.24099 142.22900 -31.71882 142.36084 -32.25927 142.26196 -32.75400 141.00000 -32.75400 140.22000 -32.47270 139.71313 -32.17561 139.30664 -31.24100 139.26200"
+      "polygon": "-29.5 139 -29.5 140.5 -29.758 141 -30.765 141.828 -31.765 142.3 -32.754 141 -32.754 140.22 -32 139.758 -31.241 139.262"
     },
     {
-      "@id": "#place-placeholder-12",
+      "@id": "#place-s01-2020",
       "@type": "Place",
       "name": "Curnamona Province, Australia",
       "geo": [
         {
-          "@id": "#geo-placeholder-12"
+          "@id": "#geo-s01-2020"
         },
         {
-          "@id": "#shape-placeholder-12"
+          "@id": "#shape-s01-2020"
         }
       ]
     },
@@ -2377,15 +2480,15 @@
       "identifier": "https://doi.org/10.7914/6q5b-va48"
     },
     {
-      "@id": "#project-Placeholder-12",
+      "@id": "#project-S01-2020",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Curnamona Downward Looking Telescope: Curnamona Cube Passive Seismic Program",
       "description": "Running alongside the MT deployments, the Curnamona Cube project is also installing 200 passive seismic stations across the same 20 km grid. These instruments are being used to record ambient seismic noise and teleseismic events, which will allow researchers to develop detailed models of seismic velocity variations throughout the crust and upper mantle. This dual approach enables a multi-parameter perspective on lithospheric structure, enhancing resolution and interpretability. Additionally, a pilot observatory known as the Curnamona SuperSite is being established near the Kalkaroo deposit. At this site, a smaller grid of seismometers, MT instruments, and heat-flow probes are co-located to allow long-term monitoring and advanced Earth imaging experiments.\n",
-      "identifier": "Placeholder-12",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-12",
+      "identifier": "S01-2020",
+      "url": "https://bvkay.github.io/ansir-data/?id=S01-2020",
       "creativeWorkStatus": "Complete",
       "dateCreated": "2022-03-29",
       "temporalCoverage": "2022-03-29/2022-07-29",
@@ -2395,7 +2498,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-12"
+        "@id": "#place-s01-2020"
       },
       "creator": [
         {
@@ -2447,13 +2550,13 @@
     {
       "@id": "#geo-s03-2023",
       "@type": "GeoCoordinates",
-      "latitude": -33.699672,
-      "longitude": 136.470795
+      "latitude": -33.655209,
+      "longitude": 136.653442
     },
     {
       "@id": "#shape-s03-2023",
       "@type": "GeoShape",
-      "polygon": "-33.60089 136.20300 -33.43144 136.47217 -33.43603 136.84021 -33.77915 136.85944 -33.90462 136.62872 -33.87216 136.43854"
+      "polygon": "-33.58344 136.25152 -33.44463 136.48477 -33.45291 136.8252 -33.76621 136.83084 -33.88607 136.60935 -33.87216 136.43854"
     },
     {
       "@id": "#place-s03-2023",
@@ -2484,9 +2587,10 @@
       "identifier": "https://ror.org/021z9m619"
     },
     {
-      "@id": "#grant-crc-p-accelerating-exploration-and-extraction-of-renewable-n",
+      "@id": "#grant-ga329799",
       "@type": "Grant",
       "name": "CRC-P: Accelerating exploration and extraction of renewable natural hydrogen",
+      "identifier": "GA329799",
       "funder": {
         "@id": "https://ror.org/021z9m619"
       }
@@ -2540,7 +2644,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-crc-p-accelerating-exploration-and-extraction-of-renewable-n"
+          "@id": "#grant-ga329799"
         }
       ],
       "instrument": [
@@ -2564,6 +2668,12 @@
       }
     },
     {
+      "@id": "#geo-ansir-2023-06",
+      "@type": "GeoCoordinates",
+      "latitude": -33.631058,
+      "longitude": 136.5271
+    },
+    {
       "@id": "#shape-ansir-2023-06",
       "@type": "GeoShape",
       "polygon": "-33.58344 136.25152 -33.44463 136.48477 -33.45291 136.8252 -33.76621 136.83084 -33.88607 136.60935 -33.87216 136.43854"
@@ -2572,9 +2682,14 @@
       "@id": "#place-ansir-2023-06",
       "@type": "Place",
       "name": "Eyre Peninsula, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-ansir-2023-06"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ansir-2023-06"
+        },
+        {
+          "@id": "#shape-ansir-2023-06"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0009-0000-1208-692X",
@@ -2617,18 +2732,26 @@
       }
     },
     {
+      "@id": "#grant-crc-p-accelerating-exploration-and-extraction-of-renewable-n",
+      "@type": "Grant",
+      "name": "CRC-P: Accelerating exploration and extraction of renewable natural hydrogen",
+      "funder": {
+        "@id": "https://ror.org/021z9m619"
+      }
+    },
+    {
       "@id": "#project-ANSIR-2023-06",
       "@type": [
         "Dataset",
         "Project"
       ],
-      "name": "Cowell-Cleve MT",
+      "name": "Eyre Peninsula Natural Hydrogen Magnetotelluric Study",
       "description": "The magnetotelluric component of the CRC-P \"Accelerating exploration and extraction of renewable natural hydrogen\" sought to characterise the crustal architecture of the study area on H2EX's PEL 691 license to identify potential sources, migration pathways and traps for hydrogen. There were multiple phases of deployment: (a) a 50-km feasibility transect in late 2023, (b) a regional-scale array covering 100 squared kilometres in early 2024, and (c) five infill transects, each spanning 25 - 60 km in late 2024.",
       "identifier": "ANSIR-2023-06",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-06",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-11-20",
-      "temporalCoverage": "2023-11-20/2024-11-08",
+      "dateCreated": "2023-11-19",
+      "temporalCoverage": "2023-11-19/2024-11-07",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -2718,26 +2841,26 @@
       }
     },
     {
-      "@id": "#geo-placeholder-14",
+      "@id": "#geo-anu-2023-02",
       "@type": "GeoCoordinates",
-      "latitude": -37.056958,
-      "longitude": 175.182495
+      "latitude": -36.9885,
+      "longitude": 175.039673
     },
     {
-      "@id": "#shape-placeholder-14",
+      "@id": "#shape-anu-2023-02",
       "@type": "GeoShape",
-      "polygon": "-37.63030 175.89280 -37.33500 174.71520 -36.45100 174.23920 -36.31950 174.69870 -36.67723 175.82520 -37.24320 175.82190"
+      "polygon": "-37.6303 175.8928 -37.335 174.7152 -36.451 174.2392 -36.3195 174.6987 -36.6651 175.48 -37.2432 175.8219"
     },
     {
-      "@id": "#place-placeholder-14",
+      "@id": "#place-anu-2023-02",
       "@type": "Place",
       "name": "Auckland Volcanic Field, New Zealand",
       "geo": [
         {
-          "@id": "#geo-placeholder-14"
+          "@id": "#geo-anu-2023-02"
         },
         {
-          "@id": "#shape-placeholder-14"
+          "@id": "#shape-anu-2023-02"
         }
       ]
     },
@@ -2759,15 +2882,15 @@
       "identifier": "https://doi.org/10.7914/8jxr-7029"
     },
     {
-      "@id": "#project-Placeholder-14",
+      "@id": "#project-ANU-2023-02",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Auckland-Hauraki Node Array",
       "description": "Short term (30 day) node array targeting the greater Auckland Volcanic Field and the Hauraki Rift to the east. 52 SmartSolo BD3C 5s nodes were deployed May-June 2023 which were supplemented by five additional Trillium Compact 120s stations (AKB*) which will remain installed for an extended period. All data recorded at 250 Hz.",
-      "identifier": "Placeholder-14",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-14",
+      "identifier": "ANU-2023-02",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023-02",
       "creativeWorkStatus": "Complete",
       "dateCreated": "2023-03-29",
       "temporalCoverage": "2023-03-29/..",
@@ -2777,7 +2900,7 @@
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-14"
+        "@id": "#place-anu-2023-02"
       },
       "creator": [
         {
@@ -2808,6 +2931,12 @@
       }
     },
     {
+      "@id": "#geo-mt03-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -30.976487,
+      "longitude": 140.318756
+    },
+    {
       "@id": "#shape-mt03-2020",
       "@type": "GeoShape",
       "polygon": "-30.8923056 140.3837222 -31.0243889 140.4195556 -31.0563056 140.2486389 -30.9250833 140.2131389"
@@ -2816,9 +2945,14 @@
       "@id": "#place-mt03-2020",
       "@type": "Place",
       "name": "Central Curnamona Province, Australia",
-      "geo": {
-        "@id": "#shape-mt03-2020"
-      }
+      "geo": [
+        {
+          "@id": "#geo-mt03-2020"
+        },
+        {
+          "@id": "#shape-mt03-2020"
+        }
+      ]
     },
     {
       "@id": "#person-ben-kay",
@@ -2837,9 +2971,10 @@
       }
     },
     {
-      "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti",
+      "@id": "#grant-rd01-117",
       "@type": "Grant",
       "name": "Accelerated Discovery Initiative (Jupiter MT Anomaly Definition Study)",
+      "identifier": "RD01-117",
       "funder": {
         "@id": "https://ror.org/04g3scy39"
       }
@@ -2870,8 +3005,8 @@
       "identifier": "MT03-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT03-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2021-04-28",
-      "temporalCoverage": "2021-04-28/2121-04-28",
+      "dateCreated": "2021-04-27",
+      "temporalCoverage": "2021-04-27/2121-04-27",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -2899,10 +3034,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti"
+          "@id": "#grant-rd01-117"
         },
         {
-          "@id": "#grant-accelerated-discovery-initiative-jupiter-mt-anomaly-definiti"
+          "@id": "#grant-rd01-117"
         }
       ],
       "instrument": [
@@ -2941,17 +3076,28 @@
       }
     },
     {
-      "@id": "#shape-placeholder-15",
+      "@id": "#geo-ua-2017-001",
+      "@type": "GeoCoordinates",
+      "latitude": -33.767732,
+      "longitude": 138.966064
+    },
+    {
+      "@id": "#shape-ua-2017-001",
       "@type": "GeoShape",
       "polygon": "-33.33493 138.55224 -33.35903 139.39488 -34.0674 139.39259 -34.4131833 138.8415333 -34.12685 138.57137"
     },
     {
-      "@id": "#place-placeholder-15",
+      "@id": "#place-ua-2017-001",
       "@type": "Place",
       "name": "Burra, South Australia, Australia",
-      "geo": {
-        "@id": "#shape-placeholder-15"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ua-2017-001"
+        },
+        {
+          "@id": "#shape-ua-2017-001"
+        }
+      ]
     },
     {
       "@id": "#grant-phd-funded-project",
@@ -2981,25 +3127,25 @@
       "identifier": "https://doi.org/10.1016/j.gr.2023.12.012"
     },
     {
-      "@id": "#project-Placeholder-15",
+      "@id": "#project-UA-2017-001",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Burra MT Project",
       "description": "The Burra MT project aims to investigate the 3D crustal architecture of the Adelaide Rift Complex in South Australia using a scale-integrated magnetotelluric (MT) approach to better understand fluid pathways in post-subduction porphyry copper systems. The project will combine long-period AusLAMP MT data with a new dense grid of broadband MT observations to image the electrical resistivity structure of the crust and upper mantle beneath the Burra region, which is known to host both magmatic and sedimentary-hosted copper mineralisation. Plans include the deployment of 82 broadband MT sites across the Northern Mount Lofty Ranges using LEMI-423 instrumentation from ANSIR and the Geological Survey of South Australia, with an additional 42 sites to be acquired using Phoenix MTU-5C systems to increase resolution and coverage.",
-      "identifier": "Placeholder-15",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-15",
+      "identifier": "UA-2017-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=UA-2017-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2018-07-28",
-      "temporalCoverage": "2018-07-28/2021-02-25",
+      "dateCreated": "2018-07-27",
+      "temporalCoverage": "2018-07-27/2021-02-24",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-15"
+        "@id": "#place-ua-2017-001"
       },
       "creator": [
         {
@@ -3093,30 +3239,19 @@
       }
     },
     {
-      "@id": "#journal-preview",
-      "@type": "Periodical",
-      "name": "Preview"
-    },
-    {
       "@id": "https://doi.org/10.1080/14432471.2021.1935718",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
       "author": "O’Donnell, J. P., Robertson, K.",
       "datePublished": "2021",
-      "isPartOf": {
-        "@id": "#journal-preview"
-      },
       "identifier": "https://doi.org/10.1080/14432471.2021.1935718"
     },
     {
       "@id": "https://doi.org/10.1080/14432471.2020.1855772",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Geological Survey of South Australia: SAEMC 2020, AusArray SA, Central Delamerian Broadband MT transect",
       "author": "Heath, P., O’Donnell, J., Robertson, K., Wise, T.",
       "datePublished": "2020",
-      "isPartOf": {
-        "@id": "#journal-preview"
-      },
       "identifier": "https://doi.org/10.1080/14432471.2020.1855772"
     },
     {
@@ -3130,8 +3265,8 @@
       "identifier": "MT01-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT01-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-08-31",
-      "temporalCoverage": "2020-08-31/2020-09-30",
+      "dateCreated": "2020-08-30",
+      "temporalCoverage": "2020-08-30/2020-09-29",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -3170,7 +3305,7 @@
           "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries"
         }
       ],
-      "citation": [
+      "hasPart": [
         {
           "@id": "https://doi.org/10.1080/14432471.2021.1935718"
         },
@@ -3186,9 +3321,18 @@
       }
     },
     {
+      "@id": "#geo-mt04-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -34.771371,
+      "longitude": 136.472168
+    },
+    {
       "@id": "#place-mt04-2020",
       "@type": "Place",
-      "name": "Spencer Gulf, Australia"
+      "name": "Spencer Gulf, Australia",
+      "geo": {
+        "@id": "#geo-mt04-2020"
+      }
     },
     {
       "@id": "https://ror.org/04v7hvq31",
@@ -3206,20 +3350,12 @@
       }
     },
     {
-      "@id": "#person-jake-perez",
-      "@type": "Person",
-      "name": "Dr Jake Perez",
-      "affiliation": {
-        "@id": "https://ror.org/04v7hvq31"
-      }
-    },
-    {
       "@id": "https://orcid.org/0000-0002-8678-412X",
       "@type": "Person",
-      "name": "Dr Stephan Thiel",
+      "name": "Dr Jake Perez",
       "identifier": "https://orcid.org/0000-0002-8678-412X",
       "affiliation": {
-        "@id": "#org-geological-survey-of-south-australia"
+        "@id": "https://ror.org/04v7hvq31"
       }
     },
     {
@@ -3263,8 +3399,8 @@
       "identifier": "MT04-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT04-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-10-30",
-      "temporalCoverage": "2020-10-30/2020-10-30",
+      "dateCreated": "2020-10-29",
+      "temporalCoverage": "2020-10-29/2020-10-29",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -3284,9 +3420,6 @@
           "@id": "https://orcid.org/0000-0002-7743-7812"
         },
         {
-          "@id": "#person-jake-perez"
-        },
-        {
           "@id": "https://orcid.org/0000-0002-8678-412X"
         },
         {
@@ -3294,6 +3427,9 @@
         },
         {
           "@id": "https://orcid.org/0000-0002-9738-7277"
+        },
+        {
+          "@id": "#person-ben-kay"
         }
       ],
       "funding": [
@@ -3322,6 +3458,15 @@
         },
         {
           "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries"
+        },
+        {
+          "@id": "#instrument-obem"
+        },
+        {
+          "@id": "#instrument-lemi-423"
+        },
+        {
+          "@id": "#instrument-lemi-120-magnetic-coils"
         }
       ],
       "hasPart": [
@@ -3337,9 +3482,28 @@
       }
     },
     {
+      "@id": "#geo-mt05-2020",
+      "@type": "GeoCoordinates",
+      "latitude": -34.358739,
+      "longitude": 138.921432
+    },
+    {
+      "@id": "#shape-mt05-2020",
+      "@type": "GeoShape",
+      "polygon": "-34.35938 138.91371 -34.36554 138.92495 -34.35909 138.93027 -34.34967 138.92015"
+    },
+    {
       "@id": "#place-mt05-2020",
       "@type": "Place",
-      "name": "Burra, Australia"
+      "name": "Burra, Australia",
+      "geo": [
+        {
+          "@id": "#geo-mt05-2020"
+        },
+        {
+          "@id": "#shape-mt05-2020"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0002-7419-8545",
@@ -3351,9 +3515,10 @@
       }
     },
     {
-      "@id": "#grant-crc-p-kapunda-in-situ-copper-and-gold-field-recovery-trial",
+      "@id": "#grant-ga18145",
       "@type": "Grant",
       "name": "CRC-P Kapunda In-Situ Copper and Gold Field Recovery Trial",
+      "identifier": "GA18145",
       "funder": {
         "@id": "https://ror.org/021z9m619"
       }
@@ -3385,8 +3550,8 @@
       "identifier": "MT05-2020",
       "url": "https://bvkay.github.io/ansir-data/?id=MT05-2020",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2019-02-26",
-      "temporalCoverage": "2019-02-26/2020-06-28",
+      "dateCreated": "2019-02-25",
+      "temporalCoverage": "2019-02-25/2020-06-27",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -3411,7 +3576,7 @@
       ],
       "funding": [
         {
-          "@id": "#grant-crc-p-kapunda-in-situ-copper-and-gold-field-recovery-trial"
+          "@id": "#grant-ga18145"
         }
       ],
       "instrument": [
@@ -3450,28 +3615,9 @@
       }
     },
     {
-      "@id": "#geo-s02-2019",
-      "@type": "GeoCoordinates",
-      "latitude": -30.668924,
-      "longitude": 136.065674
-    },
-    {
-      "@id": "#shape-s02-2019",
-      "@type": "GeoShape",
-      "polygon": "-29.39444 133.42896 -30.61221 133.38501 -31.00851 134.96704 -31.98274 137.03247 -31.87085 137.60376 -31.17785 139.47144 -29.87191 139.05396 -29.85285 136.46118 -29.43272 135.45044 -29.35614 134.94507"
-    },
-    {
       "@id": "#place-s02-2019",
       "@type": "Place",
-      "name": "East-Central Gawler Craton, Australia",
-      "geo": [
-        {
-          "@id": "#geo-s02-2019"
-        },
-        {
-          "@id": "#shape-s02-2019"
-        }
-      ]
+      "name": "East-Central Gawler Craton, Australia"
     },
     {
       "@id": "https://orcid.org/0000-0003-1524-2312",
@@ -3521,6 +3667,11 @@
       "identifier": "https://doi.org/10.7914/SN/6K_2020"
     },
     {
+      "@id": "#journal-preview",
+      "@type": "Periodical",
+      "name": "Preview"
+    },
+    {
       "@id": "https://doi.org/10.1016/j.gr.2023.04.013",
       "@type": "ScholarlyArticle",
       "name": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
@@ -3561,8 +3712,8 @@
       "identifier": "S02-2019",
       "url": "https://bvkay.github.io/ansir-data/?id=S02-2019",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-09-27",
-      "temporalCoverage": "2020-09-27/2022-05-28",
+      "dateCreated": "2020-09-29",
+      "temporalCoverage": "2020-09-29/2022-05-30",
       "about": [
         {
           "@id": "#method-seismology"
@@ -3732,28 +3883,9 @@
       }
     },
     {
-      "@id": "#geo-ob01-2019",
-      "@type": "GeoCoordinates",
-      "latitude": -54.786335,
-      "longitude": 158.768921
-    },
-    {
-      "@id": "#shape-ob01-2019",
-      "@type": "GeoShape",
-      "polygon": "-54.07702 159.39514 -55.30248 159.18640 -55.33998 158.51624 -55.19602 158.12073 -54.05123 158.46130"
-    },
-    {
       "@id": "#place-ob01-2019",
       "@type": "Place",
-      "name": "Macquarie Ridge, Macquarie Island",
-      "geo": [
-        {
-          "@id": "#geo-ob01-2019"
-        },
-        {
-          "@id": "#shape-ob01-2019"
-        }
-      ]
+      "name": "Macquarie Ridge, Macquarie Island"
     },
     {
       "@id": "https://orcid.org/0000-0001-7072-490X",
@@ -3873,8 +4005,8 @@
       "identifier": "OB01-2019",
       "url": "https://bvkay.github.io/ansir-data/?id=OB01-2019",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-09-26",
-      "temporalCoverage": "2020-09-26/2022-01-27",
+      "dateCreated": "2020-09-28",
+      "temporalCoverage": "2020-09-28/2022-01-29",
       "about": [
         {
           "@id": "#method-seismology"
@@ -4037,22 +4169,12 @@
       "longitude": 168.43537
     },
     {
-      "@id": "#shape-s01-2022",
-      "@type": "GeoShape",
-      "polygon": "-45.47169 167.82166 -46.02367 169.33777 -46.38104 169.35974 -46.59284 168.18420 -45.98551 167.30530"
-    },
-    {
       "@id": "#place-s01-2022",
       "@type": "Place",
       "name": "Southland, New Zealand",
-      "geo": [
-        {
-          "@id": "#geo-s01-2022"
-        },
-        {
-          "@id": "#shape-s01-2022"
-        }
-      ]
+      "geo": {
+        "@id": "#geo-s01-2022"
+      }
     },
     {
       "@id": "https://ror.org/01jmxt844",
@@ -4111,7 +4233,7 @@
     {
       "@id": "#grant-rcp023",
       "@type": "Grant",
-      "name": "NHC Toka Tū Ake University Research Programme",
+      "name": "NHC Toka Tū Ake University Research Programme \"Seismic hazard of the southern South Island the neglected provinces\" (RCP023)",
       "identifier": "RCP023",
       "funder": {
         "@id": "https://ror.org/04p7g7c05"
@@ -4153,8 +4275,8 @@
       "identifier": "S01-2022",
       "url": "https://bvkay.github.io/ansir-data/?id=S01-2022",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-09-29",
-      "temporalCoverage": "2020-09-29/2023-09-29",
+      "dateCreated": "2020-09-30",
+      "temporalCoverage": "2020-09-30/2023-09-30",
       "about": [
         {
           "@id": "#method-seismology"
@@ -5888,9 +6010,120 @@
       }
     },
     {
+      "@id": "#geo-ansir-2017-001",
+      "@type": "GeoCoordinates",
+      "latitude": -28.746214,
+      "longitude": 138.466187
+    },
+    {
+      "@id": "#place-ansir-2017-001",
+      "@type": "Place",
+      "name": "",
+      "geo": {
+        "@id": "#geo-ansir-2017-001"
+      }
+    },
+    {
+      "@id": "#funder-government-of-south-australia",
+      "@type": "Organization",
+      "name": "Government of South Australia"
+    },
+    {
+      "@id": "#instrument-non-polarising-cuso-electrodes",
+      "@type": "IndividualProduct",
+      "name": "Non-polarising CuSO₄ Electrodes",
+      "description": "48 units deployed"
+    },
+    {
+      "@id": "#instrument-gel-tech-8g24m-74-ah-sealed-gel-battery",
+      "@type": "IndividualProduct",
+      "name": "Gel-Tech 8G24M 74 AH sealed gel battery",
+      "description": "20 units deployed"
+    },
+    {
+      "@id": "#project-ANSIR-2017-001",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Central Curnamona Magnetotelluric Traverse",
+      "description": "",
+      "identifier": "ANSIR-2017-001",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2017-001",
+      "creativeWorkStatus": "Complete",
+      "dateCreated": "2016-04-27",
+      "temporalCoverage": "2016-04-27/2016-05-28",
+      "about": [
+        {
+          "@id": "#method-magnetotelluric"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-ansir-2017-001"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-7106-0789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9738-7277"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7743-7812"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-pace-copper"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-lemi-423"
+        },
+        {
+          "@id": "#instrument-lemi-120-magnetic-coil"
+        },
+        {
+          "@id": "#instrument-non-polarising-cuso-electrodes"
+        },
+        {
+          "@id": "#instrument-field-laptop"
+        },
+        {
+          "@id": "#instrument-gel-tech-8g24m-74-ah-sealed-gel-battery"
+        }
+      ],
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#geo-ansir-2025-010",
+      "@type": "GeoCoordinates",
+      "latitude": -26.600193,
+      "longitude": 150.88623
+    },
+    {
+      "@id": "#shape-ansir-2025-010",
+      "@type": "GeoShape",
+      "polygon": "-28.01380 153.21533 -24.84657 153.12744 -24.83660 148.30444 -27.97500 148.35938"
+    },
+    {
       "@id": "#place-ansir-2025-010",
       "@type": "Place",
-      "name": "Southestern Queensland, Australia"
+      "name": "Southestern Queensland, Australia",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2025-010"
+        },
+        {
+          "@id": "#shape-ansir-2025-010"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0003-1489-7958",
@@ -5924,8 +6157,8 @@
       "identifier": "ANSIR-2025-010",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-010",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2025-09-17",
-      "temporalCoverage": "2025-09-17/2025-12-01",
+      "dateCreated": "2025-09-16",
+      "temporalCoverage": "2025-09-16/2025-11-30",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -5964,7 +6197,7 @@
           "@id": "#instrument-field-laptop"
         }
       ],
-      "conditionsOfAccess": "restricted",
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
@@ -6129,8 +6362,8 @@
       "identifier": "ANSIR-2026-002",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-002",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2026-02-20",
-      "temporalCoverage": "2026-02-20/2026-12-17",
+      "dateCreated": "2026-02-21",
+      "temporalCoverage": "2026-02-21/2026-12-18",
       "about": [
         {
           "@id": "#method-magnetotelluric"
@@ -6191,6 +6424,96 @@
         }
       ],
       "conditionsOfAccess": "restricted",
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#geo-ansir-2026-004",
+      "@type": "GeoCoordinates",
+      "latitude": -30.299704,
+      "longitude": 139.514008
+    },
+    {
+      "@id": "#shape-ansir-2026-004",
+      "@type": "GeoShape",
+      "polygon": "-30.33053 139.39728 -30.18344 139.43298 -30.25701 139.68018 -30.43715 139.55521"
+    },
+    {
+      "@id": "#place-ansir-2026-004",
+      "@type": "Place",
+      "name": "Lake Frome Embayment, Australia",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2026-004"
+        },
+        {
+          "@id": "#shape-ansir-2026-004"
+        }
+      ]
+    },
+    {
+      "@id": "#grant-dp250100936",
+      "@type": "Grant",
+      "name": "ARC Discovery Grant \"Discovering natural hydrogen in continental interiors\"",
+      "identifier": "DP250100936",
+      "funder": {
+        "@id": "https://ror.org/05mmh0f86"
+      }
+    },
+    {
+      "@id": "#project-ANSIR-2026-004",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Investigating the natural hydrogen potential of the Frome Embayment through resistivity and shear-wave velocity structure",
+      "description": "This multi-geoscientific research explores the interplay between fault systems, hydrothermal activity, and potential natural hydrogen production related to the Paralana Fault Zone in South Australia’s Northern Flinders Ranges. The survey area represents an ideal natural laboratory for testing hypotheses on the roles of the essential geological processes in natural hydrogen production within the continental crust. Two geophysical methods - Magnetotellurics and Passive Seismics are used to constrain the sedimentary cover thickness, geometry of the major faults and to evaluate their potential role in natural hydrogen generation, transport and storage in continental settings.",
+      "identifier": "ANSIR-2026-004",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-004",
+      "creativeWorkStatus": "Planning",
+      "dateCreated": "2026-04-19",
+      "temporalCoverage": "2026-04-19/2026-06-09",
+      "about": [
+        {
+          "@id": "#method-passive-seismic"
+        },
+        {
+          "@id": "#method-magnetotelluric"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-ansir-2026-004"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0009-0000-1208-692X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7106-0789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7337-8790"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-4670-8843"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9916-1020"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7743-7812"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-dp250100936"
+        }
+      ],
+      "conditionsOfAccess": "embargoes",
       "provider": {
         "@id": "https://ansir.org.au"
       },
