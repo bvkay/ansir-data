@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T12:13:42.581Z",
+  "exported": "2026-03-09T12:14:16.462Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -12029,8 +12029,8 @@
       "acronym": "",
       "description": "This project focuses on investigating the recent surge in earthquake activity in central Australia, particularly around Kati Thanda - Lake Eyre. Despite being a stable continental interior, this region experiences frequent intra-plate earthquakes, the causes of which remain poorly understood. A new AuScope-funded deployment of 40 seismic stations, including broadband and short-period sensors, will expand seismic coverage across the Lake Eyre Basin and adjacent Gawler Craton. This network will fill a critical gap in the national seismic array, enabling high-resolution imaging of sub-surface crustal structures hidden beneath extensive sedimentary cover. The seismic stations will be strategically positioned in a challenging and remote environment, including across the Simpson Desert, to capture valuable data that would otherwise be inaccessible.",
       "status": "Complete",
-      "startDate": "2018-09-30",
-      "endDate": "2022-05-31",
+      "startDate": "2018-09-29",
+      "endDate": "2022-05-30",
       "methods": [
         "Seismology"
       ],
@@ -12038,8 +12038,8 @@
       "location": {
         "region": "Lake Eyre Basin",
         "country": "Australia",
-        "coordinates": "-27.8676, 136.3034",
-        "polygon": ""
+        "coordinates": "-27.542067, 137.043457",
+        "polygon": "-25.59664, 137.63672; -25.53718, 133.98926; -26.18964, 133.43994; -29.20462, 135.00000; -29.94988, 136.86768; -29.49191, 138.60352; -26.42600, 139.87793; -25.67588, 138.84521"
       },
       "contributors": [
         {
@@ -12081,7 +12081,7 @@
           "agency": "Australian Research Council",
           "title": "ARC Discovery Early Career Researcher Award (DE190100062)",
           "identifier": "DE190100062",
-          "identifierType": "grant_number",
+          "identifierType": "",
           "agencyRor": "https://ror.org/05mmh0f86",
           "agencyLocation": "Canberra, Australia"
         }
@@ -12105,7 +12105,368 @@
         }
       ],
       "collectionQuantity": 40,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "AEB01",
+          "latitude": -28.7625,
+          "longitude": 136.803,
+          "altitude": "8.0",
+          "startTime": "2018-10-19",
+          "finishTime": "2020-11-13",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB02",
+          "latitude": -25.9877,
+          "longitude": 135.3248,
+          "altitude": "159.0",
+          "startTime": "2019-08-09",
+          "finishTime": "2020-11-12",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB03",
+          "latitude": -25.984,
+          "longitude": 136.3783,
+          "altitude": "85.0",
+          "startTime": "2019-10-17",
+          "finishTime": "2020-11-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB04",
+          "latitude": -29.0204,
+          "longitude": 135.5654,
+          "altitude": "109.0",
+          "startTime": "2019-08-06",
+          "finishTime": "2020-11-14",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB05",
+          "latitude": -25.9918,
+          "longitude": 137.1455,
+          "altitude": "41.0",
+          "startTime": "2019-10-17",
+          "finishTime": "2020-11-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB06",
+          "latitude": -25.9879,
+          "longitude": 137.9811,
+          "altitude": "33.0",
+          "startTime": "2019-07-16",
+          "finishTime": "2020-11-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB07",
+          "latitude": -26.3257,
+          "longitude": 139.4905,
+          "altitude": "28.0",
+          "startTime": "2019-08-02",
+          "finishTime": "2020-11-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB08",
+          "latitude": -27.3283,
+          "longitude": 138.77,
+          "altitude": "36.0",
+          "startTime": "2019-08-02",
+          "finishTime": "2020-11-10",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB09",
+          "latitude": -26.9161,
+          "longitude": 139.4397,
+          "altitude": "32.0",
+          "startTime": "2019-08-02",
+          "finishTime": "2020-11-10",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB10",
+          "latitude": -25.9134,
+          "longitude": 138.7889,
+          "altitude": "32.0",
+          "startTime": "2019-08-03",
+          "finishTime": "2020-11-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB11",
+          "latitude": -28.0118,
+          "longitude": 138.6856,
+          "altitude": "63.0",
+          "startTime": "2018-10-28",
+          "finishTime": "2019-07-31",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB12",
+          "latitude": -28.7039,
+          "longitude": 138.6539,
+          "altitude": "28.0",
+          "startTime": "2018-10-28",
+          "finishTime": "2019-07-31",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB13",
+          "latitude": -29.3233,
+          "longitude": 138.3455,
+          "altitude": "58.0",
+          "startTime": "2018-10-28",
+          "finishTime": "2019-07-31",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB14",
+          "latitude": -29.6404,
+          "longitude": 137.6711,
+          "altitude": "80.0",
+          "startTime": "2019-08-04",
+          "finishTime": "2020-11-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB15",
+          "latitude": -29.3061,
+          "longitude": 136.726,
+          "altitude": "40.0",
+          "startTime": "2018-10-21",
+          "finishTime": "2019-08-06",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB16",
+          "latitude": -28.8404,
+          "longitude": 136.4092,
+          "altitude": "95.0",
+          "startTime": "2018-10-20",
+          "finishTime": "2019-08-06",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB17",
+          "latitude": -28.2366,
+          "longitude": 135.8991,
+          "altitude": "104.0",
+          "startTime": "2018-10-21",
+          "finishTime": "2020-11-13",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB18",
+          "latitude": -27.3088,
+          "longitude": 135.2305,
+          "altitude": "150.0",
+          "startTime": "2018-10-17",
+          "finishTime": "2020-11-10",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB19",
+          "latitude": -26.8503,
+          "longitude": 134.889,
+          "altitude": "188.0",
+          "startTime": "2018-10-24",
+          "finishTime": "2019-08-09",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AEB20",
+          "latitude": -26.361,
+          "longitude": 134.4426,
+          "altitude": "291.0",
+          "startTime": "2018-10-25",
+          "finishTime": "2019-08-09",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AES01",
+          "latitude": -26.2685,
+          "longitude": 133.7975,
+          "altitude": "377.0",
+          "startTime": "2018-10-25",
+          "finishTime": "2020-11-12",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AES02",
+          "latitude": -26.7521,
+          "longitude": 134.1124,
+          "altitude": "259.0",
+          "startTime": "2018-10-16",
+          "finishTime": "2019-08-08",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES03",
+          "latitude": -27.1586,
+          "longitude": 134.4371,
+          "altitude": "218.0",
+          "startTime": "2018-10-16",
+          "finishTime": "2019-08-03",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES04",
+          "latitude": -28.4765,
+          "longitude": 135.4166,
+          "altitude": "104.0",
+          "startTime": "2018-10-20",
+          "finishTime": "2019-08-07",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES05",
+          "latitude": -29.0538,
+          "longitude": 135.1635,
+          "altitude": "139.0",
+          "startTime": "2019-08-06",
+          "finishTime": "2020-11-14",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES06",
+          "latitude": -29.365,
+          "longitude": 136.1081,
+          "altitude": "108.0",
+          "startTime": "2019-08-05",
+          "finishTime": "2020-11-12",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES07",
+          "latitude": -26.1095,
+          "longitude": 134.8556,
+          "altitude": "220.0",
+          "startTime": "2018-10-25",
+          "finishTime": "2020-11-13",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES08",
+          "latitude": -26.662,
+          "longitude": 135.231,
+          "altitude": "167.0",
+          "startTime": "2018-10-24",
+          "finishTime": "2019-08-09",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES09",
+          "latitude": -27.3482,
+          "longitude": 135.9046,
+          "altitude": "139.0",
+          "startTime": "2018-10-18",
+          "finishTime": "2019-08-07",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "AES10",
+          "latitude": -28.122,
+          "longitude": 136.4672,
+          "altitude": "28.0",
+          "startTime": "2018-10-19",
+          "finishTime": "2020-11-14",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES11",
+          "latitude": -27.8676,
+          "longitude": 136.3034,
+          "altitude": "73.0",
+          "startTime": "2018-10-19",
+          "finishTime": "2020-11-14",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES12",
+          "latitude": -29.0702,
+          "longitude": 136.9962,
+          "altitude": "27.0",
+          "startTime": "2018-10-20",
+          "finishTime": "2019-08-05",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES13",
+          "latitude": -29.7977,
+          "longitude": 136.8899,
+          "altitude": "66.0",
+          "startTime": "2018-10-21",
+          "finishTime": "2019-08-05",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES14",
+          "latitude": -28.9284,
+          "longitude": 135.8522,
+          "altitude": "136.0",
+          "startTime": "2019-08-06",
+          "finishTime": "2020-11-14",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES15",
+          "latitude": -28.8634,
+          "longitude": 136.168,
+          "altitude": "101.0",
+          "startTime": "2018-10-20",
+          "finishTime": "2019-08-06",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES16",
+          "latitude": -28.0148,
+          "longitude": 135.1015,
+          "altitude": "89.0",
+          "startTime": "2018-10-18",
+          "finishTime": "2020-11-10",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES17",
+          "latitude": -26.1281,
+          "longitude": 137.5925,
+          "altitude": "30.0",
+          "startTime": "2019-10-17",
+          "finishTime": "2020-11-11",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES18",
+          "latitude": -25.8561,
+          "longitude": 137.3698,
+          "altitude": "4.0",
+          "startTime": "2019-10-17",
+          "finishTime": "2020-11-11",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES19",
+          "latitude": -25.7501,
+          "longitude": 137.6647,
+          "altitude": "42.0",
+          "startTime": "2019-10-17",
+          "finishTime": "2020-11-11",
+          "instrument": "LE-3Dlite MkII (SP)"
+        },
+        {
+          "name": "AES20",
+          "latitude": -25.7314,
+          "longitude": 134.2701,
+          "altitude": "328.0",
+          "startTime": "2018-10-26",
+          "finishTime": "2020-11-12",
+          "instrument": "LE-3Dlite MkII (SP)"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/5G_2018",
@@ -12117,7 +12478,7 @@
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072989",
-          "type": "conference_presentation"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.59350/1evzk-y6b17",
@@ -12133,7 +12494,7 @@
         },
         {
           "identifier": "https://doi.org/10.1785/0220250032",
-          "type": "journal_article"
+          "type": ""
         }
       ],
       "dataAccess": "",
