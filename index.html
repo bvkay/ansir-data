@@ -1,46 +1,5 @@
 <!DOCTYPE html>
-<!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v011)
-    Based on: git_projects_v010.html
 
-    Changes in v011:
-      - Collection site markers shown on map when project popup opens
-        (inverted black triangles for each site location)
-      - Site popups show name, instrument, coordinates
-      - Markers removed when project popup closes
-      - collectionSites passed through transformProject()
-      - Compatible with GAS code v18 (instrument + serial fields)
-
-    Changes in v010:
-      - Full academic citations for publications, datasets, and networks
-        (authors, year, title, journal — resolved at publish by v14 GAS via CrossRef/DataCite)
-      - renderCitationItem() helper for consistent citation display
-      - Removed standalone "Data Access" text section from expanded card
-        (Open Data pill badge in header is kept)
-
-    Changes in v009:
-      - Consumes structured JSON from v13 GAS export (no more semicolon parsing)
-      - Simplified transformProject() — data arrives pre-structured
-      - Removed parseArrayField, parseMethodsField, parseContributors,
-        parseFundingRecords, parseInstruments, parseRelatedObjects functions
-
-    This version fetches project data from a static data.json file
-    hosted alongside this HTML on GitHub Pages, instead of calling
-    Google Apps Script directly. This eliminates the 4-5 second
-    GAS cold-start delay for public visitors.
-
-    Data flow:
-      Google Sheet → GAS export trigger → data.json → GitHub repo
-      GitHub Pages serves this HTML + data.json
-      Squarespace embeds via iframe
-
-    Deep linking:
-      When embedded in Squarespace, the iframe communicates with the
-      parent page via postMessage to keep the browser URL in sync.
-      Shared links point to the Squarespace page (not GitHub Pages)
-      using the SQUARESPACE_PARENT_URL config. The parent page passes
-      any ?id= parameter down to the iframe on load.
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1452,23 +1411,43 @@
         }
 
         // Copy permalink to clipboard
+        // v013: Added fallback for non-HTTPS contexts (file://, http://, iframes)
         function copyPermalink(project, event) {
             event.stopPropagation(); // Prevent card expansion
-            
+
             const permalink = generatePermalink(project);
-            
-            // Copy to clipboard
-            navigator.clipboard.writeText(permalink).then(() => {
-                // Show toast notification
+
+            function showCopyToast() {
                 const toast = document.getElementById('permalink-toast');
                 toast.classList.add('show');
-                
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                }, 3000);
-            }).catch(err => {
-                console.error('Failed to copy permalink:', err);
-            });
+                setTimeout(() => { toast.classList.remove('show'); }, 3000);
+            }
+
+            // Fallback: textarea + execCommand for non-secure contexts
+            function fallbackCopy(text) {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.left = '-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                try {
+                    document.execCommand('copy');
+                    showCopyToast();
+                } catch (e) {
+                    console.error('Fallback copy failed:', e);
+                    window.prompt('Copy this link:', text);
+                }
+                document.body.removeChild(ta);
+            }
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(permalink).then(showCopyToast).catch(function() {
+                    fallbackCopy(permalink);
+                });
+            } else {
+                fallbackCopy(permalink);
+            }
         }
 
         /* ============================================ */
@@ -1737,7 +1716,10 @@
                 map.removeLayer(currentPolygon);
                 currentPolygon = null;
             }
-            
+
+            // v013: Remove any site markers
+            clearSiteMarkers();
+
             // Clear structured data when no specific project is focused
             updatePageMeta();
             populateStructuredData();
@@ -1773,8 +1755,12 @@
                 setTimeout(() => {
                     autoExpandProjectCard(targetProject, false);
                 }, 100);
+                // v013: Open the map popup to show site markers + polygon
+                setTimeout(() => {
+                    autoOpenMapPopup(targetProject);
+                }, 200);
             }
-            
+
             // Track this interaction
             trackEvent('map-search-used', projectId);
         }
@@ -1911,6 +1897,9 @@
                 maxZoom: 18,
                 opacity: 0.6
             }).addTo(map);
+
+            // v012: Rescale site markers when zoom changes
+            map.on('zoomend', onMapZoomUpdateSiteMarkers);
             
             // Add custom home button control
             const HomeControl = L.Control.extend({
@@ -1998,6 +1987,62 @@
         function clearSiteMarkers() {
             currentSiteMarkers.forEach(function(m) { map.removeLayer(m); });
             currentSiteMarkers = [];
+            if (currentSiteMarkersData) currentSiteMarkersData = null;
+        }
+
+        // v012: Currently displayed site data (for re-rendering on zoom)
+        let currentSiteMarkersData = null;
+
+        // v012: Build a site marker icon scaled to current zoom
+        function buildSiteIcon(zoom) {
+            // Scale: at zoom 3 → small (side=4), at zoom 10+ → full size (side=8)
+            var scale = Math.max(0.5, Math.min(1.2, (zoom - 2) / 8));
+            var side = Math.round(4 * scale);
+            var height = Math.round(7 * scale);
+            var w = side * 2;
+            return L.divIcon({
+                className: 'site-marker',
+                html: '<div style="width:0;height:0;'
+                    + 'border-left:' + side + 'px solid transparent;'
+                    + 'border-right:' + side + 'px solid transparent;'
+                    + 'border-top:' + height + 'px solid #444;'
+                    + 'filter:drop-shadow(0 1px 1px rgba(0,0,0,0.3));cursor:pointer;"></div>',
+                iconSize: [w, height],
+                iconAnchor: [side, 0],
+                popupAnchor: [0, 2]
+            });
+        }
+
+        // v012: Add site markers to map with zoom-responsive sizing
+        function addSiteMarkersToMap(sites) {
+            currentSiteMarkersData = sites;
+            var zoom = map.getZoom();
+            var icon = buildSiteIcon(zoom);
+            sites.forEach(function(site) {
+                var siteLng = site.longitude;
+                if (siteLng < -30) siteLng += 360;
+                var sitePopupLines = [];
+                if (site.name) sitePopupLines.push('<strong>' + escapeHtml(site.name) + '</strong>');
+                if (site.instrument) sitePopupLines.push('Instrument: ' + escapeHtml(site.instrument));
+                if (site.serial) sitePopupLines.push('Serial: ' + escapeHtml(site.serial));
+                sitePopupLines.push(site.latitude.toFixed(4) + ', ' + site.longitude.toFixed(4));
+                if (site.altitude) sitePopupLines.push('Alt: ' + escapeHtml(site.altitude) + ' m');
+                var sitePopup = '<div style="font-family:Arial,sans-serif;font-size:12px;line-height:1.4;">' + sitePopupLines.join('<br>') + '</div>';
+                var siteMarker = L.marker([site.latitude, siteLng], {
+                    icon: icon,
+                    interactive: true,
+                    zIndexOffset: 100  // Below project markers (1000)
+                }).addTo(map);
+                siteMarker.bindPopup(sitePopup, { maxWidth: 220, className: 'custom-popup' });
+                currentSiteMarkers.push(siteMarker);
+            });
+        }
+
+        // v012: Re-scale site markers on zoom change
+        function onMapZoomUpdateSiteMarkers() {
+            if (!currentSiteMarkersData || currentSiteMarkers.length === 0) return;
+            var icon = buildSiteIcon(map.getZoom());
+            currentSiteMarkers.forEach(function(m) { m.setIcon(icon); });
         }
 
         // Create individual project marker
@@ -2027,9 +2072,10 @@
                 adjustedLng += 360;
             }
 
-            const marker = L.marker([project.coordinates.lat, adjustedLng], { 
+            const marker = L.marker([project.coordinates.lat, adjustedLng], {
                 icon: icon,
-                interactive: true
+                interactive: true,
+                zIndexOffset: 1000  // v012: Project markers always on top of site markers
             }).addTo(map);
 
             // v002: Popup content with XSS-escaped values
@@ -2077,29 +2123,10 @@
                     }).addTo(map);
                 }
 
-                // v011: Display collection site markers as inverted black triangles
+                // v012: Display collection site markers as small inverted triangles
+                // Scale factor based on zoom level (smaller when zoomed out)
                 if (project.collectionSites && project.collectionSites.length > 0) {
-                    project.collectionSites.forEach(function(site) {
-                        var siteLng = site.longitude;
-                        if (siteLng < -30) siteLng += 360; // Pacific-centered adjustment
-                        var siteIcon = L.divIcon({
-                            className: 'site-marker',
-                            html: '<div style="width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 12px solid #000; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4)); cursor: pointer;"></div>',
-                            iconSize: [14, 12],
-                            iconAnchor: [7, 0],
-                            popupAnchor: [0, 2]
-                        });
-                        var sitePopupLines = [];
-                        if (site.name) sitePopupLines.push('<strong>' + escapeHtml(site.name) + '</strong>');
-                        if (site.instrument) sitePopupLines.push('Instrument: ' + escapeHtml(site.instrument));
-                        if (site.serial) sitePopupLines.push('Serial: ' + escapeHtml(site.serial));
-                        sitePopupLines.push(site.latitude.toFixed(4) + ', ' + site.longitude.toFixed(4));
-                        if (site.altitude) sitePopupLines.push('Alt: ' + escapeHtml(site.altitude) + ' m');
-                        var sitePopup = '<div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">' + sitePopupLines.join('<br>') + '</div>';
-                        var siteMarker = L.marker([site.latitude, siteLng], { icon: siteIcon, interactive: true }).addTo(map);
-                        siteMarker.bindPopup(sitePopup, { maxWidth: 220, className: 'custom-popup' });
-                        currentSiteMarkers.push(siteMarker);
-                    });
+                    addSiteMarkersToMap(project.collectionSites);
                 }
             });
 
