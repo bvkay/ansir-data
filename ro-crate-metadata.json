@@ -724,7 +724,7 @@
     {
       "@id": "#shape-placeholder-01",
       "@type": "GeoShape",
-      "polygon": "-38.63895 175.87793 -38.51537 176.09023 -38.63717 176.26271 -38.73957 176.07712"
+      "polygon": "-38.74552 176.09024 -38.73695 176.01059 -38.64584 175.87463 -38.61365 175.87463 -38.53850 175.99548 -38.50412 176.14929 -38.55031 176.22345 -38.58897 176.27563 -38.63618 176.27289 -38.73587 176.18088"
     },
     {
       "@id": "#place-placeholder-01",
@@ -783,8 +783,8 @@
       "identifier": "Placeholder-01",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-08-29",
-      "temporalCoverage": "2023-08-29/2023-10-29",
+      "dateCreated": "2023-08-28",
+      "temporalCoverage": "2023-08-28/2023-10-28",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -836,7 +836,7 @@
     {
       "@id": "#shape-sx-2023",
       "@type": "GeoShape",
-      "polygon": "-34.867 135.6581 -33.5064 136.7064 -32.4916 138.1907 -33.5206 138.063 -35.2944 138.553 -35.9231 137.5602 -35.7619 136.6848"
+      "polygon": "-34.86700 135.65810 -34.05266 136.01074 -33.50640 136.70640 -32.49160 138.19070 -33.52308 138.25195 -35.38905 138.82324 -35.99579 137.70264 -35.76190 136.68480"
     },
     {
       "@id": "#place-sx-2023",
@@ -901,8 +901,8 @@
       "identifier": "SX-2023",
       "url": "https://bvkay.github.io/ansir-data/?id=SX-2023",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2023-02-25",
-      "temporalCoverage": "2023-02-25/2026-04-30",
+      "dateCreated": "2023-02-24",
+      "temporalCoverage": "2023-02-24/2026-04-29",
       "about": [
         {
           "@id": "#method-seismology"
