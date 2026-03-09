@@ -949,16 +949,26 @@
     {
       "@id": "#geo-anu-2021",
       "@type": "GeoCoordinates",
-      "latitude": -35.069007,
-      "longitude": 149.37767
+      "latitude": -35.010329,
+      "longitude": 149.382305
+    },
+    {
+      "@id": "#shape-anu-2021",
+      "@type": "GeoShape",
+      "polygon": "-35.00787 149.37810 -35.00885 149.38823 -35.01096 149.39398 -35.01188 149.39218 -35.01188 149.38703 -35.01117 149.37767"
     },
     {
       "@id": "#place-anu-2021",
       "@type": "Place",
       "name": "Lake George, Canberra, Australia",
-      "geo": {
-        "@id": "#geo-anu-2021"
-      }
+      "geo": [
+        {
+          "@id": "#geo-anu-2021"
+        },
+        {
+          "@id": "#shape-anu-2021"
+        }
+      ]
     },
     {
       "@id": "https://doi.org/10.7914/t2z3-2m87",
@@ -996,8 +1006,8 @@
       "identifier": "ANU-2021",
       "url": "https://bvkay.github.io/ansir-data/?id=ANU-2021",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-11-20",
-      "temporalCoverage": "2020-11-20/2020-12-21",
+      "dateCreated": "2020-11-19",
+      "temporalCoverage": "2020-11-19/2020-12-20",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -1044,12 +1054,22 @@
       "longitude": 169.065514
     },
     {
+      "@id": "#shape-anu-2023-001",
+      "@type": "GeoShape",
+      "polygon": "-43.90099 169.05401 -43.89789 169.06174 -43.90927 169.07427 -43.91620 169.06723"
+    },
+    {
       "@id": "#place-anu-2023-001",
       "@type": "Place",
       "name": "Alpine Fault, Haust, New Zealand",
-      "geo": {
-        "@id": "#geo-anu-2023-001"
-      }
+      "geo": [
+        {
+          "@id": "#geo-anu-2023-001"
+        },
+        {
+          "@id": "#shape-anu-2023-001"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0002-0738-0187",
@@ -1113,8 +1133,8 @@
       "identifier": "ANU-2023-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANU-2023-001",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-01-27",
-      "temporalCoverage": "2023-01-27/2023-10-27",
+      "dateCreated": "2023-01-26",
+      "temporalCoverage": "2023-01-26/2023-10-26",
       "about": [
         {
           "@id": "#method-das"
