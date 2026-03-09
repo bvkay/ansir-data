@@ -1,5 +1,66 @@
 <!DOCTYPE html>
+<!--
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v014)
+    Based on: git_projects_v013.html
 
+    Changes in v014:
+      - Fixed "View project details →": zoom level now fits all site markers + polygon
+        using fitBounds() instead of fixed zoom 6-8
+      - Fixed copy link: button type="button" prevents form submission, permalink now
+        uses window.location.href base instead of origin+pathname for file:// compat,
+        fallback always shows prompt with link to copy
+      - autoOpenMapPopup uses project data to show sites/polygon even when popup
+        is already handled
+
+    Changes in v013:
+      - "View project details →" now also opens map popup (shows site markers + polygon)
+      - Copy link button: added fallback for non-HTTPS contexts (file://, http://, iframe)
+      - clearAutoExpandedState() now also clears site markers
+
+    Changes in v012:
+      - Site markers redesigned: small inverted triangles (CSS border trick, halved size)
+        with dark grey fill and subtle drop shadow
+      - Site markers scale with zoom level (smaller when zoomed out, larger when zoomed in)
+      - Project markers always render on top of site markers (zIndexOffset: 1000)
+      - Site markers use zIndexOffset: 100 to stay below project markers
+
+    Changes in v011:
+      - Collection site markers shown on map when project popup opens
+      - Site popups show name, instrument, coordinates
+      - Markers removed when project popup closes
+      - collectionSites passed through transformProject()
+      - Compatible with GAS code v18 (instrument + serial fields)
+
+    Changes in v010:
+      - Full academic citations for publications, datasets, and networks
+        (authors, year, title, journal — resolved at publish by v14 GAS via CrossRef/DataCite)
+      - renderCitationItem() helper for consistent citation display
+      - Removed standalone "Data Access" text section from expanded card
+        (Open Data pill badge in header is kept)
+
+    Changes in v009:
+      - Consumes structured JSON from v13 GAS export (no more semicolon parsing)
+      - Simplified transformProject() — data arrives pre-structured
+      - Removed parseArrayField, parseMethodsField, parseContributors,
+        parseFundingRecords, parseInstruments, parseRelatedObjects functions
+
+    This version fetches project data from a static data.json file
+    hosted alongside this HTML on GitHub Pages, instead of calling
+    Google Apps Script directly. This eliminates the 4-5 second
+    GAS cold-start delay for public visitors.
+
+    Data flow:
+      Google Sheet → GAS export trigger → data.json → GitHub repo
+      GitHub Pages serves this HTML + data.json
+      Squarespace embeds via iframe
+
+    Deep linking:
+      When embedded in Squarespace, the iframe communicates with the
+      parent page via postMessage to keep the browser URL in sync.
+      Shared links point to the Squarespace page (not GitHub Pages)
+      using the SQUARESPACE_PARENT_URL config. The parent page passes
+      any ?id= parameter down to the iframe on load.
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1399,46 +1460,53 @@
         }
 
         // Generate permalink for project
+        // v014: Handles file:// protocol where origin is "null"
         // When SQUARESPACE_PARENT_URL is set, permalinks point to the Squarespace page
-        // so shared links take users to the branded site, not raw GitHub Pages
         function generatePermalink(project) {
-            const projectRef = encodeURIComponent(project.ansirRef || project.id);
+            var projectRef = encodeURIComponent(project.ansirRef || project.id);
             if (SQUARESPACE_PARENT_URL) {
-                return `${SQUARESPACE_PARENT_URL}?id=${projectRef}`;
+                return SQUARESPACE_PARENT_URL + '?id=' + projectRef;
             }
-            const baseUrl = window.location.origin + window.location.pathname;
-            return `${baseUrl}?id=${projectRef}`;
+            // Build base URL — window.location.origin is "null" on file:// protocol
+            var baseUrl = window.location.href.split('?')[0].split('#')[0];
+            return baseUrl + '?id=' + projectRef;
         }
 
-        // Copy permalink to clipboard
-        // v013: Added fallback for non-HTTPS contexts (file://, http://, iframes)
-        function copyPermalink(project, event) {
+        // v014: Copy permalink to clipboard — accepts project ID (number), looks up project
+        function copyPermalink(projectId, event) {
             event.stopPropagation(); // Prevent card expansion
+            event.preventDefault();
 
-            const permalink = generatePermalink(project);
+            var project = allProjects.find(function(p) { return p.id === projectId; });
+            if (!project) {
+                console.error('copyPermalink: project not found for id', projectId);
+                return;
+            }
+
+            var permalink = generatePermalink(project);
 
             function showCopyToast() {
-                const toast = document.getElementById('permalink-toast');
+                var toast = document.getElementById('permalink-toast');
                 toast.classList.add('show');
-                setTimeout(() => { toast.classList.remove('show'); }, 3000);
+                setTimeout(function() { toast.classList.remove('show'); }, 3000);
             }
 
             // Fallback: textarea + execCommand for non-secure contexts
             function fallbackCopy(text) {
-                const ta = document.createElement('textarea');
+                var ta = document.createElement('textarea');
                 ta.value = text;
                 ta.style.position = 'fixed';
                 ta.style.left = '-9999px';
                 document.body.appendChild(ta);
                 ta.select();
-                try {
-                    document.execCommand('copy');
-                    showCopyToast();
-                } catch (e) {
-                    console.error('Fallback copy failed:', e);
-                    window.prompt('Copy this link:', text);
-                }
+                var copied = false;
+                try { copied = document.execCommand('copy'); } catch (e) { /* ignore */ }
                 document.body.removeChild(ta);
+                if (copied) {
+                    showCopyToast();
+                } else {
+                    window.prompt('Copy this project link:', text);
+                }
             }
 
             if (navigator.clipboard && window.isSecureContext) {
@@ -1673,30 +1741,48 @@
         }
 
         // Auto-open map popup for target project
+        // v014: Rewritten to fit bounds around project + all site markers + polygon
         function autoOpenMapPopup(targetProject) {
             if (!targetProject || !map) return;
-            
-            // Find the marker for this project
+
             setTimeout(() => {
                 const targetMarker = markers.find(marker => {
-                    // Compare with marker's popup content to identify the right marker
                     const popup = marker.getPopup();
                     if (popup && popup.getContent()) {
                         return popup.getContent().includes(targetProject.name);
                     }
                     return false;
                 });
-                
+
                 if (targetMarker) {
-                    // Open the popup automatically
+                    // Open the popup — this triggers popupopen which adds site markers + polygon
                     targetMarker.openPopup();
-                    
-                    // Gentle zoom to show regional context (not too close)
-                    const currentZoom = map.getZoom();
-                    const targetZoom = Math.min(Math.max(currentZoom, 6), 8); // Regional view between zoom 6-8
-                    map.setView(targetMarker.getLatLng(), targetZoom);
+
+                    // Build bounds that include the project location + all site locations + polygon
+                    const bounds = L.latLngBounds([targetMarker.getLatLng()]);
+
+                    // Include collection site locations
+                    if (targetProject.collectionSites && targetProject.collectionSites.length > 0) {
+                        targetProject.collectionSites.forEach(function(site) {
+                            if (site.latitude && site.longitude) {
+                                bounds.extend([site.latitude, site.longitude]);
+                            }
+                        });
+                    }
+
+                    // Include polygon vertices
+                    if (targetProject.polygon && targetProject.polygon.length > 2) {
+                        targetProject.polygon.forEach(function(pt) {
+                            bounds.extend(pt);
+                        });
+                    }
+
+                    // Fit the map to show everything, with some padding
+                    if (bounds.isValid()) {
+                        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10 });
+                    }
                 }
-            }, 500); // Allow time for map markers to be created
+            }, 500);
         }
 
         // Clear auto-expanded state when search is cleared
@@ -2258,7 +2344,7 @@
                     <div class="project-header-content">
                         <h3 class="project-title">
                             ${eName}
-                            <button class="permalink-btn" onclick="copyPermalink(allProjects.find(p => p.id === ${project.id}), event)" title="Copy project link">
+                            <button type="button" class="permalink-btn" onclick="copyPermalink(${project.id}, event)" title="Copy project link">
                                 🔗
                             </button>
                         </h3>
