@@ -4936,8 +4936,8 @@
       "identifier": "Placeholder-24",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-24",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2021-11-30",
-      "temporalCoverage": "2021-11-30/2023-09-30",
+      "dateCreated": "2021-11-29",
+      "temporalCoverage": "2021-11-29/2023-09-29",
       "about": [
         {
           "@id": "#method-das"
@@ -4986,6 +4986,7 @@
           "@id": "https://doi.org/10.25914/kf96-nb26"
         }
       ],
+      "conditionsOfAccess": "open",
       "provider": {
         "@id": "https://ansir.org.au"
       },
