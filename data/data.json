@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T12:08:25.979Z",
+  "exported": "2026-03-09T12:09:01.987Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -11345,8 +11345,8 @@
       "acronym": "",
       "description": "Imaging the 3D structure of the oceanic crust and underlying lithosphere along the Macquarie Ridge Complex is the central focus of this work. Located at the active boundary between the Australian and Pacific plates in the southwest Pacific Ocean, the region is geologically exceptional, being the only known example where typical oceanic crust is exposed above sea level within its original ocean basin. The study is linked to RV Investigator voyage IN2020-V02 and includes the deployment of a broadband ocean-bottom seismometer (OBS) array, along with land-based stations positioned on and around Macquarie Island. Despite the logistical and environmental challenges of operating in the Southern Ocean, data recovery and processing using QuakeMigrate software has enabled the development of a detailed microseismicity catalogue, even under noisy and variable conditions.",
       "status": "Complete",
-      "startDate": "2020-09-28",
-      "endDate": "2022-01-29",
+      "startDate": "2020-09-27",
+      "endDate": "2022-01-28",
       "methods": [
         "Seismology"
       ],
@@ -11354,8 +11354,8 @@
       "location": {
         "region": "Macquarie Ridge",
         "country": "Macquarie Island",
-        "coordinates": "",
-        "polygon": ""
+        "coordinates": "-54.710243, 158.785400",
+        "polygon": "-54.07057, 159.32373; -55.28997, 159.16992; -55.36497, 158.54370; -55.18975, 158.12622; -54.05767, 158.46680"
       },
       "contributors": [
         {
@@ -11439,7 +11439,188 @@
         }
       ],
       "collectionQuantity": 20,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "MRL01",
+          "latitude": -54.5166,
+          "longitude": 158.917,
+          "altitude": "238.0",
+          "startTime": "2021-04-21",
+          "finishTime": "2021-06-19",
+          "instrument": "Guralp Certimus 120s (BB)"
+        },
+        {
+          "name": "MRL02",
+          "latitude": -54.5625,
+          "longitude": 158.9,
+          "altitude": "131.0",
+          "startTime": "2021-09-13",
+          "finishTime": "2022-02-15",
+          "instrument": "Guralp Certimus 120s (BB)"
+        },
+        {
+          "name": "MRL03",
+          "latitude": -54.6167,
+          "longitude": 158.896,
+          "altitude": "141.0",
+          "startTime": "2021-05-27",
+          "finishTime": "2021-07-23",
+          "instrument": "Guralp Certimus 120s (BB)"
+        },
+        {
+          "name": "MRL04",
+          "latitude": -54.6624,
+          "longitude": 158.871,
+          "altitude": "154.0",
+          "startTime": "2021-06-01",
+          "finishTime": "2021-07-23",
+          "instrument": "Guralp Certimus 120s (BB)"
+        },
+        {
+          "name": "MRL05",
+          "latitude": -54.7126,
+          "longitude": 158.833,
+          "altitude": "251.0",
+          "startTime": "2021-06-13",
+          "finishTime": "2021-08-04",
+          "instrument": "Guralp Certimus 120s (BB)"
+        },
+        {
+          "name": "MRO01",
+          "latitude": -54.0875,
+          "longitude": 159.3706,
+          "altitude": "-4996.0",
+          "startTime": "2020-10-27",
+          "finishTime": "2021-06-14",
+          "instrument": "High Tech Inc. HTI-94-SSQ 2-30kHz"
+        },
+        {
+          "name": "MRO03",
+          "latitude": -54.3235,
+          "longitude": 159.1728,
+          "altitude": "-3635.0",
+          "startTime": "2020-10-16",
+          "finishTime": "2021-11-18",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO06",
+          "latitude": -54.4054,
+          "longitude": 158.8484,
+          "altitude": "-520.0",
+          "startTime": "2020-10-29",
+          "finishTime": "2021-11-17",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO07",
+          "latitude": -54.2759,
+          "longitude": 158.7031,
+          "altitude": "-3006.0",
+          "startTime": "2020-10-29",
+          "finishTime": "2021-11-17",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO10",
+          "latitude": -54.7411,
+          "longitude": 159.1672,
+          "altitude": "-5363.0",
+          "startTime": "2020-10-24",
+          "finishTime": "2021-10-25",
+          "instrument": "High Tech Inc. HTI-94-SSQ 2-30kHz"
+        },
+        {
+          "name": "MRO11",
+          "latitude": -54.9659,
+          "longitude": 158.6439,
+          "altitude": "-896.0",
+          "startTime": "2020-10-26",
+          "finishTime": "2021-11-16",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO12",
+          "latitude": -55.0369,
+          "longitude": 158.8531,
+          "altitude": "-2425.0",
+          "startTime": "2020-10-26",
+          "finishTime": "2021-11-26",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO13",
+          "latitude": -55.1308,
+          "longitude": 158.8697,
+          "altitude": "-3764.0",
+          "startTime": "2020-10-20",
+          "finishTime": "2021-11-26",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO16",
+          "latitude": -55.2433,
+          "longitude": 159.1772,
+          "altitude": "-5104.0",
+          "startTime": "2020-10-22",
+          "finishTime": "2021-11-12",
+          "instrument": "High Tech Inc. HTI-94-SSQ 2-30kHz"
+        },
+        {
+          "name": "MRO18",
+          "latitude": -55.1968,
+          "longitude": 158.1893,
+          "altitude": "-4435.0",
+          "startTime": "2020-10-29",
+          "finishTime": "2021-02-22",
+          "instrument": "High Tech Inc. HTI-94-SSQ 2-30kHz"
+        },
+        {
+          "name": "MRO20",
+          "latitude": -55.3335,
+          "longitude": 158.5508,
+          "altitude": "-2386.0",
+          "startTime": "2020-10-22",
+          "finishTime": "2021-11-16",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO22",
+          "latitude": -54.0956,
+          "longitude": 158.5276,
+          "altitude": "-3966.0",
+          "startTime": "2020-10-30",
+          "finishTime": "2021-02-27",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO23",
+          "latitude": -54.8108,
+          "longitude": 158.6844,
+          "altitude": "-975.0",
+          "startTime": "2020-10-18",
+          "finishTime": "2021-11-16",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO24",
+          "latitude": -54.6606,
+          "longitude": 158.709,
+          "altitude": "-884.0",
+          "startTime": "2020-10-18",
+          "finishTime": "2021-11-17",
+          "instrument": "IGG CAS Hydrophone (300 Counts/Pa)"
+        },
+        {
+          "name": "MRO27",
+          "latitude": -55.0767,
+          "longitude": 159.2017,
+          "altitude": "-5517.0",
+          "startTime": "2020-10-23",
+          "finishTime": "2021-10-17",
+          "instrument": "High Tech Inc. HTI-94-SSQ 2-30kHz"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/3F_2020",
