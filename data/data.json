@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T11:57:06.654Z",
+  "exported": "2026-03-09T11:58:17.758Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -94,11 +94,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/0zmj-7e94",
-          "type": "fdsn_network",
-          "title": "Southern Alps Monitoring of Weather-Influenced Seismicity and Erosion",
-          "authors": "Konstantinos Michailos, Meghan Miller, John Townend, Calum John Chamberlain",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2025"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "embargoes",
@@ -328,11 +324,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/kd1t-kt29",
-          "type": "fdsn_network",
-          "title": "Makatiti and Haroharo Nodal Array",
-          "authors": "Eleanor R. H. Mestel, Athena Mace, Finnigan Illsley-Kemp, Kelvin Tapuke, Colin Wilson, Robert Pickle, Chengxin Jiang, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2025"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "embargoes",
@@ -347,8 +339,8 @@
       "acronym": "WETA",
       "description": "The Wairakei (WETA) experiment consists of a short term (~30-60 day) nodal array targeting the Wairakei Geothermal Field. 45 SmartSolo IGU-BD3C-5 broadband nodes and 120 SmartSolo IGU-16HR 3C short period nodes were deployed in September 2023. All data recorded at 250 Hz. The aim of the project is to image the local seismic velocity structures in the top 5 km and detect and characterize local seismicity.",
       "status": "Complete",
-      "startDate": "2023-08-29",
-      "endDate": "2023-10-29",
+      "startDate": "2023-08-28",
+      "endDate": "2023-10-28",
       "methods": [
         "Passive Seismic"
       ],
@@ -357,7 +349,7 @@
         "region": "Wairakei, Taupo",
         "country": "New Zealand",
         "coordinates": "-38.63943, 176.07619",
-        "polygon": "-38.63895, 175.87793; -38.51537, 176.09023; -38.63717, 176.26271; -38.73957, 176.07712"
+        "polygon": "-38.74552, 176.09024; -38.73695, 176.01059; -38.64584, 175.87463; -38.61365, 175.87463; -38.53850, 175.99548; -38.50412, 176.14929; -38.55031, 176.22345; -38.58897, 176.27563; -38.63618, 176.27289; -38.73587, 176.18088"
       },
       "contributors": [
         {
@@ -410,15 +402,1308 @@
         }
       ],
       "collectionQuantity": 144,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "BB001",
+          "latitude": -38.60586,
+          "longitude": 176.03844,
+          "altitude": "491.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-09",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB002",
+          "latitude": -38.6566,
+          "longitude": 176.02306,
+          "altitude": "532.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB003",
+          "latitude": -38.68023,
+          "longitude": 176.01033,
+          "altitude": "454.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB004",
+          "latitude": -38.68694,
+          "longitude": 175.98198,
+          "altitude": "418.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB005",
+          "latitude": -38.65421,
+          "longitude": 175.98866,
+          "altitude": "551.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB006",
+          "latitude": -38.6258,
+          "longitude": 176.01854,
+          "altitude": "540.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB007",
+          "latitude": -38.57018,
+          "longitude": 176.02835,
+          "altitude": "551.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB008",
+          "latitude": -38.59753,
+          "longitude": 176.008,
+          "altitude": "547.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB009",
+          "latitude": -38.62874,
+          "longitude": 175.95753,
+          "altitude": "469.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB010",
+          "latitude": -38.64607,
+          "longitude": 175.93382,
+          "altitude": "413.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB011",
+          "latitude": -38.65895,
+          "longitude": 175.92674,
+          "altitude": "384.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB012",
+          "latitude": -38.61721,
+          "longitude": 175.87871,
+          "altitude": "580.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB013",
+          "latitude": -38.63895,
+          "longitude": 175.87793,
+          "altitude": "563.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB014",
+          "latitude": -38.586,
+          "longitude": 175.95442,
+          "altitude": "651.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB015",
+          "latitude": -38.7068,
+          "longitude": 176.02527,
+          "altitude": "446.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB016",
+          "latitude": -38.68045,
+          "longitude": 176.0594,
+          "altitude": "408.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-14",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB017",
+          "latitude": -38.71548,
+          "longitude": 176.10025,
+          "altitude": "424.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB018",
+          "latitude": -38.69912,
+          "longitude": 176.10526,
+          "altitude": "447.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB019",
+          "latitude": -38.67609,
+          "longitude": 176.06865,
+          "altitude": "406.0",
+          "startTime": "2023-09-09",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB020",
+          "latitude": -38.64595,
+          "longitude": 176.07759,
+          "altitude": "427.0",
+          "startTime": "2023-10-16",
+          "finishTime": "2023-11-20",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB021",
+          "latitude": -38.67505,
+          "longitude": 176.08806,
+          "altitude": "394.0",
+          "startTime": "2023-10-16",
+          "finishTime": "2023-11-20",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BB022",
+          "latitude": -38.62845,
+          "longitude": 176.06189,
+          "altitude": "491.0",
+          "startTime": "2023-10-17",
+          "finishTime": "2023-11-21",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "BS001",
+          "latitude": -38.64003,
+          "longitude": 176.08447,
+          "altitude": "396.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS002",
+          "latitude": -38.64267,
+          "longitude": 176.08368,
+          "altitude": "399.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS003",
+          "latitude": -38.64239,
+          "longitude": 176.07918,
+          "altitude": "405.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS004",
+          "latitude": -38.64153,
+          "longitude": 176.07513,
+          "altitude": "414.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS005",
+          "latitude": -38.64023,
+          "longitude": 176.07918,
+          "altitude": "413.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS006",
+          "latitude": -38.63943,
+          "longitude": 176.07619,
+          "altitude": "421.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS007",
+          "latitude": -38.63509,
+          "longitude": 176.08539,
+          "altitude": "406.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS008",
+          "latitude": -38.63628,
+          "longitude": 176.08124,
+          "altitude": "404.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS009",
+          "latitude": -38.63542,
+          "longitude": 176.0753,
+          "altitude": "428.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS010",
+          "latitude": -38.63261,
+          "longitude": 176.08582,
+          "altitude": "438.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS011",
+          "latitude": -38.61452,
+          "longitude": 176.06139,
+          "altitude": "480.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS012",
+          "latitude": -38.61394,
+          "longitude": 176.05818,
+          "altitude": "512.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-09-27",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS013",
+          "latitude": -38.61718,
+          "longitude": 176.05698,
+          "altitude": "517.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS014",
+          "latitude": -38.61735,
+          "longitude": 176.05431,
+          "altitude": "519.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS015",
+          "latitude": -38.61677,
+          "longitude": 176.05069,
+          "altitude": "529.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS017",
+          "latitude": -38.61608,
+          "longitude": 176.05228,
+          "altitude": "530.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS018",
+          "latitude": -38.61853,
+          "longitude": 176.05191,
+          "altitude": "530.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-09-30",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS019",
+          "latitude": -38.61687,
+          "longitude": 176.04829,
+          "altitude": "525.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-09-30",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS021",
+          "latitude": -38.61258,
+          "longitude": 176.0435,
+          "altitude": "500.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS022",
+          "latitude": -38.61184,
+          "longitude": 176.04811,
+          "altitude": "498.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS023",
+          "latitude": -38.61305,
+          "longitude": 176.05101,
+          "altitude": "509.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS024",
+          "latitude": -38.66092,
+          "longitude": 176.06897,
+          "altitude": "446.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-09-26",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS025",
+          "latitude": -38.66101,
+          "longitude": 176.07201,
+          "altitude": "429.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS026",
+          "latitude": -38.65316,
+          "longitude": 176.06615,
+          "altitude": "431.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS027",
+          "latitude": -38.65109,
+          "longitude": 176.06227,
+          "altitude": "439.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS028",
+          "latitude": -38.65819,
+          "longitude": 176.06903,
+          "altitude": "448.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS029",
+          "latitude": -38.65718,
+          "longitude": 176.07365,
+          "altitude": "438.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS031",
+          "latitude": -38.65702,
+          "longitude": 176.07791,
+          "altitude": "398.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS032",
+          "latitude": -38.63018,
+          "longitude": 176.0367,
+          "altitude": "571.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS033",
+          "latitude": -38.62622,
+          "longitude": 176.03629,
+          "altitude": "547.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS034",
+          "latitude": -38.63172,
+          "longitude": 176.04591,
+          "altitude": "508.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS035",
+          "latitude": -38.64151,
+          "longitude": 176.04323,
+          "altitude": "481.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS036",
+          "latitude": -38.63968,
+          "longitude": 176.04245,
+          "altitude": "488.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS037",
+          "latitude": -38.63808,
+          "longitude": 176.04018,
+          "altitude": "502.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS038",
+          "latitude": -38.63811,
+          "longitude": 176.03613,
+          "altitude": "504.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS039",
+          "latitude": -38.63387,
+          "longitude": 176.03888,
+          "altitude": "585.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS040",
+          "latitude": -38.63555,
+          "longitude": 176.04025,
+          "altitude": "545.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS041",
+          "latitude": -38.63497,
+          "longitude": 176.03647,
+          "altitude": "511.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS042",
+          "latitude": -38.61469,
+          "longitude": 176.03937,
+          "altitude": "494.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS043",
+          "latitude": -38.62455,
+          "longitude": 176.0903,
+          "altitude": "380.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-09-27",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS044",
+          "latitude": -38.62382,
+          "longitude": 176.0887,
+          "altitude": "380.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS045",
+          "latitude": -38.62328,
+          "longitude": 176.08651,
+          "altitude": "385.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS046",
+          "latitude": -38.62293,
+          "longitude": 176.08493,
+          "altitude": "388.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS047",
+          "latitude": -38.6224,
+          "longitude": 176.08295,
+          "altitude": "391.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS048",
+          "latitude": -38.62101,
+          "longitude": 176.08022,
+          "altitude": "398.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS049",
+          "latitude": -38.61985,
+          "longitude": 176.07668,
+          "altitude": "408.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS050",
+          "latitude": -38.61847,
+          "longitude": 176.07571,
+          "altitude": "414.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS051",
+          "latitude": -38.6175,
+          "longitude": 176.07266,
+          "altitude": "433.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS052",
+          "latitude": -38.61655,
+          "longitude": 176.06996,
+          "altitude": "477.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS054",
+          "latitude": -38.62317,
+          "longitude": 176.06874,
+          "altitude": "433.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS055",
+          "latitude": -38.62561,
+          "longitude": 176.06424,
+          "altitude": "465.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS056",
+          "latitude": -38.62671,
+          "longitude": 176.06248,
+          "altitude": "483.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS057",
+          "latitude": -38.62846,
+          "longitude": 176.06184,
+          "altitude": "483.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS058",
+          "latitude": -38.61665,
+          "longitude": 176.06635,
+          "altitude": "457.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS059",
+          "latitude": -38.61505,
+          "longitude": 176.04286,
+          "altitude": "491.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS060",
+          "latitude": -38.61428,
+          "longitude": 176.04469,
+          "altitude": "510.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS061",
+          "latitude": -38.62005,
+          "longitude": 176.03654,
+          "altitude": "514.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-09-27",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS062",
+          "latitude": -38.61786,
+          "longitude": 176.03668,
+          "altitude": "520.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS063",
+          "latitude": -38.62334,
+          "longitude": 176.03944,
+          "altitude": "514.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS064",
+          "latitude": -38.63631,
+          "longitude": 176.04968,
+          "altitude": "510.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS065",
+          "latitude": -38.63765,
+          "longitude": 176.05058,
+          "altitude": "386.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "BS066",
+          "latitude": -38.63355,
+          "longitude": 176.04727,
+          "altitude": "523.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LB001",
+          "latitude": -38.66491,
+          "longitude": 176.12166,
+          "altitude": "437.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB002",
+          "latitude": -38.64016,
+          "longitude": 176.13332,
+          "altitude": "484.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB003",
+          "latitude": -38.62473,
+          "longitude": 176.14517,
+          "altitude": "393.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB004",
+          "latitude": -38.6149,
+          "longitude": 176.17661,
+          "altitude": "321.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB005",
+          "latitude": -38.63717,
+          "longitude": 176.26271,
+          "altitude": "337.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-10",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB006",
+          "latitude": -38.62937,
+          "longitude": 176.21513,
+          "altitude": "341.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-10",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB007",
+          "latitude": -38.73957,
+          "longitude": 176.07712,
+          "altitude": "400.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB008",
+          "latitude": -38.73199,
+          "longitude": 176.18164,
+          "altitude": "606.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB009",
+          "latitude": -38.7281,
+          "longitude": 176.14015,
+          "altitude": "534.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB010",
+          "latitude": -38.70579,
+          "longitude": 176.14041,
+          "altitude": "550.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB011",
+          "latitude": -38.67025,
+          "longitude": 176.16867,
+          "altitude": "472.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB012",
+          "latitude": -38.64983,
+          "longitude": 176.18137,
+          "altitude": "417.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB013",
+          "latitude": -38.59218,
+          "longitude": 176.15274,
+          "altitude": "466.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB014",
+          "latitude": -38.57423,
+          "longitude": 176.20047,
+          "altitude": "363.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB015",
+          "latitude": -38.57968,
+          "longitude": 176.24187,
+          "altitude": "368.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB016",
+          "latitude": -38.59099,
+          "longitude": 176.26784,
+          "altitude": "322.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB017",
+          "latitude": -38.59143,
+          "longitude": 176.11484,
+          "altitude": "483.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB018",
+          "latitude": -38.58567,
+          "longitude": 176.07187,
+          "altitude": "530.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB019",
+          "latitude": -38.51537,
+          "longitude": 176.09023,
+          "altitude": "447.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB020",
+          "latitude": -38.51144,
+          "longitude": 176.14401,
+          "altitude": "373.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB021",
+          "latitude": -38.69716,
+          "longitude": 176.0369,
+          "altitude": "368.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-11",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB022",
+          "latitude": -38.65937,
+          "longitude": 176.06108,
+          "altitude": "470.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB023",
+          "latitude": -38.61354,
+          "longitude": 176.1622,
+          "altitude": "322.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB024",
+          "latitude": -38.60963,
+          "longitude": 176.1535,
+          "altitude": "320.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB025",
+          "latitude": -38.71738,
+          "longitude": 176.08922,
+          "altitude": "394.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB026",
+          "latitude": -38.70603,
+          "longitude": 176.08783,
+          "altitude": "374.0",
+          "startTime": "2023-09-07",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB027",
+          "latitude": -38.5431,
+          "longitude": 175.99265,
+          "altitude": "469.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB028",
+          "latitude": -38.70218,
+          "longitude": 176.0253,
+          "altitude": "478.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB029",
+          "latitude": -38.73408,
+          "longitude": 176.01303,
+          "altitude": "423.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-12",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB030",
+          "latitude": -38.68922,
+          "longitude": 176.08655,
+          "altitude": "408.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-10",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB031",
+          "latitude": -38.70525,
+          "longitude": 176.00385,
+          "altitude": "535.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-14",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LB032",
+          "latitude": -38.69532,
+          "longitude": 176.09836,
+          "altitude": "430.0",
+          "startTime": "2023-09-08",
+          "finishTime": "2023-10-13",
+          "instrument": "DT-SOLO BD3C-5 0.2 Hz node (BB)"
+        },
+        {
+          "name": "LS001",
+          "latitude": -38.63514,
+          "longitude": 176.09221,
+          "altitude": "387.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS002",
+          "latitude": -38.63708,
+          "longitude": 176.09081,
+          "altitude": "396.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-09-30",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS003",
+          "latitude": -38.64059,
+          "longitude": 176.08861,
+          "altitude": "383.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS004",
+          "latitude": -38.64294,
+          "longitude": 176.08719,
+          "altitude": "393.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS005",
+          "latitude": -38.64732,
+          "longitude": 176.08916,
+          "altitude": "384.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS006",
+          "latitude": -38.64979,
+          "longitude": 176.08772,
+          "altitude": "366.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-09-30",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS007",
+          "latitude": -38.65369,
+          "longitude": 176.08653,
+          "altitude": "365.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS008",
+          "latitude": -38.65707,
+          "longitude": 176.0845,
+          "altitude": "363.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS009",
+          "latitude": -38.65985,
+          "longitude": 176.08215,
+          "altitude": "367.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS010",
+          "latitude": -38.66323,
+          "longitude": 176.0798,
+          "altitude": "375.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS011",
+          "latitude": -38.66679,
+          "longitude": 176.08087,
+          "altitude": "395.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS012",
+          "latitude": -38.65522,
+          "longitude": 176.0952,
+          "altitude": "408.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS013",
+          "latitude": -38.65915,
+          "longitude": 176.09286,
+          "altitude": "407.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS014",
+          "latitude": -38.65962,
+          "longitude": 176.0986,
+          "altitude": "414.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS015",
+          "latitude": -38.66248,
+          "longitude": 176.08887,
+          "altitude": "400.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS016",
+          "latitude": -38.66367,
+          "longitude": 176.09642,
+          "altitude": "415.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS017",
+          "latitude": -38.62834,
+          "longitude": 176.10391,
+          "altitude": "352.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS018",
+          "latitude": -38.62756,
+          "longitude": 176.10246,
+          "altitude": "352.0",
+          "startTime": "2023-09-05",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS019",
+          "latitude": -38.62772,
+          "longitude": 176.10063,
+          "altitude": "354.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-03",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS020",
+          "latitude": -38.6273,
+          "longitude": 176.09831,
+          "altitude": "360.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS021",
+          "latitude": -38.6266,
+          "longitude": 176.09526,
+          "altitude": "378.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-01",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS022",
+          "latitude": -38.67174,
+          "longitude": 176.08662,
+          "altitude": "390.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS023",
+          "latitude": -38.67244,
+          "longitude": 176.09093,
+          "altitude": "388.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-05",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS024",
+          "latitude": -38.67508,
+          "longitude": 176.08812,
+          "altitude": "396.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS025",
+          "latitude": -38.67492,
+          "longitude": 176.09319,
+          "altitude": "389.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS028",
+          "latitude": -38.64593,
+          "longitude": 176.07764,
+          "altitude": "432.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-09-30",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS029",
+          "latitude": -38.64493,
+          "longitude": 176.08255,
+          "altitude": "420.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-02",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        },
+        {
+          "name": "LS030",
+          "latitude": -38.63298,
+          "longitude": 176.09586,
+          "altitude": "346.0",
+          "startTime": "2023-09-06",
+          "finishTime": "2023-10-04",
+          "instrument": "DT-SOLO 16HR-3C 5Hz node (SP)"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/37v8-hv88",
-          "type": "fdsn_network",
-          "title": "Wairakei Earthquake and Tomography Array (WETA)",
-          "authors": "Chengxin Jiang, Finnigan Illsley-Kemp, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -493,11 +1778,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/9j20-yq91",
-          "type": "fdsn_network",
-          "title": "Seismic Network Around Kangaroo Eyre Yorke",
-          "authors": "Caroline M. Eakin, Robert Pickle",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "embargoes",
@@ -560,19 +1841,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/t2z3-2m87",
-          "type": "fdsn_network",
-          "title": "Lake George Seismic Nodal Array",
-          "authors": "Chengxin Jiang, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250046",
-          "type": "journal_article",
-          "title": "Illuminating Subsurface Structures Beneath Lake George Fault Zone, Southeast Australia with Traffic Noise",
-          "authors": "Jiang, C., Miller, M. S.",
-          "journal": "Seismological Research Letters",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "open",
@@ -651,27 +1924,15 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220240322",
-          "type": "journal_article",
-          "title": "The South Island Seismology at the Speed of Light Experiment (SISSLE): Distributed Acoustic Sensing Across and Along the Alpine Fault, South Westland, New Zealand",
-          "authors": "Miller, M. S., Townend, J., Lai, V. H.",
-          "journal": "Seismological Research Letters",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2024JH000356",
-          "type": "journal_article",
-          "title": "Unsupervised Coherent Noise Removal From Seismological Distributed Acoustic Sensing Data",
-          "authors": "Konietzny, S., Lai, V. H., Miller, M. S., Townend, J., Harmeling, S.",
-          "journal": "Journal of Geophysical Research: Machine Learning and Computation",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/bfp8-xv25",
-          "type": "fdsn_network",
-          "title": "South Island Seismology at the Speed of Light Experiment",
-          "authors": "Meghan Miller, Voon Hui Lai, John Townend",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -814,67 +2075,35 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1785/0220220323",
-          "type": "journal_article",
-          "title": "Southwest Australia Seismic Network (SWAN): Recording Earthquakes in Australia’s Most Active Seismic Zone",
-          "authors": "Miller, M. S., Pickle, R., Murdie, R., Yuan, H., Allen, T. I., Gessner, K., Kennett, B. L. N., Whitney, J.",
-          "journal": "Seismological Research Letters",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1093/gji/ggad035",
-          "type": "journal_article",
-          "title": "Refining the Moho across the Australian continent",
-          "authors": "Kennett, B. L. N., Gorbatov, A., Yuan, H., Agrawal, S., Murdie, R., Doublier, M. P., Eakin, C. M., Miller, M. S., Zhao, L., Czarnota, K., O’Donnell, J. P., Dentith, M., Gessner, K.",
-          "journal": "Geophysical Journal International",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/2P_2020",
-          "type": "fdsn_network",
-          "title": "South West Australia Network",
-          "authors": "Meghan Miller, Trevor Allen, Ruth Murdie, Klaus Gessner, Huaiyu Yuan, Brian Kennett, Robert Pickle",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.59350/1evzk-y6b17",
-          "type": "journal_article",
-          "title": "Australia surprised by moderate quake, but rumbling is not unusual",
-          "authors": "Eakin, C., Miller, M. S.",
-          "journal": "",
-          "year": "2021"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article",
-          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
-          "authors": "Allen, T. I.",
-          "journal": "Bulletin of the Seismological Society of America",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article",
-          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
-          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2025gl117119",
-          "type": "journal_article",
-          "title": "Building Blocks of Cratonic Lithosphere in Southwestern Australia: Early Results of WA Array",
-          "authors": "Levin, V., Yuan, H., Murdie, R., Gessner, K., Quentin de Gromard, R., Miller, M. S.",
-          "journal": "Geophysical Research Letters",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250308",
-          "type": "journal_article",
-          "title": "A New High-Resolution Seismic Catalog for Southwestern Australia (2020–2025) and Analysis of Long-Term Clustering Behavior",
-          "authors": "Pickle, R., Miller, M. S., Allen, T., Mousavi, S., Zhang, P., Yuan, H., Murdie, R.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "open",
@@ -935,35 +2164,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1093/gji/ggad035",
-          "type": "journal_article",
-          "title": "Refining the Moho across the Australian continent",
-          "authors": "Kennett, B. L. N., Gorbatov, A., Yuan, H., Agrawal, S., Murdie, R., Doublier, M. P., Eakin, C. M., Miller, M. S., Zhao, L., Czarnota, K., O’Donnell, J. P., Dentith, M., Gessner, K.",
-          "journal": "Geophysical Journal International",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/3O_2019",
-          "type": "fdsn_network",
-          "title": "AKIMBA",
-          "authors": "Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2019"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article",
-          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
-          "authors": "Allen, T. I.",
-          "journal": "Bulletin of the Seismological Society of America",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article",
-          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
-          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -1042,11 +2255,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/7b9m-1d60",
-          "type": "fdsn_network",
-          "title": "Fiordland Seismological Sounding of Landslides and Earthquakes (FISSLE)",
-          "authors": "Meghan Miller, John Townend, Voon Hui Lai",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2024"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -1467,43 +2676,23 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2378132",
-          "type": "journal_article",
-          "title": "Magnetotelluric imaging of an iron-oxide copper gold (IOCG) deposit under thick cover",
-          "authors": "Kay, B., Heinson, G., Boren, G., Liu, Y., Carter, S., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2371001",
-          "type": "journal_article",
-          "title": "Ambient noise tomography of an iron-oxide copper–gold (IOCG) deposit under thick cover",
-          "authors": "Olivier, G., Heinson, G., Kay, B., Boren, G., Liu, Y., Carter, S., Jones, T., Dales, P., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2354209",
-          "type": "journal_article",
-          "title": "Natural source-field induced polarisation exploration of an iron-oxide copper-gold (IOCG) deposit under thick cover",
-          "authors": "Liu, Y., Heinson, G., Kay, B., Boren, G., Carter, S., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2391571",
-          "type": "journal_article",
-          "title": "Fuzzy c-mean (FCM) integration of geophysical data from an iron-oxide copper gold (IOCG) deposit under thick cover",
-          "authors": "Carter, S., Heinson, G., Kay, B., Boren, G., Liu, Y., Olivier, G., Jones, T., Abel, R., Vella, L., McAllister, L.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/xnz7-th21",
-          "type": "fdsn_network",
-          "title": "Vulcan MT & Passive Seismic Array",
-          "authors": "Ben Kay, Graham Heinson, Goran Boren",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "open",
@@ -1634,11 +2823,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/6j8j-9f06",
-          "type": "fdsn_network",
-          "title": "Western Gawler MT & Passive Seismic Array",
-          "authors": "Ben Kay, Graham Heinson, Goran Boren",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -1745,11 +2930,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2025.04.001",
-          "type": "journal_article",
-          "title": "Lithospheric architecture of the Curnamona Province, Australia",
-          "authors": "Kay, B., Heinson, G., Boren, G., Liu, Y., Brand, K., Thiel, S., Williams, H.",
-          "journal": "Gondwana Research",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -1844,19 +3025,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2025.230737",
-          "type": "journal_article",
-          "title": "Crustal structure of the Curnamona Province in Australia by ambient noise tomography",
-          "authors": "Tan, X., Yang, Y., Heinson, G., Kay, B., Boren, G., Yang, X.",
-          "journal": "Tectonophysics",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/6q5b-va48",
-          "type": "fdsn_network",
-          "title": "Curnamona Cube MT & Passive Seismic Array",
-          "authors": "Ben Kay, Graham Heinson, Goran Boren",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -1965,11 +3138,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/ac1p-7y35",
-          "type": "fdsn_network",
-          "title": "Eyre Peninsula Nodal Array",
-          "authors": "Caroline M. Eakin, Chengxin Jiang, Meghan Miller, Louis Moresi, Graham Heinson",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -2217,11 +3386,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/8jxr-7029",
-          "type": "fdsn_network",
-          "title": "Auckland-Hauraki Node Array",
-          "authors": "Robert Pickle, Kimberley Berends, Meghan Miller",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2023"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -2583,11 +3748,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.12.012",
-          "type": "journal_article",
-          "title": "Multiscale resistivity mapping from an intracontinental hydrothermal mineral system, Adelaide Rift Complex, Australia",
-          "authors": "Kay, B., Heinson, G., Boren, G.",
-          "journal": "Gondwana Research",
-          "year": "2024"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -2675,19 +3836,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/14432471.2021.1935718",
-          "type": "",
-          "title": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
-          "authors": "O’Donnell, J. P., Robertson, K.",
-          "journal": "Preview",
-          "year": "2021"
+          "type": ""
         },
         {
           "identifier": "https://doi.org/10.1080/14432471.2020.1855772",
-          "type": "",
-          "title": "Geological Survey of South Australia: SAEMC 2020, AusArray SA, Central Delamerian Broadband MT transect",
-          "authors": "Heath, P., O’Donnell, J., Robertson, K., Wise, T.",
-          "journal": "Preview",
-          "year": "2020"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -2858,11 +4011,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/14432471.2019.1694473",
-          "type": "",
-          "title": "Geological Survey of South Australia: An update",
-          "authors": "Heath, P., Katona, L., Robertson, K., Thiel, S.",
-          "journal": "Preview",
-          "year": "2019"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -2980,11 +4129,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.ejrh.2021.100841",
-          "type": "journal_article",
-          "title": "Constraining regional-scale groundwater transport predictions with multiple geophysical techniques",
-          "authors": "Li, C., Doble, R., Hatch, M., Heinson, G., Kay, B.",
-          "journal": "Journal of Hydrology: Regional Studies",
-          "year": "2021"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3101,43 +4246,23 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/6K_2020",
-          "type": "fdsn_network",
-          "title": "AusArray SA",
-          "authors": "John Paul O'Donnell, Stephan Thiel, Kate Robertson, Alexei Gorbatov, Bruce Goleby",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1080/14432471.2021.1935718",
-          "type": "journal_article",
-          "title": "Geological Survey of South Australia: The AusArray SA passive seismic array and new MT data",
-          "authors": "O’Donnell, J. P., Robertson, K.",
-          "journal": "Preview",
-          "year": "2021"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.04.013",
-          "type": "journal_article",
-          "title": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
-          "authors": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
-          "journal": "Gondwana Research",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2023.229938",
-          "type": "journal_article",
-          "title": "Tracking crustal thickness at the sediment inundated edge of the Gawler Craton, South Australia",
-          "authors": "Agrawal, S., Eakin, C. M., O’Donnell, J. P.",
-          "journal": "Tectonophysics",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2023gc011066",
-          "type": "",
-          "title": "The Influence of Lithospheric Thickness Variations Beneath Australia on Seismic Anisotropy and Mantle Flow",
-          "authors": "Eakin, C. M., Davies, D. R., Ghelichkhan, S., O’Donnell, J. P., Agrawal, S.",
-          "journal": "Geochemistry, Geophysics, Geosystems",
-          "year": "2023"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -3355,35 +4480,19 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/3F_2020",
-          "type": "fdsn_network",
-          "title": "Macquarie Ridge",
-          "authors": "Hrvoje Tkalčić, Caroline Eakin, Nicholas Rawlinson, Coffin, M. F., Joann Miriam Stock",
-          "journal": "AusPass: The Australian Passive Seismic Server",
-          "year": "2020"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.5194/egusphere-egu23-10875",
-          "type": "journal_article",
-          "title": "Crustal Structure of the Macquarie Ridge Complex Constrained by the Ambient Noise and Earthquake Autocorrelograms",
-          "authors": "Ma, X., Tkalčić, H., Eakin, C., Rawlinson, N., Pham, T. S., Winder, T., Pickle, R., Coffin, M., Stock, J.",
-          "journal": "",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.5194/egusphere-egu23-9886",
-          "type": "",
-          "title": "Microseismicity of the Macquarie Ridge Complex",
-          "authors": "Rawlinson, N., Winder, T., Tkalcic, H., Stock, J., Coffin, M.",
-          "journal": "",
-          "year": "2023"
+          "type": ""
         },
         {
           "identifier": "https://doi.org/10.1029/2024jb031032",
-          "type": "",
-          "title": "Investigating the Characteristics of Microseisms Using the Australian Seismic Arrays",
-          "authors": "Pandey, A., Tkalčić, H., Ma, X.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2025"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -3567,19 +4676,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1029/2024JB030371",
-          "type": "journal_article",
-          "title": "Deep and Clustered Microseismicity at the Edge of Southern New Zealand's Transpressive Plate Boundary",
-          "authors": "Williams, J. N., Eberhart‐Phillips, D., Bourguignon, S., Stirling, M. W., Oliver, W.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/jr68-qq17",
-          "type": "fdsn_network",
-          "title": "Southland Otago Seismic Array",
-          "authors": "Jack N. Williams, Donna Eberhart-Phillips, Sandra Bourguignon, Mark Stirling",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2022"
+          "type": "fdsn_network"
         }
       ],
       "dataAccess": "",
@@ -3674,59 +4775,31 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/5G_2018",
-          "type": "fdsn_network",
-          "title": "Lake Eyre Basin",
-          "authors": "Caroline Eakin",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2018"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1016/j.gr.2023.04.013",
-          "type": "journal_article",
-          "title": "Mapping crustal structure across southern Australia using seismic ambient noise tomography",
-          "authors": "O’Donnell, J., Agrawal, S., Eakin, C., Thiel, S., Brand, K., Gorbatov, A., Goleby, B.",
-          "journal": "Gondwana Research",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072989",
-          "type": "conference_presentation",
-          "title": "Seismicity, Minerals, and Craton margins: The Lake Eyre Basin Seismic Deployment",
-          "authors": "Eakin, C.",
-          "journal": "ASEG Extended Abstracts",
-          "year": "2019"
+          "type": "conference_presentation"
         },
         {
           "identifier": "https://doi.org/10.59350/1evzk-y6b17",
-          "type": "journal_article",
-          "title": "Australia surprised by moderate quake, but rumbling is not unusual",
-          "authors": "Eakin, C., Miller, M. S.",
-          "journal": "",
-          "year": "2021"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.59350/h4nph-she37",
-          "type": "journal_article",
-          "title": "Australia surprised by moderate quake, but rumbling is not unusual",
-          "authors": "Eakin, C., Miller, M. S.",
-          "journal": "",
-          "year": "2021"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2024jb031032",
-          "type": "journal_article",
-          "title": "Investigating the Characteristics of Microseisms Using the Australian Seismic Arrays",
-          "authors": "Pandey, A., Tkalčić, H., Ma, X.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250032",
-          "type": "journal_article",
-          "title": "Exploring Seismic Signal Detection and Source Identification of Atmospheric Entries: The Hayabusa2 Sample Return Capsule as a Benchmark",
-          "authors": "Clemente, I., Sansom, E. K., Devillepoix, H. A. R., Kawamura, T., Fernando, B. A., Garcia, R. F., Collet, O.",
-          "journal": "Seismological Research Letters",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3822,67 +4895,35 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7G_2000",
-          "type": "fdsn_network",
-          "title": "West Australian Cratons",
-          "authors": "Brian Kennet",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2000"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01000.x",
-          "type": "journal_article",
-          "title": "Seismic structure of the Yilgarn Craton, Western Australia",
-          "authors": "Reading, A. M., Kennett, B. L. N., Dentith, M. C.",
-          "journal": "Australian Journal of Earth Sciences",
-          "year": "2003"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1046/j.1440-0952.2003.01003.x",
-          "type": "journal_article",
-          "title": "Lithospheric structure of the Pilbara Craton, Capricorn Orogen and northern Yilgarn Craton, Western Australia, from teleseismic receiver functions",
-          "authors": "Reading, A. M., Kennett, B. L. N.",
-          "journal": "Australian Journal of Earth Sciences",
-          "year": "2003"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2003GL018090",
-          "type": "journal_article",
-          "title": "Improved inversion for seismic structure using transformed, <i>S</i>‐wavevector receiver functions: Removing the effect of the free surface",
-          "authors": "Reading, A., Kennett, B., Sambridge, M.",
-          "journal": "Geophysical Research Letters",
-          "year": "2003"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1130/G23341A.1",
-          "type": "journal_article",
-          "title": "New constraints on the seismic structure of West Australia: Evidence for terrane stabilization prior to the assembly of an ancient continent?",
-          "authors": "Reading, A., Kennett, B., Goleby, B.",
-          "journal": "Geology",
-          "year": "2007"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1016/j.epsl.2005.01.009",
-          "type": "journal_article",
-          "title": "Contrasts in lithospheric structure within the Australian craton—insights from surface wave tomography",
-          "authors": "Fishwick, S., Kennett, B., Reading, A.",
-          "journal": "Earth and Planetary Science Letters",
-          "year": "2005"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
-          "type": "journal_article",
-          "title": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
-          "authors": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
-          "journal": "Journal of Earth System Science",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250308",
-          "type": "journal_article",
-          "title": "A New High-Resolution Seismic Catalog for Southwestern Australia (2020–2025) and Analysis of Long-Term Clustering Behavior",
-          "authors": "Pickle, R., Miller, M. S., Allen, T., Mousavi, S., Zhang, P., Yuan, H., Murdie, R.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -3970,35 +5011,19 @@
       "relatedObjects": [
         {
           "identifier": "https://dx.doi.org/10.25914/kf96-nb26",
-          "type": "dataset",
-          "title": "Australian Lightwave Infrastructure Research Testbed Dataset (ALIRT-001)",
-          "authors": "Lai, Voon Hui, Miller, Meghan",
-          "journal": "NCI Australia",
-          "year": "2023"
+          "type": "dataset"
         },
         {
           "identifier": "https://doi.org/10.1785/0320240031",
-          "type": "journal_article",
-          "title": "Passive Seismic Imaging of Urban Environments Using Distributed Acoustic Sensing: A Case Study from Melbourne, Australia",
-          "authors": "Lai, V. H., Miller, M. S., Jiang, C., Yang, Y., Magrini, F., Zhan, Z., McQueen, H.",
-          "journal": "The Seismic Record",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220230180",
-          "type": "journal_article",
-          "title": "The Global DAS Month of February 2023",
-          "authors": "Wuestefeld, A., Spica, Z. J., Aderhold, K., Huang, H. H., Ma, K. F., Lai, V. H., Miller, M., Urmantseva, L., Zapf, D., Bowden, D. C., Edme, P., Kiers, T., Rinaldi, A. P., Tuinstra, K., Jestin, C., Diaz-Meza, S., Jousset, P., Wollin, C., Ugalde, A., Ruiz Barajas, S., Gaite, B., Currenti, G., Prestifilippo, M., Araki, E., Tonegawa, T., de Ridder, S., Nowacki, A., Lindner, F., Schoenball, M., Wetter, C., Zhu, H. H., Baird, A. F., Rørstadbotnen, R. A., Ajo-Franklin, J., Ma, Y., Abbott, R. E., Hodgkinson, K. M., Porritt, R. W., Stanciu, C., Podrasky, A., Hill, D., Biondi, B., Yuan, S., Luo, B., Nikitin, S., Morten, J. P., Dumitru, V. A., Lienhart, W., Cunningham, E., Wang, H.",
-          "journal": "Seismological Research Letters",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220230325",
-          "type": "journal_article",
-          "title": "Toward a Metadata Standard for Distributed Acoustic Sensing (DAS) Data Collection",
-          "authors": "Lai, V. H., Hodgkinson, K. M., Porritt, R. W., Mellors, R.",
-          "journal": "Seismological Research Letters",
-          "year": "2024"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4089,51 +5114,27 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.precamres.2011.07.001",
-          "type": "journal_article",
-          "title": "Seismic structure of the crust and uppermost mantle of the Capricorn and Paterson Orogens and adjacent cratons, Western Australia, from passive seismic transects",
-          "authors": "Reading, A. M., Tkalčić, H., Kennett, B. L., Johnson, S. P., Sheppard, S.",
-          "journal": "Precambrian Research",
-          "year": "2012"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.7914/SN/7J_2005",
-          "type": "fdsn_network",
-          "title": "CAPRA - Linkage",
-          "authors": "Anya Reading, Brian Kennett",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2005"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "journal_article",
-          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
-          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
-          "journal": "Geophysical Journal International",
-          "year": "2012"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article",
-          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
-          "authors": "Allen, T. I.",
-          "journal": "Bulletin of the Seismological Society of America",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article",
-          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
-          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
-          "type": "journal_article",
-          "title": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
-          "authors": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
-          "journal": "Journal of Earth System Science",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4220,51 +5221,27 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7J_2005",
-          "type": "fdsn_network",
-          "title": "CAPRA - Linkage",
-          "authors": "Anya Reading, Brian Kennett",
-          "journal": "International Federation of Digital Seismograph Networks",
-          "year": "2005"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1029/2008JB006152",
-          "type": "journal_article",
-          "title": "NW Australian intraplate seismicity and stress regime",
-          "authors": "Revets, S. A., Keep, M., Kennett, B. L. N.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2009"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "journal_article",
-          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
-          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
-          "journal": "Geophysical Journal International",
-          "year": "2012"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article",
-          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
-          "authors": "Allen, T. I.",
-          "journal": "Bulletin of the Seismological Society of America",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article",
-          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
-          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1007/s12040-025-02560-y",
-          "type": "journal_article",
-          "title": "Moho variations in the Archean Cratons of Australia from joint inversion of receiver function and Rayleigh wave group velocity",
-          "authors": "Chakraborty, A., Mukherjee, P., Sharma, S., Borah, K.",
-          "journal": "Journal of Earth System Science",
-          "year": "2025"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4405,27 +5382,15 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1002/2015JB012677",
-          "type": "journal_article",
-          "title": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica",
-          "authors": "Peacock, J. R., Selway, K.",
-          "journal": "Journal of Geophysical Research: Solid Earth",
-          "year": "2016"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1111/j.1365-246X.2011.05326.x",
-          "type": "dataset",
-          "title": "Exploiting seismic signal and noise in an intracratonic environment to constrain crustal structure and source parameters of infrequent earthquakes",
-          "authors": "Young, M. K., Tkalčić, H., Rawlinson, N., Reading, A. M.",
-          "journal": "Geophysical Journal International",
-          "year": "2012"
+          "type": "dataset"
         },
         {
           "identifier": "https://dx.doi.org/10.25914/5cc28d3b5a808",
-          "type": "",
-          "title": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica  (time series)",
-          "authors": "Heinson, Graham",
-          "journal": "National Computational Infrastructure",
-          "year": "2019"
+          "type": ""
         }
       ],
       "dataAccess": "",
@@ -4565,19 +5530,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1016/j.gr.2021.09.017",
-          "type": "journal_article",
-          "title": "A global magnetotelluric graphite type locality: Multi-decade, multi-scale studies of the Eyre Peninsula anomaly",
-          "authors": "Heinson, G., Kay, B., Loader, L., Robertson, K., Thiel, S.",
-          "journal": "Gondwana Research",
-          "year": "2022"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1080/22020586.2019.12072992",
-          "type": "conference abstract",
-          "title": "Defining the Eyre Conductivity Anomaly with the Tumby Bay MT transect",
-          "authors": "Robertson, K., Kay, B., Loader, L., Heinson, G., Thiel, S.",
-          "journal": "ASEG Extended Abstracts",
-          "year": "2019"
+          "type": "conference abstract"
         }
       ],
       "dataAccess": "",
@@ -4717,11 +5674,7 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1038/s41598-023-32403-z",
-          "type": "journal_article",
-          "title": "Magnetotelluric support for edge-driven convection and shear-driven upwelling in the Newer Volcanics Province",
-          "authors": "Jennings, S., Heinson, G., Hasterok, D., Kay, B.",
-          "journal": "Scientific Reports",
-          "year": "2023"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4793,43 +5746,23 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/6F_2008",
-          "type": "fdsn_network",
-          "title": "BILBY",
-          "authors": "Sara Rawlinson, Brian Kennet",
-          "journal": "Australian Passive Seismic Server",
-          "year": "2008"
+          "type": "fdsn_network"
         },
         {
           "identifier": "https://doi.org/10.1016/j.tecto.2016.03.031",
-          "type": "journal_article",
-          "title": "Moho geometry along a north–south passive seismic transect through Central Australia",
-          "authors": "Sippl, C.",
-          "journal": "Tectonophysics",
-          "year": "2016"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1029/2023gc011066",
-          "type": "journal_article",
-          "title": "The Influence of Lithospheric Thickness Variations Beneath Australia on Seismic Anisotropy and Mantle Flow",
-          "authors": "Eakin, C. M., Davies, D. R., Ghelichkhan, S., O’Donnell, J. P., Agrawal, S.",
-          "journal": "Geochemistry, Geophysics, Geosystems",
-          "year": "2023"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0120250054",
-          "type": "journal_article",
-          "title": "Systematic Estimation of Earthquake Source Parameters for Continental Australia: Attenuation and Stress Drop",
-          "authors": "Allen, T. I.",
-          "journal": "Bulletin of the Seismological Society of America",
-          "year": "2025"
+          "type": "journal_article"
         },
         {
           "identifier": "https://doi.org/10.1785/0220250316",
-          "type": "journal_article",
-          "title": "AGMD: A Ground-Motion Database for the Australian Continental Crust",
-          "authors": "Ghasemi, H., Allen, T., Sunketa, A., Mckenna, C., Mani, D.",
-          "journal": "Seismological Research Letters",
-          "year": "2026"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4901,19 +5834,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/ZR_2009",
-          "type": "fdsn_network",
-          "title": "Mt Isa Norther Queensland - AuScope",
-          "authors": "Brian Kennett, Herb McQueen",
-          "journal": "Australian Passive Seismic Server",
-          "year": "2009"
+          "type": "fdsn_network"
         },
         {
           "identifier": "http://dx.doi.org/10.1080/08120099.2013.837098",
-          "type": "journal_article",
-          "title": "Structure of the Mt Isa region from seismic ambient noise tomography",
-          "authors": "Saygin, E., McQUEEN, H., Hutton, L. J., Kennett, B. L. N., Lister, G.",
-          "journal": "Australian Journal of Earth Sciences",
-          "year": "2013"
+          "type": "journal_article"
         }
       ],
       "dataAccess": "",
@@ -4991,19 +5916,11 @@
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.1080/08123985.2024.2392802",
-          "type": "journal_article",
-          "title": "Resistivity anomalies in the shallow and deep crust beneath West Tasmania from a broadband magnetotelluric 2D transect",
-          "authors": "Ostersen, T. C., Reading, A. M., Cracknell, M. J., Roach, M., Duffett, M. L., Bombardieri, D. J., McNeill, A., Fomin, T., Brand, K. E., Thiel, S., Boren, G., Heinson, G.",
-          "journal": "Exploration Geophysics",
-          "year": "2024"
+          "type": "journal_article"
         },
         {
           "identifier": "https://dx.doi.org/10.25914/3erf-dn38",
-          "type": "dataset",
-          "title": "Magnetotelluric Broadband Surveys of Western and North-Western Tasmania, 2016",
-          "authors": "Ostersen, Thomas, Reading, Anya, Duffett, Mark, Heinson, Graham",
-          "journal": "NCI Australia",
-          "year": "2023"
+          "type": "dataset"
         }
       ],
       "dataAccess": "",
