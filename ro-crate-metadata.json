@@ -137,7 +137,7 @@
           "@id": "#project-2005-S01"
         },
         {
-          "@id": "#project-Placeholder-29"
+          "@id": "#project-2008-M01"
         },
         {
           "@id": "#project-Placeholder-31"
@@ -5225,8 +5225,8 @@
       "identifier": "2005-S01",
       "url": "https://bvkay.github.io/ansir-data/?id=2005-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2005-09-29",
-      "temporalCoverage": "2005-09-29/2007-02-27",
+      "dateCreated": "2005-09-28",
+      "temporalCoverage": "2005-09-28/2007-02-26",
       "about": [
         {
           "@id": "#method-seismology"
@@ -5289,7 +5289,7 @@
       }
     },
     {
-      "@id": "#place-placeholder-29",
+      "@id": "#place-2008-m01",
       "@type": "Place",
       "name": "Prydz Bay, Antartica"
     },
@@ -5391,25 +5391,25 @@
       "identifier": "https://doi.org/10.25914/5cc28d3b5a808"
     },
     {
-      "@id": "#project-Placeholder-29",
+      "@id": "#project-2008-M01",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Magnetotelluric investigation of the Vestfold Hills and Rauer Group, East Antarctica",
       "description": "The Prydz Bay MT project, located in East Antarctica is aimed at imaging a suspected suture zone beneath the Sørsdal Glacier. The survey area spans the Vestfold Hills and Rauer Group, two terranes with contrasting geological histories that are thought to have been juxtaposed during the assembly of East Gondwana. A series of MT stations will be deployed along three helicopter-supported transects extending inland from the Davis research station, covering approximately 200 line-kilometres. Due to the unique challenges of working in polar conditions, the survey will use MT systems with preamplifiers designed to overcome the high contact resistance of ice. Stainless steel electrodes will be arranged in 100 m dipoles with magnetic sensors capturing both fluxgate and induction coil data, optimised for data collection in a high-noise, cold-climate environment.",
-      "identifier": "Placeholder-29",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-29",
+      "identifier": "2008-M01",
+      "url": "https://bvkay.github.io/ansir-data/?id=2008-M01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2008-10-30",
-      "temporalCoverage": "2008-10-30/2009-01-30",
+      "dateCreated": "2008-10-29",
+      "temporalCoverage": "2008-10-29/2009-01-29",
       "about": [
         {
           "@id": "#method-magnetotelluric"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-29"
+        "@id": "#place-2008-m01"
       },
       "creator": [
         {
@@ -5465,9 +5465,6 @@
         }
       ],
       "hasPart": [
-        {
-          "@id": "https://doi.org/10.1111/j.1365-246X.2011.05326.x"
-        },
         {
           "@id": "https://doi.org/10.25914/5cc28d3b5a808"
         }
