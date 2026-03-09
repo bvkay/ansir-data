@@ -4,12 +4,12 @@
     Based on: git_projects_v010.html
 
     Changes in v011:
-      - Fixed empty space after collapsing project cards (iframe height now shrinks)
-      - Removed GPU compositing hacks (translate3d, will-change) that interfered
-        with layout recalculation after card collapse
-      - sendHeightToParent() now temporarily collapses body to measure true content height
-      - Fixed initial sort: page now loads sorted by Date (Newest First) as the
-        dropdown indicates, instead of spreadsheet row order
+      - Collection site markers shown on map when project popup opens
+        (inverted black triangles for each site location)
+      - Site popups show name, instrument, coordinates
+      - Markers removed when project popup closes
+      - collectionSites passed through transformProject()
+      - Compatible with GAS code v18 (instrument + serial fields)
 
     Changes in v010:
       - Full academic citations for publications, datasets, and networks
@@ -92,9 +92,9 @@
             --status-planning-bg: #fff3cd;           /* Yellow background */
             --status-planning-color: #856404;        /* Yellow text */
             --status-planning-marker: #ffc107;       /* Yellow map marker */
-            --status-in-progress-bg: #e8e0ff;        /* Indigo background */
-            --status-in-progress-color: #4338ca;     /* Indigo text */
-            --status-in-progress-marker: #6366F1;    /* Indigo map marker */
+            --status-in-progress-bg: #d1ecf1;        /* Blue background */
+            --status-in-progress-color: #0c5460;     /* Blue text */
+            --status-in-progress-marker: #17a2b8;    /* Blue map marker */
             --status-complete-bg: #d4edda;           /* Green background */
             --status-complete-color: #155724;        /* Green text */
             --status-complete-marker: #28a745;       /* Green map marker */
@@ -137,6 +137,8 @@
             font-display: swap;
             /* Smooth scrolling behavior */
             scroll-behavior: smooth;
+            /* GPU acceleration for performance */
+            transform: translate3d(0, 0, 0);
         }
 
         /* ============================================ */
@@ -412,6 +414,9 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             cursor: pointer;
             position: relative;
+            /* Performance optimization */
+            will-change: transform;
+            transform: translateZ(0);
         }
 
         /* Hidden state for filtered projects - seamless transition */
@@ -931,6 +936,7 @@
         let map = null;              // Leaflet map instance
         let markers = [];            // Map markers array
         let currentPolygon = null;   // Currently displayed polygon
+        let currentSiteMarkers = [];  // v011: Collection site markers on map
         let urlProjectId = null;     // Project ID from URL parameter
         let targetProjectForDeepLink = null; // Specific project for deep linking
         let projectsInitialized = false; // Track if cards have been created
@@ -1222,7 +1228,9 @@
                 dataAccess: String(rawProject.dataAccess || ''),
                 indigenousInvolvement: rawProject.indigenousInvolvement === true,
                 indigenousEngagement: String(rawProject.indigenousEngagement || ''),
-                indigenousAcknowledgement: String(rawProject.indigenousAcknowledgement || '')
+                indigenousAcknowledgement: String(rawProject.indigenousAcknowledgement || ''),
+                // v011: Collection site locations from GAS v18 export
+                collectionSites: (rawProject.collectionSites || []).filter(s => s.latitude && s.longitude)
             };
         }
 
@@ -1499,12 +1507,13 @@
         function sendHeightToParent() {
             if (!IS_EMBEDDED) return;
             try {
-                // Temporarily shrink body so scrollHeight reflects actual content,
-                // not the iframe's current (possibly too-tall) viewport.
-                // Without this, scrollHeight never decreases after card collapse.
-                document.body.style.height = '1px';
-                const height = document.body.scrollHeight;
-                document.body.style.height = '';
+                // Use the larger of body and documentElement to capture full content
+                const height = Math.max(
+                    document.body.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.scrollHeight,
+                    document.documentElement.offsetHeight
+                );
                 // Only send if height actually changed (avoid message spam)
                 if (height !== lastSentHeight && height > 0) {
                     lastSentHeight = height;
@@ -1832,8 +1841,10 @@
                     initializeProjectCards();
                     populateMethodFilter();
                     
-                    // Apply initial sort and filter (honours the default "Date Newest" dropdown)
-                    applyFiltersSeamlessly();
+                    // Apply initial filter if URL had project ID
+                    if (targetProjectId) {
+                        applyFiltersSeamlessly(); // Use seamless filter for initial load
+                    }
                     
                     // Update stats based on filtered projects
                     updateStats();
@@ -1983,11 +1994,17 @@
             }
         }
 
+        // v011: Remove all collection site markers from the map
+        function clearSiteMarkers() {
+            currentSiteMarkers.forEach(function(m) { map.removeLayer(m); });
+            currentSiteMarkers = [];
+        }
+
         // Create individual project marker
         function createProjectMarker(project) {
             const colors = {
                 'planning': '#ffc107',
-                'in-progress': '#6366F1',
+                'in-progress': '#17a2b8',
                 'complete': '#28a745'
             };
             
@@ -2010,12 +2027,9 @@
                 adjustedLng += 360;
             }
 
-            // zIndexOffset ensures planning on top, in-progress middle, complete bottom
-            const zOffsets = { 'planning': 2000, 'in-progress': 1000, 'complete': 0 };
-            const marker = L.marker([project.coordinates.lat, adjustedLng], {
+            const marker = L.marker([project.coordinates.lat, adjustedLng], { 
                 icon: icon,
-                interactive: true,
-                zIndexOffset: zOffsets[project.status] || 0
+                interactive: true
             }).addTo(map);
 
             // v002: Popup content with XSS-escaped values
@@ -2043,13 +2057,15 @@
                 trackEvent('map-marker-clicked', project.name);
             });
 
-            // Handle polygon display
+            // Handle polygon and collection site markers display
             marker.on('popupopen', function() {
                 if (currentPolygon) {
                     map.removeLayer(currentPolygon);
                     currentPolygon = null;
                 }
-                
+                // v011: Remove any existing site markers
+                clearSiteMarkers();
+
                 // Display project polygon if available
                 if (project.polygon && project.polygon.length > 2) {
                     currentPolygon = L.polygon(project.polygon, {
@@ -2060,14 +2076,40 @@
                         opacity: 0.8
                     }).addTo(map);
                 }
+
+                // v011: Display collection site markers as inverted black triangles
+                if (project.collectionSites && project.collectionSites.length > 0) {
+                    project.collectionSites.forEach(function(site) {
+                        var siteLng = site.longitude;
+                        if (siteLng < -30) siteLng += 360; // Pacific-centered adjustment
+                        var siteIcon = L.divIcon({
+                            className: 'site-marker',
+                            html: '<div style="width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 12px solid #000; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4)); cursor: pointer;"></div>',
+                            iconSize: [14, 12],
+                            iconAnchor: [7, 0],
+                            popupAnchor: [0, 2]
+                        });
+                        var sitePopupLines = [];
+                        if (site.name) sitePopupLines.push('<strong>' + escapeHtml(site.name) + '</strong>');
+                        if (site.instrument) sitePopupLines.push('Instrument: ' + escapeHtml(site.instrument));
+                        if (site.serial) sitePopupLines.push('Serial: ' + escapeHtml(site.serial));
+                        sitePopupLines.push(site.latitude.toFixed(4) + ', ' + site.longitude.toFixed(4));
+                        if (site.altitude) sitePopupLines.push('Alt: ' + escapeHtml(site.altitude) + ' m');
+                        var sitePopup = '<div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">' + sitePopupLines.join('<br>') + '</div>';
+                        var siteMarker = L.marker([site.latitude, siteLng], { icon: siteIcon, interactive: true }).addTo(map);
+                        siteMarker.bindPopup(sitePopup, { maxWidth: 220, className: 'custom-popup' });
+                        currentSiteMarkers.push(siteMarker);
+                    });
+                }
             });
 
-            // Remove polygon when popup closes
+            // Remove polygon and site markers when popup closes
             marker.on('popupclose', function() {
                 if (currentPolygon) {
                     map.removeLayer(currentPolygon);
                     currentPolygon = null;
                 }
+                clearSiteMarkers();
             });
 
             return marker;
