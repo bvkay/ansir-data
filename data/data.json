@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T11:58:17.758Z",
+  "exported": "2026-03-09T11:58:55.081Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -1718,8 +1718,8 @@
       "acronym": "SNAKEY",
       "description": "This deployment of 20 broadband seismometers is intended to fill a gap in seismic coverage in South Australia, along the south-eastern margin of the Galwer Craton. The aim is to better characterise the local seismicity, and to improve seismic imaging of the crust and upper mantle structure beneath this region.",
       "status": "In Progress",
-      "startDate": "2023-02-25",
-      "endDate": "2026-04-30",
+      "startDate": "2023-02-24",
+      "endDate": "2026-04-29",
       "methods": [
         "Seismology"
       ],
@@ -1728,7 +1728,7 @@
         "region": "South Australia",
         "country": "Australia",
         "coordinates": "-34.512498, 137.109375",
-        "polygon": "-34.867, 135.6581; -33.5064, 136.7064; -32.4916, 138.1907; -33.5206, 138.063; -35.2944, 138.553; -35.9231, 137.5602; -35.7619, 136.6848"
+        "polygon": "-34.86700, 135.65810; -34.05266, 136.01074; -33.50640, 136.70640; -32.49160, 138.19070; -33.52308, 138.25195; -35.38905, 138.82324; -35.99579, 137.70264; -35.76190, 136.68480"
       },
       "contributors": [
         {
@@ -1774,7 +1774,188 @@
         }
       ],
       "collectionQuantity": 20,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "SNKE1",
+          "latitude": -34.867,
+          "longitude": 135.6581,
+          "altitude": "78.0",
+          "startTime": "2023-03-28",
+          "finishTime": "2024-11-04",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKE2",
+          "latitude": -34.4512,
+          "longitude": 136.0203,
+          "altitude": "32.0",
+          "startTime": "2023-03-28",
+          "finishTime": "2026-06-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKE3",
+          "latitude": -33.9547,
+          "longitude": 136.1991,
+          "altitude": "135.0",
+          "startTime": "2023-03-27",
+          "finishTime": "2024-10-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKE4",
+          "latitude": -33.5064,
+          "longitude": 136.7064,
+          "altitude": "303.0",
+          "startTime": "2023-03-27",
+          "finishTime": "2024-03-04",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKE5",
+          "latitude": -33.321,
+          "longitude": 137.2114,
+          "altitude": "144.0",
+          "startTime": "2023-03-26",
+          "finishTime": "2026-06-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKG1",
+          "latitude": -35.5863,
+          "longitude": 138.2364,
+          "altitude": "314.0",
+          "startTime": "2023-03-28",
+          "finishTime": "2026-06-01",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKG2",
+          "latitude": -35.2944,
+          "longitude": 138.553,
+          "altitude": "263.0",
+          "startTime": "2023-03-28",
+          "finishTime": "2024-09-28",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKG3",
+          "latitude": -34.5542,
+          "longitude": 138.4472,
+          "altitude": "20.0",
+          "startTime": "2023-03-27",
+          "finishTime": "2024-04-09",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKG4",
+          "latitude": -34.0285,
+          "longitude": 138.2736,
+          "altitude": "199.0",
+          "startTime": "2023-03-26",
+          "finishTime": "2024-09-28",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKG5",
+          "latitude": -33.5206,
+          "longitude": 138.063,
+          "altitude": "6.0",
+          "startTime": "2023-03-29",
+          "finishTime": "2026-06-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKG6",
+          "latitude": -32.4916,
+          "longitude": 138.1907,
+          "altitude": "240.0",
+          "startTime": "2023-03-26",
+          "finishTime": "2025-05-24",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKK1",
+          "latitude": -35.7619,
+          "longitude": 136.6848,
+          "altitude": "190.0",
+          "startTime": "2023-03-30",
+          "finishTime": "2026-06-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKK2",
+          "latitude": -35.6481,
+          "longitude": 137.3003,
+          "altitude": "269.0",
+          "startTime": "2023-03-29",
+          "finishTime": "2026-06-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKK3",
+          "latitude": -35.9231,
+          "longitude": 137.5602,
+          "altitude": "14.0",
+          "startTime": "2023-03-29",
+          "finishTime": "2026-06-01",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKK4",
+          "latitude": -35.8259,
+          "longitude": 138.0179,
+          "altitude": "29.0",
+          "startTime": "2023-03-28",
+          "finishTime": "2024-04-11",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKY1",
+          "latitude": -35.22,
+          "longitude": 136.9794,
+          "altitude": "73.0",
+          "startTime": "2023-03-30",
+          "finishTime": "2023-09-23",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKY2",
+          "latitude": -35.0159,
+          "longitude": 137.5912,
+          "altitude": "37.0",
+          "startTime": "2023-03-31",
+          "finishTime": "2024-04-08",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKY3",
+          "latitude": -34.5969,
+          "longitude": 137.5615,
+          "altitude": "27.0",
+          "startTime": "2023-03-30",
+          "finishTime": "2026-06-01",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        },
+        {
+          "name": "SNKY4",
+          "latitude": -34.2914,
+          "longitude": 137.9744,
+          "altitude": "58.0",
+          "startTime": "2023-03-26",
+          "finishTime": "2026-06-01",
+          "instrument": "Trillium Compact 120s (BB)"
+        },
+        {
+          "name": "SNKY5",
+          "latitude": -33.9659,
+          "longitude": 137.6209,
+          "altitude": "25.0",
+          "startTime": "2023-03-30",
+          "finishTime": "2023-09-23",
+          "instrument": "Nanometrics Trillium Compact PostHole 120s (BB)"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/9j20-yq91",
