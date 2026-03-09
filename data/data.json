@@ -1,6 +1,6 @@
 {
   "success": true,
-  "exported": "2026-03-09T12:17:12.019Z",
+  "exported": "2026-03-09T12:17:53.502Z",
   "source": "ANSIR_Projects_MasterList",
   "projectCount": 48,
   "data": [
@@ -12509,8 +12509,8 @@
       "acronym": "WACRATON",
       "description": "A passive seismic investigation is planned across key tectonic domains of Western Australia to improve resolution of crustal and upper mantle structure in a region that remains poorly imaged compared to the rest of the continent. The survey will utilise broadband three-component seismic stations deployed along the WT and WV transects across the Yilgarn Craton, with additional WR and WP sites providing extended coverage. These arrays will record teleseismic events for receiver function analysis, enabling the mapping of seismic velocity variations, Moho depth, and discontinuity structure from the Pilbara Craton, across the Capricorn Orogen, into the Yilgarn Craton. By using closely spaced stations in targeted profiles alongside more widely spaced regional coverage, the survey design allows for both local-scale and broad lithospheric imaging.",
       "status": "Complete",
-      "startDate": "2000-06-30",
-      "endDate": "2004-01-31",
+      "startDate": "2000-06-29",
+      "endDate": "2004-01-30",
       "methods": [
         "Seismology"
       ],
@@ -12519,7 +12519,7 @@
         "region": "Western Australia",
         "country": "Australia",
         "coordinates": "-30, 120",
-        "polygon": ""
+        "polygon": "-23.51300, 120.01465; -26.14496, 122.21191; -28.98832, 123.17871; -32.24010, 123.17871; -34.04299, 116.05957; -31.34367, 115.62012; -28.29410, 115.57617; -24.31644, 115.09277; -22.21728, 115.88379"
       },
       "contributors": [
         {
@@ -12535,7 +12535,7 @@
         },
         {
           "name": "Brian Kennet",
-          "title": "Emer Prof",
+          "title": "",
           "orcid": "https://orcid.org/0000-0003-2206-5350",
           "position": "",
           "organisation": "Australian National University",
@@ -12550,7 +12550,7 @@
           "agency": "Department of Industry, Science and Resources",
           "title": "Predictive Mineral Discovery CRC",
           "identifier": "pmdCRC",
-          "identifierType": "internal_id",
+          "identifierType": "",
           "agencyRor": "https://ror.org/021z9m619",
           "agencyLocation": "Canberra, Australia"
         },
@@ -12586,7 +12586,431 @@
         }
       ],
       "collectionQuantity": 54,
-      "collectionSites": [],
+      "collectionSites": [
+        {
+          "name": "WP01",
+          "latitude": -28.321,
+          "longitude": 116.9355,
+          "altitude": "400.0",
+          "startTime": "2002-12-01",
+          "finishTime": "2003-02-17",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP02",
+          "latitude": -28.2415,
+          "longitude": 117.4418,
+          "altitude": "304.0",
+          "startTime": "2002-12-02",
+          "finishTime": "2003-02-18",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP03",
+          "latitude": -28.2945,
+          "longitude": 118.3023,
+          "altitude": "427.0",
+          "startTime": "2002-12-02",
+          "finishTime": "2003-02-18",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP04",
+          "latitude": -28.0352,
+          "longitude": 118.8367,
+          "altitude": "479.0",
+          "startTime": "2002-11-30",
+          "finishTime": "2003-02-16",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP05",
+          "latitude": -27.1233,
+          "longitude": 118.8157,
+          "altitude": "491.0",
+          "startTime": "2002-11-30",
+          "finishTime": "2002-11-30",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP06",
+          "latitude": -28.6805,
+          "longitude": 118.825,
+          "altitude": "427.0",
+          "startTime": "2002-12-03",
+          "finishTime": "2003-02-19",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP08",
+          "latitude": -29.2823,
+          "longitude": 121.2572,
+          "altitude": "454.0",
+          "startTime": "2002-11-28",
+          "finishTime": "2003-02-14",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP11",
+          "latitude": -29.6617,
+          "longitude": 119.3123,
+          "altitude": "448.0",
+          "startTime": "2002-12-03",
+          "finishTime": "2003-03-01",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP13",
+          "latitude": -30.4628,
+          "longitude": 120.811,
+          "altitude": "417.0",
+          "startTime": "2002-11-26",
+          "finishTime": "2003-02-24",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP14",
+          "latitude": -31.5368,
+          "longitude": 122.098,
+          "altitude": "275.0",
+          "startTime": "2002-11-27",
+          "finishTime": "2003-02-25",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP15",
+          "latitude": -31.2135,
+          "longitude": 121.0932,
+          "altitude": "424.0",
+          "startTime": "2003-03-03",
+          "finishTime": "2003-08-08",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP16",
+          "latitude": -30.2113,
+          "longitude": 121.0848,
+          "altitude": "387.0",
+          "startTime": "2003-03-03",
+          "finishTime": "2003-06-20",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP17",
+          "latitude": -31.0137,
+          "longitude": 122.5985,
+          "altitude": "327.0",
+          "startTime": "2003-03-05",
+          "finishTime": "2003-08-09",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP18",
+          "latitude": -29.9692,
+          "longitude": 122.5463,
+          "altitude": "386.0",
+          "startTime": "2003-03-05",
+          "finishTime": "2003-08-11",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP25",
+          "latitude": -30.4755,
+          "longitude": 122.7078,
+          "altitude": "371.0",
+          "startTime": "2003-08-16",
+          "finishTime": "2003-11-02",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP26",
+          "latitude": -28.95,
+          "longitude": 122.5167,
+          "altitude": "452.0",
+          "startTime": "2003-08-18",
+          "finishTime": "2003-11-04",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP27",
+          "latitude": -31.2568,
+          "longitude": 119.8232,
+          "altitude": "452.0",
+          "startTime": "2003-11-17",
+          "finishTime": "2004-02-03",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP29",
+          "latitude": -29.7638,
+          "longitude": 121.7243,
+          "altitude": "372.0",
+          "startTime": "2003-11-14",
+          "finishTime": "2004-01-31",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP30",
+          "latitude": -31.68,
+          "longitude": 120.287,
+          "altitude": "472.0",
+          "startTime": "2003-11-16",
+          "finishTime": "2003-11-16",
+          "instrument": "BB"
+        },
+        {
+          "name": "WP31",
+          "latitude": -28.871,
+          "longitude": 122.7795,
+          "altitude": "400.0",
+          "startTime": "2003-11-19",
+          "finishTime": "2004-02-05",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR01",
+          "latitude": -22.5431,
+          "longitude": 116.1192,
+          "altitude": "174.0",
+          "startTime": "2000-07-13",
+          "finishTime": "2000-11-24",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR02",
+          "latitude": -23.9436,
+          "longitude": 119.9672,
+          "altitude": "574.0",
+          "startTime": "2000-07-15",
+          "finishTime": "2001-01-29",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR03",
+          "latitude": -24.4078,
+          "longitude": 115.374,
+          "altitude": "218.0",
+          "startTime": "2000-07-12",
+          "finishTime": "2001-02-16",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR04",
+          "latitude": -26.1861,
+          "longitude": 121.9324,
+          "altitude": "490.0",
+          "startTime": "2000-07-20",
+          "finishTime": "2001-01-28",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR05",
+          "latitude": -26.3237,
+          "longitude": 117.9824,
+          "altitude": "435.0",
+          "startTime": "2000-07-19",
+          "finishTime": "2001-07-13",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR06",
+          "latitude": -28.3841,
+          "longitude": 115.8435,
+          "altitude": "325.0",
+          "startTime": "2000-07-11",
+          "finishTime": "2001-01-31",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR07",
+          "latitude": -28.4754,
+          "longitude": 122.4517,
+          "altitude": "464.0",
+          "startTime": "2000-07-21",
+          "finishTime": "2000-10-13",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR08",
+          "latitude": -30.7247,
+          "longitude": 118.3518,
+          "altitude": "310.0",
+          "startTime": "2000-10-21",
+          "finishTime": "2001-07-05",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR09",
+          "latitude": -32.0364,
+          "longitude": 122.7921,
+          "altitude": "460.0",
+          "startTime": "2000-10-12",
+          "finishTime": "2001-07-06",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR10",
+          "latitude": -32.856,
+          "longitude": 119.6784,
+          "altitude": "380.0",
+          "startTime": "2000-10-11",
+          "finishTime": "2001-07-05",
+          "instrument": "BB"
+        },
+        {
+          "name": "WR11",
+          "latitude": -34.0058,
+          "longitude": 116.0545,
+          "altitude": "170.0",
+          "startTime": "2000-10-10",
+          "finishTime": "2001-07-04",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS01",
+          "latitude": -27.4222,
+          "longitude": 118.9104,
+          "altitude": "470.0",
+          "startTime": "2000-07-18",
+          "finishTime": "2000-10-04",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS02",
+          "latitude": -26.7681,
+          "longitude": 118.9495,
+          "altitude": "537.0",
+          "startTime": "2000-07-19",
+          "finishTime": "2000-07-21",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS03",
+          "latitude": -26.103,
+          "longitude": 119.1048,
+          "altitude": "536.0",
+          "startTime": "2000-07-18",
+          "finishTime": "2000-10-04",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS04",
+          "latitude": -25.5353,
+          "longitude": 118.7924,
+          "altitude": "530.0",
+          "startTime": "2000-08-08",
+          "finishTime": "2000-10-03",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS05",
+          "latitude": -24.9813,
+          "longitude": 118.7502,
+          "altitude": "550.0",
+          "startTime": "2000-07-17",
+          "finishTime": "2000-10-03",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS06",
+          "latitude": -24.3993,
+          "longitude": 118.9733,
+          "altitude": "559.0",
+          "startTime": "2000-07-16",
+          "finishTime": "2000-10-02",
+          "instrument": "BB"
+        },
+        {
+          "name": "WS07",
+          "latitude": -23.5312,
+          "longitude": 119.1585,
+          "altitude": "643.0",
+          "startTime": "2000-07-15",
+          "finishTime": "2000-10-01",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT02",
+          "latitude": -31.8453,
+          "longitude": 116.6072,
+          "altitude": "360.0",
+          "startTime": "2000-10-20",
+          "finishTime": "2001-04-12",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT03",
+          "latitude": -31.8316,
+          "longitude": 117.2649,
+          "altitude": "318.0",
+          "startTime": "2000-10-20",
+          "finishTime": "2001-04-12",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT04",
+          "latitude": -31.5081,
+          "longitude": 117.7736,
+          "altitude": "343.0",
+          "startTime": "2000-10-21",
+          "finishTime": "2001-04-12",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT05",
+          "latitude": -31.2958,
+          "longitude": 118.3594,
+          "altitude": "390.0",
+          "startTime": "2000-10-22",
+          "finishTime": "2001-04-13",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT06",
+          "latitude": -31.1259,
+          "longitude": 118.939,
+          "altitude": "405.0",
+          "startTime": "2000-10-22",
+          "finishTime": "2001-04-13",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT08",
+          "latitude": -31.1275,
+          "longitude": 120.5363,
+          "altitude": "438.0",
+          "startTime": "2000-10-23",
+          "finishTime": "2001-04-14",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT09",
+          "latitude": -30.7807,
+          "longitude": 121.7726,
+          "altitude": "398.0",
+          "startTime": "2000-10-24",
+          "finishTime": "2001-04-15",
+          "instrument": "BB"
+        },
+        {
+          "name": "WT10",
+          "latitude": -30.4185,
+          "longitude": 122.5106,
+          "altitude": "400.0",
+          "startTime": "2000-10-24",
+          "finishTime": "2001-04-14",
+          "instrument": "BB"
+        },
+        {
+          "name": "WX01",
+          "latitude": -31.353,
+          "longitude": 115.7154,
+          "altitude": "340.0",
+          "startTime": "2001-02-01",
+          "finishTime": "2001-07-15",
+          "instrument": "BB"
+        }
+      ],
       "relatedObjects": [
         {
           "identifier": "https://doi.org/10.7914/SN/7G_2000",
