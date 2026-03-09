@@ -5808,12 +5808,12 @@
         "Project"
       ],
       "name": "Ambient Noise Tomography of an Electrical Resistivity Anomaly, Mundi Mundi",
-      "description": "",
+      "description": "The Mundi project investigated the eastern extent of the Curnamona conductivity anomaly beneath the Mundi Plain in far western New South Wales, a region prospective for iron oxide copper-gold (IOCG) and Broken Hill–type mineral systems. The area is largely covered by sediments with minimal basement exposure, making geophysical methods essential for understanding the underlying crustal structure. To complement earlier magnetotelluric (MT) and moving-loop electromagnetic (MLEM) surveys that identified conductive features potentially linked to mineralised systems, a 102-station ambient noise tomography (ANT) passive seismic array was deployed across the eastern portion of the conductor. The array recorded naturally occurring seismic noise to derive surface-wave velocity models of the crust, providing additional constraints on subsurface structure and physical properties. Integration of the ANT results with existing electromagnetic datasets improves imaging of the crustal architecture of the Curnamona Province and helps refine interpretations of the conductive structures thought to be associated with mineral system development.",
       "identifier": "2024-S02",
       "url": "https://bvkay.github.io/ansir-data/?id=2024-S02",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2024-06-27",
-      "temporalCoverage": "2024-06-27/2024-07-28",
+      "dateCreated": "2024-06-26",
+      "temporalCoverage": "2024-06-26/2024-07-27",
       "about": [
         {
           "@id": "#method-passive-seismic"
