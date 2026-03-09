@@ -134,7 +134,7 @@
           "@id": "#project-2006-S01"
         },
         {
-          "@id": "#project-Placeholder-28"
+          "@id": "#project-2005-S01"
         },
         {
           "@id": "#project-Placeholder-29"
@@ -5153,18 +5153,28 @@
       }
     },
     {
-      "@id": "#geo-placeholder-28",
+      "@id": "#geo-2005-s01",
       "@type": "GeoCoordinates",
       "latitude": -22.485,
       "longitude": 115.445
     },
     {
-      "@id": "#place-placeholder-28",
+      "@id": "#shape-2005-s01",
+      "@type": "GeoShape",
+      "polygon": "-26.61554 114.91699 -22.37802 115.88379 -21.07169 118.38867 -21.97107 122.25586 -21.19466 122.65137 -20.12558 118.78418 -20.49649 117.02637 -21.88954 114.65332 -23.22873 113.86230 -26.53694 113.68652"
+    },
+    {
+      "@id": "#place-2005-s01",
       "@type": "Place",
       "name": "Capricorn, Australia",
-      "geo": {
-        "@id": "#geo-placeholder-28"
-      }
+      "geo": [
+        {
+          "@id": "#geo-2005-s01"
+        },
+        {
+          "@id": "#shape-2005-s01"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0002-2421-9213",
@@ -5205,25 +5215,25 @@
       "identifier": "https://doi.org/10.1029/2008JB006152"
     },
     {
-      "@id": "#project-Placeholder-28",
+      "@id": "#project-2005-S01",
       "@type": [
         "Dataset",
         "Project"
       ],
       "name": "Linkage Project",
       "description": "A regional seismic monitoring program is planned for northwestern Australia to investigate the causes and characteristics of seismicity in one of the most tectonically complex and historically active parts of the continent. Despite hosting Australia’s largest recorded earthquakes, the current seismic record for this region is sparse. The geological framework includes multiple Archean and Proterozoic cratons, orogens, and large-scale fault systems, many of which remain poorly understood at depth. By deploying a dense array of broadband seismometers, the survey will enable high-precision earthquake detection and imaging of crustal structure across both onshore and offshore zones. This will support an improved understanding of neotectonics, basement reactivation, and the potential influence of natural resource extraction on local seismicity",
-      "identifier": "Placeholder-28",
-      "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-28",
+      "identifier": "2005-S01",
+      "url": "https://bvkay.github.io/ansir-data/?id=2005-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2005-09-30",
-      "temporalCoverage": "2005-09-30/2007-02-28",
+      "dateCreated": "2005-09-29",
+      "temporalCoverage": "2005-09-29/2007-02-27",
       "about": [
         {
           "@id": "#method-seismology"
         }
       ],
       "spatialCoverage": {
-        "@id": "#place-placeholder-28"
+        "@id": "#place-2005-s01"
       },
       "creator": [
         {
