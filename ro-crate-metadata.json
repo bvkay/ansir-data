@@ -5773,11 +5773,24 @@
       ]
     },
     {
-      "@id": "#grant-minex-crc-and-strategic-energy-resources",
+      "@id": "#grant-minex-crc",
       "@type": "Grant",
       "name": "",
       "funder": {
         "@id": "https://ror.org/021z9m619"
+      }
+    },
+    {
+      "@id": "#funder-strategic-energy-resources",
+      "@type": "Organization",
+      "name": "Strategic Energy Resources"
+    },
+    {
+      "@id": "#grant-strategic-energy-resources",
+      "@type": "Grant",
+      "name": "",
+      "funder": {
+        "@id": "#funder-strategic-energy-resources"
       }
     },
     {
@@ -5820,7 +5833,10 @@
       ],
       "funding": [
         {
-          "@id": "#grant-minex-crc-and-strategic-energy-resources"
+          "@id": "#grant-minex-crc"
+        },
+        {
+          "@id": "#grant-strategic-energy-resources"
         }
       ],
       "instrument": [
