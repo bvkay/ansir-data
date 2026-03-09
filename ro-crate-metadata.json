@@ -4997,16 +4997,26 @@
     {
       "@id": "#geo-placeholder-27",
       "@type": "GeoCoordinates",
-      "latitude": -22.5,
-      "longitude": 118
+      "latitude": -22.623518,
+      "longitude": 116.850586
+    },
+    {
+      "@id": "#shape-placeholder-27",
+      "@type": "GeoShape",
+      "polygon": "-21.76907 122.73926 -19.59020 120.10254 -20.53958 117.02637 -21.31944 115.40039 -23.06899 114.03809 -26.46012 113.81836 -27.32236 118.21289 -24.51651 117.68555 -23.71432 118.21289 -22.86669 118.21289 -21.80987 120.32227"
     },
     {
       "@id": "#place-placeholder-27",
       "@type": "Place",
       "name": "Capricorn, Australia",
-      "geo": {
-        "@id": "#geo-placeholder-27"
-      }
+      "geo": [
+        {
+          "@id": "#geo-placeholder-27"
+        },
+        {
+          "@id": "#shape-placeholder-27"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/01nfmeh72",
@@ -5076,8 +5086,8 @@
       "identifier": "Placeholder-27",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-27",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2006-05-31",
-      "temporalCoverage": "2006-05-31/2007-04-30",
+      "dateCreated": "2006-05-30",
+      "temporalCoverage": "2006-05-30/2007-04-29",
       "about": [
         {
           "@id": "#method-seismology"
