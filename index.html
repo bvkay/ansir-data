@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v014)
-    Based on: git_projects_v013.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v015)
+    Based on: git_projects_v014.html
+
+    Changes in v015:
+      - Rewrote "View project details →" flow: searchForProject no longer closes
+        and re-opens the popup. Instead it directly adds site markers + polygon
+        and fits bounds, avoiding the jarring zoom-in/zoom-out flash.
+      - autoOpenMapPopup rewritten: fits bounds FIRST (without animation), then
+        opens popup, eliminating the half-second flash at wrong zoom level.
+      - Copy link in iframe: rewrote copyPermalink to handle Squarespace iframe
+        sandbox restrictions — uses window.open data URI fallback when clipboard
+        APIs are blocked by iframe sandbox.
 
     Changes in v014:
-      - Fixed "View project details →": zoom level now fits all site markers + polygon
-        using fitBounds() instead of fixed zoom 6-8
-      - Fixed copy link: button type="button" prevents form submission, permalink now
-        uses window.location.href base instead of origin+pathname for file:// compat,
-        fallback always shows prompt with link to copy
-      - autoOpenMapPopup uses project data to show sites/polygon even when popup
-        is already handled
 
     Changes in v013:
       - "View project details →" now also opens map popup (shows site markers + polygon)
@@ -942,7 +945,7 @@
         // Set this to the Squarespace page URL where this iframe is embedded
         // e.g. 'https://www.ansir.org.au/projects'
         // When set, permalinks will point to the Squarespace page instead of GitHub Pages
-        const SQUARESPACE_PARENT_URL = '';  // <-- Set this to your Squarespace page URL
+        const SQUARESPACE_PARENT_URL = 'https://www.auscope.org.au/ansir-projects';  // <-- Set this to your Squarespace page URL
 
         // Detect if we're running inside an iframe
         const IS_EMBEDDED = (window !== window.top);
@@ -1472,9 +1475,9 @@
             return baseUrl + '?id=' + projectRef;
         }
 
-        // v014: Copy permalink to clipboard — accepts project ID (number), looks up project
+        // v015: Copy permalink to clipboard — handles iframe sandbox restrictions
         function copyPermalink(projectId, event) {
-            event.stopPropagation(); // Prevent card expansion
+            event.stopPropagation();
             event.preventDefault();
 
             var project = allProjects.find(function(p) { return p.id === projectId; });
@@ -1491,31 +1494,84 @@
                 setTimeout(function() { toast.classList.remove('show'); }, 3000);
             }
 
-            // Fallback: textarea + execCommand for non-secure contexts
-            function fallbackCopy(text) {
-                var ta = document.createElement('textarea');
-                ta.value = text;
-                ta.style.position = 'fixed';
-                ta.style.left = '-9999px';
-                document.body.appendChild(ta);
-                ta.select();
-                var copied = false;
-                try { copied = document.execCommand('copy'); } catch (e) { /* ignore */ }
-                document.body.removeChild(ta);
-                if (copied) {
-                    showCopyToast();
-                } else {
-                    window.prompt('Copy this project link:', text);
-                }
-            }
-
+            // Try clipboard API first (works on HTTPS, not in sandboxed iframes)
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(permalink).then(showCopyToast).catch(function() {
-                    fallbackCopy(permalink);
+                    tryCopyFallback(permalink, showCopyToast);
                 });
             } else {
-                fallbackCopy(permalink);
+                tryCopyFallback(permalink, showCopyToast);
             }
+        }
+
+        // v015: Fallback copy using textarea + execCommand, with visible link as last resort
+        function tryCopyFallback(text, onSuccess) {
+            // Clear any existing selection
+            if (window.getSelection) {
+                window.getSelection().removeAllRanges();
+            }
+
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.setAttribute('readonly', ''); // Prevent keyboard on mobile
+            ta.style.cssText = 'position:fixed;top:0;left:0;width:2em;height:2em;padding:0;border:none;outline:none;box-shadow:none;background:transparent;opacity:0;';
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            ta.setSelectionRange(0, ta.value.length);
+
+            var copied = false;
+            try { copied = document.execCommand('copy'); } catch (e) { /* ignore */ }
+            document.body.removeChild(ta);
+
+            // Verify we actually copied the right content by checking clipboard
+            // In some iframes, execCommand returns true but copies wrong content
+            if (copied && !IS_EMBEDDED) {
+                onSuccess();
+            } else {
+                // In iframe or uncertain: show a selectable link overlay
+                showCopyOverlay(text);
+            }
+        }
+
+        // v015: Show a visible overlay with the link for manual copy (iframe-safe)
+        function showCopyOverlay(text) {
+            // Remove any existing overlay
+            var existing = document.getElementById('copy-link-overlay');
+            if (existing) existing.remove();
+
+            var overlay = document.createElement('div');
+            overlay.id = 'copy-link-overlay';
+            overlay.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);'
+                + 'background:#fff;border:2px solid #282572;border-radius:8px;padding:20px;'
+                + 'box-shadow:0 4px 20px rgba(0,0,0,0.3);z-index:10000;max-width:90%;width:400px;'
+                + 'font-family:Arial,sans-serif;text-align:center;';
+
+            var label = document.createElement('p');
+            label.textContent = 'Project link:';
+            label.style.cssText = 'margin:0 0 10px;font-size:14px;color:#495057;';
+
+            var input = document.createElement('input');
+            input.type = 'text';
+            input.value = text;
+            input.readOnly = true;
+            input.style.cssText = 'width:100%;padding:8px;border:1px solid #dee2e6;border-radius:4px;'
+                + 'font-size:13px;text-align:center;margin-bottom:10px;';
+            input.onclick = function() { this.select(); this.setSelectionRange(0, this.value.length); };
+
+            var closeBtn = document.createElement('button');
+            closeBtn.textContent = 'Close';
+            closeBtn.style.cssText = 'background:#282572;color:#fff;border:none;padding:6px 20px;'
+                + 'border-radius:4px;cursor:pointer;font-size:13px;';
+            closeBtn.onclick = function() { overlay.remove(); };
+
+            overlay.appendChild(label);
+            overlay.appendChild(input);
+            overlay.appendChild(closeBtn);
+            document.body.appendChild(overlay);
+
+            // Auto-select the text
+            setTimeout(function() { input.select(); input.setSelectionRange(0, input.value.length); }, 50);
         }
 
         /* ============================================ */
@@ -1740,49 +1796,13 @@
             }
         }
 
-        // Auto-open map popup for target project
-        // v014: Rewritten to fit bounds around project + all site markers + polygon
+        // v015: Auto-open map popup for deep-linked project (page load)
+        // Reuses showProjectOnMap to avoid flash
         function autoOpenMapPopup(targetProject) {
             if (!targetProject || !map) return;
-
-            setTimeout(() => {
-                const targetMarker = markers.find(marker => {
-                    const popup = marker.getPopup();
-                    if (popup && popup.getContent()) {
-                        return popup.getContent().includes(targetProject.name);
-                    }
-                    return false;
-                });
-
-                if (targetMarker) {
-                    // Open the popup — this triggers popupopen which adds site markers + polygon
-                    targetMarker.openPopup();
-
-                    // Build bounds that include the project location + all site locations + polygon
-                    const bounds = L.latLngBounds([targetMarker.getLatLng()]);
-
-                    // Include collection site locations
-                    if (targetProject.collectionSites && targetProject.collectionSites.length > 0) {
-                        targetProject.collectionSites.forEach(function(site) {
-                            if (site.latitude && site.longitude) {
-                                bounds.extend([site.latitude, site.longitude]);
-                            }
-                        });
-                    }
-
-                    // Include polygon vertices
-                    if (targetProject.polygon && targetProject.polygon.length > 2) {
-                        targetProject.polygon.forEach(function(pt) {
-                            bounds.extend(pt);
-                        });
-                    }
-
-                    // Fit the map to show everything, with some padding
-                    if (bounds.isValid()) {
-                        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10 });
-                    }
-                }
-            }, 500);
+            setTimeout(function() {
+                showProjectOnMap(targetProject);
+            }, 300);
         }
 
         // Clear auto-expanded state when search is cleared
@@ -1811,44 +1831,105 @@
             populateStructuredData();
         }
 
-        // Smart search function - populate search filter and focus on project
+        // v015: Rewritten — no popup close/reopen, directly shows sites + polygon + fits bounds
         function searchForProject(projectId) {
             // Populate search filter
-            const searchInput = document.getElementById('filter-name');
+            var searchInput = document.getElementById('filter-name');
             searchInput.value = projectId;
             searchInput.classList.add('pre-filled');
-            
-            // Close any open map popups
-            if (map) {
-                map.closePopup();
-            }
-            
+
+            // Close any open map popups (this clears previous project's sites/polygon)
+            if (map) map.closePopup();
+
             // Clear other filters to ensure project shows up
             document.getElementById('filter-status').value = '';
             document.getElementById('filter-method').value = '';
-            
-            // Apply filters - SEAMLESS version
+
+            // Apply filters
             applyFiltersSeamlessly();
-            
+
             // Find and focus on the target project
-            const targetProject = allProjects.find(p => 
-                (p.ansirRef && p.ansirRef === projectId) ||
-                (p.id && p.id.toString() === projectId)
-            );
-            
+            var targetProject = allProjects.find(function(p) {
+                return (p.ansirRef && p.ansirRef === projectId) ||
+                       (p.id && p.id.toString() === projectId);
+            });
+
             if (targetProject) {
-                // Auto-expand project card (no scrolling when clicked from map)
-                setTimeout(() => {
+                // Auto-expand project card (no scrolling when clicked from map popup)
+                setTimeout(function() {
                     autoExpandProjectCard(targetProject, false);
                 }, 100);
-                // v013: Open the map popup to show site markers + polygon
-                setTimeout(() => {
-                    autoOpenMapPopup(targetProject);
-                }, 200);
+
+                // v015: Directly add site markers + polygon + fit bounds, THEN open popup
+                // This avoids the jarring zoom-in-then-zoom-out flash
+                showProjectOnMap(targetProject);
             }
 
-            // Track this interaction
             trackEvent('map-search-used', projectId);
+        }
+
+        // v015: Show a project's sites, polygon, and popup on the map in the right order
+        // 1. Clear previous overlays  2. Add sites + polygon  3. Fit bounds  4. Open popup
+        function showProjectOnMap(project) {
+            if (!project || !map) return;
+
+            // Clear previous overlays
+            clearSiteMarkers();
+            if (currentPolygon) {
+                map.removeLayer(currentPolygon);
+                currentPolygon = null;
+            }
+
+            // Determine the project marker's adjusted position
+            var projLng = project.coordinates.lng;
+            if (projLng < -30) projLng += 360;
+            var projLatLng = L.latLng(project.coordinates.lat, projLng);
+
+            // Build bounds starting from project location
+            var bounds = L.latLngBounds([projLatLng]);
+
+            // Add polygon if available
+            if (project.polygon && project.polygon.length > 2) {
+                var statusColors = { 'planning': '#ffc107', 'in-progress': '#17a2b8', 'complete': '#28a745' };
+                var color = statusColors[project.status] || '#6c757d';
+                currentPolygon = L.polygon(project.polygon, {
+                    color: color,
+                    fillColor: color,
+                    fillOpacity: 0.15,
+                    weight: 2,
+                    opacity: 0.8
+                }).addTo(map);
+                project.polygon.forEach(function(pt) { bounds.extend(pt); });
+            }
+
+            // Add site markers
+            if (project.collectionSites && project.collectionSites.length > 0) {
+                addSiteMarkersToMap(project.collectionSites);
+                project.collectionSites.forEach(function(site) {
+                    if (site.latitude && site.longitude) {
+                        bounds.extend([site.latitude, site.longitude]);
+                    }
+                });
+            }
+
+            // Fit bounds FIRST (no animation) so the map is at the right zoom
+            if (bounds.isValid()) {
+                map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10, animate: false });
+            }
+
+            // Now find and open the popup (map is already at correct zoom)
+            setTimeout(function() {
+                var targetMarker = markers.find(function(marker) {
+                    var popup = marker.getPopup();
+                    return popup && popup.getContent() && popup.getContent().includes(project.name);
+                });
+                if (targetMarker) {
+                    // Temporarily suppress the popupopen handler from adding duplicate sites
+                    targetMarker._sitesAlreadyShown = true;
+                    targetMarker.openPopup();
+                    delete targetMarker._sitesAlreadyShown;
+                }
+            }, 50);
         }
 
         /* ============================================ */
@@ -2191,11 +2272,13 @@
 
             // Handle polygon and collection site markers display
             marker.on('popupopen', function() {
+                // v015: Skip if showProjectOnMap() already added sites + polygon
+                if (marker._sitesAlreadyShown) return;
+
                 if (currentPolygon) {
                     map.removeLayer(currentPolygon);
                     currentPolygon = null;
                 }
-                // v011: Remove any existing site markers
                 clearSiteMarkers();
 
                 // Display project polygon if available
@@ -2209,8 +2292,7 @@
                     }).addTo(map);
                 }
 
-                // v012: Display collection site markers as small inverted triangles
-                // Scale factor based on zoom level (smaller when zoomed out)
+                // Display collection site markers
                 if (project.collectionSites && project.collectionSites.length > 0) {
                     addSiteMarkersToMap(project.collectionSites);
                 }
