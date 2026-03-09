@@ -4224,12 +4224,22 @@
       "longitude": 168.43537
     },
     {
+      "@id": "#shape-s01-2022",
+      "@type": "GeoShape",
+      "polygon": "-45.54098 167.80518 -46.03892 169.24438 -46.32796 169.25537 -46.47948 168.72803 -46.53241 168.16772 -45.96261 167.33276"
+    },
+    {
       "@id": "#place-s01-2022",
       "@type": "Place",
       "name": "Southland, New Zealand",
-      "geo": {
-        "@id": "#geo-s01-2022"
-      }
+      "geo": [
+        {
+          "@id": "#geo-s01-2022"
+        },
+        {
+          "@id": "#shape-s01-2022"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/01jmxt844",
@@ -4288,7 +4298,7 @@
     {
       "@id": "#grant-rcp023",
       "@type": "Grant",
-      "name": "NHC Toka Tū Ake University Research Programme \"Seismic hazard of the southern South Island the neglected provinces\" (RCP023)",
+      "name": "NHC Toka Tū Ake University Research Programme",
       "identifier": "RCP023",
       "funder": {
         "@id": "https://ror.org/04p7g7c05"
@@ -4330,8 +4340,8 @@
       "identifier": "S01-2022",
       "url": "https://bvkay.github.io/ansir-data/?id=S01-2022",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-09-30",
-      "temporalCoverage": "2020-09-30/2023-09-30",
+      "dateCreated": "2020-09-29",
+      "temporalCoverage": "2020-09-29/2023-09-29",
       "about": [
         {
           "@id": "#method-seismology"
