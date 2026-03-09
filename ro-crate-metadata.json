@@ -1009,8 +1009,8 @@
       "identifier": "ANU-2021",
       "url": "https://bvkay.github.io/ansir-data/?id=ANU-2021",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2020-11-19",
-      "temporalCoverage": "2020-11-19/2020-12-20",
+      "dateCreated": "2020-11-18",
+      "temporalCoverage": "2020-11-18/2020-12-19",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -1042,7 +1042,6 @@
           "@id": "https://doi.org/10.7914/t2z3-2m87"
         }
       ],
-      "conditionsOfAccess": "open",
       "provider": {
         "@id": "https://ansir.org.au"
       },
