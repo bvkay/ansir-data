@@ -4397,16 +4397,26 @@
     {
       "@id": "#geo-placeholder-17",
       "@type": "GeoCoordinates",
-      "latitude": -27.8676,
-      "longitude": 136.3034
+      "latitude": -27.542067,
+      "longitude": 137.043457
+    },
+    {
+      "@id": "#shape-placeholder-17",
+      "@type": "GeoShape",
+      "polygon": "-25.59664 137.63672 -25.53718 133.98926 -26.18964 133.43994 -29.20462 135.00000 -29.94988 136.86768 -29.49191 138.60352 -26.42600 139.87793 -25.67588 138.84521"
     },
     {
       "@id": "#place-placeholder-17",
       "@type": "Place",
       "name": "Lake Eyre Basin, Australia",
-      "geo": {
-        "@id": "#geo-placeholder-17"
-      }
+      "geo": [
+        {
+          "@id": "#geo-placeholder-17"
+        },
+        {
+          "@id": "#shape-placeholder-17"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0002-8756-2457",
@@ -4436,11 +4446,19 @@
       "identifier": "https://doi.org/10.7914/SN/5G_2018"
     },
     {
+      "@id": "#journal-aseg-extended-abstracts",
+      "@type": "Periodical",
+      "name": "ASEG Extended Abstracts"
+    },
+    {
       "@id": "https://doi.org/10.1080/22020586.2019.12072989",
-      "@type": "Dataset",
+      "@type": "ScholarlyArticle",
       "name": "Seismicity, Minerals, and Craton margins: The Lake Eyre Basin Seismic Deployment",
       "author": "Eakin, C.",
       "datePublished": "2019",
+      "isPartOf": {
+        "@id": "#journal-aseg-extended-abstracts"
+      },
       "identifier": "https://doi.org/10.1080/22020586.2019.12072989"
     },
     {
@@ -4461,13 +4479,10 @@
     },
     {
       "@id": "https://doi.org/10.1785/0220250032",
-      "@type": "ScholarlyArticle",
+      "@type": "Dataset",
       "name": "Exploring Seismic Signal Detection and Source Identification of Atmospheric Entries: The Hayabusa2 Sample Return Capsule as a Benchmark",
       "author": "Clemente, I., Sansom, E. K., Devillepoix, H. A. R., Kawamura, T., Fernando, B. A., Garcia, R. F., Collet, O.",
       "datePublished": "2025",
-      "isPartOf": {
-        "@id": "#journal-seismological-research-letters"
-      },
       "identifier": "https://doi.org/10.1785/0220250032"
     },
     {
@@ -4481,8 +4496,8 @@
       "identifier": "Placeholder-17",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-17",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2018-09-30",
-      "temporalCoverage": "2018-09-30/2022-05-31",
+      "dateCreated": "2018-09-29",
+      "temporalCoverage": "2018-09-29/2022-05-30",
       "about": [
         {
           "@id": "#method-seismology"
@@ -4526,6 +4541,9 @@
           "@id": "https://doi.org/10.1016/j.gr.2023.04.013"
         },
         {
+          "@id": "https://doi.org/10.1080/22020586.2019.12072989"
+        },
+        {
           "@id": "https://doi.org/10.59350/1evzk-y6b17"
         },
         {
@@ -4533,9 +4551,6 @@
         },
         {
           "@id": "https://doi.org/10.1029/2024jb031032"
-        },
-        {
-          "@id": "https://doi.org/10.1785/0220250032"
         }
       ],
       "hasPart": [
@@ -4543,7 +4558,7 @@
           "@id": "https://doi.org/10.7914/SN/5G_2018"
         },
         {
-          "@id": "https://doi.org/10.1080/22020586.2019.12072989"
+          "@id": "https://doi.org/10.1785/0220250032"
         }
       ],
       "provider": {
@@ -4560,12 +4575,22 @@
       "longitude": 120
     },
     {
+      "@id": "#shape-placeholder-23",
+      "@type": "GeoShape",
+      "polygon": "-23.51300 120.01465 -26.14496 122.21191 -28.98832 123.17871 -32.24010 123.17871 -34.04299 116.05957 -31.34367 115.62012 -28.29410 115.57617 -24.31644 115.09277 -22.21728 115.88379"
+    },
+    {
       "@id": "#place-placeholder-23",
       "@type": "Place",
       "name": "Western Australia, Australia",
-      "geo": {
-        "@id": "#geo-placeholder-23"
-      }
+      "geo": [
+        {
+          "@id": "#geo-placeholder-23"
+        },
+        {
+          "@id": "#shape-placeholder-23"
+        }
+      ]
     },
     {
       "@id": "https://orcid.org/0000-0002-9316-7605",
@@ -4729,8 +4754,8 @@
       "identifier": "Placeholder-23",
       "url": "https://bvkay.github.io/ansir-data/?id=Placeholder-23",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2000-06-30",
-      "temporalCoverage": "2000-06-30/2004-01-31",
+      "dateCreated": "2000-06-29",
+      "temporalCoverage": "2000-06-29/2004-01-30",
       "about": [
         {
           "@id": "#method-seismology"
