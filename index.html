@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v018)
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v019)
     Based on: git_projects_v016.html
 
     Changes in v017:
@@ -133,9 +133,9 @@
             --status-planning-bg: #fff3cd;           /* Yellow background */
             --status-planning-color: #856404;        /* Yellow text */
             --status-planning-marker: #ffc107;       /* Yellow map marker */
-            --status-in-progress-bg: #d1ecf1;        /* Blue background */
-            --status-in-progress-color: #0c5460;     /* Blue text */
-            --status-in-progress-marker: #17a2b8;    /* Blue map marker */
+            --status-in-progress-bg: #e8dff5;        /* Purple-indigo background */
+            --status-in-progress-color: #4a2d7a;     /* Purple-indigo text */
+            --status-in-progress-marker: #6f42c1;    /* Purple-indigo map marker */
             --status-complete-bg: #d4edda;           /* Green background */
             --status-complete-color: #155724;        /* Green text */
             --status-complete-marker: #28a745;       /* Green map marker */
@@ -434,10 +434,10 @@
 
         /* Map Popup Transparency — v018: more transparent to see sites beneath */
         .leaflet-popup-content-wrapper {
-            opacity: 0.65 !important;
+            opacity: 0.75 !important;
         }
         .leaflet-popup-tip {
-            opacity: 0.65 !important;
+            opacity: 0.75 !important;
         }
 
         /* ============================================ */
@@ -1881,7 +1881,7 @@
 
             // Add polygon if available
             if (project.polygon && project.polygon.length > 2) {
-                var statusColors = { 'planning': '#ffc107', 'in-progress': '#17a2b8', 'complete': '#28a745' };
+                var statusColors = { 'planning': '#ffc107', 'in-progress': '#6f42c1', 'complete': '#28a745' };
                 var color = statusColors[project.status] || '#6c757d';
                 currentPolygon = L.polygon(project.polygon, {
                     color: color,
@@ -2212,14 +2212,23 @@
 
         // Create individual project marker
         function createProjectMarker(project) {
+            // v019: Purple-indigo for in-progress (was teal #17a2b8)
             const colors = {
                 'planning': '#ffc107',
-                'in-progress': '#17a2b8',
+                'in-progress': '#6f42c1',
                 'complete': '#28a745'
             };
-            
+
+            // v019: Status-based z-index — planning on top, then in-progress, then complete
+            const statusZIndex = {
+                'planning': 3000,
+                'in-progress': 2000,
+                'complete': 1000
+            };
+
             const color = colors[project.status] || '#6c757d';
-            
+            const zIndex = statusZIndex[project.status] || 1000;
+
             // Custom marker icon
             const icon = L.divIcon({
                 className: 'custom-marker',
@@ -2230,8 +2239,6 @@
             });
 
             // v002: Adjust longitude for Pacific-centered map (center ~150°E)
-            // Only shift western hemisphere points (Americas/Pacific islands) to appear
-            // on the right side of the map. Threshold -30° avoids shifting Atlantic/Africa.
             let adjustedLng = project.coordinates.lng;
             if (adjustedLng < -30) {
                 adjustedLng += 360;
@@ -2240,7 +2247,7 @@
             const marker = L.marker([project.coordinates.lat, adjustedLng], {
                 icon: icon,
                 interactive: true,
-                zIndexOffset: 1000  // v012: Project markers always on top of site markers
+                zIndexOffset: zIndex  // v019: Status-based layering
             }).addTo(map);
 
             // v002: Popup content with XSS-escaped values
