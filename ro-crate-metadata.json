@@ -16,7 +16,7 @@
       "@type": "Dataset",
       "name": "ANSIR Research Projects Database",
       "description": "Public database of geophysical research projects enabled by the Australian National Seismic Imaging Resource (ANSIR), an AuScope national facility. Includes seismic, magnetotelluric, and DAS deployments across Australia and internationally.",
-      "datePublished": "2026-03-09",
+      "datePublished": "2026-03-10",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -1196,7 +1196,7 @@
     {
       "@id": "#shape-s01-2019",
       "@type": "GeoShape",
-      "polygon": "-30.36867 115.55577 -34.03496 115.60883 -34.95166 116.72426 -34.52466 118.69629 -33.08253 119.69009 -31.45390 119.43164 -30.32251 118.20749"
+      "polygon": "-30.31599 115.53223 -32.19421 115.86182 -34.03445 115.66406 -35.01200 116.78467 -34.34344 118.60840 -33.08253 119.69009 -32.45416 118.95996 -30.27804 118.25684"
     },
     {
       "@id": "#place-s01-2019",
