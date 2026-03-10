@@ -1514,8 +1514,8 @@
       "identifier": "2018-S01",
       "url": "https://bvkay.github.io/ansir-data/?id=2018-S01",
       "creativeWorkStatus": "Complete",
-      "dateCreated": "2019-11-28",
-      "temporalCoverage": "2019-11-28/2020-04-28",
+      "dateCreated": "2019-11-27",
+      "temporalCoverage": "2019-11-27/2020-04-27",
       "about": [
         {
           "@id": "#method-seismology"
