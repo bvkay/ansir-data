@@ -1283,18 +1283,6 @@
       }
     },
     {
-      "@id": "#instrument-guralp-cmg-6td-30s-100hz",
-      "@type": "IndividualProduct",
-      "name": "Guralp CMG-6TD 30s-100Hz",
-      "description": "1 unit deployed"
-    },
-    {
-      "@id": "#instrument-siliconaudio-40s",
-      "@type": "IndividualProduct",
-      "name": "SiliconAudio 40s",
-      "description": "1 unit deployed"
-    },
-    {
       "@id": "https://doi.org/10.1785/0220220323",
       "@type": "ScholarlyArticle",
       "name": "Southwest Australia Seismic Network (SWAN): Recording Earthquakes in Australia’s Most Active Seismic Zone",
@@ -1443,19 +1431,16 @@
       ],
       "instrument": [
         {
-          "@id": "#instrument-guralp-cmg-6td-30s-100hz"
-        },
-        {
           "@id": "#instrument-nanometrics-trillium-compact-120s"
         },
         {
           "@id": "#instrument-nanometrics-trillium-compact-posthole-120s"
         },
         {
-          "@id": "#instrument-siliconaudio-40s"
+          "@id": "#instrument-igu-bd3c-5s"
         },
         {
-          "@id": "#instrument-igu-bd3c-5s"
+          "@id": "#instrument-terrasawr"
         }
       ],
       "citation": [
