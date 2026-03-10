@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!--
-    ANSIR Research Projects - GitHub Pages Version (git_projects_v019)
-    Based on: git_projects_v016.html
+    ANSIR Research Projects - GitHub Pages Version (git_projects_v020)
+    Based on: git_projects_v019.html
+    v020: Sort projects by date newest-first on initial load
 
     Changes in v017:
       - Zoom now fits polygon bounds (when present) with 2x extra padding,
@@ -1980,23 +1981,28 @@
                     cleanupURL();
                 }
                 
+                // v020: Sort allProjects by date-newest so DOM order matches default sort
+                allProjects.sort(function(a, b) {
+                    var dateA = a.rawStartDate ? new Date(a.rawStartDate).getTime() : 0;
+                    var dateB = b.rawStartDate ? new Date(b.rawStartDate).getTime() : 0;
+                    return dateB - dateA;
+                });
+
                 // Set initial filtered projects
                 filteredProjects = [...allProjects];
-                
+
                 // Set up event listeners
                 setupEventListeners();
-                
+
                 // Use requestAnimationFrame for smooth UI updates
                 requestAnimationFrame(() => {
                     // Initialize all project cards ONCE
                     initializeProjectCards();
                     populateMethodFilter();
-                    
-                    // Apply initial filter if URL had project ID
-                    if (targetProjectId) {
-                        applyFiltersSeamlessly(); // Use seamless filter for initial load
-                    }
-                    
+
+                    // v020: Always apply filters on load (handles sort + deep link)
+                    applyFiltersSeamlessly();
+
                     // Update stats based on filtered projects
                     updateStats();
                     
