@@ -1266,14 +1266,6 @@
       }
     },
     {
-      "@id": "#person-robert-pickle",
-      "@type": "Person",
-      "name": "Dr Robert Pickle",
-      "affiliation": {
-        "@id": "https://ror.org/019wvm592"
-      }
-    },
-    {
       "@id": "#grant-lp170100890",
       "@type": "Grant",
       "name": "ARC Linkage Project",
@@ -1421,7 +1413,7 @@
           "@id": "https://orcid.org/0000-0002-8550-5256"
         },
         {
-          "@id": "#person-robert-pickle"
+          "@id": "https://orcid.org/0000-0002-8550-5256"
         }
       ],
       "funding": [
