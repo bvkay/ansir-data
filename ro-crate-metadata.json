@@ -6689,11 +6689,6 @@
       ]
     },
     {
-      "@id": "#funder-auscope",
-      "@type": "Organization",
-      "name": "AuScope"
-    },
-    {
       "@id": "#project-ANSIR-2026-005",
       "@type": [
         "Dataset",
@@ -6766,7 +6761,7 @@
     {
       "@id": "#place-ansir-2026-006",
       "@type": "Place",
-      "name": "",
+      "name": "Northern Queensland, Australia",
       "geo": [
         {
           "@id": "#geo-ansir-2026-006"
@@ -6775,6 +6770,11 @@
           "@id": "#shape-ansir-2026-006"
         }
       ]
+    },
+    {
+      "@id": "#funder-auscope",
+      "@type": "Organization",
+      "name": "AuScope"
     },
     {
       "@id": "#project-ANSIR-2026-006",
