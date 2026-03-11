@@ -171,6 +171,9 @@
         },
         {
           "@id": "#project-ANSIR-2026-004"
+        },
+        {
+          "@id": "#project-ANSIR-2026-005"
         }
       ]
     },
@@ -6651,6 +6654,94 @@
         }
       ],
       "conditionsOfAccess": "embargoes",
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#geo-ansir-2026-005",
+      "@type": "GeoCoordinates",
+      "latitude": -22.411981,
+      "longitude": 146.546631
+    },
+    {
+      "@id": "#shape-ansir-2026-005",
+      "@type": "GeoShape",
+      "polygon": "-19.97432 141.99829 -20.96240 149.16138 -24.12764 151.16089 -24.14769 143.73413 -20.83924 141.77856"
+    },
+    {
+      "@id": "#place-ansir-2026-005",
+      "@type": "Place",
+      "name": "Eastern Queensland, Australia",
+      "geo": [
+        {
+          "@id": "#geo-ansir-2026-005"
+        },
+        {
+          "@id": "#shape-ansir-2026-005"
+        }
+      ]
+    },
+    {
+      "@id": "#funder-auscope",
+      "@type": "Organization",
+      "name": "AuScope"
+    },
+    {
+      "@id": "#project-ANSIR-2026-005",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Australian Lithospheric Architecture Magnetotelluric Project (AusLAMP) Phase 3 Queensland",
+      "description": "This project aims to create maps of how electricity moves through rocks deep beneath Australia. These maps help scientists better understand how the Australian continent formed and changed over time. The results can also help identify areas with potential mineral and energy resources, and improve understanding of how space weather can affect infrastructure on the ground.",
+      "identifier": "ANSIR-2026-005",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-005",
+      "creativeWorkStatus": "Planning",
+      "dateCreated": "2026-05-28",
+      "temporalCoverage": "2026-05-28/2026-07-09",
+      "keywords": "AusLAMP, magnetotelluric",
+      "about": [
+        {
+          "@id": "#method-magnetotelluric"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-ansir-2026-005"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-7106-0789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1489-7958"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-auscope"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-earth-data-pr6-24-loggers"
+        },
+        {
+          "@id": "#instrument-bartington-mag-03ms-fluxgate"
+        },
+        {
+          "@id": "#instrument-borin-stelth-ag-agcl-electrodes"
+        },
+        {
+          "@id": "#instrument-solar-panels"
+        },
+        {
+          "@id": "#instrument-field-laptop"
+        }
+      ],
       "provider": {
         "@id": "https://ansir.org.au"
       },
