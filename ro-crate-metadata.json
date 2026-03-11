@@ -6787,8 +6787,8 @@
       "identifier": "ANSIR-2026-006",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-006",
       "creativeWorkStatus": "Planning",
-      "dateCreated": "2026-08-13",
-      "temporalCoverage": "2026-08-13/2026-10-01",
+      "dateCreated": "2026-08-12",
+      "temporalCoverage": "2026-08-12/2026-09-30",
       "keywords": "AusLAMP, magnetotelluric",
       "about": [
         {
@@ -6809,6 +6809,23 @@
       "funding": [
         {
           "@id": "#grant-auscope"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-earth-data-pr6-24-loggers"
+        },
+        {
+          "@id": "#instrument-bartington-mag-03ms-fluxgate"
+        },
+        {
+          "@id": "#instrument-borin-stelth-ag-agcl-electrodes"
+        },
+        {
+          "@id": "#instrument-field-laptop"
+        },
+        {
+          "@id": "#instrument-solar-panels"
         }
       ],
       "provider": {
