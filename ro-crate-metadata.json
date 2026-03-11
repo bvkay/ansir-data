@@ -6772,11 +6772,6 @@
       ]
     },
     {
-      "@id": "#funder-auscope",
-      "@type": "Organization",
-      "name": "AuScope"
-    },
-    {
       "@id": "#project-ANSIR-2026-006",
       "@type": [
         "Dataset",
