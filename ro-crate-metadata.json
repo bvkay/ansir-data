@@ -6345,13 +6345,13 @@
     {
       "@id": "#geo-ansir-2026-001",
       "@type": "GeoCoordinates",
-      "latitude": -26.600193,
-      "longitude": 143.986816
+      "latitude": -26.579623,
+      "longitude": 144.63501
     },
     {
       "@id": "#shape-ansir-2026-001",
       "@type": "GeoShape",
-      "polygon": "-24.86650 141.94336 -24.85653 145.93140 -28.13982 146.06323 -28.18824 141.98730"
+      "polygon": "-24.86650 141.94336 -24.82662 147.08496 -27.05913 147.04102 -28.13982 146.06323 -28.18824 141.98730"
     },
     {
       "@id": "#place-ansir-2026-001",
@@ -6377,8 +6377,8 @@
       "identifier": "ANSIR-2026-001",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-001",
       "creativeWorkStatus": "In Progress",
-      "dateCreated": "2026-02-28",
-      "temporalCoverage": "2026-02-28/2026-04-28",
+      "dateCreated": "2026-02-27",
+      "temporalCoverage": "2026-02-27/2026-04-27",
       "about": [
         {
           "@id": "#method-magnetotelluric"
