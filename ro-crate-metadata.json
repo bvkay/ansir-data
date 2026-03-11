@@ -170,6 +170,9 @@
           "@id": "#project-ANSIR-2026-002"
         },
         {
+          "@id": "#project-ANSIR-2026-003"
+        },
+        {
           "@id": "#project-ANSIR-2026-004"
         },
         {
@@ -6564,6 +6567,253 @@
         },
         {
           "@id": "#instrument-sonnenschein-gf-12-63-y-12v-batteries"
+        }
+      ],
+      "conditionsOfAccess": "restricted",
+      "provider": {
+        "@id": "https://ansir.org.au"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#shape-ansir-2026-003",
+      "@type": "GeoShape",
+      "polygon": "-40.93427 174.95178 -41.27719 174.53705 -41.65239 175.34729 -41.31640 175.87189"
+    },
+    {
+      "@id": "#place-ansir-2026-003",
+      "@type": "Place",
+      "name": "lower North Island, New Zealand",
+      "geo": {
+        "@id": "#shape-ansir-2026-003"
+      }
+    },
+    {
+      "@id": "https://ror.org/02zww1c82",
+      "@type": "Organization",
+      "name": "Earth Sciences New Zealand",
+      "identifier": "https://ror.org/02zww1c82"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0043-0580",
+      "@type": "Person",
+      "name": "Dr Brook Tozer",
+      "identifier": "https://orcid.org/0000-0003-0043-0580",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "https://ror.org/02h2x0161",
+      "@type": "Organization",
+      "name": "Kiel, Germany",
+      "identifier": "https://ror.org/02h2x0161"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6692-0665",
+      "@type": "Person",
+      "name": "Dr Gareth Crutchley",
+      "identifier": "https://orcid.org/0000-0002-6692-0665",
+      "affiliation": {
+        "@id": "https://ror.org/02h2x0161"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5055-0180",
+      "@type": "Person",
+      "name": "Dr Christian Berndt",
+      "identifier": "https://orcid.org/0000-0001-5055-0180",
+      "affiliation": {
+        "@id": "https://ror.org/02h2x0161"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6351-0284",
+      "@type": "Person",
+      "name": "Dr Dan Bassett",
+      "identifier": "https://orcid.org/0000-0001-6351-0284",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7164-5274",
+      "@type": "Person",
+      "name": "Dr Stuart Henrys",
+      "identifier": "https://orcid.org/0000-0002-7164-5274",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4374-8022",
+      "@type": "Person",
+      "name": "Dr Brook Keats",
+      "identifier": "https://orcid.org/0000-0002-4374-8022",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2044-6582",
+      "@type": "Person",
+      "name": "Mr Thomas Brakenrig",
+      "identifier": "https://orcid.org/0000-0002-2044-6582",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6111-6379",
+      "@type": "Person",
+      "name": "Mr Nick Macdonald",
+      "identifier": "https://orcid.org/0000-0002-6111-6379",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "#person-lauren-coup",
+      "@type": "Person",
+      "name": "Ms Lauren Coup",
+      "affiliation": {
+        "@id": "https://ror.org/02zww1c82"
+      }
+    },
+    {
+      "@id": "https://ror.org/03c4nqn69",
+      "@type": "Organization",
+      "name": "Academia Sinica, Taiwan",
+      "identifier": "https://ror.org/03c4nqn69"
+    },
+    {
+      "@id": "#person-wu-cheng-chi",
+      "@type": "Person",
+      "name": "Mr Wu-Cheng Chi",
+      "affiliation": {
+        "@id": "https://ror.org/03c4nqn69"
+      }
+    },
+    {
+      "@id": "https://ror.org/018mejw64",
+      "@type": "Organization",
+      "name": "Deutsche Forschungsgemeinschaft (DFG)",
+      "identifier": "https://ror.org/018mejw64"
+    },
+    {
+      "@id": "#grant-multi-scale-geophysical-investigation-of-subduction-to-strik",
+      "@type": "Grant",
+      "name": "Multi-scale geophysical investigation of subduction to strike-slip transition, New Zealand",
+      "funder": {
+        "@id": "https://ror.org/018mejw64"
+      }
+    },
+    {
+      "@id": "#grant-nga-ngaru-wakapuke-nnw",
+      "@type": "Grant",
+      "name": "Nga Ngaru Wakapuke (NNW)",
+      "funder": {
+        "@id": "https://ror.org/03c4nqn69"
+      }
+    },
+    {
+      "@id": "#funder-ministry-of-business-innovation-and-employment-mbie",
+      "@type": "Organization",
+      "name": "Ministry of Business Innovation and Employment (MBIE)"
+    },
+    {
+      "@id": "#grant-ministry-of-business-innovation-and-employment-mbie",
+      "@type": "Grant",
+      "name": "",
+      "funder": {
+        "@id": "#funder-ministry-of-business-innovation-and-employment-mbie"
+      }
+    },
+    {
+      "@id": "#funder-earth-sciences-new-zealand",
+      "@type": "Organization",
+      "name": "Earth Sciences New Zealand"
+    },
+    {
+      "@id": "#grant-earth-sciences-new-zealand",
+      "@type": "Grant",
+      "name": "",
+      "funder": {
+        "@id": "#funder-earth-sciences-new-zealand"
+      }
+    },
+    {
+      "@id": "#project-ANSIR-2026-003",
+      "@type": [
+        "Dataset",
+        "Project"
+      ],
+      "name": "Multi-scale geophysical investigation of subduction to strike-slip transition, New Zealand",
+      "description": "New Zealand’s plate boundary changes rapidly in the Cook Strait region, shifting from a subduction zone in the North Island to the strike‑slip faults of the South Island. This transition zone controls how large earthquakes begin, connect, and cascade, but its deep structure is still poorly understood. This project will use a dense array of seismic sensors to create a 3D image of the crust, providing critical information needed to better assess seismic hazard and strengthen the resilience of central New Zealand",
+      "identifier": "ANSIR-2026-003",
+      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-003",
+      "creativeWorkStatus": "Planning",
+      "dateCreated": "2027-01-30",
+      "temporalCoverage": "2027-01-30/2027-03-22",
+      "about": [
+        {
+          "@id": "#method-passive-seismic"
+        }
+      ],
+      "spatialCoverage": {
+        "@id": "#place-ansir-2026-003"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0003-0043-0580"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6692-0665"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5055-0180"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6351-0284"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7164-5274"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4374-8022"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2044-6582"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6111-6379"
+        },
+        {
+          "@id": "#person-lauren-coup"
+        },
+        {
+          "@id": "#person-wu-cheng-chi"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-multi-scale-geophysical-investigation-of-subduction-to-strik"
+        },
+        {
+          "@id": "#grant-nga-ngaru-wakapuke-nnw"
+        },
+        {
+          "@id": "#grant-ministry-of-business-innovation-and-employment-mbie"
+        },
+        {
+          "@id": "#grant-earth-sciences-new-zealand"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-igu-16hr-3c-5hz"
         }
       ],
       "conditionsOfAccess": "restricted",
