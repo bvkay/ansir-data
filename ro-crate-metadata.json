@@ -16,7 +16,7 @@
       "@type": "Dataset",
       "name": "ANSIR Research Projects Database",
       "description": "Public database of geophysical research projects enabled by the Australian National Seismic Imaging Resource (ANSIR), an AuScope national facility. Includes seismic, magnetotelluric, and DAS deployments across Australia and internationally.",
-      "datePublished": "2026-03-10",
+      "datePublished": "2026-03-11",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -63,9 +63,6 @@
         },
         {
           "@id": "#project-ANSIR-2023-002"
-        },
-        {
-          "@id": "#project-ANSIR-2023-003"
         },
         {
           "@id": "#project-ANSIR-2022-001"
@@ -1860,79 +1857,6 @@
       "creator": [
         {
           "@id": "https://orcid.org/0000-0001-5494-2296"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-7106-0789"
-        },
-        {
-          "@id": "https://orcid.org/0009-0007-4854-1227"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-9738-7277"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-7743-7812"
-        }
-      ],
-      "instrument": [
-        {
-          "@id": "#instrument-lemi-423"
-        },
-        {
-          "@id": "#instrument-lemi-120-magnetic-coils"
-        },
-        {
-          "@id": "#instrument-borin-stelth-ag-agcl-electrodes"
-        },
-        {
-          "@id": "#instrument-field-laptop"
-        }
-      ],
-      "provider": {
-        "@id": "https://ansir.org.au"
-      },
-      "license": {
-        "@id": "https://creativecommons.org/licenses/by/4.0/"
-      }
-    },
-    {
-      "@id": "#geo-ansir-2023-003",
-      "@type": "GeoCoordinates",
-      "latitude": 22.25,
-      "longitude": -15.47
-    },
-    {
-      "@id": "#place-ansir-2023-003",
-      "@type": "Place",
-      "name": "West African Craton, Morocco",
-      "geo": {
-        "@id": "#geo-ansir-2023-003"
-      }
-    },
-    {
-      "@id": "#project-ANSIR-2023-003",
-      "@type": [
-        "Dataset",
-        "Project"
-      ],
-      "name": "Morocco - SUD West African Craton Margin Profile",
-      "description": "This project proposes a broadband magnetotelluric (MT) survey along a 185 km transect across the western margin of the West African Craton (WAC), extending from the Dakhla Coastal Basin through the Adrar Souttouf to the Reguibat Ridge. A total of 45 MT stations will be deployed, spaced at approximately 5 km intervals, with tighter spacing of 2.5 km in areas of known mineral prospectivity. The survey targets a geologically diverse region that includes Mesozoic basins, Ediacaran metamorphic complexes, and Archean craton, intersecting key structures associated with rare earth element (REE), gold, platinum group element (PGE), and iron oxide mineral systems. Data will be collected using ANSIR LEMI-423 instruments with Ag-AgCl electrodes and LEMI-120 magnetic coils. This work forms part of a collaboration between the University of Adelaide and Morocco’s Office National des Hydrocarbures et des Mines (ONHYM), and aims to generate new geophysical insights in a frontier area for exploration.",
-      "identifier": "ANSIR-2023-003",
-      "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2023-003",
-      "creativeWorkStatus": "Complete",
-      "dateCreated": "2023-12-30",
-      "temporalCoverage": "2023-12-30/2024-02-28",
-      "about": [
-        {
-          "@id": "#method-magnetotelluric"
-        }
-      ],
-      "spatialCoverage": {
-        "@id": "#place-ansir-2023-003"
-      },
-      "creator": [
-        {
-          "@id": "https://orcid.org/0000-0001-7180-3386"
         },
         {
           "@id": "https://orcid.org/0000-0001-7106-0789"
