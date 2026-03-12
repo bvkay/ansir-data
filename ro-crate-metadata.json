@@ -16,7 +16,7 @@
       "@type": "Dataset",
       "name": "ANSIR Research Projects Database",
       "description": "Public database of geophysical research projects enabled by the Australian National Seismic Imaging Resource (ANSIR), an AuScope national facility. Includes seismic, magnetotelluric, and DAS deployments across Australia and internationally.",
-      "datePublished": "2026-03-11",
+      "datePublished": "2026-03-12",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -6578,6 +6578,12 @@
       }
     },
     {
+      "@id": "#geo-ansir-2026-003",
+      "@type": "GeoCoordinates",
+      "latitude": -41.293479,
+      "longitude": 175.174255
+    },
+    {
       "@id": "#shape-ansir-2026-003",
       "@type": "GeoShape",
       "polygon": "-40.93427 174.95178 -41.27719 174.53705 -41.65239 175.34729 -41.31640 175.87189"
@@ -6586,9 +6592,14 @@
       "@id": "#place-ansir-2026-003",
       "@type": "Place",
       "name": "lower North Island, New Zealand",
-      "geo": {
-        "@id": "#shape-ansir-2026-003"
-      }
+      "geo": [
+        {
+          "@id": "#geo-ansir-2026-003"
+        },
+        {
+          "@id": "#shape-ansir-2026-003"
+        }
+      ]
     },
     {
       "@id": "https://ror.org/02zww1c82",
