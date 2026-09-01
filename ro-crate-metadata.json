@@ -666,9 +666,9 @@
       "description": "A temporary network of seismic nodes focussed on Ōkataina caldera volcano in the North Island of Aotearoa New Zealand. We seek to image the volcano in detail and detect local earthquakes to improve our knowledge of the volcano's structure and processes and the hazard that it poses.",
       "identifier": "ANSIR-2025-004",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-004",
-      "creativeWorkStatus": "In Progress",
-      "dateCreated": "2025-09-22",
-      "temporalCoverage": "2025-09-22/2026-03-30",
+      "creativeWorkStatus": "Complete",
+      "dateCreated": "2025-09-21",
+      "temporalCoverage": "2025-09-21/2026-03-29",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -6919,7 +6919,7 @@
     {
       "@id": "#grant-dp250100936",
       "@type": "Grant",
-      "name": "ARC Discovery Grant \"Discovering natural hydrogen in continental interiors\"",
+      "name": "ARC Discovery Grant",
       "identifier": "DP250100936",
       "funder": {
         "@id": "https://ror.org/05mmh0f86"
@@ -6935,9 +6935,9 @@
       "description": "This multi-geoscientific research explores the interplay between fault systems, hydrothermal activity, and potential natural hydrogen production related to the Paralana Fault Zone in South Australia’s Northern Flinders Ranges. The survey area represents an ideal natural laboratory for testing hypotheses on the roles of the essential geological processes in natural hydrogen production within the continental crust. Two geophysical methods - Magnetotellurics and Passive Seismics are used to constrain the sedimentary cover thickness, geometry of the major faults and to evaluate their potential role in natural hydrogen generation, transport and storage in continental settings.",
       "identifier": "ANSIR-2026-004",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2026-004",
-      "creativeWorkStatus": "Planning",
-      "dateCreated": "2026-04-19",
-      "temporalCoverage": "2026-04-19/2026-06-09",
+      "creativeWorkStatus": "In Progress",
+      "dateCreated": "2026-04-18",
+      "temporalCoverage": "2026-04-18/2026-06-08",
       "about": [
         {
           "@id": "#method-passive-seismic"
@@ -6972,6 +6972,11 @@
       "funding": [
         {
           "@id": "#grant-dp250100936"
+        }
+      ],
+      "instrument": [
+        {
+          "@id": "#instrument-igu-16hr-3c-5hz"
         }
       ],
       "conditionsOfAccess": "embargoes",
