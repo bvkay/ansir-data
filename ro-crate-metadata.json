@@ -16,7 +16,7 @@
       "@type": "Dataset",
       "name": "ANSIR Research Projects Database",
       "description": "Public database of geophysical research projects enabled by the Australian National Seismic Imaging Resource (ANSIR), an AuScope national facility. Includes seismic, magnetotelluric, and DAS deployments across Australia and internationally.",
-      "datePublished": "2026-08-04",
+      "datePublished": "2026-09-01",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -498,9 +498,9 @@
       "description": "ARC Centre of Excellence COMBS joint investigation with the W.M. Keck Observatory in Hawaii to run a distributed acoustic sensing experiment on Maunakea, which is located on the Big Island of Hawai'i. We aim to record small, previously undetected earthquakes on the dormant volcano and use these and ambient noise signals to image the volcano structure.",
       "identifier": "ANSIR-2025-003",
       "url": "https://bvkay.github.io/ansir-data/?id=ANSIR-2025-003",
-      "creativeWorkStatus": "Planning",
-      "dateCreated": "2026-06-29",
-      "temporalCoverage": "2026-06-29/2027-06-29",
+      "creativeWorkStatus": "In Progress",
+      "dateCreated": "2026-06-28",
+      "temporalCoverage": "2026-06-28/2027-06-28",
       "about": [
         {
           "@id": "#method-das"
@@ -900,6 +900,22 @@
       "identifier": "https://doi.org/10.7914/9j20-yq91"
     },
     {
+      "@id": "#journal-geophysical-journal-international",
+      "@type": "Periodical",
+      "name": "Geophysical Journal International"
+    },
+    {
+      "@id": "https://doi.org/10.1093/gji/ggag282",
+      "@type": "ScholarlyArticle",
+      "name": "Lowermost mantle deformation beneath Australia linked to deep mantle upwellings and putative remnant slab material",
+      "author": "Xu, E., Wolf, J., Frost, D. A., Li, M., Long, M. D.",
+      "datePublished": "2026",
+      "isPartOf": {
+        "@id": "#journal-geophysical-journal-international"
+      },
+      "identifier": "https://doi.org/10.1093/gji/ggag282"
+    },
+    {
       "@id": "#project-SX-2023",
       "@type": [
         "Dataset",
@@ -940,6 +956,11 @@
         },
         {
           "@id": "#instrument-nanometrics-trillium-compact-posthole-120s"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "hasPart": [
@@ -1292,11 +1313,6 @@
       "identifier": "https://doi.org/10.1785/0220220323"
     },
     {
-      "@id": "#journal-geophysical-journal-international",
-      "@type": "Periodical",
-      "name": "Geophysical Journal International"
-    },
-    {
       "@id": "https://doi.org/10.1093/gji/ggad035",
       "@type": "ScholarlyArticle",
       "name": "Refining the Moho across the Australian continent",
@@ -1462,6 +1478,9 @@
         },
         {
           "@id": "https://doi.org/10.59350/1evzk-y6b17"
+        },
+        {
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "hasPart": [
@@ -1554,6 +1573,9 @@
         },
         {
           "@id": "https://doi.org/10.1785/0220250316"
+        },
+        {
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "hasPart": [
@@ -1590,6 +1612,17 @@
       "datePublished": "2024",
       "publisher": "International Federation of Digital Seismograph Networks",
       "identifier": "https://doi.org/10.7914/7b9m-1d60"
+    },
+    {
+      "@id": "https://doi.org/10.1785/0220260139",
+      "@type": "ScholarlyArticle",
+      "name": "Snow Avalanche Characteristics Along Milford Road, Aotearoa New Zealand, Using Distributed Acoustic Sensing",
+      "author": "Michailos, K., Morris, S., Lai, V. H., Miller, M. S., Townend, J., Anderson, H. P., Clarke, G.",
+      "datePublished": "2026",
+      "isPartOf": {
+        "@id": "#journal-seismological-research-letters"
+      },
+      "identifier": "https://doi.org/10.1785/0220260139"
     },
     {
       "@id": "#project-2024-S01",
@@ -1632,6 +1665,11 @@
         },
         {
           "@id": "#instrument-silixa-idas-25"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1785/0220260139"
         }
       ],
       "hasPart": [
@@ -3729,6 +3767,9 @@
         },
         {
           "@id": "https://doi.org/10.1785/0120260045"
+        },
+        {
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "hasPart": [
@@ -4472,6 +4513,9 @@
         },
         {
           "@id": "https://doi.org/10.1785/0220250032"
+        },
+        {
+          "@id": "https://doi.org/10.1785/0120260045"
         }
       ],
       "hasPart": [
@@ -4479,7 +4523,7 @@
           "@id": "https://doi.org/10.7914/SN/5G_2018"
         },
         {
-          "@id": "https://doi.org/10.1785/0120260045"
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "provider": {
@@ -4739,6 +4783,9 @@
         },
         {
           "@id": "https://doi.org/10.1785/0220250308"
+        },
+        {
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "hasPart": [
@@ -5883,6 +5930,9 @@
         },
         {
           "@id": "https://doi.org/10.1785/0220250316"
+        },
+        {
+          "@id": "https://doi.org/10.1093/gji/ggag282"
         }
       ],
       "hasPart": [
